@@ -1,0 +1,3 @@
+C:\GEMM\sep6\fmm_hls_greedy_potential.cpp:7:10: fatal error: 'assert.h' file not found
+#include <assert.h>
+         ^~~~~~~~~~

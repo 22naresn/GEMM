@@ -1,0 +1,5 @@
+  CREATE_STREAM @0 {NAME:fmm_reduce_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.fmm_reduce_kernel_virtual_sqr STREAM:5951}
+  CREATE_STREAM @125000 {NAME:fmm_reduce_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem.vsqr STREAM:6310}
+  CREATE_STREAM @125000 {NAME:fmm_reduce_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem2.vsqr STREAM:6319}
+  CREATE_STREAM @125000 {NAME:fmm_reduce_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control_r.vsqr STREAM:6328}
+  CREATE_STREAM @125000 {NAME:fmm_reduce_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:6337}

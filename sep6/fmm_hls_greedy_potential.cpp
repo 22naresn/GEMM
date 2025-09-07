@@ -1,0 +1,320 @@
+// fmm_hls_greedy_potential.cpp
+// Hardened HLS kernel with runtime bounds checks and AXI depth pragmas for safe cosim.
+
+#include <ap_int.h>
+#include <hls_stream.h>
+#include <stdint.h>
+#include <assert.h>
+
+/////////////////////
+// Configuration
+/////////////////////
+constexpr int MAX_ORIG_ROWS = 256;
+constexpr int MAX_ORIG_COLS = 256;
+constexpr int MAX_TCAP = 64;
+constexpr int MAX_TOTAL_ROWS = MAX_ORIG_ROWS + MAX_TCAP;
+constexpr int MAX_TOTAL_COLS = MAX_ORIG_COLS + MAX_TCAP;
+
+// compile-time depths used in AXI pragmas (must be >= runtime usage)
+constexpr int MAX_A_DEPTH = MAX_ORIG_ROWS * MAX_ORIG_COLS; // 256*256 = 65536
+constexpr int MAX_DEBUG_DEPTH = 4096;                      // debug words
+
+typedef ap_int<32> elem_t;
+
+struct Matrix {
+    int rows;
+    int cols;
+    int t;
+    int t_capacity;
+    elem_t e[MAX_TOTAL_ROWS][MAX_TOTAL_COLS];
+};
+
+// === Internal helpers ===
+static inline elem_t mat_entry(const Matrix &M, int r, int c) {
+#pragma HLS INLINE
+    return M.e[r][c];
+}
+static inline void mat_set_entry(Matrix &M, int r, int c, elem_t v) {
+#pragma HLS INLINE
+    M.e[r][c] = v;
+}
+
+// Safe loader: checks index bounds before reading A_dram
+static void load_matrix_from_dram_safe(const int32_t *A_dram, Matrix &M, int rows, int cols, int t_capacity, int max_a_words) {
+#pragma HLS INLINE off
+    M.rows = rows;
+    M.cols = cols;
+    M.t = 0;
+    M.t_capacity = t_capacity;
+    // zero full storage
+    for (int r = 0; r < MAX_TOTAL_ROWS; ++r) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=320
+        for (int c = 0; c < MAX_TOTAL_COLS; ++c) {
+#pragma HLS PIPELINE II=1
+            M.e[r][c] = 0;
+        }
+    }
+    // fill original region with bounds-check
+    int max_words = max_a_words;
+    for (int r = 0; r < rows; ++r) {
+        for (int c = 0; c < cols; ++c) {
+#pragma HLS PIPELINE II=1
+            int idx = r * cols + c;
+            if (idx >= 0 && idx < max_words && A_dram != nullptr) {
+                M.e[r][c] = (elem_t) A_dram[idx];
+            } else {
+                M.e[r][c] = 0;
+            }
+        }
+    }
+}
+
+static void store_matrix_to_dram_safe(int32_t *A_dram, const Matrix &M, int max_a_words) {
+#pragma HLS INLINE off
+    int rows = M.rows;
+    int cols = M.cols;
+    int max_words = max_a_words;
+    for (int r = 0; r < rows; ++r) {
+        for (int c = 0; c < cols; ++c) {
+#pragma HLS PIPELINE II=1
+            int idx = r * cols + c;
+            if (idx >= 0 && idx < max_words && A_dram != nullptr) {
+                A_dram[idx] = (int32_t) M.e[r][c];
+            } // else skip write
+        }
+    }
+}
+
+// === Utilities ===
+static inline int column_weight(const Matrix &M, int col_idx) {
+#pragma HLS INLINE
+    int total_rows = M.rows + M.t;
+    int cnt = 0;
+    for (int r = 0; r < total_rows; ++r) {
+#pragma HLS PIPELINE II=1
+        if (M.e[r][col_idx] != 0) ++cnt;
+    }
+    return cnt;
+}
+
+static inline int num_additions(const Matrix &M) {
+#pragma HLS INLINE
+    int total_cols = M.cols + M.t;
+    int s = 0;
+    for (int c = 0; c < total_cols; ++c) {
+#pragma HLS PIPELINE II=1
+        int w = column_weight(M, c);
+        s += (w > 0) ? (w - 1) : 0;
+    }
+    return s;
+}
+
+static void compute_pp_nn(const Matrix &M, int r1, int r2, int &pp, int &nn) {
+#pragma HLS INLINE
+    pp = 0; nn = 0;
+    int cols_non_t = M.cols;
+    for (int c = 0; c < cols_non_t; ++c) {
+#pragma HLS PIPELINE II=1
+        elem_t e1 = M.e[r1][c];
+        if (e1 == 0) continue;
+        elem_t e2 = M.e[r2][c];
+        if (e2 == 0) continue;
+        if (e1 == e2) pp++;
+        else if (e1 == -e2) nn++;
+    }
+}
+
+// === Reduction move / undo ===
+static void reduction_move(Matrix &M, int row1, int row2, int move_type) {
+#pragma HLS INLINE
+    if (M.t >= M.t_capacity) return;
+    int new_col = M.cols + M.t;
+    int new_row = M.rows + M.t;
+    M.e[row1][new_col] = 1;
+    M.e[row2][new_col] = (move_type == 1) ? 1 : -1;
+    int existing_cols = M.cols + M.t;
+    for (int c = 0; c < existing_cols; ++c) {
+#pragma HLS PIPELINE II=1
+        elem_t e1 = M.e[row1][c];
+        if (e1 == 0) continue;
+        elem_t e2 = M.e[row2][c];
+        if (e2 == 0) continue;
+        if ((move_type == 1 && e1 == e2) || (move_type == -1 && e1 == -e2)) {
+            M.e[row1][c] = 0;
+            M.e[row2][c] = 0;
+            M.e[new_row][c] = e1;
+        }
+    }
+    M.t += 1;
+}
+
+static void reduction_move_undo(Matrix &M) {
+#pragma HLS INLINE
+    if (M.t <= 0) return;
+    int t_old = M.t - 1;
+    int rowt = M.rows + t_old;
+    int colt = M.cols + t_old;
+    int row1 = -1, row2 = -1; int move_type = 0;
+    for (int r = 0; r < rowt; ++r) {
+#pragma HLS PIPELINE II=1
+        elem_t v = M.e[r][colt];
+        if (v == 0) continue;
+        if (v == 1) { row1 = r; break; }
+    }
+    for (int r = rowt - 1; r > row1; --r) {
+#pragma HLS PIPELINE II=1
+        elem_t v = M.e[r][colt];
+        if (v == 0) continue;
+        row2 = r;
+        move_type = (int) M.e[r][colt];
+        break;
+    }
+    if (!(row1 >= 0 && row2 > row1 && (move_type == 1 || move_type == -1))) return;
+    M.e[row1][colt] = 0;
+    M.e[row2][colt] = 0;
+    for (int c = 0; c < colt; ++c) {
+#pragma HLS PIPELINE II=1
+        elem_t v = M.e[rowt][c];
+        if (v == 0) continue;
+        M.e[rowt][c] = 0;
+        M.e[row1][c] = v;
+        elem_t v2 = (move_type == 1) ? v : (elem_t)(-v);
+        M.e[row2][c] = v2;
+    }
+    M.t -= 1;
+}
+
+// === Potential and scoring ===
+static int total_potential(const Matrix &M) {
+#pragma HLS INLINE
+    int R = M.rows + M.t;
+    int s = 0;
+    for (int i = 0; i < R; ++i) {
+        for (int j = i+1; j < R; ++j) {
+#pragma HLS PIPELINE II=1
+            int p=0,n=0;
+            compute_pp_nn(M, i, j, p, n);
+            if (p > 1) s += (p - 1);
+            if (n > 1) s += (n - 1);
+        }
+    }
+    return s;
+}
+
+static int compute_greedy_potential_score(Matrix &M, int r1, int r2, int sign, int k1, int k2) {
+#pragma HLS INLINE
+    int p=0,n=0;
+    compute_pp_nn(M, r1, r2, p, n);
+    int overlap = (sign == 1) ? p : n;
+    if (overlap < 2) return 0;
+    int score = k1 * overlap;
+    if (k2 != 0) {
+        reduction_move(M, r1, r2, sign);
+        int pot = total_potential(M);
+        reduction_move_undo(M);
+        score += k2 * pot;
+    }
+    return score;
+}
+
+static int find_best_move(Matrix &M, int &out_r1, int &out_r2, int &out_sign, int k1, int k2) {
+#pragma HLS INLINE
+    int best_score = 0;
+    int R = M.rows + M.t;
+    for (int i = 0; i < R; ++i) {
+        for (int j = i+1; j < R; ++j) {
+#pragma HLS PIPELINE II=1
+            int p=0, n=0;
+            compute_pp_nn(M, i, j, p, n);
+            if (p >= 2) {
+                int s = compute_greedy_potential_score(M, i, j, 1, k1, k2);
+                if (s > best_score) { best_score = s; out_r1 = i; out_r2 = j; out_sign = 1; }
+            }
+            if (n >= 2) {
+                int s = compute_greedy_potential_score(M, i, j, -1, k1, k2);
+                if (s > best_score) { best_score = s; out_r1 = i; out_r2 = j; out_sign = -1; }
+            }
+        }
+    }
+    return best_score;
+}
+
+static void greedy_potential_reduce_with_debug(Matrix &M, int k1, int k2, volatile int *debug_dram, int debug_capacity) {
+#pragma HLS INLINE off
+    int rec_size = 5;
+    int rec_capacity = (debug_capacity > 0) ? (debug_capacity / rec_size) : 0;
+    int rec_idx = 0;
+
+    // initial record (only if debug_dram available and capacity)
+    if (rec_capacity > 0 && debug_dram != nullptr) {
+        // guard writes: these addresses should be legal because cosim wrapper allocates debug_capacity words
+        debug_dram[0] = 0;
+        debug_dram[1] = -1;
+        debug_dram[2] = -1;
+        debug_dram[3] = 0;
+        debug_dram[4] = num_additions(M);
+        rec_idx = 1;
+    }
+
+    int iter = 0;
+    while (true) {
+        int r1=0, r2=0, sign=0;
+        int best = find_best_move(M, r1, r2, sign, k1, k2);
+        if (best < 2) break;
+        reduction_move(M, r1, r2, sign);
+        ++iter;
+        if (rec_idx < rec_capacity && debug_dram != nullptr) {
+            int base = rec_idx * rec_size;
+            debug_dram[base + 0] = iter;
+            debug_dram[base + 1] = r1;
+            debug_dram[base + 2] = r2;
+            debug_dram[base + 3] = sign;
+            debug_dram[base + 4] = num_additions(M);
+            rec_idx++;
+        }
+        if (iter > (M.rows + M.t + 5) * 10) break;
+    }
+}
+
+// === Top-level wrapper (C linkage only here) ===
+extern "C" void fmm_reduce_kernel(volatile int *A_dram,
+                                  int rows,
+                                  int cols,
+                                  int t_capacity,
+                                  int k1,
+                                  int k2,
+                                  int verbose,
+                                  volatile int *debug_dram,
+                                  int debug_capacity) {
+    // For safe cosim, the AXI interfaces must declare a compile-time depth.
+#pragma HLS INTERFACE m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH
+#pragma HLS INTERFACE m_axi port=debug_dram offset=slave bundle=gmem2 depth=MAX_DEBUG_DEPTH
+
+#pragma HLS INTERFACE s_axilite port=rows bundle=control
+#pragma HLS INTERFACE s_axilite port=cols bundle=control
+#pragma HLS INTERFACE s_axilite port=t_capacity bundle=control
+#pragma HLS INTERFACE s_axilite port=k1 bundle=control
+#pragma HLS INTERFACE s_axilite port=k2 bundle=control
+#pragma HLS INTERFACE s_axilite port=verbose bundle=control
+#pragma HLS INTERFACE s_axilite port=debug_capacity bundle=control
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+
+    // Use static storage for the large matrix to avoid stack overflow in cosim wrapper
+    static Matrix M;
+#pragma HLS DATAFLOW
+    // runtime sanity checks (prevent segfaults in cosim)
+    int64_t req_words = (int64_t)rows * (int64_t)cols;
+    bool a_ok = (req_words > 0 && req_words <= MAX_A_DEPTH);
+    bool debug_ok = (debug_capacity >= 0 && debug_capacity <= MAX_DEBUG_DEPTH);
+    if (!a_ok || !debug_ok) {
+        if (debug_dram != nullptr && debug_capacity > 0) {
+            debug_dram[0] = (int) ((a_ok) ? -901 : -900);
+        }
+        return;
+    }
+
+    // safe loads/stores that always check indices against max_a_words
+    load_matrix_from_dram_safe((const int32_t *)A_dram, M, rows, cols, t_capacity, MAX_A_DEPTH);
+    greedy_potential_reduce_with_debug(M, k1, k2, debug_dram, debug_capacity);
+    store_matrix_to_dram_safe((int32_t *)A_dram, M, MAX_A_DEPTH);
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fmm_reduce_kernel",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fmm_reduce_kernel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

@@ -1,0 +1,29 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/GEMM/sep6/fmm_reduce_kernel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/GEMM/sep6/fmm_reduce_kernel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/GEMM/sep6/fmm_reduce_kernel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/GEMM/sep6/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/nithi/OneDrive/Documents/Nilesh's Stuff/OneDrive/Desktop/fmm_hls_greedy_potential.cpp' from C:/GEMM/sep6/hls_config.cfg(8)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/nithi/OneDrive/Documents/Nilesh's'
+WARNING: [HLS 200-40] Cannot find design file 'Stuff/OneDrive/Desktop/fmm_hls_greedy_potential.cpp'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/nithi/OneDrive/Documents/Nilesh's Stuff/OneDrive/Desktop/tb_fmm_hls.cpp' from C:/GEMM/sep6/hls_config.cfg(9)
+WARNING: [HLS 200-40] Cannot find test bench file 'C:/Users/nithi/OneDrive/Documents/Nilesh's'
+WARNING: [HLS 200-40] Cannot find test bench file 'Stuff/OneDrive/Desktop/tb_fmm_hls.cpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fmm_reduce_kernel' from C:/GEMM/sep6/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/GEMM/sep6/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-3' from C:/GEMM/sep6/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-3'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/GEMM/sep6/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/GEMM/sep6/fmm_reduce_kernel/vitis-comp.json
+WARNING: [HLS 200-1998] cannot find relative file path '../../Stuff/OneDrive/Desktop/tb_fmm_hls.cpp' in directory(s): C:/GEMM/sep6/fmm_reduce_kernel/solution C:/GEMM/sep6
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.825 seconds; peak allocated memory: 157.059 MB.

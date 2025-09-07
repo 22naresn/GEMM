@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\fmm_reduce_kernel.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/07/25 15:33:38",
+ "timestampMillis": "1757239418129",
+ "buildStep": {
+  "cmdId": "91ca0cbc-2bef-4e35-8048-287972aea834",
+  "name": "vitis-run",
+  "logFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\logs\\fmm_reduce_kernel.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GEMM\\sep6\\hls_config.cfg --work_dir fmm_reduce_kernel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GEMM\\sep6\\hls_config.cfg",
+   "--work_dir",
+   "fmm_reduce_kernel"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GEMM\\sep6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/25 15:33:38",
+ "timestampMillis": "1757239418130",
+ "status": {
+  "cmdId": "91ca0cbc-2bef-4e35-8048-287972aea834",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/07/25 15:33:42",
+ "timestampMillis": "1757239422276",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fmm_reduce_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GEMM\\sep6\\fmm_hls_greedy_potential.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/07/25 15:33:42",
+ "timestampMillis": "1757239422277",
+ "buildStep": {
+  "cmdId": "4b7dab82-b6fa-458c-93c9-d8079a9823f3",
+  "name": "",
+  "logFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GEMM\\sep6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/25 15:33:42",
+ "timestampMillis": "1757239422277",
+ "status": {
+  "cmdId": "4b7dab82-b6fa-458c-93c9-d8079a9823f3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/25 15:33:45",
+ "timestampMillis": "1757239425384",
+ "status": {
+  "cmdId": "4b7dab82-b6fa-458c-93c9-d8079a9823f3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/25 15:33:45",
+ "timestampMillis": "1757239425476",
+ "status": {
+  "cmdId": "91ca0cbc-2bef-4e35-8048-287972aea834",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/25 15:33:45",
+ "timestampMillis": "1757239425476",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/25 15:33:45",
+ "timestampMillis": "1757239425477",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

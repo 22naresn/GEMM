@@ -1,0 +1,51 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/GEMM/sep6/fmm_reduce_kernel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/GEMM/sep6/fmm_reduce_kernel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/GEMM/sep6/fmm_reduce_kernel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/GEMM/sep6/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fmm_hls_greedy_potential.cpp' from C:/GEMM/sep6/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/GEMM/sep6/fmm_hls_greedy_potential.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_fmm_hls.cpp' from C:/GEMM/sep6/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/GEMM/sep6/tb_fmm_hls.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fmm_reduce_kernel' from C:/GEMM/sep6/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/GEMM/sep6/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-3' from C:/GEMM/sep6/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-3'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/GEMM/sep6/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/GEMM/sep6/fmm_reduce_kernel/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb_fmm_hls.cpp in debug mode
+   Compiling ../../../../fmm_hls_greedy_potential.cpp in debug mode
+csim.mk:94: recipe for target 'obj/fmm_hls_greedy_potential.o' failed
+In file included from ../../../../fmm_hls_greedy_potential.cpp:9:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../fmm_hls_greedy_potential.cpp:36:15: error: 'mat_entry' has C-linkage specified, but returns user-defined type 'elem_t' (aka 'ap_int<32>') which is incompatible with C [-Werror,-Wreturn-type-c-linkage]
+inline elem_t mat_entry(const Matrix &M, int r, int c) {
+              ^
+../../../../fmm_hls_greedy_potential.cpp:194:41: error: conditional expression is ambiguous; 'ap_int<32>' can be converted to 'ap_int<33 aka 33>' and vice versa
+        M.e[row2][c] = (move_type == 1) ? v : -v;
+                                        ^ ~   ~~
+1 warning and 2 errors generated.
+make: *** [obj/fmm_hls_greedy_potential.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 9.41 seconds; peak allocated memory: 157.688 MB.

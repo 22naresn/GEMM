@@ -1,0 +1,209 @@
+{
+  "0": {
+    "basicblocks": 14,
+    "calls": "6 11 9",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 280,
+    "instructions": 43,
+    "memory_accesses": 0,
+    "name": "fmm_reduce_kernel",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 4119
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "2 7 3 4",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 204,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "compute_greedy_potential_score",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1465
+  },
+  "10": {
+    "basicblocks": 21,
+    "calls": "2 1 1",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 220,
+    "instructions": 66,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "find_best_move",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 3237
+  },
+  "11": {
+    "basicblocks": 21,
+    "calls": "5 10 7 5",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 242,
+    "instructions": 105,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 0,
+    "name": "greedy_potential_reduce_with_debug",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 3886
+  },
+  "2": {
+    "basicblocks": 20,
+    "calls": "",
+    "control_depth": 5,
+    "def_use_depth": 2,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 112,
+    "instructions": 76,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 13,
+    "name": "compute_pp_nn",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 241
+  },
+  "3": {
+    "basicblocks": 17,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 188,
+    "instructions": 56,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "total_potential",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 297
+  },
+  "4": {
+    "basicblocks": 49,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 3,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 151,
+    "instructions": 214,
+    "loads": {
+      "L": 14
+    },
+    "memory_accesses": 22,
+    "name": "reduction_move_undo",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 501
+  },
+  "5": {
+    "basicblocks": 10,
+    "calls": "8",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 100,
+    "instructions": 24,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "num_additions",
+    "total_instructions": 77
+  },
+  "6": {
+    "basicblocks": 30,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 3,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 43,
+    "instructions": 97,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 10,
+    "name": "load_matrix_from_dram_safe",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 142
+  },
+  "7": {
+    "basicblocks": 27,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 4,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 128,
+    "instructions": 165,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 17,
+    "name": "reduction_move",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 390
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 2,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 89,
+    "instructions": 27,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 1,
+    "name": "column_weight",
+    "total_instructions": 53
+  },
+  "9": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 3,
+    "file": "fmm_hls_greedy_potential.cpp",
+    "fileloc": 72,
+    "instructions": 43,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 2,
+    "name": "store_matrix_to_dram_safe",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 48
+  }
+}

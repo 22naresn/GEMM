@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\GEMM\\sep6",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=fmm_reduce_kernel",
+      "-c",
+      "C:\\GEMM\\sep6\\fmm_hls_greedy_potential.cpp"
+    ],
+    "file": "C:\\GEMM\\sep6\\fmm_hls_greedy_potential.cpp"
+  },
+  {
+    "directory": "C:\\GEMM\\sep6",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\GEMM\\sep6\\tb_fmm_hls.cpp"
+    ],
+    "file": "C:\\GEMM\\sep6\\tb_fmm_hls.cpp"
+  }
+]

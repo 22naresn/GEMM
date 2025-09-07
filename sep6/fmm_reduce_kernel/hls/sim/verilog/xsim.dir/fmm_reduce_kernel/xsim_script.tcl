@@ -1,0 +1,1 @@
+xsim {fmm_reduce_kernel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=fmm_reduce_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {fmm_reduce_kernel.tcl}

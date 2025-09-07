@@ -1,0 +1,202 @@
+---
+MainSourceFile:  'C:/GEMM/sep6/fmm_reduce_kernel/hls/.autopilot/db/fmm_hls_greedy_potential.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          279636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          280102
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          280569
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          575039
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_1:  '
+    FileOffset:      50
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          998134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_52_2:  '
+    FileOffset:      52
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          998219
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_52_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_59_3:  '
+    FileOffset:      59
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          998358
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_59_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_4:  '
+    FileOffset:      60
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          998399
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_1:  '
+    FileOffset:      77
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          998880
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_2:  '
+    FileOffset:      78
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          998921
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          999294
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_1:  '
+    FileOffset:      104
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          999539
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_1:  '
+    FileOffset:      116
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          999841
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_1:  '
+    FileOffset:      136
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1000411
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_1:  '
+    FileOffset:      158
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1001034
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_164_2:  '
+    FileOffset:      164
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1001200
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_164_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_3:  '
+    FileOffset:      175
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1001539
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_192_1:  '
+    FileOffset:      192
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1001921
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_192_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_2:  '
+    FileOffset:      193
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1001959
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_1:  '
+    FileOffset:      224
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1002796
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_225_2:  '
+    FileOffset:      225
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1002834
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_225_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_260_1:  '
+    FileOffset:      260
+    FilePath:        fmm_hls_greedy_potential.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp'
+        Offset:          1003935
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_260_1: '
+...

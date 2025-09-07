@@ -1,0 +1,13 @@
+{
+  "name": "sep6",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "fmm_reduce_kernel"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

@@ -1,0 +1,205 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:303:16" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:317:32" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:319:31" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:304:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_entry" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_set_entry" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_matrix_from_dram_safe" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_matrix_from_dram_safe" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=320" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_matrix_from_dram_safe" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_matrix_from_dram_safe" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store_matrix_to_dram_safe" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store_matrix_to_dram_safe" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="column_weight" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="column_weight" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="num_additions" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="num_additions" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute_pp_nn" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute_pp_nn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduction_move" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduction_move" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:152:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduction_move_undo" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduction_move_undo" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduction_move_undo" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduction_move_undo" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:189:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="total_potential" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:194:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="total_potential" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute_greedy_potential_score" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="find_best_move" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="find_best_move" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:243:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="greedy_potential_reduce_with_debug" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fmm_reduce_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:290:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:291:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=debug_dram offset=slave bundle=gmem2 depth=MAX_DEBUG_DEPTH" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:293:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=rows bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:294:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=cols bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:295:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=t_capacity bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:296:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=k1 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:297:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=k2 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:298:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=verbose bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:299:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=debug_capacity bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:300:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:304:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fmm_reduce_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:106:10" msg_body="Inlining function 'column_weight(Matrix const&amp;, int)' into 'num_additions(Matrix const&amp;)'">
+        <args Callee="column_weight(Matrix const&amp;, int)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 89 Column 0" Caller="num_additions(Matrix const&amp;)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 100 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:196:13" msg_body="Inlining function 'compute_pp_nn(Matrix const&amp;, int, int, int&amp;, int&amp;)' into 'total_potential(Matrix const&amp;)'">
+        <args Callee="compute_pp_nn(Matrix const&amp;, int, int, int&amp;, int&amp;)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 112 Column 0" Caller="total_potential(Matrix const&amp;)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 188 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:207:5" msg_body="Inlining function 'compute_pp_nn(Matrix const&amp;, int, int, int&amp;, int&amp;)' into 'compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)'">
+        <args Callee="compute_pp_nn(Matrix const&amp;, int, int, int&amp;, int&amp;)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 112 Column 0" Caller="compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 204 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:214:9" msg_body="Inlining function 'reduction_move_undo(Matrix&amp;)' into 'compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)'">
+        <args Callee="reduction_move_undo(Matrix&amp;)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 151 Column 0" Caller="compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 204 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:213:19" msg_body="Inlining function 'total_potential(Matrix const&amp;)' into 'compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)'">
+        <args Callee="total_potential(Matrix const&amp;)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 188 Column 0" Caller="compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 204 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:212:9" msg_body="Inlining function 'reduction_move(Matrix&amp;, int, int, int)' into 'compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)'">
+        <args Callee="reduction_move(Matrix&amp;, int, int, int)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 128 Column 0" Caller="compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 204 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:228:13" msg_body="Inlining function 'compute_pp_nn(Matrix const&amp;, int, int, int&amp;, int&amp;)' into 'find_best_move(Matrix&amp;, int&amp;, int&amp;, int&amp;, int, int)'">
+        <args Callee="compute_pp_nn(Matrix const&amp;, int, int, int&amp;, int&amp;)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 112 Column 0" Caller="find_best_move(Matrix&amp;, int&amp;, int&amp;, int&amp;, int, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 220 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:234:25" msg_body="Inlining function 'compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)' into 'find_best_move(Matrix&amp;, int&amp;, int&amp;, int&amp;, int, int)'">
+        <args Callee="compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 204 Column 0" Caller="find_best_move(Matrix&amp;, int&amp;, int&amp;, int&amp;, int, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 220 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:255:25" msg_body="Inlining function 'num_additions(Matrix const&amp;)' into 'greedy_potential_reduce_with_debug(Matrix&amp;, int, int, int volatile*, int)'">
+        <args Callee="num_additions(Matrix const&amp;)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 100 Column 0" Caller="greedy_potential_reduce_with_debug(Matrix&amp;, int, int, int volatile*, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 242 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:264:9" msg_body="Inlining function 'reduction_move(Matrix&amp;, int, int, int)' into 'greedy_potential_reduce_with_debug(Matrix&amp;, int, int, int volatile*, int)'">
+        <args Callee="reduction_move(Matrix&amp;, int, int, int)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 128 Column 0" Caller="greedy_potential_reduce_with_debug(Matrix&amp;, int, int, int volatile*, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 242 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:262:20" msg_body="Inlining function 'find_best_move(Matrix&amp;, int&amp;, int&amp;, int&amp;, int, int)' into 'greedy_potential_reduce_with_debug(Matrix&amp;, int, int, int volatile*, int)'">
+        <args Callee="find_best_move(Matrix&amp;, int&amp;, int&amp;, int&amp;, int, int)" Callee-DebugLoc="File fmm_hls_greedy_potential.cpp Line 220 Column 0" Caller="greedy_potential_reduce_with_debug(Matrix&amp;, int, int, int volatile*, int)" Caller-DebugLoc="File fmm_hls_greedy_potential.cpp Line 242 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:116:23" msg_body="Loop 'VITIS_LOOP_116_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_116_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:136:23" msg_body="Loop 'VITIS_LOOP_136_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_136_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:192:23" msg_body="Loop 'VITIS_LOOP_192_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_192_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:193:27" msg_body="Loop 'VITIS_LOOP_193_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_193_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:158:23" msg_body="Loop 'VITIS_LOOP_158_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_158_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:164:23" msg_body="Loop 'VITIS_LOOP_164_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_164_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:175:23" msg_body="Loop 'VITIS_LOOP_175_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_175_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fmm_hls_greedy_potential.cpp:93:22" msg_body="Loop 'VITIS_LOOP_93_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_93_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:43:0" msg_body="Updating loop lower bound from 1 to 320 for loop 'VITIS_LOOP_50_1' (fmm_hls_greedy_potential.cpp:50:22) in function 'load_matrix_from_dram_safe'.">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:50:22" LoopName="VITIS_LOOP_50_1" NewBound="320" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:116:23" msg_body="Cannot unroll loop 'VITIS_LOOP_116_1' (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:116:23" LoopName="VITIS_LOOP_116_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:136:23" msg_body="Cannot unroll loop 'VITIS_LOOP_136_1' (fmm_hls_greedy_potential.cpp:136:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:136:23" LoopName="VITIS_LOOP_136_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:192:23" msg_body="Cannot unroll loop 'VITIS_LOOP_192_1' (fmm_hls_greedy_potential.cpp:192:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:192:23" LoopName="VITIS_LOOP_192_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:193:27" msg_body="Cannot unroll loop 'VITIS_LOOP_193_2' (fmm_hls_greedy_potential.cpp:193:27) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:193:27" LoopName="VITIS_LOOP_193_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:158:23" msg_body="Cannot unroll loop 'VITIS_LOOP_158_1' (fmm_hls_greedy_potential.cpp:158:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:158:23" LoopName="VITIS_LOOP_158_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:164:23" msg_body="Cannot unroll loop 'VITIS_LOOP_164_2' (fmm_hls_greedy_potential.cpp:164:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:164:23" LoopName="VITIS_LOOP_164_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:175:23" msg_body="Cannot unroll loop 'VITIS_LOOP_175_3' (fmm_hls_greedy_potential.cpp:175:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:175:23" LoopName="VITIS_LOOP_175_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="fmm_hls_greedy_potential.cpp:93:22" msg_body="Cannot unroll loop 'VITIS_LOOP_93_1' (fmm_hls_greedy_potential.cpp:93:22) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count">
+        <args LoopLoc="fmm_hls_greedy_potential.cpp:93:22" LoopName="VITIS_LOOP_93_1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

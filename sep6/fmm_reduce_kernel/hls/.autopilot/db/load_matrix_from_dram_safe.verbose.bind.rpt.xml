@@ -1,0 +1,47 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'load_matrix_from_dram_safe'" level="0">
+<item name = "Date">Sun Sep  7 15:34:36 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">fmm_reduce_kernel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72">load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2, 102402, 102402, 1.024 ms, 1.024 ms, 102401, 102401, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78">load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

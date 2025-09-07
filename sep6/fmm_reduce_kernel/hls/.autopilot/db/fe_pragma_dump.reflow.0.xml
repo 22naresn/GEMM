@@ -1,0 +1,59 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="73" pragmaType="inline" parentfunction="store_matrix_to_dram_safe" off="1" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="79" pragmaType="pipeline" parentfunction="store_matrix_to_dram_safe" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="129" pragmaType="inline" parentfunction="reduction_move" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="137" pragmaType="pipeline" parentfunction="reduction_move" off="0" ii="1" rewind="0" style=""/>
+<pragma file="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="44" pragmaType="inline" parentfunction="load_matrix_from_dram_safe" off="1" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="61" pragmaType="pipeline" parentfunction="load_matrix_from_dram_safe" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="51" pragmaType="loop_tripcount" parentfunction="load_matrix_from_dram_safe" min="1" max="320" avg="160"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="53" pragmaType="pipeline" parentfunction="load_matrix_from_dram_safe" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="243" pragmaType="inline" parentfunction="greedy_potential_reduce_with_debug" off="1" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="221" pragmaType="inline" parentfunction="find_best_move" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="226" pragmaType="pipeline" parentfunction="find_best_move" off="0" ii="1" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator-() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator==<33, true>(ap_int_base<33, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<32, true>(ap_int_base<32, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::RType<32, true>::minus operator-<1, false, 32, true>(ap_int_base<1, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="304" pragmaType="dataflow" parentfunction="fmm_reduce_kernel" disable_start_propagation="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="290" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="m_axi" port="A_dram" bundle="gmem" offset="slave" name="" depth="65536" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="291" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="m_axi" port="debug_dram" bundle="gmem2" offset="slave" name="" depth="4096" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="293" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="rows" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="294" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="cols" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="295" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="t_capacity" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="296" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="k1" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="297" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="k2" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="298" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="verbose" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="299" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="debug_capacity" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="300" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="101" pragmaType="inline" parentfunction="num_additions" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="105" pragmaType="pipeline" parentfunction="num_additions" off="0" ii="1" rewind="0" style=""/>
+<pragma file="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<32, true>(ap_int_base<32, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="90" pragmaType="inline" parentfunction="column_weight" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="94" pragmaType="pipeline" parentfunction="column_weight" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="113" pragmaType="inline" parentfunction="compute_pp_nn" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="117" pragmaType="pipeline" parentfunction="compute_pp_nn" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="205" pragmaType="inline" parentfunction="compute_greedy_potential_score" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="189" pragmaType="inline" parentfunction="total_potential" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="194" pragmaType="pipeline" parentfunction="total_potential" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="152" pragmaType="inline" parentfunction="reduction_move_undo" off="0" region="0" recursive="0"/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="176" pragmaType="pipeline" parentfunction="reduction_move_undo" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="165" pragmaType="pipeline" parentfunction="reduction_move_undo" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fmm_hls_greedy_potential.cpp" line="159" pragmaType="pipeline" parentfunction="reduction_move_undo" off="0" ii="1" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int<33>(ap_int<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

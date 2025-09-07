@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1757239506439">
+  <ports id="1" name="gmem" type="PortType" coreId="4294967295" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="gmem2" type="PortType" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="A_dram" type="PortType" originalName="A_dram" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="rows" type="PortType" originalName="rows" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="cols" type="PortType" originalName="cols" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="t_capacity" type="PortType" originalName="t_capacity" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="k1" type="PortType" originalName="k1" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="k2" type="PortType" originalName="k2" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="verbose" type="PortType" originalName="verbose" coreId="4294967295" bitwidth="32"/>
+  <ports id="10" name="debug_dram" type="PortType" originalName="debug_dram" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="debug_capacity" type="PortType" originalName="debug_capacity" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="90" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="93" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="95" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="97" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="99" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="101" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="103" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="105" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="141" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@ports.1"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="151" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="152" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="153" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="154" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="155" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="875" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="876" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="877" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="-141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@ports.0"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="266" RegionName="fmm_reduce_kernel">
+    <basic_blocks id="87" name="fmm_reduce_kernel" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="debug_capacity_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>debug_capacity</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="debug_dram_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>debug_dram</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="k2_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>k2</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="k1_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>k1</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="t_capacity_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>t_capacity</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="cols_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>cols</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="rows_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>rows</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="A_dram_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>A_dram</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="debug_capacity_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="debug_capacity_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="debug_dram_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="debug_dram_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="k2_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="k2_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="k1_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="k1_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="t_capacity_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="t_capacity_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="cols_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="cols_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="rows_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="rows_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="A_dram_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="A_dram_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="_ln304" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="entry_proc_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="call" m_display="0" m_delay="3.22" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>entry_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="call_ret" lineNumber="306" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="Block_entry_proc_1_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" bitwidth="2" opcode="call" nodeLatency="1" m_display="0" m_delay="6.21" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="306" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>Block_entry_proc_1</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="spec_select_loc_channel" lineNumber="306" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="spec_select_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="306" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="p_loc_channel" lineNumber="306" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="p_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="306" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="_ln309" lineNumber="309" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="Block_entry_proc_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="6.47" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="309" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>gmem2</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+        <constName>Block_entry_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="_ln320" lineNumber="320" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="320" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="fmm_hls_greedy_potential.cpp">
+        <validLinenumbers>304</validLinenumbers>
+        <validLinenumbers>306</validLinenumbers>
+        <validLinenumbers>309</validLinenumbers>
+        <validLinenumbers>320</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="cols_c_reg_323">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="debug_dram_c_reg_299">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="p_loc_channel_reg_346">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="A_dram_c_reg_335">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="cols_read_reg_283">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="rows_read_reg_288">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="rows_c_reg_329">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="k2_c_reg_305">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="debug_capacity_read_reg_278">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="k1_c_reg_311">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="spec_select_loc_channel_reg_341">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="t_capacity_c_reg_317">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="debug_capacity_c_reg_293">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <expressionNodes realName="t_capacity_c_fu_146">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rows_c_fu_154">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="spec_select_loc_channel_fu_270">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_loc_channel_fu_274">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_dram_c_fu_158">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="debug_dram_c_fu_134">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k2_c_fu_138">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="debug_capacity_c_fu_130">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cols_c_fu_150">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k1_c_fu_142">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_Block_entry_proc_fu_242">
+    <nodeIds>85</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Block_entry_proc_1_fu_229">
+    <nodeIds>82</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln304_entry_proc_fu_210">
+    <nodeIds>81</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="debug_capacity_read_read_fu_162">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="t_capacity_read_read_fu_186">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="A_dram_read_read_fu_204">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="k1_read_read_fu_180">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="cols_read_read_fu_192">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="debug_dram_read_read_fu_168">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="k2_read_read_fu_174">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="rows_read_read_fu_198">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="M_e" portID="100">
+    <nodeIds>85</nodeIds>
+  </memoryPorts>
+  <ioPorts name="A_dram">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="cols">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="debug_capacity">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="debug_dram">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem2">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="k1">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="k2">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rows">
+    <contents name="read">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="t_capacity">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="verbose"/>
+  <fsm>
+    <states id="1">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="82" stage="1" latency="2"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="85" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="2"/>
+      <operations id="86" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="fmm_reduce_kernel" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mIsDfPipe="true">
+      <basicBlocks>87</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.2/@pins.0/@inst">
+        <processe_list name="entry_proc_U0" ssdmobj_id="81">
+          <pins>
+            <port name="A_dram" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_100" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </pins>
+          <pins>
+            <port name="t_capacity" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_103" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </pins>
+          <pins>
+            <port name="k1" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_104" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </pins>
+          <pins>
+            <port name="k2" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_105" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </pins>
+          <pins>
+            <port name="debug_dram" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_107" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Block_entry_proc_1_U0" ssdmobj_id="82">
+          <pins>
+            <port name="cols" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_102" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="rows" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_101" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="debug_capacity" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_108" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Block_entry_proc_U0" ssdmobj_id="85">
+          <pins>
+            <port name="gmem" dir="DirInOut" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_98" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </pins>
+          <pins>
+            <port name="gmem2" dir="DirOut" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_99" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="3" bitwidth="64" suggested_type="2" suggested_depth="3" name="A_dram_c" ssdmobj_id="46" bram_cost="0" uram_cost="0" storage_size="64 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="32" suggested_type="2" suggested_depth="3" name="t_capacity_c" ssdmobj_id="37" bram_cost="0" uram_cost="0" storage_size="32 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="32" suggested_type="2" suggested_depth="3" name="k1_c" ssdmobj_id="34" bram_cost="0" uram_cost="0" storage_size="32 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="32" suggested_type="2" suggested_depth="3" name="k2_c" ssdmobj_id="31" bram_cost="0" uram_cost="0" storage_size="32 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="64" suggested_type="2" suggested_depth="3" name="debug_dram_c" ssdmobj_id="28" bram_cost="0" uram_cost="0" storage_size="64 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="2" suggested_depth="2" name="rows_c" ssdmobj_id="43" bram_cost="0" uram_cost="0" storage_size="32 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="2" suggested_depth="2" name="cols_c" ssdmobj_id="40" bram_cost="0" uram_cost="0" storage_size="32 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="2" suggested_depth="2" name="debug_capacity_c" ssdmobj_id="25" bram_cost="0" uram_cost="0" storage_size="32 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="1" suggested_type="1" suggested_depth="2" name="spec_select_loc_channel" ssdmobj_id="83" bram_cost="0" uram_cost="0" storage_size="1 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="1" suggested_type="1" suggested_depth="2" name="p_loc_channel" ssdmobj_id="84" bram_cost="0" uram_cost="0" storage_size="1 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_1_U0" ssdmobj_id="82" object_id="_124"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_entry_proc_U0" ssdmobj_id="85" object_id="_132"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

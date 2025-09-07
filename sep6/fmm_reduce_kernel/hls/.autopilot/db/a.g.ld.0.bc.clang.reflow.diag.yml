@@ -1,0 +1,1720 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 106, Column: 10 }
+Function:        _ZL13num_additionsRK6Matrix
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'column_weight(Matrix const&, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 89, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'num_additions(Matrix const&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 100, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 196, Column: 13 }
+Function:        _ZL15total_potentialRK6Matrix
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'total_potential(Matrix const&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 188, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 207, Column: 5 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 204, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 214, Column: 9 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reduction_move_undo(Matrix&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 151, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 204, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 213, Column: 19 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'total_potential(Matrix const&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 188, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 204, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 212, Column: 9 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reduction_move(Matrix&, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 128, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 204, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 228, Column: 13 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 220, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 234, Column: 25 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 204, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 220, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 255, Column: 25 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'num_additions(Matrix const&)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 100, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 264, Column: 9 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reduction_move(Matrix&, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 128, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 262, Column: 20 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 220, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 317, Column: 5 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'load_matrix_from_dram_safe(int const*, Matrix&, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 43, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 318, Column: 5 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 319, Column: 5 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'store_matrix_to_dram_safe(int*, Matrix const&, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 43, Column: 0 }
+Function:        _ZL26load_matrix_from_dram_safePKiR6Matrixiiii
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '320'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_50_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:50:22'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          load_matrix_from_dram_safe
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 317, Column: 5 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'load_matrix_from_dram_safe(int const*, Matrix&, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 43, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 318, Column: 5 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 319, Column: 5 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'store_matrix_to_dram_safe(int*, Matrix const&, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_fmm_reduce_kernel_ir
+Args:            
+  - Callee:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_fmm_reduce_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 311, Column: 27 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 311, Column: 27 }
+  - OrigDirection:   write
+  - OrigID:          if.then9.store.1
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 64, Column: 38 }
+Function:        _ZL26load_matrix_from_dram_safePKiR6Matrixiiii
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 64, Column: 38 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 64, Column: 38 }
+  - OrigDirection:   read
+  - OrigID:          if.then.load.1
+  - ArrayName:       A_dram
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_60_4
+  - String:          ' '
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:60:26'
+  - String:          ' '
+  - Function:        'load_matrix_from_dram_safe(int const*, Matrix&, int, int, int, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ' '
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:164:23'
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ' '
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:164:23'
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 260, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_260_1
+  - String:          ' '
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:260:23'
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 255, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 255, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          _ZL13num_additionsRK6Matrix.exit.store.2
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 251, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 251, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          if.then.store.0
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 252, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 252, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          if.then.store.2
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 253, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 253, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          if.then.store.4
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 254, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 254, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          if.then.store.6
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 272, Column: 34 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 272, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          _ZL13num_additionsRK6Matrix.exit39.store.4
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 268, Column: 34 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 268, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          if.then14.store.4
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 269, Column: 34 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 269, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          if.then14.store.8
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 270, Column: 34 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 270, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          if.then14.store.12
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 271, Column: 34 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 271, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          if.then14.store.16
+  - ArrayName:       debug_dram
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 82, Column: 29 }
+Function:        _ZL25store_matrix_to_dram_safePiRK6Matrixi
+Args:            
+  - String:          'Access '
+  - Access:          store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 82, Column: 29 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 82, Column: 29 }
+  - OrigDirection:   write
+  - OrigID:          if.then.store.3
+  - ArrayName:       A_dram
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_78_2
+  - String:          ' '
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:78:26'
+  - String:          ' '
+  - Function:        'store_matrix_to_dram_safe(int*, Matrix const&, int)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 72, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          '''('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:164:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          '''('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:164:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:116:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:116:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:136:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:192:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:193:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:116:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:158:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:164:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:175:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:116:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 136, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:136:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 192, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:192:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 193, Column: 27 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_193_2
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:193:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 116, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_116_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:116:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 158, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:158:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 164, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_164_2
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:164:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 175, Column: 23 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_175_3
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:175:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:93:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 93, Column: 22 }
+Function:        _ZL34greedy_potential_reduce_with_debugR6MatrixiiPVii.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ''' ('
+  - LoopLoc:         'fmm_hls_greedy_potential.cpp:93:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          greedy_potential_reduce_with_debug
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 317, Column: 5 }
+Function:        Block_entry_proc
+Args:            
+  - Callee:          'load_matrix_from_dram_safe(int const*, Matrix&, int, int, int, int) (.1)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 43, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_proc
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 318, Column: 5 }
+Function:        Block_entry_proc
+Args:            
+  - Callee:          'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int) (.1)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 242, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_proc
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 319, Column: 5 }
+Function:        Block_entry_proc
+Args:            
+  - Callee:          'store_matrix_to_dram_safe(int*, Matrix const&, int) (.1)'
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_proc
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 306, Column: 47 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          Block_entry_proc.1
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 309, Column: 15 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          Block_entry_proc
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: fmm_hls_greedy_potential.cpp, Line: 288, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

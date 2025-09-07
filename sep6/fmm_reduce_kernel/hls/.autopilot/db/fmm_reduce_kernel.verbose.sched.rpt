@@ -1,0 +1,201 @@
+
+
+================================================================
+== Vitis HLS Report for 'fmm_reduce_kernel'
+================================================================
+* Date:           Sun Sep  7 15:34:56 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        fmm_reduce_kernel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  9.532 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.21>
+ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%debug_capacity_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %debug_capacity" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 5 'read' 'debug_capacity_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%debug_dram_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %debug_dram" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 6 'read' 'debug_dram_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 7 [1/1] (1.00ns)   --->   "%k2_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %k2" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 7 'read' 'k2_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 8 [1/1] (1.00ns)   --->   "%k1_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %k1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 8 'read' 'k1_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 9 [1/1] (1.00ns)   --->   "%t_capacity_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %t_capacity" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 9 'read' 't_capacity_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %cols" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 10 'read' 'cols_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%rows_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %rows" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 11 'read' 'rows_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%A_dram_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %A_dram" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 12 'read' 'A_dram_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%debug_capacity_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 13 'alloca' 'debug_capacity_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%debug_dram_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 14 'alloca' 'debug_dram_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 3> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%k2_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 15 'alloca' 'k2_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 3> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%k1_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 16 'alloca' 'k1_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 3> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%t_capacity_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 17 'alloca' 't_capacity_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 3> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%cols_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 18 'alloca' 'cols_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%rows_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 19 'alloca' 'rows_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%A_dram_c = alloca i64 1" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 20 'alloca' 'A_dram_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 3> <FIFO>
+ST_1 : Operation 21 [1/1] (3.22ns)   --->   "%call_ln304 = call void @entry_proc, i64 %A_dram_read, i64 %A_dram_c, i32 %t_capacity_read, i32 %t_capacity_c, i32 %k1_read, i32 %k1_c, i32 %k2_read, i32 %k2_c, i64 %debug_dram_read, i64 %debug_dram_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 21 'call' 'call_ln304' <Predicate = true> <Delay = 3.22> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 22 [2/2] (6.21ns)   --->   "%call_ret = call i2 @Block_entry_proc.1, i32 %cols_read, i32 %rows_read, i32 %debug_capacity_read, i32 %rows_c, i32 %cols_c, i32 %debug_capacity_c" [fmm_hls_greedy_potential.cpp:306]   --->   Operation 22 'call' 'call_ret' <Predicate = true> <Delay = 6.21> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 3.36>
+ST_2 : Operation 23 [1/2] (3.36ns)   --->   "%call_ret = call i2 @Block_entry_proc.1, i32 %cols_read, i32 %rows_read, i32 %debug_capacity_read, i32 %rows_c, i32 %cols_c, i32 %debug_capacity_c" [fmm_hls_greedy_potential.cpp:306]   --->   Operation 23 'call' 'call_ret' <Predicate = true> <Delay = 3.36> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%spec_select_loc_channel = extractvalue i2 %call_ret" [fmm_hls_greedy_potential.cpp:306]   --->   Operation 24 'extractvalue' 'spec_select_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%p_loc_channel = extractvalue i2 %call_ret" [fmm_hls_greedy_potential.cpp:306]   --->   Operation 25 'extractvalue' 'p_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 3 <SV = 2> <Delay = 6.47>
+ST_3 : Operation 26 [2/2] (6.47ns)   --->   "%call_ln309 = call void @Block_entry_proc, i1 %spec_select_loc_channel, i1 %p_loc_channel, i32 %gmem, i64 %A_dram_c, i32 %rows_c, i32 %cols_c, i32 %t_capacity_c, i32 %k1_c, i32 %k2_c, i32 %gmem2, i64 %debug_dram_c, i32 %debug_capacity_c, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e" [fmm_hls_greedy_potential.cpp:309]   --->   Operation 26 'call' 'call_ln309' <Predicate = true> <Delay = 6.47> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @debug_capacity_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %debug_capacity_c, i32 %debug_capacity_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 27 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %debug_capacity_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 28 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%empty_57 = specchannel i32 @_ssdm_op_SpecChannel, void @debug_dram_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i64 %debug_dram_c, i64 %debug_dram_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 29 'specchannel' 'empty_57' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i64 %debug_dram_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 30 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%empty_58 = specchannel i32 @_ssdm_op_SpecChannel, void @k2_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i32 %k2_c, i32 %k2_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 31 'specchannel' 'empty_58' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %k2_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 32 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%empty_59 = specchannel i32 @_ssdm_op_SpecChannel, void @k1_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i32 %k1_c, i32 %k1_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 33 'specchannel' 'empty_59' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %k1_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 34 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%empty_60 = specchannel i32 @_ssdm_op_SpecChannel, void @t_capacity_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i32 %t_capacity_c, i32 %t_capacity_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 35 'specchannel' 'empty_60' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 36 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%empty_61 = specchannel i32 @_ssdm_op_SpecChannel, void @cols_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %cols_c, i32 %cols_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 37 'specchannel' 'empty_61' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %cols_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 38 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%empty_62 = specchannel i32 @_ssdm_op_SpecChannel, void @rows_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %rows_c, i32 %rows_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 39 'specchannel' 'empty_62' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %rows_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 40 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%empty_63 = specchannel i32 @_ssdm_op_SpecChannel, void @A_dram_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i64 %A_dram_c, i64 %A_dram_c" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 41 'specchannel' 'empty_63' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 42 'specinterface' 'specinterface_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln304 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_13" [fmm_hls_greedy_potential.cpp:304]   --->   Operation 43 'specdataflowpipeline' 'specdataflowpipeline_ln304' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%spectopmodule_ln280 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty" [fmm_hls_greedy_potential.cpp:280]   --->   Operation 44 'spectopmodule' 'spectopmodule_ln280' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_19, i32 0, i32 0, void @empty_13, i32 0, i32 65536, void @empty_10, void @empty_14, void @empty_13, i32 16, i32 16, i32 16, i32 16, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem2, void @empty_19, i32 0, i32 0, void @empty_13, i32 0, i32 4096, void @empty_15, void @empty_14, void @empty_13, i32 16, i32 16, i32 16, i32 16, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem2"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram, void @empty_2, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_9, void @empty_17, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_18, i32 4294967295, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_18, i32 4294967295, i32 0, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rows"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_17, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cols"   --->   Operation 54 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_26, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %t_capacity"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_23, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %k1"   --->   Operation 60 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k1, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_24, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k1, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %k2"   --->   Operation 63 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k2, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_25, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k2, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %verbose"   --->   Operation 66 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %verbose, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_3, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %verbose, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %debug_dram, void @empty_2, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_9, void @empty_21, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_18, i32 4294967295, i32 0, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %debug_dram, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_18, i32 4294967295, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %debug_capacity"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %debug_capacity, void @empty_2, i32 4294967295, i32 4294967295, void @empty_20, i32 0, i32 0, void @empty_22, void @empty_27, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %debug_capacity, void @empty_0, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_22, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 74 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 75 [1/2] (0.00ns)   --->   "%call_ln309 = call void @Block_entry_proc, i1 %spec_select_loc_channel, i1 %p_loc_channel, i32 %gmem, i64 %A_dram_c, i32 %rows_c, i32 %cols_c, i32 %t_capacity_c, i32 %k1_c, i32 %k2_c, i32 %gmem2, i64 %debug_dram_c, i32 %debug_capacity_c, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e" [fmm_hls_greedy_potential.cpp:309]   --->   Operation 75 'call' 'call_ln309' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%ret_ln320 = ret" [fmm_hls_greedy_potential.cpp:320]   --->   Operation 76 'ret' 'ret_ln320' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.210ns
+The critical path consists of the following:
+	s_axi read operation ('debug_capacity_read', fmm_hls_greedy_potential.cpp:304) on port 'debug_capacity' (fmm_hls_greedy_potential.cpp:304) [17]  (1.000 ns)
+	'call' operation 2 bit ('call_ret', fmm_hls_greedy_potential.cpp:306) to 'Block_entry_proc.1' [82]  (6.210 ns)
+
+ <State 2>: 3.361ns
+The critical path consists of the following:
+	'call' operation 2 bit ('call_ret', fmm_hls_greedy_potential.cpp:306) to 'Block_entry_proc.1' [82]  (3.361 ns)
+
+ <State 3>: 6.475ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln309', fmm_hls_greedy_potential.cpp:309) to 'Block_entry_proc' [85]  (6.475 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
