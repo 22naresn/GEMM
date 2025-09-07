@@ -1,8 +1,6 @@
-// tb_fmm_hls.cpp
 // Testbench for fmm_hls_greedy_potential kernel with debug buffer.
-// - Declares kernel (no definition here).
-// - Builds test matrices, calls kernel (C-sim / C/RTL cosim), runs CPU reference,
-//   prints full matrices, prints per-iteration traces and compares kernel vs CPU.
+// Builds test matrices, calls kernel (C-sim / C/RTL cosim), runs CPU reference,
+// prints full matrices, prints per-iteration traces and compares kernel vs CPU.
 
 #include <iostream>
 #include <vector>
