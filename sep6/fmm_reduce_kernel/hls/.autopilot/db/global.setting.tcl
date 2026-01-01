@@ -1,9 +1,9 @@
 
 set TopModule "fmm_reduce_kernel"
-set ClockPeriod 10
+set ClockPeriod 100
 set ClockList ap_clk
 set AxiliteClockList {}
-set HasVivadoClockPeriod 0
+set HasVivadoClockPeriod 1
 set CombLogicFlag 0
 set PipelineFlag 1
 set DataflowTaskPipelineFlag 1
@@ -43,15 +43,15 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg400:-3
-set SourceFiles {sc {} c ../../fmm_hls_greedy_potential.cpp}
-set SourceFlags {sc {} c {{}}}
+set SourceFiles {c {} sc {}}
+set SourceFlags {c {} sc {}}
 set DirectiveFile {}
-set TBFiles {verilog C:/GEMM/sep6/tb_fmm_hls.cpp bc C:/GEMM/sep6/tb_fmm_hls.cpp vhdl C:/GEMM/sep6/tb_fmm_hls.cpp sc C:/GEMM/sep6/tb_fmm_hls.cpp cas C:/GEMM/sep6/tb_fmm_hls.cpp c {}}
+set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1757239506439">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1760355756115">
   <ports id="1" name="gmem" type="PortType" coreId="4294967295" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>call</dataInputObjs>
     <dataOutputObjs>call</dataOutputObjs>
@@ -81,96 +81,96 @@
   <edges id="-141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@ports.0"/>
   <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="266" RegionName="fmm_reduce_kernel">
     <basic_blocks id="87" name="fmm_reduce_kernel" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="debug_capacity_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="debug_capacity_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>debug_capacity</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="debug_dram_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="debug_dram_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>debug_dram</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="k2_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="k2_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>k2</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="k1_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="k1_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>k1</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="t_capacity_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="t_capacity_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>t_capacity</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="cols_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="cols_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>cols</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="rows_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="rows_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>rows</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="A_dram_read" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="A_dram_read" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="112" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>A_dram</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="debug_capacity_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="debug_capacity_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="debug_capacity_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="debug_capacity_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="debug_dram_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="debug_dram_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="debug_dram_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="debug_dram_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="k2_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="k2_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="k2_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="k2_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="k1_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="k1_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="k1_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="k1_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="t_capacity_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="t_capacity_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="t_capacity_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="t_capacity_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="cols_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="cols_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="cols_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="cols_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="rows_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="rows_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="rows_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="rows_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="A_dram_c" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="A_dram_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="A_dram_c" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="A_dram_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="_ln304" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="entry_proc_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="call" m_display="0" m_delay="3.22" m_topoIndex="17" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="_ln302" lineNumber="302" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="entry_proc_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="call" m_display="0" m_delay="3.22" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="302" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
@@ -183,8 +183,8 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>entry_proc</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="call_ret" lineNumber="306" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="Block_entry_proc_1_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" bitwidth="2" opcode="call" nodeLatency="1" m_display="0" m_delay="6.21" m_topoIndex="18" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="306" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="call_ret" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="Block_entry_proc_1_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" bitwidth="2" opcode="call" nodeLatency="1" m_display="0" m_delay="6.21" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
@@ -195,18 +195,18 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <constName>Block_entry_proc_1</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="spec_select_loc_channel" lineNumber="306" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="spec_select_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="306" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="spec_select_loc_channel" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="spec_select_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="p_loc_channel" lineNumber="306" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="p_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="306" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="p_loc_channel" lineNumber="304" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="p_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="fmm_reduce_kernel" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="304" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="_ln309" lineNumber="309" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="Block_entry_proc_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="6.47" m_topoIndex="21" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="309" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="_ln307" lineNumber="307" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." rtlName="Block_entry_proc_U0" coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="6.47" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="307" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>gmem</dataInputObjs>
@@ -222,14 +222,14 @@
         <dataOutputObjs>gmem</dataOutputObjs>
         <constName>Block_entry_proc</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="_ln320" lineNumber="320" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="320" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="_ln317" lineNumber="317" fileName="fmm_hls_greedy_potential.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="fmm_reduce_kernel" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fmm_hls_greedy_potential.cpp" linenumber="317" fileDirectory="C:\GEMM\sep6" functionName="fmm_reduce_kernel"/>
       </node_objs>
       <fileValidLineNumbers fileName="fmm_hls_greedy_potential.cpp">
+        <validLinenumbers>302</validLinenumbers>
         <validLinenumbers>304</validLinenumbers>
-        <validLinenumbers>306</validLinenumbers>
-        <validLinenumbers>309</validLinenumbers>
-        <validLinenumbers>320</validLinenumbers>
+        <validLinenumbers>307</validLinenumbers>
+        <validLinenumbers>317</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -306,14 +306,14 @@
   <expressionNodes realName="k1_c_fu_142">
     <nodeIds>34</nodeIds>
   </expressionNodes>
+  <moduleNodes realName="call_ln302_entry_proc_fu_210">
+    <nodeIds>81</nodeIds>
+  </moduleNodes>
   <moduleNodes realName="grp_Block_entry_proc_fu_242">
     <nodeIds>85</nodeIds>
   </moduleNodes>
   <moduleNodes realName="grp_Block_entry_proc_1_fu_229">
     <nodeIds>82</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="call_ln304_entry_proc_fu_210">
-    <nodeIds>81</nodeIds>
   </moduleNodes>
   <ioNodes realName="debug_capacity_read_read_fu_162">
     <nodeIds>17</nodeIds>

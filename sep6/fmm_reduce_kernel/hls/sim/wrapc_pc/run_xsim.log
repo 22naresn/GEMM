@@ -9,91 +9,6 @@ Original (rows=6 cols=8 t=0 tcap=64)
     0    0    0    0    0    0    7    0
     0    0    0    0    0    0    0    9
 CPU initial additions = 6
-TB debug: full-matrix + per-iteration trace comparison
-
-=== Test 0 ===
-Original (rows=6 cols=8 t=0 tcap=64)
-    1    2    3    0    0    0    0    0
-    1    2    3    0    0    0    0    0
-    0    0    0    4    1    2    0    0
-    0    0    0   -4   -1   -2    0    0
-    0    0    0    0    0    0    7    0
-    0    0    0    0    0    0    0    9
-CPU initial additions = 6
-TB debug: full-matrix + per-iteration trace comparison
-
-=== Test 0 ===
-Original (rows=6 cols=8 t=0 tcap=64)
-    1    2    3    0    0    0    0    0
-    1    2    3    0    0    0    0    0
-    0    0    0    4    1    2    0    0
-    0    0    0   -4   -1   -2    0    0
-    0    0    0    0    0    0    7    0
-    0    0    0    0    0    0    0    9
-CPU initial additions = 6
-ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
-This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
-Possible cause of this problem may be:
-  1) Missing depth information for one or more pointers to arrays in the interface;
-  2) Insufficient depth setting for array argument(s);
-  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
-  4) Null pointer etc.
-Current execution stopped during CodeState = ENTER_WRAPC.
-You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
-
-TB debug: full-matrix + per-iteration trace comparison
-
-=== Test 0 ===
-Original (rows=6 cols=8 t=0 tcap=64)
-    1    2    3    0    0    0    0    0
-    1    2    3    0    0    0    0    0
-    0    0    0    4    1    2    0    0
-    0    0    0   -4   -1   -2    0    0
-    0    0    0    0    0    0    7    0
-    0    0    0    0    0    0    0    9
-CPU initial additions = 6
-ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
-This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
-Possible cause of this problem may be:
-  1) Missing depth information for one or more pointers to arrays in the interface;
-  2) Insufficient depth setting for array argument(s);
-  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
-  4) Null pointer etc.
-Current execution stopped during CodeState = ENTER_WRAPC.
-You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
-
-TB debug: full-matrix + per-iteration trace comparison
-
-=== Test 0 ===
-Original (rows=6 cols=8 t=0 tcap=64)
-    1    2    3    0    0    0    0    0
-    1    2    3    0    0    0    0    0
-    0    0    0    4    1    2    0    0
-    0    0    0   -4   -1   -2    0    0
-    0    0    0    0    0    0    7    0
-    0    0    0    0    0    0    0    9
-CPU initial additions = 6
-ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
-This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
-Possible cause of this problem may be:
-  1) Missing depth information for one or more pointers to arrays in the interface;
-  2) Insufficient depth setting for array argument(s);
-  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
-  4) Null pointer etc.
-Current execution stopped during CodeState = ENTER_WRAPC.
-You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
-
-TB debug: full-matrix + per-iteration trace comparison
-
-=== Test 0 ===
-Original (rows=6 cols=8 t=0 tcap=64)
-    1    2    3    0    0    0    0    0
-    1    2    3    0    0    0    0    0
-    0    0    0    4    1    2    0    0
-    0    0    0   -4   -1   -2    0    0
-    0    0    0    0    0    0    7    0
-    0    0    0    0    0    0    0    9
-CPU initial additions = 6
 Kernel output (original region) (rows=6 cols=8 t=0 tcap=64)
     0    0    0    0    0    0    0    0
     0    0    0    0    0    0    0    0
@@ -263,44 +178,44 @@ INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_gmem_m_axi_srl
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_gmem_m_axi_mem
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_mul_31ns_31ns_62_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_mul_31ns_31ns_62_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_mul_32ns_34ns_64_1_1.v" into library xil_defaultlib
@@ -315,8 +230,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kerne
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_mul_64ns_31ns_95_3_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_store_matrix_to_dram_safe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_store_matrix_to_dram_safe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
@@ -459,7 +374,7 @@ Built simulation snapshot fmm_reduce_kernel
   **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Sun Sep  7 15:37:01 2025
+  **** Start of session at: Wed Nov  5 11:00:07 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -1002,15 +917,15 @@ UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 2 [n/a] @ "125000"
-// RTL Simulation : 1 / 2 [n/a] @ "1050205000"
-// RTL Simulation : 2 / 2 [n/a] @ "2148165000"
+// RTL Simulation : 0 / 2 [n/a] @ "350000"
+// RTL Simulation : 1 / 2 [n/a] @ "10501150000"
+// RTL Simulation : 2 / 2 [n/a] @ "21480750000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 2148235 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 197.984 ; gain = 0.000
+$finish called at time : 21481450 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 197.449 ; gain = 0.000
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 1055376 KB (Peak: 1055376 KB), Simulation CPU Usage: 7437 ms
-INFO: [Common 17-206] Exiting xsim at Sun Sep  7 15:37:24 2025...
+INFO: xsimkernel Simulation Memory Usage: 1055200 KB (Peak: 1055200 KB), Simulation CPU Usage: 6343 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov  5 11:00:17 2025...
 TB debug: full-matrix + per-iteration trace comparison
 
 === Test 0 ===

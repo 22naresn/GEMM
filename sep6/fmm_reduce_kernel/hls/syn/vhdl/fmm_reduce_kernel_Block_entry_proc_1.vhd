@@ -65,21 +65,21 @@ attribute shreg_extract : string;
     signal rows_c_blk_n : STD_LOGIC;
     signal cols_c_blk_n : STD_LOGIC;
     signal debug_capacity_c_blk_n : STD_LOGIC;
-    signal mul_ln306_fu_88_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal mul_ln306_reg_155 : STD_LOGIC_VECTOR (63 downto 0);
+    signal mul_ln304_fu_88_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal mul_ln304_reg_155 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_state1 : BOOLEAN;
-    signal and_ln308_fu_122_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal and_ln308_reg_161 : STD_LOGIC_VECTOR (0 downto 0);
-    signal sext_ln306_fu_92_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sext_ln306_1_fu_97_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal and_ln306_fu_122_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal and_ln306_reg_161 : STD_LOGIC_VECTOR (0 downto 0);
+    signal sext_ln304_fu_92_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sext_ln304_1_fu_97_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_fu_102_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln308_fu_116_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal xor_ln308_fu_110_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln306_fu_116_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal xor_ln306_fu_110_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal icmp_ln307_fu_128_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln307_1_fu_133_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal and_ln307_fu_138_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln305_fu_128_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln305_1_fu_133_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal and_ln305_fu_138_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -109,9 +109,9 @@ begin
         din1_WIDTH => 32,
         dout_WIDTH => 64)
     port map (
-        din0 => sext_ln306_1_fu_97_p0,
-        din1 => sext_ln306_fu_92_p0,
-        dout => mul_ln306_fu_88_p2);
+        din0 => sext_ln304_1_fu_97_p0,
+        din1 => sext_ln304_fu_92_p0,
+        dout => mul_ln304_fu_88_p2);
 
 
 
@@ -148,8 +148,8 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
-                and_ln308_reg_161 <= and_ln308_fu_122_p2;
-                mul_ln306_reg_155 <= mul_ln306_fu_88_p2;
+                and_ln306_reg_161 <= and_ln306_fu_122_p2;
+                mul_ln304_reg_155 <= mul_ln304_fu_88_p2;
             end if;
         end if;
     end process;
@@ -169,8 +169,8 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
-    and_ln307_fu_138_p2 <= (icmp_ln307_fu_128_p2 and icmp_ln307_1_fu_133_p2);
-    and_ln308_fu_122_p2 <= (xor_ln308_fu_110_p2 and icmp_ln308_fu_116_p2);
+    and_ln305_fu_138_p2 <= (icmp_ln305_fu_128_p2 and icmp_ln305_1_fu_133_p2);
+    and_ln306_fu_122_p2 <= (xor_ln306_fu_110_p2 and icmp_ln306_fu_116_p2);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
 
@@ -220,8 +220,8 @@ begin
         end if; 
     end process;
 
-    ap_return_0 <= and_ln307_fu_138_p2;
-    ap_return_1 <= and_ln308_reg_161;
+    ap_return_0 <= and_ln305_fu_138_p2;
+    ap_return_1 <= and_ln306_reg_161;
 
     cols_c_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, cols_c_full_n)
     begin
@@ -264,9 +264,9 @@ begin
         end if; 
     end process;
 
-    icmp_ln307_1_fu_133_p2 <= "1" when (signed(mul_ln306_reg_155) < signed(ap_const_lv64_10001)) else "0";
-    icmp_ln307_fu_128_p2 <= "1" when (signed(mul_ln306_reg_155) > signed(ap_const_lv64_0)) else "0";
-    icmp_ln308_fu_116_p2 <= "1" when (signed(debug_capacity) < signed(ap_const_lv32_1001)) else "0";
+    icmp_ln305_1_fu_133_p2 <= "1" when (signed(mul_ln304_reg_155) < signed(ap_const_lv64_10001)) else "0";
+    icmp_ln305_fu_128_p2 <= "1" when (signed(mul_ln304_reg_155) > signed(ap_const_lv64_0)) else "0";
+    icmp_ln306_fu_116_p2 <= "1" when (signed(debug_capacity) < signed(ap_const_lv32_1001)) else "0";
 
     rows_c_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, rows_c_full_n)
     begin
@@ -288,8 +288,8 @@ begin
         end if; 
     end process;
 
-    sext_ln306_1_fu_97_p0 <= rows;
-    sext_ln306_fu_92_p0 <= cols;
+    sext_ln304_1_fu_97_p0 <= rows;
+    sext_ln304_fu_92_p0 <= cols;
     tmp_fu_102_p3 <= debug_capacity(31 downto 31);
-    xor_ln308_fu_110_p2 <= (tmp_fu_102_p3 xor ap_const_lv1_1);
+    xor_ln306_fu_110_p2 <= (tmp_fu_102_p3 xor ap_const_lv1_1);
 end behav;

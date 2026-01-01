@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "09/07/25 15:34:12",
- "timestampMillis": "1757239452752",
+ "dateTimestamp": "10/13/25 17:11:35",
+ "timestampMillis": "1760355695740",
  "buildStep": {
-  "cmdId": "2ccaaa60-dd4b-4ac6-b0e9-706726da7341",
+  "cmdId": "b0935501-1944-407c-ae77-cac035f33254",
   "name": "v++",
   "logFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\logs\\fmm_reduce_kernel.steps.log",
   "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GEMM\\sep6\\hls_config.cfg --work_dir fmm_reduce_kernel ",
@@ -28,7 +28,7 @@
   "iniFiles": [
    {
     "path": "C:/GEMM\\sep6\\hls_config.cfg",
-    "content": "part=xc7z020clg400-3\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=fmm_reduce_kernel\nsyn.file=fmm_hls_greedy_potential.cpp\ntb.file=tb_fmm_hls.cpp"
+    "content": "part=xc7z020clg400-3\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=fmm_reduce_kernel\nsyn.file=fmm_hls_greedy_potential.cpp\ntb.file=tb_fmm_hls.cpp\ncosim.wave_debug=0\ncosim.trace_level=none\npackage.output.file=sep6_fmm_reduce_ip\npackage.ip.description=FMM row-reduction accelerator (greedy potential)\npackage.ip.display_name=fmm_reduce_kernel\npackage.ip.library=user\npackage.ip.taxonomy=Math/LinearAlgebra\npackage.ip.vendor=nilesh\npackage.ip.version=1.0\nvivado.clock=100\nvivado.flow=impl"
    }
   ],
   "cwd": "C:\\GEMM\\sep6"
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "09/07/25 15:34:12",
- "timestampMillis": "1757239452753",
+ "dateTimestamp": "10/13/25 17:11:35",
+ "timestampMillis": "1760355695741",
  "status": {
-  "cmdId": "2ccaaa60-dd4b-4ac6-b0e9-706726da7341",
+  "cmdId": "b0935501-1944-407c-ae77-cac035f33254",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "09/07/25 15:34:17",
- "timestampMillis": "1757239457381",
+ "dateTimestamp": "10/13/25 17:11:40",
+ "timestampMillis": "1760355700852",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -85,10 +85,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "09/07/25 15:34:17",
- "timestampMillis": "1757239457382",
+ "dateTimestamp": "10/13/25 17:11:40",
+ "timestampMillis": "1760355700853",
  "buildStep": {
-  "cmdId": "ab8afdaf-dfe3-430b-a751-cba220ed1a6f",
+  "cmdId": "7eab62f0-6451-4123-8531-01e052148968",
   "name": "",
   "logFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\hls.log",
   "commandLine": "",
@@ -101,10 +101,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "09/07/25 15:34:17",
- "timestampMillis": "1757239457382",
+ "dateTimestamp": "10/13/25 17:11:40",
+ "timestampMillis": "1760355700854",
  "status": {
-  "cmdId": "ab8afdaf-dfe3-430b-a751-cba220ed1a6f",
+  "cmdId": "7eab62f0-6451-4123-8531-01e052148968",
   "state": "CS_RUNNING"
  }
 }
@@ -112,8 +112,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:34:17",
- "timestampMillis": "1757239457383",
+ "dateTimestamp": "10/13/25 17:11:40",
+ "timestampMillis": "1760355700854",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\hls_data.json",
   "name": "",
@@ -126,8 +126,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:34:17",
- "timestampMillis": "1757239457383",
+ "dateTimestamp": "10/13/25 17:11:40",
+ "timestampMillis": "1760355700855",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\syn\\report\\csynth.rpt",
   "name": "",
@@ -140,8 +140,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:34:17",
- "timestampMillis": "1757239457383",
+ "dateTimestamp": "10/13/25 17:11:40",
+ "timestampMillis": "1760355700855",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\syn\\report\\csynth.xml",
   "name": "",
@@ -154,8 +154,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510755",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764062",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls",
   "name": "",
@@ -168,8 +168,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510756",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764063",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls",
   "name": "",
@@ -182,8 +182,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510756",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764064",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls",
   "name": "",
@@ -196,10 +196,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510756",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764065",
  "status": {
-  "cmdId": "ab8afdaf-dfe3-430b-a751-cba220ed1a6f",
+  "cmdId": "7eab62f0-6451-4123-8531-01e052148968",
   "state": "CS_PASSED"
  }
 }
@@ -207,10 +207,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510925",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764440",
  "status": {
-  "cmdId": "2ccaaa60-dd4b-4ac6-b0e9-706726da7341",
+  "cmdId": "b0935501-1944-407c-ae77-cac035f33254",
   "state": "CS_PASSED"
  }
 }
@@ -218,8 +218,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510946",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764471",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\reports\\v++_compile_fmm_reduce_kernel_guidance.html",
   "name": "",
@@ -232,8 +232,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "09/07/25 15:35:10",
- "timestampMillis": "1757239510946",
+ "dateTimestamp": "10/13/25 17:12:44",
+ "timestampMillis": "1760355764471",
  "report": {
   "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\reports\\.db\\v++_compile_fmm_reduce_kernel_guidance.pb3",
   "name": "",

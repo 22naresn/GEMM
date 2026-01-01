@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'greedy_potential_reduce_with_debug'" level="0">
-<item name = "Date">Sun Sep  7 15:34:54 2025
+<item name = "Date">Mon Oct 13 17:12:22 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">fmm_reduce_kernel</item>
@@ -35,11 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_260_1">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_224_1">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ VITIS_LOOP_225_2">?, ?, ?, -, -, 0, no</column>
-<column name="   +++ VITIS_LOOP_192_1">?, ?, ?, -, -, ?, no</column>
-<column name="   +++ VITIS_LOOP_192_1">?, ?, ?, -, -, ?, no</column>
+<column name="- VITIS_LOOP_259_1">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_223_1">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ VITIS_LOOP_224_2">?, ?, ?, -, -, 0, no</column>
+<column name="   +++ VITIS_LOOP_191_1">?, ?, ?, -, -, ?, no</column>
+<column name="   +++ VITIS_LOOP_191_1">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>
 </section>

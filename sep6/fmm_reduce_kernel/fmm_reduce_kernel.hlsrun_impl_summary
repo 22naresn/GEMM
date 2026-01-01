@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\fmm_reduce_kernel.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/13/25 17:30:31",
+ "timestampMillis": "1760356831266",
+ "buildStep": {
+  "cmdId": "c0422ed5-6c71-4c94-a4c3-6a1a3a8c293f",
+  "name": "vitis-run",
+  "logFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\logs\\fmm_reduce_kernel.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\GEMM\\sep6\\hls_config.cfg --work_dir fmm_reduce_kernel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\GEMM\\sep6\\hls_config.cfg",
+   "--work_dir",
+   "fmm_reduce_kernel"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GEMM\\sep6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/13/25 17:30:31",
+ "timestampMillis": "1760356831266",
+ "status": {
+  "cmdId": "c0422ed5-6c71-4c94-a4c3-6a1a3a8c293f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836210",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fmm_reduce_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GEMM\\sep6\\fmm_hls_greedy_potential.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836211",
+ "buildStep": {
+  "cmdId": "c53da540-5a20-47e7-89f4-42a89787827b",
+  "name": "",
+  "logFile": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GEMM\\sep6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836212",
+ "status": {
+  "cmdId": "c53da540-5a20-47e7-89f4-42a89787827b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836214",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836215",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836216",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836216",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836216",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:30:36",
+ "timestampMillis": "1760356836217",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:48:19",
+ "timestampMillis": "1760357899253",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:48:19",
+ "timestampMillis": "1760357899254",
+ "report": {
+  "path": "C:/GEMM\\sep6\\fmm_reduce_kernel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/13/25 17:48:19",
+ "timestampMillis": "1760357899255",
+ "status": {
+  "cmdId": "c53da540-5a20-47e7-89f4-42a89787827b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/13/25 17:48:19",
+ "timestampMillis": "1760357899427",
+ "status": {
+  "cmdId": "c0422ed5-6c71-4c94-a4c3-6a1a3a8c293f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:48:19",
+ "timestampMillis": "1760357899430",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/13/25 17:48:19",
+ "timestampMillis": "1760357899431",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

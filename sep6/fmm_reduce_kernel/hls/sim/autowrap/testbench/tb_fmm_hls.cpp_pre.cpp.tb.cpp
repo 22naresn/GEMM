@@ -15,9 +15,6 @@
 
 
 
-
-
-
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/iostream" 1 3
 # 37 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/iostream" 3
 
@@ -26910,7 +26907,7 @@ namespace std
 
 
 }
-# 8 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
+# 5 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/vector" 1 3
 # 59 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/vector" 3
 
@@ -31146,10 +31143,10 @@ namespace std
 
 }
 # 73 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/vector" 2 3
-# 9 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
+# 6 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cstdlib" 1 3
 # 40 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cstdlib" 3
-# 10 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
+# 7 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
 
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cassert" 1 3
 # 42 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cassert" 3
@@ -31211,7 +31208,7 @@ __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _assert (const c
 
 }
 # 45 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cassert" 2 3
-# 12 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
+# 9 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/iomanip" 1 3
 # 37 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/iomanip" 3
 
@@ -39466,7 +39463,7 @@ namespace std
 
 
 }
-# 13 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
+# 10 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/random" 1 3
 # 33 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/random" 3
 
@@ -51803,7 +51800,7 @@ namespace __detail
 
 }
 # 52 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/random" 2 3
-# 14 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
+# 11 "C:/GEMM/sep6/tb_fmm_hls.cpp" 2
 
 using namespace std;
 
@@ -51820,7 +51817,7 @@ extern "C"
 #endif
 void apatb_fmm_reduce_kernel_sw(volatile int *, int, int, int, int, int, int, volatile int *, int);
 #endif
-# 23 "C:/GEMM/sep6/tb_fmm_hls.cpp"
+# 20 "C:/GEMM/sep6/tb_fmm_hls.cpp"
 void fmm_reduce_kernel(volatile int *A_dram,
                        int rows,
                        int cols,
@@ -52008,7 +52005,7 @@ void flatten_from_matcpu(const MatCPU &M, vector<int32_t> &buf) {
             buf[r * M.cols + c] = M.entry(r, c);
 }
 void unflatten_to_matcpu(const vector<int32_t> &buf, MatCPU &M) {
-    (void) ((!!((int)buf.size() == M.rows * M.cols)) || (_assert("(int)buf.size() == M.rows * M.cols","C:/GEMM/sep6/tb_fmm_hls.cpp",210),0));
+    (void) ((!!((int)buf.size() == M.rows * M.cols)) || (_assert("(int)buf.size() == M.rows * M.cols","C:/GEMM/sep6/tb_fmm_hls.cpp",207),0));
     for (int r = 0; r < M.rows; ++r)
         for (int c = 0; c < M.cols; ++c)
             M.set(r, c, buf[r * M.cols + c]);
@@ -52056,7 +52053,7 @@ void build_random(MatCPU &M, int rows, int cols, int seed=12345, int vmax=5, dou
 
 
 #ifndef HLS_FASTSIM
-# 256 "C:/GEMM/sep6/tb_fmm_hls.cpp"
+# 253 "C:/GEMM/sep6/tb_fmm_hls.cpp"
 int main() {
     cout << "TB debug: full-matrix + per-iteration trace comparison\n";
 
@@ -52096,15 +52093,15 @@ int main() {
 #ifndef HLS_FASTSIM
 #define fmm_reduce_kernel apatb_fmm_reduce_kernel_sw
 #endif
-# 291 "C:/GEMM/sep6/tb_fmm_hls.cpp"
+# 288 "C:/GEMM/sep6/tb_fmm_hls.cpp"
 fmm_reduce_kernel
 #undef fmm_reduce_kernel
-# 291 "C:/GEMM/sep6/tb_fmm_hls.cpp"
+# 288 "C:/GEMM/sep6/tb_fmm_hls.cpp"
 ((volatile int*)dram_for_kernel.data(),
                           mat.rows, mat.cols, T_CAP, K1, K2, 0,
                           (volatile int*)debug_kern.data(), DEBUG_CAPACITY);
 #undef fmm_reduce_kernel
-# 291 "C:/GEMM/sep6/tb_fmm_hls.cpp"
+# 288 "C:/GEMM/sep6/tb_fmm_hls.cpp"
 
 
 
@@ -52173,5 +52170,5 @@ fmm_reduce_kernel
     return 0;
 }
 #endif
-# 359 "C:/GEMM/sep6/tb_fmm_hls.cpp"
+# 356 "C:/GEMM/sep6/tb_fmm_hls.cpp"
 

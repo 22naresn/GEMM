@@ -15,7 +15,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "fmm_reduce_kernel.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_fmm_reduce_kernel_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 50.00
 
 `define AESL_DEPTH_gmem 1
 `define AESL_DEPTH_gmem2 1

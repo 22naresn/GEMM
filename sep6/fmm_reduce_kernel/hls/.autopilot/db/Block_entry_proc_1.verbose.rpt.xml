@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Block_entry_proc_1'" level="0">
-<item name = "Date">Sun Sep  7 15:34:56 2025
+<item name = "Date">Mon Oct 13 17:12:25 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">fmm_reduce_kernel</item>
@@ -78,13 +78,13 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="and_ln307_fu_138_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln308_fu_122_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln307_1_fu_133_p2">icmp, 0, 0, 71, 64, 17</column>
-<column name="icmp_ln307_fu_128_p2">icmp, 0, 0, 71, 64, 1</column>
-<column name="icmp_ln308_fu_116_p2">icmp, 0, 0, 39, 32, 13</column>
+<column name="and_ln305_fu_138_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln306_fu_122_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln305_1_fu_133_p2">icmp, 0, 0, 71, 64, 17</column>
+<column name="icmp_ln305_fu_128_p2">icmp, 0, 0, 71, 64, 1</column>
+<column name="icmp_ln306_fu_116_p2">icmp, 0, 0, 39, 32, 13</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="xor_ln308_fu_110_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln306_fu_110_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -98,10 +98,10 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="and_ln308_reg_161">1, 0, 1, 0</column>
+<column name="and_ln306_reg_161">1, 0, 1, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="mul_ln306_reg_155">64, 0, 64, 0</column>
+<column name="mul_ln304_reg_155">64, 0, 64, 0</column>
 </table>
 </item>
 </section>

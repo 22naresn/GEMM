@@ -52,10 +52,10 @@ entry:2 %rows = load i32 %M_rows
 
 <Node id="9" bw="31" op_0_bw="32">
 <![CDATA[
-entry:3 %trunc_ln74 = trunc i32 %rows
+entry:3 %trunc_ln73 = trunc i32 %rows
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln74"/></StgValue>
+<StgValue><ssdm name="trunc_ln73"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -82,10 +82,10 @@ entry:4 %cols = load i32 %M_cols
 
 <Node id="11" bw="31" op_0_bw="32">
 <![CDATA[
-entry:5 %trunc_ln75 = trunc i32 %cols
+entry:5 %trunc_ln74 = trunc i32 %cols
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln75"/></StgValue>
+<StgValue><ssdm name="trunc_ln74"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -112,7 +112,7 @@ entry:6 %empty = icmp_sgt  i32 %rows, i32 0
 
 <Node id="13" bw="31" op_0_bw="1" op_1_bw="31" op_2_bw="31">
 <![CDATA[
-entry:7 %smax = select i1 %empty, i31 %trunc_ln74, i31 0
+entry:7 %smax = select i1 %empty, i31 %trunc_ln73, i31 0
 
 ]]></Node>
 <StgValue><ssdm name="smax"/></StgValue>
@@ -142,7 +142,7 @@ entry:8 %empty_39 = icmp_sgt  i32 %cols, i32 0
 
 <Node id="15" bw="31" op_0_bw="1" op_1_bw="31" op_2_bw="31">
 <![CDATA[
-entry:9 %smax1 = select i1 %empty_39, i31 %trunc_ln75, i31 0
+entry:9 %smax1 = select i1 %empty_39, i31 %trunc_ln74, i31 0
 
 ]]></Node>
 <StgValue><ssdm name="smax1"/></StgValue>
@@ -223,10 +223,10 @@ entry:1 %A_dram_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %A_dram
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="62" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:13 %call_ln75 = call void @store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2, i32 %cols, i62 %bound, i64 %A_dram_read, i32 %gmem, i32 %cols, i32 %M_e
+entry:13 %call_ln74 = call void @store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2, i32 %cols, i62 %bound, i64 %A_dram_read, i32 %gmem, i32 %cols, i32 %M_e
 
 ]]></Node>
-<StgValue><ssdm name="call_ln75"/></StgValue>
+<StgValue><ssdm name="call_ln74"/></StgValue>
 </operation>
 </state>
 
@@ -256,10 +256,10 @@ entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gm
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="62" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:13 %call_ln75 = call void @store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2, i32 %cols, i62 %bound, i64 %A_dram_read, i32 %gmem, i32 %cols, i32 %M_e
+entry:13 %call_ln74 = call void @store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2, i32 %cols, i62 %bound, i64 %A_dram_read, i32 %gmem, i32 %cols, i32 %M_e
 
 ]]></Node>
-<StgValue><ssdm name="call_ln75"/></StgValue>
+<StgValue><ssdm name="call_ln74"/></StgValue>
 </operation>
 
 <operation id="20" st_id="4" stage="1" lat="1">

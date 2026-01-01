@@ -36,21 +36,21 @@
 +--------------------------------------+----------------------------------+-----------------+---------------+--------------+-------------+---------------+
 | Function                             | Location                         | Compile/Link    | Unroll/Inline | Array/Struct | Performance | HW Transforms |
 +--------------------------------------+----------------------------------+-----------------+---------------+--------------+-------------+---------------+
-| + fmm_reduce_kernel                  | fmm_hls_greedy_potential.cpp:280 | 4,119           | 863           | 873          | 815         | 891           |
-|    load_matrix_from_dram_safe        | fmm_hls_greedy_potential.cpp:43  |  142            |  49           |  47          |  45         |               |
-|  + greedy_potential_reduce_with...   | fmm_hls_greedy_potential.cpp:242 | 3,886           | 745           | 757          | 703         |               |
-|   + num_additions                    | fmm_hls_greedy_potential.cpp:100 |  154 (2 calls)  |               |              |             |               |
-|      column_weight                   | fmm_hls_greedy_potential.cpp:89  |  106 (2 calls)  |               |              |             |               |
-|   + find_best_move                   | fmm_hls_greedy_potential.cpp:220 | 3,237           |               |              |             |               |
-|      compute_pp_nn                   | fmm_hls_greedy_potential.cpp:112 |  241            |               |              |             |               |
-|    + compute_greedy_potential_sco... | fmm_hls_greedy_potential.cpp:204 | 2,930 (2 calls) |               |              |             |               |
-|       compute_pp_nn                  | fmm_hls_greedy_potential.cpp:112 |  482 (2 calls)  |               |              |             |               |
-|       reduction_move                 | fmm_hls_greedy_potential.cpp:128 |  780 (2 calls)  |               |              |             |               |
-|     + total_potential                | fmm_hls_greedy_potential.cpp:188 |  594 (2 calls)  |               |              |             |               |
-|        compute_pp_nn                 | fmm_hls_greedy_potential.cpp:112 |  482 (2 calls)  |               |              |             |               |
-|       reduction_move_undo            | fmm_hls_greedy_potential.cpp:151 | 1,002 (2 calls) |               |              |             |               |
-|     reduction_move                   | fmm_hls_greedy_potential.cpp:128 |  390            |               |              |             |               |
-|    store_matrix_to_dram_safe         | fmm_hls_greedy_potential.cpp:72  |   48            |  34           |  32          |  30         |               |
+| + fmm_reduce_kernel                  | fmm_hls_greedy_potential.cpp:279 | 4,119           | 863           | 873          | 815         | 891           |
+|    load_matrix_from_dram_safe        | fmm_hls_greedy_potential.cpp:42  |  142            |  49           |  47          |  45         |               |
+|  + greedy_potential_reduce_with...   | fmm_hls_greedy_potential.cpp:241 | 3,886           | 745           | 757          | 703         |               |
+|   + num_additions                    | fmm_hls_greedy_potential.cpp:99  |  154 (2 calls)  |               |              |             |               |
+|      column_weight                   | fmm_hls_greedy_potential.cpp:88  |  106 (2 calls)  |               |              |             |               |
+|   + find_best_move                   | fmm_hls_greedy_potential.cpp:219 | 3,237           |               |              |             |               |
+|      compute_pp_nn                   | fmm_hls_greedy_potential.cpp:111 |  241            |               |              |             |               |
+|    + compute_greedy_potential_sco... | fmm_hls_greedy_potential.cpp:203 | 2,930 (2 calls) |               |              |             |               |
+|       compute_pp_nn                  | fmm_hls_greedy_potential.cpp:111 |  482 (2 calls)  |               |              |             |               |
+|       reduction_move                 | fmm_hls_greedy_potential.cpp:127 |  780 (2 calls)  |               |              |             |               |
+|     + total_potential                | fmm_hls_greedy_potential.cpp:187 |  594 (2 calls)  |               |              |             |               |
+|        compute_pp_nn                 | fmm_hls_greedy_potential.cpp:111 |  482 (2 calls)  |               |              |             |               |
+|       reduction_move_undo            | fmm_hls_greedy_potential.cpp:150 | 1,002 (2 calls) |               |              |             |               |
+|     reduction_move                   | fmm_hls_greedy_potential.cpp:127 |  390            |               |              |             |               |
+|    store_matrix_to_dram_safe         | fmm_hls_greedy_potential.cpp:71  |   48            |  34           |  32          |  30         |               |
 +--------------------------------------+----------------------------------+-----------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings

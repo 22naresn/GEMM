@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Block_entry_proc'" level="0">
-<item name = "Date">Sun Sep  7 15:35:05 2025
+<item name = "Date">Mon Oct 13 17:12:35 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">fmm_reduce_kernel</item>
@@ -84,12 +84,12 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="and_ln309_fu_231_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln307_fu_231_p2">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state8">and, 0, 0, 2, 1, 1</column>
 <column name="ap_predicate_op49_writeresp_state8">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln310_fu_237_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln308_fu_237_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln311_fu_243_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln309_fu_243_p3">select, 0, 0, 11, 1, 11</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -147,7 +147,7 @@
 <column name="M_rows">32, 0, 32, 0</column>
 <column name="M_t">32, 0, 32, 0</column>
 <column name="M_t_capacity">32, 0, 32, 0</column>
-<column name="and_ln309_reg_317">1, 0, 1, 0</column>
+<column name="and_ln307_reg_317">1, 0, 1, 0</column>
 <column name="ap_CS_fsm">13, 0, 13, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="cols_read_reg_301">32, 0, 32, 0</column>
@@ -156,12 +156,12 @@
 <column name="grp_greedy_potential_reduce_with_debug_fu_198_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_load_matrix_from_dram_safe_fu_174_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_store_matrix_to_dram_safe_fu_218_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln310_reg_321">1, 0, 1, 0</column>
+<column name="icmp_ln308_reg_321">1, 0, 1, 0</column>
 <column name="k1_read_reg_291">32, 0, 32, 0</column>
 <column name="k2_read_reg_286">32, 0, 32, 0</column>
 <column name="p_read_2_reg_270">1, 0, 1, 0</column>
 <column name="rows_read_reg_306">32, 0, 32, 0</column>
-<column name="select_ln311_reg_325">3, 0, 32, 29</column>
+<column name="select_ln309_reg_325">3, 0, 32, 29</column>
 <column name="t_capacity_read_reg_296">32, 0, 32, 0</column>
 </table>
 </item>

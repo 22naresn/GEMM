@@ -145,52 +145,52 @@ wire   [61:0] bound_fu_53_p2;
 reg   [61:0] bound_reg_122;
 wire    ap_CS_fsm_state2;
 wire    ap_CS_fsm_state3;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_done;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_idle;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_ready;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWVALID;
-wire   [63:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWADDR;
-wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWID;
-wire   [31:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWLEN;
-wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWSIZE;
-wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWBURST;
-wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWLOCK;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWCACHE;
-wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWPROT;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWQOS;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWREGION;
-wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWUSER;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WVALID;
-wire   [31:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WDATA;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WSTRB;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WLAST;
-wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WID;
-wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WUSER;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARVALID;
-wire   [63:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARADDR;
-wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARID;
-wire   [31:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARLEN;
-wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARSIZE;
-wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARBURST;
-wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARLOCK;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARCACHE;
-wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARPROT;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARQOS;
-wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARREGION;
-wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARUSER;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_RREADY;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_BREADY;
-wire   [16:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_M_e_address0;
-wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_M_e_ce0;
-reg    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start_reg;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_done;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_idle;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_ready;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWID;
+wire   [31:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWUSER;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WVALID;
+wire   [31:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WDATA;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WSTRB;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WID;
+wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WUSER;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARID;
+wire   [31:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARUSER;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_RREADY;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_BREADY;
+wire   [16:0] grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_M_e_address0;
+wire    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_M_e_ce0;
+reg    grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start_reg;
 wire    ap_CS_fsm_state4;
 wire   [30:0] bound_fu_53_p0;
 wire   [30:0] bound_fu_53_p1;
 wire   [0:0] empty_fu_73_p2;
-wire   [30:0] trunc_ln74_fu_61_p1;
+wire   [30:0] trunc_ln73_fu_61_p1;
 wire   [0:0] empty_39_fu_87_p2;
-wire   [30:0] trunc_ln75_fu_69_p1;
+wire   [30:0] trunc_ln74_fu_69_p1;
 reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -203,51 +203,51 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 4'd1;
-#0 grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start_reg = 1'b0;
+#0 grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start_reg = 1'b0;
 end
 
-fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2 grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40(
+fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2 grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start),
-    .ap_done(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_done),
-    .ap_idle(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_idle),
-    .ap_ready(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_ready),
-    .m_axi_gmem_0_AWVALID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWVALID),
+    .ap_start(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start),
+    .ap_done(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_done),
+    .ap_idle(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_idle),
+    .ap_ready(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_ready),
+    .m_axi_gmem_0_AWVALID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWVALID),
     .m_axi_gmem_0_AWREADY(m_axi_gmem_0_AWREADY),
-    .m_axi_gmem_0_AWADDR(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWADDR),
-    .m_axi_gmem_0_AWID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWID),
-    .m_axi_gmem_0_AWLEN(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWLEN),
-    .m_axi_gmem_0_AWSIZE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWSIZE),
-    .m_axi_gmem_0_AWBURST(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWBURST),
-    .m_axi_gmem_0_AWLOCK(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWLOCK),
-    .m_axi_gmem_0_AWCACHE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWCACHE),
-    .m_axi_gmem_0_AWPROT(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWPROT),
-    .m_axi_gmem_0_AWQOS(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWQOS),
-    .m_axi_gmem_0_AWREGION(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWREGION),
-    .m_axi_gmem_0_AWUSER(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWUSER),
-    .m_axi_gmem_0_WVALID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_AWADDR(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WVALID),
     .m_axi_gmem_0_WREADY(m_axi_gmem_0_WREADY),
-    .m_axi_gmem_0_WDATA(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WDATA),
-    .m_axi_gmem_0_WSTRB(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WSTRB),
-    .m_axi_gmem_0_WLAST(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WLAST),
-    .m_axi_gmem_0_WID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WID),
-    .m_axi_gmem_0_WUSER(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WUSER),
-    .m_axi_gmem_0_ARVALID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_WDATA(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARVALID),
     .m_axi_gmem_0_ARREADY(1'b0),
-    .m_axi_gmem_0_ARADDR(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARADDR),
-    .m_axi_gmem_0_ARID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARID),
-    .m_axi_gmem_0_ARLEN(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARLEN),
-    .m_axi_gmem_0_ARSIZE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARSIZE),
-    .m_axi_gmem_0_ARBURST(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARBURST),
-    .m_axi_gmem_0_ARLOCK(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARLOCK),
-    .m_axi_gmem_0_ARCACHE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARCACHE),
-    .m_axi_gmem_0_ARPROT(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARPROT),
-    .m_axi_gmem_0_ARQOS(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARQOS),
-    .m_axi_gmem_0_ARREGION(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARREGION),
-    .m_axi_gmem_0_ARUSER(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_ARADDR(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_ARUSER),
     .m_axi_gmem_0_RVALID(1'b0),
-    .m_axi_gmem_0_RREADY(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RREADY(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_RREADY),
     .m_axi_gmem_0_RDATA(32'd0),
     .m_axi_gmem_0_RLAST(1'b0),
     .m_axi_gmem_0_RID(1'd0),
@@ -255,16 +255,16 @@ fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_
     .m_axi_gmem_0_RUSER(1'd0),
     .m_axi_gmem_0_RRESP(2'd0),
     .m_axi_gmem_0_BVALID(m_axi_gmem_0_BVALID),
-    .m_axi_gmem_0_BREADY(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BREADY(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_BREADY),
     .m_axi_gmem_0_BRESP(m_axi_gmem_0_BRESP),
     .m_axi_gmem_0_BID(m_axi_gmem_0_BID),
     .m_axi_gmem_0_BUSER(m_axi_gmem_0_BUSER),
     .cols(M_cols),
     .bound(bound_reg_122),
     .A_dram(A_dram),
-    .sext_ln77(M_cols),
-    .M_e_address0(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_M_e_address0),
-    .M_e_ce0(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_M_e_ce0),
+    .sext_ln76(M_cols),
+    .M_e_address0(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_M_e_address0),
+    .M_e_ce0(grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_M_e_ce0),
     .M_e_q0(M_e_q0)
 );
 
@@ -290,12 +290,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start_reg <= 1'b0;
+        grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start_reg <= 1'b1;
-        end else if ((grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_ready == 1'b1)) begin
-            grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start_reg <= 1'b0;
+            grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start_reg <= 1'b1;
+        end else if ((grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_ready == 1'b1)) begin
+            grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -326,7 +326,7 @@ assign ap_ST_fsm_state2_blk = 1'b0;
 assign ap_ST_fsm_state3_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_done == 1'b0)) begin
+    if ((grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_done == 1'b0)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -334,7 +334,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((1'b1 == ap_CS_fsm_state4) & (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_done == 1'b1)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((((1'b1 == ap_CS_fsm_state4) & (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_done == 1'b1)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -350,7 +350,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state4) & (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -373,7 +373,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state4) & (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -385,9 +385,9 @@ always @ (*) begin
     endcase
 end
 
-assign M_e_address0 = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_M_e_address0;
+assign M_e_address0 = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_M_e_address0;
 
-assign M_e_ce0 = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_M_e_ce0;
+assign M_e_ce0 = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_M_e_ce0;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -409,7 +409,7 @@ assign empty_39_fu_87_p2 = (($signed(M_cols) > $signed(32'd0)) ? 1'b1 : 1'b0);
 
 assign empty_fu_73_p2 = (($signed(M_rows) > $signed(32'd0)) ? 1'b1 : 1'b0);
 
-assign grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_ap_start_reg;
+assign grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_ap_start_reg;
 
 assign m_axi_gmem_0_ARADDR = 64'd0;
 
@@ -435,52 +435,52 @@ assign m_axi_gmem_0_ARUSER = 1'd0;
 
 assign m_axi_gmem_0_ARVALID = 1'b0;
 
-assign m_axi_gmem_0_AWADDR = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWADDR;
+assign m_axi_gmem_0_AWADDR = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWADDR;
 
-assign m_axi_gmem_0_AWBURST = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWBURST;
+assign m_axi_gmem_0_AWBURST = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWBURST;
 
-assign m_axi_gmem_0_AWCACHE = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWCACHE;
+assign m_axi_gmem_0_AWCACHE = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWCACHE;
 
-assign m_axi_gmem_0_AWID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWID;
+assign m_axi_gmem_0_AWID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWID;
 
-assign m_axi_gmem_0_AWLEN = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWLEN;
+assign m_axi_gmem_0_AWLEN = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWLEN;
 
-assign m_axi_gmem_0_AWLOCK = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWLOCK;
+assign m_axi_gmem_0_AWLOCK = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWLOCK;
 
-assign m_axi_gmem_0_AWPROT = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWPROT;
+assign m_axi_gmem_0_AWPROT = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWPROT;
 
-assign m_axi_gmem_0_AWQOS = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWQOS;
+assign m_axi_gmem_0_AWQOS = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWQOS;
 
-assign m_axi_gmem_0_AWREGION = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWREGION;
+assign m_axi_gmem_0_AWREGION = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWREGION;
 
-assign m_axi_gmem_0_AWSIZE = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWSIZE;
+assign m_axi_gmem_0_AWSIZE = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWSIZE;
 
-assign m_axi_gmem_0_AWUSER = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWUSER;
+assign m_axi_gmem_0_AWUSER = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWUSER;
 
-assign m_axi_gmem_0_AWVALID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_AWVALID;
+assign m_axi_gmem_0_AWVALID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_AWVALID;
 
-assign m_axi_gmem_0_BREADY = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_BREADY;
+assign m_axi_gmem_0_BREADY = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_BREADY;
 
 assign m_axi_gmem_0_RREADY = 1'b0;
 
-assign m_axi_gmem_0_WDATA = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WDATA;
+assign m_axi_gmem_0_WDATA = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WDATA;
 
-assign m_axi_gmem_0_WID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WID;
+assign m_axi_gmem_0_WID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WID;
 
-assign m_axi_gmem_0_WLAST = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WLAST;
+assign m_axi_gmem_0_WLAST = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WLAST;
 
-assign m_axi_gmem_0_WSTRB = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WSTRB;
+assign m_axi_gmem_0_WSTRB = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WSTRB;
 
-assign m_axi_gmem_0_WUSER = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WUSER;
+assign m_axi_gmem_0_WUSER = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WUSER;
 
-assign m_axi_gmem_0_WVALID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_m_axi_gmem_0_WVALID;
+assign m_axi_gmem_0_WVALID = grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_m_axi_gmem_0_WVALID;
 
-assign smax1_fu_93_p3 = ((empty_39_fu_87_p2[0:0] == 1'b1) ? trunc_ln75_fu_69_p1 : 31'd0);
+assign smax1_fu_93_p3 = ((empty_39_fu_87_p2[0:0] == 1'b1) ? trunc_ln74_fu_69_p1 : 31'd0);
 
-assign smax_fu_79_p3 = ((empty_fu_73_p2[0:0] == 1'b1) ? trunc_ln74_fu_61_p1 : 31'd0);
+assign smax_fu_79_p3 = ((empty_fu_73_p2[0:0] == 1'b1) ? trunc_ln73_fu_61_p1 : 31'd0);
 
-assign trunc_ln74_fu_61_p1 = M_rows[30:0];
+assign trunc_ln73_fu_61_p1 = M_rows[30:0];
 
-assign trunc_ln75_fu_69_p1 = M_cols[30:0];
+assign trunc_ln74_fu_69_p1 = M_cols[30:0];
 
 endmodule //fmm_reduce_kernel_store_matrix_to_dram_safe

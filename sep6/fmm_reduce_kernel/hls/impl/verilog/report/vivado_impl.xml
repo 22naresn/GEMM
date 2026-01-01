@@ -1,0 +1,367 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>100.000</TargetClockPeriod>
+  <AchievedClockPeriod>21.687</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>21.687</CP_FINAL>
+  <CP_ROUTE>21.687</CP_ROUTE>
+  <CP_SYNTH>8.447</CP_SYNTH>
+  <CP_TARGET>100.000</CP_TARGET>
+  <SLACK_FINAL>78.313</SLACK_FINAL>
+  <SLACK_ROUTE>78.313</SLACK_ROUTE>
+  <SLACK_SYNTH>91.553</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>78.313</WNS_FINAL>
+  <WNS_ROUTE>78.313</WNS_ROUTE>
+  <WNS_SYNTH>91.553</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>257</BRAM>
+    <CLB>0</CLB>
+    <DSP>39</DSP>
+    <FF>11530</FF>
+    <LATCH>0</LATCH>
+    <LUT>11317</LUT>
+    <SLICE>4168</SLICE>
+    <SRL>375</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="fmm_reduce_kernel" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="16">A_dram_c_U Block_entry_proc_1_U0 Block_entry_proc_U0 cols_c_U control_r_s_axi_U control_s_axi_U debug_capacity_c_U debug_dram_c_U gmem2_m_axi_U gmem_m_axi_U k1_c_U k2_c_U p_loc_channel_U rows_c_U spec_select_loc_channel_U t_capacity_c_U</SubModules>
+    <Resources BRAM="257" DSP="39" FF="11530" LUT="11317" LogicLUT="10942" RAMB18="1" RAMB36="128" SRL="375"/>
+  </RtlModule>
+  <RtlModule CELL="inst/A_dram_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w64_d3_S">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_1_U0" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_Block_entry_proc_1">
+    <SubModules count="1">mul_32s_32s_64_1_1_U11</SubModules>
+    <Resources DSP="4" FF="38" LUT="118" LogicLUT="118"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_1_U0/mul_32s_32s_64_1_1_U11" DEPTH="2" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_1.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_32s_32s_64_1_1">
+    <Resources DSP="2" LUT="92" LogicLUT="92"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_Block_entry_proc">
+    <SubModules count="4">M_e_U grp_greedy_potential_reduce_with_debug_fu_198 grp_load_matrix_from_dram_safe_fu_174 grp_store_matrix_to_dram_safe_fu_218</SubModules>
+    <Resources BRAM="256" DSP="35" FF="8004" LUT="8754" LogicLUT="8739" RAMB36="128" SRL="15"/>
+    <LocalResources FF="467" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/M_e_U" DEPTH="2" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" ORIG_REF_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W">
+    <Resources BRAM="256" FF="3" LUT="516" LogicLUT="516" RAMB36="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198" DEPTH="2" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug">
+    <SubModules count="20">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999 grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935 mul_31ns_31ns_62_1_1_U127 mul_32ns_34ns_64_1_1_U128 mul_32s_32s_32_1_1_U129 mul_64ns_31ns_95_3_1_U130</SubModules>
+    <Resources DSP="19" FF="6672" LUT="7254" LogicLUT="7254"/>
+    <LocalResources DSP="2" FF="3929" LUT="2588" LogicLUT="2588"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="196" LUT="346" LogicLUT="346"/>
+    <LocalResources FF="194" LUT="214" LogicLUT="214"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="133" LogicLUT="133"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="196" LUT="405" LogicLUT="405"/>
+    <LocalResources FF="194" LUT="213" LogicLUT="213"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="192" LogicLUT="192"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="66" LUT="213" LogicLUT="213"/>
+    <LocalResources FF="64" LUT="100" LogicLUT="100"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="113" LogicLUT="113"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="117" LUT="193" LogicLUT="193"/>
+    <LocalResources FF="115" LUT="94" LogicLUT="94"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="99" LogicLUT="99"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="149" LUT="488" LogicLUT="488"/>
+    <LocalResources FF="147" LUT="379" LogicLUT="379"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="109" LogicLUT="109"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="184" LUT="364" LogicLUT="364"/>
+    <LocalResources FF="182" LUT="68" LogicLUT="68"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="296" LogicLUT="296"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="183" LUT="188" LogicLUT="188"/>
+    <LocalResources FF="181" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="108" LogicLUT="108"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="142" LUT="265" LogicLUT="265"/>
+    <LocalResources FF="140" LUT="129" LogicLUT="129"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="136" LogicLUT="136"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="130" LUT="224" LogicLUT="224"/>
+    <LocalResources FF="128" LUT="127" LogicLUT="127"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="98" LogicLUT="98"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="130" LUT="269" LogicLUT="269"/>
+    <LocalResources FF="128" LUT="185" LogicLUT="185"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="85" LogicLUT="85"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="168" LUT="119" LogicLUT="119"/>
+    <LocalResources FF="166" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="100" LogicLUT="100"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="168" LUT="119" LogicLUT="119"/>
+    <LocalResources FF="166" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="100" LogicLUT="100"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="151" LUT="294" LogicLUT="294"/>
+    <LocalResources FF="149" LUT="188" LogicLUT="188"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="107" LogicLUT="107"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="151" LUT="223" LogicLUT="223"/>
+    <LocalResources FF="149" LUT="119" LogicLUT="119"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="105" LogicLUT="105"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="272" LUT="367" LogicLUT="367"/>
+    <LocalResources FF="270" LUT="321" LogicLUT="321"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="272" LUT="339" LogicLUT="339"/>
+    <LocalResources FF="270" LUT="292" LogicLUT="292"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_31ns_31ns_62_1_1_U127" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_31ns_31ns_62_1_1">
+    <Resources DSP="2" LUT="70" LogicLUT="70"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32ns_34ns_64_1_1_U128" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_32ns_34ns_64_1_1">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_32s_32s_32_1_1">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_64ns_31ns_95_3_1_U130" DEPTH="3" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_64ns_31ns_95_3_1">
+    <Resources DSP="8" FF="68" LUT="127" LogicLUT="127"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174" DEPTH="2" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" ORIG_REF_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe">
+    <SubModules count="3">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72 grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78 mul_31ns_31ns_62_1_1_U28</SubModules>
+    <Resources DSP="8" FF="471" LUT="475" LogicLUT="462" SRL="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72" DEPTH="3" FILE_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe.v" ORIG_REF_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="56" LUT="64" LogicLUT="64"/>
+    <LocalResources FF="54" LUT="55" LogicLUT="55"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78" DEPTH="3" FILE_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe.v" ORIG_REF_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_32s_31ns_62_1_1_U20</SubModules>
+    <Resources DSP="4" FF="375" LUT="302" LogicLUT="289" SRL="13"/>
+    <LocalResources DSP="2" FF="373" LUT="192" LogicLUT="179" SRL="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/mul_32s_31ns_62_1_1_U20" DEPTH="4" FILE_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_32s_31ns_62_1_1">
+    <Resources DSP="2" LUT="100" LogicLUT="100"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/mul_31ns_31ns_62_1_1_U28" DEPTH="3" FILE_NAME="fmm_reduce_kernel_load_matrix_from_dram_safe.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_31ns_31ns_62_1_1">
+    <Resources DSP="2" LUT="77" LogicLUT="77"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218" DEPTH="2" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" ORIG_REF_NAME="fmm_reduce_kernel_store_matrix_to_dram_safe">
+    <SubModules count="2">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40 mul_31ns_31ns_62_1_1_U151</SubModules>
+    <Resources DSP="8" FF="391" LUT="501" LogicLUT="499" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40" DEPTH="3" FILE_NAME="fmm_reduce_kernel_store_matrix_to_dram_safe.v" ORIG_REF_NAME="fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_32s_31ns_62_1_1_U144</SubModules>
+    <Resources DSP="4" FF="352" LUT="394" LogicLUT="392" SRL="2"/>
+    <LocalResources DSP="2" FF="350" LUT="286" LogicLUT="284" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" ORIG_REF_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/mul_32s_31ns_62_1_1_U144" DEPTH="4" FILE_NAME="fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_32s_31ns_62_1_1">
+    <Resources DSP="2" LUT="100" LogicLUT="100"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/mul_31ns_31ns_62_1_1_U151" DEPTH="3" FILE_NAME="fmm_reduce_kernel_store_matrix_to_dram_safe.v" ORIG_REF_NAME="fmm_reduce_kernel_mul_31ns_31ns_62_1_1">
+    <Resources DSP="2" LUT="78" LogicLUT="78"/>
+  </RtlModule>
+  <RtlModule CELL="inst/cols_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w32_d2_S">
+    <Resources FF="70" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_r_s_axi_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_control_r_s_axi">
+    <Resources FF="169" LUT="109" LogicLUT="109"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_control_s_axi">
+    <Resources FF="278" LUT="258" LogicLUT="258"/>
+  </RtlModule>
+  <RtlModule CELL="inst/debug_capacity_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w32_d2_S">
+    <Resources FF="70" LUT="39" LogicLUT="39"/>
+  </RtlModule>
+  <RtlModule CELL="inst/debug_dram_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w64_d3_S">
+  </RtlModule>
+  <RtlModule CELL="inst/gmem2_m_axi_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_gmem2_m_axi">
+    <Resources FF="1015" LUT="677" LogicLUT="570" SRL="107"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_gmem_m_axi">
+    <Resources BRAM="1" FF="1762" LUT="1142" LogicLUT="1002" RAMB18="1" SRL="140"/>
+  </RtlModule>
+  <RtlModule CELL="inst/k1_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w32_d3_S">
+  </RtlModule>
+  <RtlModule CELL="inst/k2_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w32_d3_S">
+  </RtlModule>
+  <RtlModule CELL="inst/p_loc_channel_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w1_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/rows_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w32_d2_S">
+    <Resources FF="70" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spec_select_loc_channel_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w1_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/t_capacity_c_U" DEPTH="1" FILE_NAME="fmm_reduce_kernel.v" ORIG_REF_NAME="fmm_reduce_kernel_fifo_w32_d3_S">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="21.179" DATAPATH_LOGIC_DELAY="4.016" DATAPATH_NET_DELAY="17.163" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28/WEA[0]" LOGIC_LEVELS="10" MAX_FANOUT="52" SLACK="78.313" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_1_27_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="21.040" DATAPATH_LOGIC_DELAY="1.770" DATAPATH_NET_DELAY="19.270" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_2/ENBWREN" LOGIC_LEVELS="9" MAX_FANOUT="208" SLACK="78.541" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="1516"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="3945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="1538"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_740" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="1538"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_318" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_156" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_0_i_42" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" LINE_NUMBER="1525"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_2_2_i_2" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_2" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="20.808" DATAPATH_LOGIC_DELAY="4.016" DATAPATH_NET_DELAY="16.792" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_28/WEA[0]" LOGIC_LEVELS="10" MAX_FANOUT="52" SLACK="78.684" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_1_27_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_28" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="20.537" DATAPATH_LOGIC_DELAY="4.016" DATAPATH_NET_DELAY="16.521" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_27/WEA[0]" LOGIC_LEVELS="10" MAX_FANOUT="52" SLACK="78.956" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_1_27_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_27" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="20.363" DATAPATH_LOGIC_DELAY="4.016" DATAPATH_NET_DELAY="16.347" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_27/WEA[0]" LOGIC_LEVELS="10" MAX_FANOUT="52" SLACK="79.130" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" LINE_NUMBER="4295"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_26_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fmm_reduce_kernel_Block_entry_proc.v" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_27" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/fmm_reduce_kernel_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/fmm_reduce_kernel_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/fmm_reduce_kernel_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/fmm_reduce_kernel_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/fmm_reduce_kernel_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/fmm_reduce_kernel_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/fmm_reduce_kernel_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fmm_reduce_kernel_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

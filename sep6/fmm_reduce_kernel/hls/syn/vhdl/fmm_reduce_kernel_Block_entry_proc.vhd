@@ -228,8 +228,8 @@ attribute shreg_extract : string;
     signal gmem2_blk_n_B : STD_LOGIC;
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
-    signal and_ln309_reg_317 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln310_reg_321 : STD_LOGIC_VECTOR (0 downto 0);
+    signal and_ln307_reg_317 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln308_reg_321 : STD_LOGIC_VECTOR (0 downto 0);
     signal debug_dram_blk_n : STD_LOGIC;
     signal debug_capacity_blk_n : STD_LOGIC;
     signal p_read_2_reg_270 : STD_LOGIC_VECTOR (0 downto 0);
@@ -242,10 +242,10 @@ attribute shreg_extract : string;
     signal cols_read_reg_301 : STD_LOGIC_VECTOR (31 downto 0);
     signal rows_read_reg_306 : STD_LOGIC_VECTOR (31 downto 0);
     signal A_dram_read_reg_311 : STD_LOGIC_VECTOR (63 downto 0);
-    signal and_ln309_fu_231_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln310_fu_237_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal select_ln311_fu_243_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal select_ln311_reg_325 : STD_LOGIC_VECTOR (31 downto 0);
+    signal and_ln307_fu_231_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln308_fu_237_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal select_ln309_fu_243_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal select_ln309_reg_325 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_load_matrix_from_dram_safe_fu_174_ap_start : STD_LOGIC;
     signal grp_load_matrix_from_dram_safe_fu_174_ap_done : STD_LOGIC;
     signal grp_load_matrix_from_dram_safe_fu_174_ap_idle : STD_LOGIC;
@@ -392,7 +392,7 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
     signal ap_CS_fsm_state13 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
-    signal sext_ln311_fu_259_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal sext_ln309_fu_259_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_predicate_op49_writeresp_state8 : BOOLEAN;
     signal ap_block_state8 : BOOLEAN;
     signal trunc_ln_fu_250_p4 : STD_LOGIC_VECTOR (61 downto 0);
@@ -928,7 +928,7 @@ begin
             if (ap_rst = '1') then
                 grp_load_matrix_from_dram_safe_fu_174_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_boolean_0 = ap_block_state1_ignore_call0) and (ap_const_lv1_1 = and_ln309_fu_231_p2) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+                if (((ap_const_boolean_0 = ap_block_state1_ignore_call0) and (ap_const_lv1_1 = and_ln307_fu_231_p2) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                     grp_load_matrix_from_dram_safe_fu_174_ap_start_reg <= ap_const_logic_1;
                 elsif ((grp_load_matrix_from_dram_safe_fu_174_ap_ready = ap_const_logic_1)) then 
                     grp_load_matrix_from_dram_safe_fu_174_ap_start_reg <= ap_const_logic_0;
@@ -969,11 +969,11 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                 A_dram_read_reg_311 <= A_dram_dout;
-                and_ln309_reg_317 <= and_ln309_fu_231_p2;
+                and_ln307_reg_317 <= and_ln307_fu_231_p2;
                 cols_read_reg_301 <= cols_dout;
                 debug_capacity_read_reg_275 <= debug_capacity_dout;
                 debug_dram_read_reg_280 <= debug_dram_dout;
-                icmp_ln310_reg_321 <= icmp_ln310_fu_237_p2;
+                icmp_ln308_reg_321 <= icmp_ln308_fu_237_p2;
                 k1_read_reg_291 <= k1_dout;
                 k2_read_reg_286 <= k2_dout;
                 p_read_2_reg_270 <= p_read;
@@ -1010,21 +1010,21 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state2) and (m_axi_gmem2_0_AWREADY = ap_const_logic_1))) then
-                    select_ln311_reg_325(2 downto 0) <= select_ln311_fu_243_p3(2 downto 0);
+                    select_ln309_reg_325(2 downto 0) <= select_ln309_fu_243_p3(2 downto 0);
             end if;
         end if;
     end process;
-    select_ln311_reg_325(31 downto 3) <= "11111111111111111111110001111";
+    select_ln309_reg_325(31 downto 3) <= "11111111111111111111110001111";
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, m_axi_gmem2_0_AWREADY, m_axi_gmem2_0_WREADY, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state8, ap_block_state1, and_ln309_fu_231_p2, icmp_ln310_fu_237_p2, grp_load_matrix_from_dram_safe_fu_174_ap_done, grp_greedy_potential_reduce_with_debug_fu_198_ap_done, grp_store_matrix_to_dram_safe_fu_218_ap_done, ap_CS_fsm_state9, ap_CS_fsm_state11, ap_CS_fsm_state13, ap_block_state8)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, m_axi_gmem2_0_AWREADY, m_axi_gmem2_0_WREADY, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state8, ap_block_state1, and_ln307_fu_231_p2, icmp_ln308_fu_237_p2, grp_load_matrix_from_dram_safe_fu_174_ap_done, grp_greedy_potential_reduce_with_debug_fu_198_ap_done, grp_store_matrix_to_dram_safe_fu_218_ap_done, ap_CS_fsm_state9, ap_CS_fsm_state11, ap_CS_fsm_state13, ap_block_state8)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if (((icmp_ln310_fu_237_p2 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_lv1_0 = and_ln309_fu_231_p2))) then
+                if (((icmp_ln308_fu_237_p2 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_lv1_0 = and_ln307_fu_231_p2))) then
                     ap_NS_fsm <= ap_ST_fsm_state8;
-                elsif (((icmp_ln310_fu_237_p2 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_lv1_0 = and_ln309_fu_231_p2))) then
+                elsif (((icmp_ln308_fu_237_p2 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_lv1_0 = and_ln307_fu_231_p2))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
-                elsif (((ap_const_boolean_0 = ap_block_state1) and (ap_const_lv1_1 = and_ln309_fu_231_p2) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+                elsif (((ap_const_boolean_0 = ap_block_state1) and (ap_const_lv1_1 = and_ln307_fu_231_p2) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state9;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
@@ -1173,7 +1173,7 @@ begin
         end if; 
     end process;
 
-    and_ln309_fu_231_p2 <= (p_read1 and p_read);
+    and_ln307_fu_231_p2 <= (p_read1 and p_read);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
     ap_CS_fsm_state11 <= ap_CS_fsm(10);
@@ -1298,9 +1298,9 @@ begin
     end process;
 
 
-    ap_predicate_op49_writeresp_state8_assign_proc : process(and_ln309_reg_317, icmp_ln310_reg_321)
+    ap_predicate_op49_writeresp_state8_assign_proc : process(and_ln307_reg_317, icmp_ln308_reg_321)
     begin
-                ap_predicate_op49_writeresp_state8 <= ((icmp_ln310_reg_321 = ap_const_lv1_1) and (ap_const_lv1_0 = and_ln309_reg_317));
+                ap_predicate_op49_writeresp_state8 <= ((icmp_ln308_reg_321 = ap_const_lv1_1) and (ap_const_lv1_0 = and_ln307_reg_317));
     end process;
 
 
@@ -1384,9 +1384,9 @@ begin
     end process;
 
 
-    gmem2_blk_n_B_assign_proc : process(m_axi_gmem2_0_BVALID, ap_CS_fsm_state8, and_ln309_reg_317, icmp_ln310_reg_321)
+    gmem2_blk_n_B_assign_proc : process(m_axi_gmem2_0_BVALID, ap_CS_fsm_state8, and_ln307_reg_317, icmp_ln308_reg_321)
     begin
-        if (((icmp_ln310_reg_321 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state8) and (ap_const_lv1_0 = and_ln309_reg_317))) then 
+        if (((icmp_ln308_reg_321 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state8) and (ap_const_lv1_0 = and_ln307_reg_317))) then 
             gmem2_blk_n_B <= m_axi_gmem2_0_BVALID;
         else 
             gmem2_blk_n_B <= ap_const_logic_1;
@@ -1406,7 +1406,7 @@ begin
     grp_greedy_potential_reduce_with_debug_fu_198_ap_start <= grp_greedy_potential_reduce_with_debug_fu_198_ap_start_reg;
     grp_load_matrix_from_dram_safe_fu_174_ap_start <= grp_load_matrix_from_dram_safe_fu_174_ap_start_reg;
     grp_store_matrix_to_dram_safe_fu_218_ap_start <= grp_store_matrix_to_dram_safe_fu_218_ap_start_reg;
-    icmp_ln310_fu_237_p2 <= "1" when (signed(debug_capacity_dout) > signed(ap_const_lv32_0)) else "0";
+    icmp_ln308_fu_237_p2 <= "1" when (signed(debug_capacity_dout) > signed(ap_const_lv32_0)) else "0";
 
     k1_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, k1_empty_n)
     begin
@@ -1460,10 +1460,10 @@ begin
     m_axi_gmem2_0_ARUSER <= ap_const_lv1_0;
     m_axi_gmem2_0_ARVALID <= ap_const_logic_0;
 
-    m_axi_gmem2_0_AWADDR_assign_proc : process(m_axi_gmem2_0_AWREADY, ap_CS_fsm_state2, grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_AWADDR, ap_CS_fsm_state10, ap_CS_fsm_state11, sext_ln311_fu_259_p1)
+    m_axi_gmem2_0_AWADDR_assign_proc : process(m_axi_gmem2_0_AWREADY, ap_CS_fsm_state2, grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_AWADDR, ap_CS_fsm_state10, ap_CS_fsm_state11, sext_ln309_fu_259_p1)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state2) and (m_axi_gmem2_0_AWREADY = ap_const_logic_1))) then 
-            m_axi_gmem2_0_AWADDR <= sext_ln311_fu_259_p1;
+            m_axi_gmem2_0_AWADDR <= sext_ln309_fu_259_p1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
             m_axi_gmem2_0_AWADDR <= grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_AWADDR;
         else 
@@ -1599,10 +1599,10 @@ begin
 
     m_axi_gmem2_0_RREADY <= ap_const_logic_0;
 
-    m_axi_gmem2_0_WDATA_assign_proc : process(ap_CS_fsm_state3, select_ln311_reg_325, grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_WDATA, ap_CS_fsm_state10, ap_CS_fsm_state11)
+    m_axi_gmem2_0_WDATA_assign_proc : process(ap_CS_fsm_state3, select_ln309_reg_325, grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_WDATA, ap_CS_fsm_state10, ap_CS_fsm_state11)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            m_axi_gmem2_0_WDATA <= select_ln311_reg_325;
+            m_axi_gmem2_0_WDATA <= select_ln309_reg_325;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
             m_axi_gmem2_0_WDATA <= grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_WDATA;
         else 
@@ -1761,10 +1761,10 @@ begin
         end if; 
     end process;
 
-    select_ln311_fu_243_p3 <= 
+    select_ln309_fu_243_p3 <= 
         ap_const_lv32_FFFFFC7B when (p_read_2_reg_270(0) = '1') else 
         ap_const_lv32_FFFFFC7C;
-        sext_ln311_fu_259_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_fu_250_p4),64));
+        sext_ln309_fu_259_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_fu_250_p4),64));
 
 
     t_capacity_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, t_capacity_empty_n)

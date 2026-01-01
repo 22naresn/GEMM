@@ -16,6 +16,6 @@
     <option name="tool" tcl="config_cosim -tool" ini="cosim.tool">xsim</option>
     <option name="trace_level" tcl="config_cosim -trace_level" ini="cosim.trace_level">none</option>
     <option name="user_stall" tcl="config_cosim -user_stall" ini="cosim.user_stall"></option>
-    <option name="wave_debug" tcl="config_cosim -wave_debug" ini="cosim.wave_debug"></option>
+    <option name="wave_debug" tcl="config_cosim -wave_debug" ini="cosim.wave_debug">0</option>
 </cosim_options>
 

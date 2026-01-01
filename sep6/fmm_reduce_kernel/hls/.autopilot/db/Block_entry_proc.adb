@@ -882,10 +882,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>and_ln309</name>
+              <name>and_ln307</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>309</lineNumber>
+              <lineNumber>307</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -901,13 +901,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>309</second>
+                      <second>307</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>and_ln309_fu_231_p2</rtlName>
+              <rtlName>and_ln307_fu_231_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -939,10 +939,10 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>br_ln309</name>
+              <name>br_ln307</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>309</lineNumber>
+              <lineNumber>307</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -958,7 +958,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>309</second>
+                      <second>307</second>
                     </item>
                   </second>
                 </item>
@@ -997,10 +997,10 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>icmp_ln310</name>
+              <name>icmp_ln308</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>310</lineNumber>
+              <lineNumber>308</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1016,13 +1016,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>310</second>
+                      <second>308</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>icmp_ln310_fu_237_p2</rtlName>
+              <rtlName>icmp_ln308_fu_237_p2</rtlName>
               <control>auto</control>
               <opType>setgt</opType>
               <implIndex>auto</implIndex>
@@ -1054,10 +1054,10 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>br_ln310</name>
+              <name>br_ln308</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>310</lineNumber>
+              <lineNumber>308</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1073,7 +1073,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>310</second>
+                      <second>308</second>
                     </item>
                   </second>
                 </item>
@@ -1112,10 +1112,10 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>select_ln311</name>
+              <name>select_ln309</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1131,13 +1131,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>select_ln311_fu_243_p3</rtlName>
+              <rtlName>select_ln309_fu_243_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
@@ -1173,7 +1173,7 @@
               <name>trunc_ln</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1189,7 +1189,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
@@ -1229,10 +1229,10 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>sext_ln311</name>
+              <name>sext_ln309</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1248,13 +1248,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sext_ln311_fu_259_p1</rtlName>
+              <rtlName>sext_ln309_fu_259_p1</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1288,7 +1288,7 @@
               <name>gmem2_addr</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1304,7 +1304,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
@@ -1345,7 +1345,7 @@
               <name>gmem2_addr_req</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1361,7 +1361,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
@@ -1400,10 +1400,10 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>gmem2_addr_write_ln311</name>
+              <name>gmem2_addr_write_ln309</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1419,7 +1419,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
@@ -1463,7 +1463,7 @@
               <name>gmem2_addr_resp</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>311</lineNumber>
+              <lineNumber>309</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1479,7 +1479,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>311</second>
+                      <second>309</second>
                     </item>
                   </second>
                 </item>
@@ -1518,10 +1518,10 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>br_ln312</name>
+              <name>br_ln310</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>312</lineNumber>
+              <lineNumber>310</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1537,7 +1537,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>312</second>
+                      <second>310</second>
                     </item>
                   </second>
                 </item>
@@ -1574,10 +1574,10 @@
             <Obj>
               <type>0</type>
               <id>53</id>
-              <name>br_ln313</name>
+              <name>br_ln311</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>313</lineNumber>
+              <lineNumber>311</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1593,7 +1593,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>313</second>
+                      <second>311</second>
                     </item>
                   </second>
                 </item>
@@ -1630,10 +1630,10 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>_ln317</name>
+              <name>_ln314</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>317</lineNumber>
+              <lineNumber>314</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1649,7 +1649,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>317</second>
+                      <second>314</second>
                     </item>
                   </second>
                 </item>
@@ -1696,10 +1696,10 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>_ln318</name>
+              <name>_ln315</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>318</lineNumber>
+              <lineNumber>315</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1715,7 +1715,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>318</second>
+                      <second>315</second>
                     </item>
                   </second>
                 </item>
@@ -1765,10 +1765,10 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>_ln319</name>
+              <name>_ln316</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>319</lineNumber>
+              <lineNumber>316</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1784,7 +1784,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>319</second>
+                      <second>316</second>
                     </item>
                   </second>
                 </item>
@@ -1829,10 +1829,10 @@
             <Obj>
               <type>0</type>
               <id>58</id>
-              <name>br_ln320</name>
+              <name>br_ln317</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>320</lineNumber>
+              <lineNumber>317</lineNumber>
               <contextFuncName>fmm_reduce_kernel_entry.aft</contextFuncName>
               <contextNormFuncName>fmm_reduce_kernel_entry_aft</contextNormFuncName>
               <inlineStackInfo>
@@ -1848,7 +1848,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>fmm_reduce_kernel_entry.aft</second>
                       </first>
-                      <second>320</second>
+                      <second>317</second>
                     </item>
                   </second>
                 </item>
@@ -3730,7 +3730,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>and_ln309_fu_231_p2 ( and ) </first>
+          <first>and_ln307_fu_231_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3822,7 +3822,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln310_fu_237_p2 ( icmp ) </first>
+          <first>icmp_ln308_fu_237_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3845,7 +3845,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln311_fu_243_p3 ( select ) </first>
+          <first>select_ln309_fu_243_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -5210,7 +5210,7 @@
           </second>
         </item>
         <item>
-          <first>and_ln309_reg_317</first>
+          <first>and_ln307_reg_317</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5381,7 +5381,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln310_reg_321</first>
+          <first>icmp_ln308_reg_321</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5476,7 +5476,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln311_reg_325</first>
+          <first>select_ln309_reg_325</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5571,7 +5571,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>and_ln309_fu_231_p2 ( and ) </first>
+          <first>and_ln307_fu_231_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5579,7 +5579,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln310_fu_237_p2 ( icmp ) </first>
+          <first>icmp_ln308_fu_237_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5587,7 +5587,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln311_fu_243_p3 ( select ) </first>
+          <first>select_ln309_fu_243_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6060,7 +6060,7 @@
       <count>6</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>and_ln309_fu_231</first>
+        <first>and_ln307_fu_231</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6076,7 +6076,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln310_fu_237</first>
+        <first>icmp_ln308_fu_237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6084,7 +6084,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln311_fu_243</first>
+        <first>select_ln309_fu_243</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6092,7 +6092,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln311_fu_259</first>
+        <first>sext_ln309_fu_259</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6243,7 +6243,7 @@
         </second>
       </item>
       <item>
-        <first>write_ln311_write_fu_161</first>
+        <first>write_ln309_write_fu_161</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6392,7 +6392,7 @@
         </second>
       </item>
       <item>
-        <first>and_ln309_reg_317</first>
+        <first>and_ln307_reg_317</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6432,7 +6432,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln310_reg_321</first>
+        <first>icmp_ln308_reg_321</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6472,7 +6472,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln311_reg_325</first>
+        <first>select_ln309_reg_325</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

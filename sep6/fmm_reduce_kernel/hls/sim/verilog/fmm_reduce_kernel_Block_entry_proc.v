@@ -369,8 +369,8 @@ reg    gmem2_blk_n_W;
 wire    ap_CS_fsm_state3;
 reg    gmem2_blk_n_B;
 wire    ap_CS_fsm_state8;
-reg   [0:0] and_ln309_reg_317;
-reg   [0:0] icmp_ln310_reg_321;
+reg   [0:0] and_ln307_reg_317;
+reg   [0:0] icmp_ln308_reg_321;
 reg    debug_dram_blk_n;
 reg    debug_capacity_blk_n;
 reg   [0:0] p_read_2_reg_270;
@@ -383,10 +383,10 @@ reg   [31:0] t_capacity_read_reg_296;
 reg   [31:0] cols_read_reg_301;
 reg   [31:0] rows_read_reg_306;
 reg   [63:0] A_dram_read_reg_311;
-wire   [0:0] and_ln309_fu_231_p2;
-wire   [0:0] icmp_ln310_fu_237_p2;
-wire   [31:0] select_ln311_fu_243_p3;
-reg   [31:0] select_ln311_reg_325;
+wire   [0:0] and_ln307_fu_231_p2;
+wire   [0:0] icmp_ln308_fu_237_p2;
+wire   [31:0] select_ln309_fu_243_p3;
+reg   [31:0] select_ln309_reg_325;
 wire    grp_load_matrix_from_dram_safe_fu_174_ap_start;
 wire    grp_load_matrix_from_dram_safe_fu_174_ap_done;
 wire    grp_load_matrix_from_dram_safe_fu_174_ap_idle;
@@ -528,7 +528,7 @@ wire    ap_CS_fsm_state11;
 reg    grp_store_matrix_to_dram_safe_fu_218_ap_start_reg;
 wire    ap_CS_fsm_state12;
 wire    ap_CS_fsm_state13;
-wire  signed [63:0] sext_ln311_fu_259_p1;
+wire  signed [63:0] sext_ln309_fu_259_p1;
 reg    ap_predicate_op49_writeresp_state8;
 reg    ap_block_state8;
 wire   [61:0] trunc_ln_fu_250_p4;
@@ -823,7 +823,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_load_matrix_from_dram_safe_fu_174_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call0) & (1'd1 == and_ln309_fu_231_p2) & (1'b1 == ap_CS_fsm_state1))) begin
+        if (((1'b0 == ap_block_state1_ignore_call0) & (1'd1 == and_ln307_fu_231_p2) & (1'b1 == ap_CS_fsm_state1))) begin
             grp_load_matrix_from_dram_safe_fu_174_ap_start_reg <= 1'b1;
         end else if ((grp_load_matrix_from_dram_safe_fu_174_ap_ready == 1'b1)) begin
             grp_load_matrix_from_dram_safe_fu_174_ap_start_reg <= 1'b0;
@@ -854,11 +854,11 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
         A_dram_read_reg_311 <= A_dram_dout;
-        and_ln309_reg_317 <= and_ln309_fu_231_p2;
+        and_ln307_reg_317 <= and_ln307_fu_231_p2;
         cols_read_reg_301 <= cols_dout;
         debug_capacity_read_reg_275 <= debug_capacity_dout;
         debug_dram_read_reg_280 <= debug_dram_dout;
-        icmp_ln310_reg_321 <= icmp_ln310_fu_237_p2;
+        icmp_ln308_reg_321 <= icmp_ln308_fu_237_p2;
         k1_read_reg_291 <= k1_dout;
         k2_read_reg_286 <= k2_dout;
         p_read_2_reg_270 <= p_read;
@@ -887,7 +887,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state2) & (m_axi_gmem2_0_AWREADY == 1'b1))) begin
-        select_ln311_reg_325[2 : 0] <= select_ln311_fu_243_p3[2 : 0];
+        select_ln309_reg_325[2 : 0] <= select_ln309_fu_243_p3[2 : 0];
     end
 end
 
@@ -1116,7 +1116,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln310_reg_321 == 1'd1) & (1'b1 == ap_CS_fsm_state8) & (1'd0 == and_ln309_reg_317))) begin
+    if (((icmp_ln308_reg_321 == 1'd1) & (1'b1 == ap_CS_fsm_state8) & (1'd0 == and_ln307_reg_317))) begin
         gmem2_blk_n_B = m_axi_gmem2_0_BVALID;
     end else begin
         gmem2_blk_n_B = 1'b1;
@@ -1165,7 +1165,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state2) & (m_axi_gmem2_0_AWREADY == 1'b1))) begin
-        m_axi_gmem2_0_AWADDR = sext_ln311_fu_259_p1;
+        m_axi_gmem2_0_AWADDR = sext_ln309_fu_259_p1;
     end else if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         m_axi_gmem2_0_AWADDR = grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_AWADDR;
     end else begin
@@ -1277,7 +1277,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        m_axi_gmem2_0_WDATA = select_ln311_reg_325;
+        m_axi_gmem2_0_WDATA = select_ln309_reg_325;
     end else if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         m_axi_gmem2_0_WDATA = grp_greedy_potential_reduce_with_debug_fu_198_m_axi_gmem2_0_WDATA;
     end else begin
@@ -1404,11 +1404,11 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((icmp_ln310_fu_237_p2 == 1'd0) & (1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & (1'd0 == and_ln309_fu_231_p2))) begin
+            if (((icmp_ln308_fu_237_p2 == 1'd0) & (1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & (1'd0 == and_ln307_fu_231_p2))) begin
                 ap_NS_fsm = ap_ST_fsm_state8;
-            end else if (((icmp_ln310_fu_237_p2 == 1'd1) & (1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & (1'd0 == and_ln309_fu_231_p2))) begin
+            end else if (((icmp_ln308_fu_237_p2 == 1'd1) & (1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & (1'd0 == and_ln307_fu_231_p2))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
-            end else if (((1'b0 == ap_block_state1) & (1'd1 == and_ln309_fu_231_p2) & (1'b1 == ap_CS_fsm_state1))) begin
+            end else if (((1'b0 == ap_block_state1) & (1'd1 == and_ln307_fu_231_p2) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
@@ -1480,7 +1480,7 @@ always @ (*) begin
     endcase
 end
 
-assign and_ln309_fu_231_p2 = (p_read1 & p_read);
+assign and_ln307_fu_231_p2 = (p_read1 & p_read);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1513,7 +1513,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_predicate_op49_writeresp_state8 = ((icmp_ln310_reg_321 == 1'd1) & (1'd0 == and_ln309_reg_317));
+    ap_predicate_op49_writeresp_state8 = ((icmp_ln308_reg_321 == 1'd1) & (1'd0 == and_ln307_reg_317));
 end
 
 assign grp_greedy_potential_reduce_with_debug_fu_198_ap_start = grp_greedy_potential_reduce_with_debug_fu_198_ap_start_reg;
@@ -1522,7 +1522,7 @@ assign grp_load_matrix_from_dram_safe_fu_174_ap_start = grp_load_matrix_from_dra
 
 assign grp_store_matrix_to_dram_safe_fu_218_ap_start = grp_store_matrix_to_dram_safe_fu_218_ap_start_reg;
 
-assign icmp_ln310_fu_237_p2 = (($signed(debug_capacity_dout) > $signed(32'd0)) ? 1'b1 : 1'b0);
+assign icmp_ln308_fu_237_p2 = (($signed(debug_capacity_dout) > $signed(32'd0)) ? 1'b1 : 1'b0);
 
 assign m_axi_gmem2_0_ARADDR = 64'd0;
 
@@ -1604,14 +1604,14 @@ assign m_axi_gmem_0_WSTRB = grp_store_matrix_to_dram_safe_fu_218_m_axi_gmem_0_WS
 
 assign m_axi_gmem_0_WUSER = grp_store_matrix_to_dram_safe_fu_218_m_axi_gmem_0_WUSER;
 
-assign select_ln311_fu_243_p3 = ((p_read_2_reg_270[0:0] == 1'b1) ? 32'd4294966395 : 32'd4294966396);
+assign select_ln309_fu_243_p3 = ((p_read_2_reg_270[0:0] == 1'b1) ? 32'd4294966395 : 32'd4294966396);
 
-assign sext_ln311_fu_259_p1 = $signed(trunc_ln_fu_250_p4);
+assign sext_ln309_fu_259_p1 = $signed(trunc_ln_fu_250_p4);
 
 assign trunc_ln_fu_250_p4 = {{debug_dram_read_reg_280[63:2]}};
 
 always @ (posedge ap_clk) begin
-    select_ln311_reg_325[31:3] <= 29'b11111111111111111111110001111;
+    select_ln309_reg_325[31:3] <= 29'b11111111111111111111110001111;
 end
 
 endmodule //fmm_reduce_kernel_Block_entry_proc

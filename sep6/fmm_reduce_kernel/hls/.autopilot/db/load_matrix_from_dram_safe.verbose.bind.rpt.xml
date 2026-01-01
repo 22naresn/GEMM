@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_matrix_from_dram_safe'" level="0">
-<item name = "Date">Sun Sep  7 15:34:36 2025
+<item name = "Date">Mon Oct 13 17:12:05 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">fmm_reduce_kernel</item>
@@ -31,8 +31,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72">load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2, 102402, 102402, 1.024 ms, 1.024 ms, 102401, 102401, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78">load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72">load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2, 102402, 102402, 1.024 ms, 1.024 ms, 102401, 102401, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78">load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

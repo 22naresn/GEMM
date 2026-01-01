@@ -69,44 +69,44 @@ INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_gmem_m_axi_srl
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_gmem_m_axi_mem
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_mul_31ns_31ns_62_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_mul_31ns_31ns_62_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_mul_32ns_34ns_64_1_1.v" into library xil_defaultlib
@@ -121,8 +121,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kerne
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_mul_64ns_31ns_95_3_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_store_matrix_to_dram_safe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_store_matrix_to_dram_safe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmm_reduce_kernel_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GEMM/sep6/fmm_reduce_kernel/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib

@@ -7,7 +7,6 @@
 # 1 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
 
 
-
 # 1 "C:/Xilinx/2025.1/Vitis/include/ap_int.h" 1
 # 10 "C:/Xilinx/2025.1/Vitis/include/ap_int.h"
 # 1 "C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h" 1
@@ -55500,7 +55499,7 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 }
 # 370 "C:/Xilinx/2025.1/Vitis/include/ap_fixed.h" 2
 # 365 "C:/Xilinx/2025.1/Vitis/include/ap_int.h" 2
-# 5 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
+# 4 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/include/hls_stream.h" 1
 # 22 "C:/Xilinx/2025.1/Vitis/include/hls_stream.h"
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/queue" 1 3
@@ -78090,10 +78089,10 @@ public:
 };
 
 }
-# 6 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
+# 5 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
 
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/assert.h" 1 3
-# 8 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
+# 7 "C:/GEMM/sep6/fmm_hls_greedy_potential.cpp" 2
 
 
 
@@ -78375,7 +78374,6 @@ extern "C" void fmm_reduce_kernel(volatile int *A_dram,
                                   int verbose,
                                   volatile int *debug_dram,
                                   int debug_capacity) {
-
 #pragma HLS INTERFACE m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH
 #pragma HLS INTERFACE m_axi port=debug_dram offset=slave bundle=gmem2 depth=MAX_DEBUG_DEPTH
 
@@ -78401,7 +78399,6 @@ extern "C" void fmm_reduce_kernel(volatile int *A_dram,
         }
         return;
     }
-
 
     load_matrix_from_dram_safe((const int32_t *)A_dram, M, rows, cols, t_capacity, MAX_A_DEPTH);
     greedy_potential_reduce_with_debug(M, k1, k2, debug_dram, debug_capacity);

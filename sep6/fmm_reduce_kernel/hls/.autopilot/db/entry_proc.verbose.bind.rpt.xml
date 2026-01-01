@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'entry_proc'" level="0">
-<item name = "Date">Sun Sep  7 15:34:34 2025
+<item name = "Date">Mon Oct 13 17:12:03 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">fmm_reduce_kernel</item>

@@ -1,0 +1,702 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 13 17:47:45 2025
+| Host         : TUF15 running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/fmm_reduce_kernel_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             78.313ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28/WEA[0]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        21.179ns  (logic 4.016ns (18.962%)  route 17.163ns (81.038%))
+  Logic Levels:           10  (CARRY4=3 LUT3=1 LUT5=1 LUT6=4 RAMB36E1=1)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X5Y14         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X5Y14         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.259     2.963 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CASCADEOUTB
+                         net (fo=1, routed)           0.065     3.028    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8_n_8
+    RAMB36_X5Y15         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.343     3.371 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8/DOBDO[0]
+                         net (fo=5, routed)           4.058     7.429    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8_n_74
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.097     7.526 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1/O
+                         net (fo=20, routed)          1.347     8.873    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/D[8]
+    SLICE_X38Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.970 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13/O
+                         net (fo=1, routed)           0.000     8.970    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13_n_7
+    SLICE_X38Y11         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.286     9.256 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000     9.256    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7_n_7
+    SLICE_X38Y12         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     9.348 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     9.348    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3_n_7
+    SLICE_X38Y13         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.174     9.522 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2/CO[2]
+                         net (fo=2, routed)           1.141    10.662    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_291[0]
+    SLICE_X57Y14         LUT5 (Prop_lut5_I3_O)        0.227    10.889 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523/O
+                         net (fo=1, routed)           0.782    11.671    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_141
+    SLICE_X52Y14         LUT6 (Prop_lut6_I5_O)        0.247    11.918 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291/O
+                         net (fo=2, routed)           0.281    12.199    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_M_e_we1
+    SLICE_X55Y14         LUT6 (Prop_lut6_I3_O)        0.097    12.296 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138/O
+                         net (fo=52, routed)          7.082    19.377    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_3_31
+    SLICE_X54Y86         LUT6 (Prop_lut6_I2_O)        0.097    19.474 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_1_27_i_1/O
+                         net (fo=3, routed)           2.409    21.883    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28_0[0]
+    RAMB36_X3Y29         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y29         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28/CLKARDCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y29         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_WEA[0])
+                                                     -0.437   100.196    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28
+  -------------------------------------------------------------------
+                         required time                        100.196    
+                         arrival time                         -21.883    
+  -------------------------------------------------------------------
+                         slack                                 78.313    
+
+Slack (MET) :             78.541ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_2/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        21.040ns  (logic 1.770ns (8.413%)  route 19.270ns (91.587%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT5=3 LUT6=3)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_clk
+    SLICE_X26Y7          FDRE                                         r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y7          FDRE (Prop_fdre_C_Q)         0.393     1.097 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/Q
+                         net (fo=208, routed)         6.206     7.303    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_state47
+    SLICE_X67Y29         LUT5 (Prop_lut5_I2_O)        0.097     7.400 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603/O
+                         net (fo=2, routed)           0.682     8.082    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603_n_7
+    SLICE_X70Y24         LUT6 (Prop_lut6_I0_O)        0.097     8.179 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607/O
+                         net (fo=1, routed)           0.000     8.179    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607_n_7
+    SLICE_X70Y24         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     8.591 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429/CO[3]
+                         net (fo=1, routed)           0.007     8.599    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429_n_7
+    SLICE_X70Y25         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.758 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_740/O[0]
+                         net (fo=1, routed)           0.700     9.457    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/O[0]
+    SLICE_X81Y21         LUT5 (Prop_lut5_I2_O)        0.224     9.681 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547/O
+                         net (fo=1, routed)           0.826    10.507    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547_n_7
+    SLICE_X66Y19         LUT6 (Prop_lut6_I0_O)        0.097    10.604 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_318/O
+                         net (fo=1, routed)           0.429    11.033    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_42_1
+    SLICE_X63Y24         LUT6 (Prop_lut6_I4_O)        0.097    11.130 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_156/O
+                         net (fo=1, routed)           1.058    12.187    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_greedy_potential_reduce_with_debug_fu_198_M_e_address0[16]
+    SLICE_X28Y23         LUT5 (Prop_lut5_I4_O)        0.097    12.284 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_0_i_42/O
+                         net (fo=68, routed)          5.438    17.722    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/add_ln81_1_reg_429_reg[16]_0
+    SLICE_X81Y53         LUT2 (Prop_lut2_I1_O)        0.097    17.819 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_2_2_i_2/O
+                         net (fo=10, routed)          3.925    21.744    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6_2
+    RAMB36_X3Y13         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_2/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y13         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_2/CLKBWRCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y13         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.348   100.285    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_2
+  -------------------------------------------------------------------
+                         required time                        100.285    
+                         arrival time                         -21.744    
+  -------------------------------------------------------------------
+                         slack                                 78.541    
+
+Slack (MET) :             78.684ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_28/WEA[0]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.808ns  (logic 4.016ns (19.300%)  route 16.792ns (80.700%))
+  Logic Levels:           10  (CARRY4=3 LUT3=1 LUT5=1 LUT6=4 RAMB36E1=1)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X5Y14         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X5Y14         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.259     2.963 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CASCADEOUTB
+                         net (fo=1, routed)           0.065     3.028    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8_n_8
+    RAMB36_X5Y15         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.343     3.371 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8/DOBDO[0]
+                         net (fo=5, routed)           4.058     7.429    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8_n_74
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.097     7.526 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1/O
+                         net (fo=20, routed)          1.347     8.873    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/D[8]
+    SLICE_X38Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.970 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13/O
+                         net (fo=1, routed)           0.000     8.970    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13_n_7
+    SLICE_X38Y11         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.286     9.256 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000     9.256    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7_n_7
+    SLICE_X38Y12         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     9.348 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     9.348    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3_n_7
+    SLICE_X38Y13         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.174     9.522 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2/CO[2]
+                         net (fo=2, routed)           1.141    10.662    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_291[0]
+    SLICE_X57Y14         LUT5 (Prop_lut5_I3_O)        0.227    10.889 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523/O
+                         net (fo=1, routed)           0.782    11.671    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_141
+    SLICE_X52Y14         LUT6 (Prop_lut6_I5_O)        0.247    11.918 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291/O
+                         net (fo=2, routed)           0.281    12.199    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_M_e_we1
+    SLICE_X55Y14         LUT6 (Prop_lut6_I3_O)        0.097    12.296 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138/O
+                         net (fo=52, routed)          7.082    19.377    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_3_31
+    SLICE_X54Y86         LUT6 (Prop_lut6_I2_O)        0.097    19.474 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_1_27_i_1/O
+                         net (fo=3, routed)           2.038    21.512    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28_0[0]
+    RAMB36_X3Y28         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_28/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y28         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_28/CLKARDCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y28         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_WEA[0])
+                                                     -0.437   100.196    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_28
+  -------------------------------------------------------------------
+                         required time                        100.196    
+                         arrival time                         -21.512    
+  -------------------------------------------------------------------
+                         slack                                 78.684    
+
+Slack (MET) :             78.956ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_27/WEA[0]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.537ns  (logic 4.016ns (19.555%)  route 16.521ns (80.445%))
+  Logic Levels:           10  (CARRY4=3 LUT3=1 LUT5=1 LUT6=4 RAMB36E1=1)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X5Y14         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X5Y14         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.259     2.963 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CASCADEOUTB
+                         net (fo=1, routed)           0.065     3.028    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8_n_8
+    RAMB36_X5Y15         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.343     3.371 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8/DOBDO[0]
+                         net (fo=5, routed)           4.058     7.429    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8_n_74
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.097     7.526 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1/O
+                         net (fo=20, routed)          1.347     8.873    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/D[8]
+    SLICE_X38Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.970 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13/O
+                         net (fo=1, routed)           0.000     8.970    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13_n_7
+    SLICE_X38Y11         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.286     9.256 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000     9.256    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7_n_7
+    SLICE_X38Y12         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     9.348 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     9.348    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3_n_7
+    SLICE_X38Y13         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.174     9.522 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2/CO[2]
+                         net (fo=2, routed)           1.141    10.662    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_291[0]
+    SLICE_X57Y14         LUT5 (Prop_lut5_I3_O)        0.227    10.889 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523/O
+                         net (fo=1, routed)           0.782    11.671    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_141
+    SLICE_X52Y14         LUT6 (Prop_lut6_I5_O)        0.247    11.918 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291/O
+                         net (fo=2, routed)           0.281    12.199    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_M_e_we1
+    SLICE_X55Y14         LUT6 (Prop_lut6_I3_O)        0.097    12.296 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138/O
+                         net (fo=52, routed)          7.082    19.377    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_3_31
+    SLICE_X54Y86         LUT6 (Prop_lut6_I2_O)        0.097    19.474 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_1_27_i_1/O
+                         net (fo=3, routed)           1.766    21.241    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_28_0[0]
+    RAMB36_X3Y27         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_27/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y27         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_27/CLKARDCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y27         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_WEA[0])
+                                                     -0.437   100.196    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_27
+  -------------------------------------------------------------------
+                         required time                        100.196    
+                         arrival time                         -21.241    
+  -------------------------------------------------------------------
+                         slack                                 78.956    
+
+Slack (MET) :             79.130ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_27/WEA[0]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.363ns  (logic 4.016ns (19.722%)  route 16.347ns (80.278%))
+  Logic Levels:           10  (CARRY4=3 LUT3=1 LUT5=1 LUT6=4 RAMB36E1=1)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X5Y14         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X5Y14         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.259     2.963 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CASCADEOUTB
+                         net (fo=1, routed)           0.065     3.028    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8_n_8
+    RAMB36_X5Y15         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.343     3.371 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8/DOBDO[0]
+                         net (fo=5, routed)           4.058     7.429    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8_n_74
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.097     7.526 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1/O
+                         net (fo=20, routed)          1.347     8.873    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/D[8]
+    SLICE_X38Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.970 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13/O
+                         net (fo=1, routed)           0.000     8.970    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13_n_7
+    SLICE_X38Y11         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.286     9.256 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000     9.256    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7_n_7
+    SLICE_X38Y12         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     9.348 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     9.348    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3_n_7
+    SLICE_X38Y13         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.174     9.522 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2/CO[2]
+                         net (fo=2, routed)           1.141    10.662    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_291[0]
+    SLICE_X57Y14         LUT5 (Prop_lut5_I3_O)        0.227    10.889 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523/O
+                         net (fo=1, routed)           0.782    11.671    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_141
+    SLICE_X52Y14         LUT6 (Prop_lut6_I5_O)        0.247    11.918 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291/O
+                         net (fo=2, routed)           0.281    12.199    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_M_e_we1
+    SLICE_X55Y14         LUT6 (Prop_lut6_I3_O)        0.097    12.296 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138/O
+                         net (fo=52, routed)          6.911    19.206    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_3_31
+    SLICE_X54Y86         LUT6 (Prop_lut6_I2_O)        0.097    19.303 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_26_i_2/O
+                         net (fo=2, routed)           1.763    21.067    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_26_0[1]
+    RAMB36_X3Y26         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_27/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y26         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_27/CLKARDCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y26         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_WEA[0])
+                                                     -0.437   100.196    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_27
+  -------------------------------------------------------------------
+                         required time                        100.196    
+                         arrival time                         -21.067    
+  -------------------------------------------------------------------
+                         slack                                 79.130    
+
+Slack (MET) :             79.141ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.440ns  (logic 1.770ns (8.659%)  route 18.670ns (91.341%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT5=3 LUT6=3)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_clk
+    SLICE_X26Y7          FDRE                                         r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y7          FDRE (Prop_fdre_C_Q)         0.393     1.097 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/Q
+                         net (fo=208, routed)         6.206     7.303    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_state47
+    SLICE_X67Y29         LUT5 (Prop_lut5_I2_O)        0.097     7.400 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603/O
+                         net (fo=2, routed)           0.682     8.082    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603_n_7
+    SLICE_X70Y24         LUT6 (Prop_lut6_I0_O)        0.097     8.179 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607/O
+                         net (fo=1, routed)           0.000     8.179    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607_n_7
+    SLICE_X70Y24         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     8.591 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429/CO[3]
+                         net (fo=1, routed)           0.007     8.599    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429_n_7
+    SLICE_X70Y25         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.758 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_740/O[0]
+                         net (fo=1, routed)           0.700     9.457    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/O[0]
+    SLICE_X81Y21         LUT5 (Prop_lut5_I2_O)        0.224     9.681 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547/O
+                         net (fo=1, routed)           0.826    10.507    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547_n_7
+    SLICE_X66Y19         LUT6 (Prop_lut6_I0_O)        0.097    10.604 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_318/O
+                         net (fo=1, routed)           0.429    11.033    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_42_1
+    SLICE_X63Y24         LUT6 (Prop_lut6_I4_O)        0.097    11.130 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_156/O
+                         net (fo=1, routed)           1.058    12.187    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_greedy_potential_reduce_with_debug_fu_198_M_e_address0[16]
+    SLICE_X28Y23         LUT5 (Prop_lut5_I4_O)        0.097    12.284 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_0_i_42/O
+                         net (fo=68, routed)          5.438    17.722    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/add_ln81_1_reg_429_reg[16]_0
+    SLICE_X81Y53         LUT2 (Prop_lut2_I1_O)        0.097    17.819 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_2_2_i_2/O
+                         net (fo=10, routed)          3.325    21.144    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6_2
+    RAMB36_X3Y19         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y19         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6/CLKBWRCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y19         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.348   100.285    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6
+  -------------------------------------------------------------------
+                         required time                        100.285    
+                         arrival time                         -21.144    
+  -------------------------------------------------------------------
+                         slack                                 79.141    
+
+Slack (MET) :             79.231ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_10/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.350ns  (logic 1.770ns (8.698%)  route 18.580ns (91.302%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT5=3 LUT6=3)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_clk
+    SLICE_X26Y7          FDRE                                         r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y7          FDRE (Prop_fdre_C_Q)         0.393     1.097 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/Q
+                         net (fo=208, routed)         6.206     7.303    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_state47
+    SLICE_X67Y29         LUT5 (Prop_lut5_I2_O)        0.097     7.400 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603/O
+                         net (fo=2, routed)           0.682     8.082    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603_n_7
+    SLICE_X70Y24         LUT6 (Prop_lut6_I0_O)        0.097     8.179 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607/O
+                         net (fo=1, routed)           0.000     8.179    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607_n_7
+    SLICE_X70Y24         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     8.591 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429/CO[3]
+                         net (fo=1, routed)           0.007     8.599    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429_n_7
+    SLICE_X70Y25         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.758 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_740/O[0]
+                         net (fo=1, routed)           0.700     9.457    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/O[0]
+    SLICE_X81Y21         LUT5 (Prop_lut5_I2_O)        0.224     9.681 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547/O
+                         net (fo=1, routed)           0.826    10.507    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547_n_7
+    SLICE_X66Y19         LUT6 (Prop_lut6_I0_O)        0.097    10.604 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_318/O
+                         net (fo=1, routed)           0.429    11.033    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_42_1
+    SLICE_X63Y24         LUT6 (Prop_lut6_I4_O)        0.097    11.130 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_156/O
+                         net (fo=1, routed)           1.058    12.187    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_greedy_potential_reduce_with_debug_fu_198_M_e_address0[16]
+    SLICE_X28Y23         LUT5 (Prop_lut5_I4_O)        0.097    12.284 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_0_i_42/O
+                         net (fo=68, routed)          5.819    18.103    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/add_ln81_1_reg_429_reg[16]_0
+    SLICE_X90Y74         LUT2 (Prop_lut2_I1_O)        0.097    18.200 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_10_i_2/O
+                         net (fo=10, routed)          2.854    21.054    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_10_1
+    RAMB36_X4Y25         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_10/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X4Y25         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_10/CLKBWRCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X4Y25         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.348   100.285    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_10
+  -------------------------------------------------------------------
+                         required time                        100.285    
+                         arrival time                         -21.054    
+  -------------------------------------------------------------------
+                         slack                                 79.231    
+
+Slack (MET) :             79.292ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_6/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.289ns  (logic 1.770ns (8.724%)  route 18.519ns (91.276%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT5=3 LUT6=3)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_clk
+    SLICE_X26Y7          FDRE                                         r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y7          FDRE (Prop_fdre_C_Q)         0.393     1.097 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/Q
+                         net (fo=208, routed)         6.206     7.303    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_state47
+    SLICE_X67Y29         LUT5 (Prop_lut5_I2_O)        0.097     7.400 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603/O
+                         net (fo=2, routed)           0.682     8.082    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603_n_7
+    SLICE_X70Y24         LUT6 (Prop_lut6_I0_O)        0.097     8.179 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607/O
+                         net (fo=1, routed)           0.000     8.179    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607_n_7
+    SLICE_X70Y24         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     8.591 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429/CO[3]
+                         net (fo=1, routed)           0.007     8.599    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429_n_7
+    SLICE_X70Y25         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.758 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_740/O[0]
+                         net (fo=1, routed)           0.700     9.457    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/O[0]
+    SLICE_X81Y21         LUT5 (Prop_lut5_I2_O)        0.224     9.681 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547/O
+                         net (fo=1, routed)           0.826    10.507    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547_n_7
+    SLICE_X66Y19         LUT6 (Prop_lut6_I0_O)        0.097    10.604 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_318/O
+                         net (fo=1, routed)           0.429    11.033    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_42_1
+    SLICE_X63Y24         LUT6 (Prop_lut6_I4_O)        0.097    11.130 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_156/O
+                         net (fo=1, routed)           1.058    12.187    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_greedy_potential_reduce_with_debug_fu_198_M_e_address0[16]
+    SLICE_X28Y23         LUT5 (Prop_lut5_I4_O)        0.097    12.284 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_0_i_42/O
+                         net (fo=68, routed)          5.438    17.722    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/add_ln81_1_reg_429_reg[16]_0
+    SLICE_X81Y53         LUT2 (Prop_lut2_I1_O)        0.097    17.819 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_2_2_i_2/O
+                         net (fo=10, routed)          3.174    20.993    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_6_2
+    RAMB36_X3Y18         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_6/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y18         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_6/CLKBWRCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y18         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.348   100.285    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_6
+  -------------------------------------------------------------------
+                         required time                        100.285    
+                         arrival time                         -20.993    
+  -------------------------------------------------------------------
+                         slack                                 79.292    
+
+Slack (MET) :             79.302ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_26/WEA[0]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.190ns  (logic 4.016ns (19.891%)  route 16.174ns (80.109%))
+  Logic Levels:           10  (CARRY4=3 LUT3=1 LUT5=1 LUT6=4 RAMB36E1=1)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X5Y14         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X5Y14         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.259     2.963 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8/CASCADEOUTB
+                         net (fo=1, routed)           0.065     3.028    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_2_8_n_8
+    RAMB36_X5Y15         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.343     3.371 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8/DOBDO[0]
+                         net (fo=5, routed)           4.058     7.429    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_3_8_n_74
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.097     7.526 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/M_e_load_reg_450[8]_i_1/O
+                         net (fo=20, routed)          1.347     8.873    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/D[8]
+    SLICE_X38Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.970 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13/O
+                         net (fo=1, routed)           0.000     8.970    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227[0]_i_13_n_7
+    SLICE_X38Y11         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.286     9.256 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000     9.256    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_7_n_7
+    SLICE_X38Y12         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     9.348 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     9.348    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_3_n_7
+    SLICE_X38Y13         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.174     9.522 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/icmp_ln141_reg_227_reg[0]_i_2/CO[2]
+                         net (fo=2, routed)           1.141    10.662    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_291[0]
+    SLICE_X57Y14         LUT5 (Prop_lut5_I3_O)        0.227    10.889 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ram_reg_0_0_i_523/O
+                         net (fo=1, routed)           0.782    11.671    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_141
+    SLICE_X52Y14         LUT6 (Prop_lut6_I5_O)        0.247    11.918 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_0_i_291/O
+                         net (fo=2, routed)           0.281    12.199    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_M_e_we1
+    SLICE_X55Y14         LUT6 (Prop_lut6_I3_O)        0.097    12.296 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ram_reg_0_0_i_138/O
+                         net (fo=52, routed)          6.911    19.206    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_3_31
+    SLICE_X54Y86         LUT6 (Prop_lut6_I2_O)        0.097    19.303 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_26_i_2/O
+                         net (fo=2, routed)           1.591    20.894    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_26_0[1]
+    RAMB36_X3Y25         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_26/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X3Y25         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_26/CLKARDCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X3Y25         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_WEA[0])
+                                                     -0.437   100.196    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_1_26
+  -------------------------------------------------------------------
+                         required time                        100.196    
+                         arrival time                         -20.894    
+  -------------------------------------------------------------------
+                         slack                                 79.302    
+
+Slack (MET) :             79.307ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_10/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@50.000ns period=100.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (ap_clk rise@100.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        20.274ns  (logic 1.770ns (8.730%)  route 18.504ns (91.270%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT5=3 LUT6=3)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.669ns = ( 100.669 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.704ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.704     0.704    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_clk
+    SLICE_X26Y7          FDRE                                         r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y7          FDRE (Prop_fdre_C_Q)         0.393     1.097 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[46]/Q
+                         net (fo=208, routed)         6.206     7.303    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_state47
+    SLICE_X67Y29         LUT5 (Prop_lut5_I2_O)        0.097     7.400 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603/O
+                         net (fo=2, routed)           0.682     8.082    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_603_n_7
+    SLICE_X70Y24         LUT6 (Prop_lut6_I0_O)        0.097     8.179 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607/O
+                         net (fo=1, routed)           0.000     8.179    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_607_n_7
+    SLICE_X70Y24         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     8.591 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429/CO[3]
+                         net (fo=1, routed)           0.007     8.599    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_429_n_7
+    SLICE_X70Y25         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.758 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ram_reg_0_0_i_740/O[0]
+                         net (fo=1, routed)           0.700     9.457    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/O[0]
+    SLICE_X81Y21         LUT5 (Prop_lut5_I2_O)        0.224     9.681 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547/O
+                         net (fo=1, routed)           0.826    10.507    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_547_n_7
+    SLICE_X66Y19         LUT6 (Prop_lut6_I0_O)        0.097    10.604 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ram_reg_0_0_i_318/O
+                         net (fo=1, routed)           0.429    11.033    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_42_1
+    SLICE_X63Y24         LUT6 (Prop_lut6_I4_O)        0.097    11.130 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ram_reg_0_0_i_156/O
+                         net (fo=1, routed)           1.058    12.187    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_greedy_potential_reduce_with_debug_fu_198_M_e_address0[16]
+    SLICE_X28Y23         LUT5 (Prop_lut5_I4_O)        0.097    12.284 f  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_0_i_42/O
+                         net (fo=68, routed)          5.819    18.103    bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/add_ln81_1_reg_429_reg[16]_0
+    SLICE_X90Y74         LUT2 (Prop_lut2_I1_O)        0.097    18.200 r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ram_reg_0_10_i_2/O
+                         net (fo=10, routed)          2.778    20.978    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_10_1
+    RAMB36_X4Y24         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_10/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)   100.000   100.000 r  
+                                                      0.000   100.000 r  ap_clk (IN)
+                         net (fo=12464, unset)        0.669   100.669    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ap_clk
+    RAMB36_X4Y24         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_10/CLKBWRCLK
+                         clock pessimism              0.000   100.669    
+                         clock uncertainty           -0.035   100.633    
+    RAMB36_X4Y24         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.348   100.285    bd_0_i/hls_inst/inst/Block_entry_proc_U0/M_e_U/ram_reg_0_10
+  -------------------------------------------------------------------
+                         required time                        100.285    
+                         arrival time                         -20.978    
+  -------------------------------------------------------------------
+                         slack                                 79.307    
+
+
+
+

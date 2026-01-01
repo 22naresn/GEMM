@@ -155,7 +155,6 @@ extern "C" {
 # 1 "fmm_hls_greedy_potential.cpp" 2
 
 
-
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_int.h" 1
 # 10 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\etc/ap_common.h" 1
@@ -6202,7 +6201,7 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 }
 # 370 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_fixed.h" 2
 # 365 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_int.h" 2
-# 5 "fmm_hls_greedy_potential.cpp" 2
+# 4 "fmm_hls_greedy_potential.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_stream.h" 1
 # 12 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_stream.h"
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h" 1
@@ -6332,7 +6331,7 @@ class stream : public stream<__STREAM_T__, 0> {
 };
 }
 # 13 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_stream.h" 2
-# 6 "fmm_hls_greedy_potential.cpp" 2
+# 5 "fmm_hls_greedy_potential.cpp" 2
 # 1 "C:\\Xilinx\\2025.1\\Vitis\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\stdint.h" 1 3
 # 63 "C:\\Xilinx\\2025.1\\Vitis\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\stdint.h" 3
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 1 3
@@ -6563,7 +6562,7 @@ __extension__ typedef unsigned long long uint_fast64_t;
 __extension__ typedef long long intmax_t;
 __extension__ typedef unsigned long long uintmax_t;
 # 64 "C:\\Xilinx\\2025.1\\Vitis\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\stdint.h" 2 3
-# 7 "fmm_hls_greedy_potential.cpp" 2
+# 6 "fmm_hls_greedy_potential.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\assert.h" 1 3
 # 17 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\assert.h" 3
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\stdlib.h" 1 3
@@ -7406,7 +7405,7 @@ _assert (const char *_Message, const char *_File, unsigned _Line);
 
 
 }
-# 8 "fmm_hls_greedy_potential.cpp" 2
+# 7 "fmm_hls_greedy_potential.cpp" 2
 
 
 
@@ -7449,17 +7448,17 @@ static void load_matrix_from_dram_safe(const int32_t *A_dram, Matrix &M, int row
     M.t = 0;
     M.t_capacity = t_capacity;
 
-    VITIS_LOOP_50_1: for (int r = 0; r < MAX_TOTAL_ROWS; ++r) {
+    VITIS_LOOP_49_1: for (int r = 0; r < MAX_TOTAL_ROWS; ++r) {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=320
- VITIS_LOOP_52_2: for (int c = 0; c < MAX_TOTAL_COLS; ++c) {
+ VITIS_LOOP_51_2: for (int c = 0; c < MAX_TOTAL_COLS; ++c) {
 #pragma HLS PIPELINE II=1
  M.e[r][c] = 0;
         }
     }
 
     int max_words = max_a_words;
-    VITIS_LOOP_59_3: for (int r = 0; r < rows; ++r) {
-        VITIS_LOOP_60_4: for (int c = 0; c < cols; ++c) {
+    VITIS_LOOP_58_3: for (int r = 0; r < rows; ++r) {
+        VITIS_LOOP_59_4: for (int c = 0; c < cols; ++c) {
 #pragma HLS PIPELINE II=1
  int idx = r * cols + c;
             if (idx >= 0 && idx < max_words && A_dram != nullptr) {
@@ -7476,8 +7475,8 @@ static void store_matrix_to_dram_safe(int32_t *A_dram, const Matrix &M, int max_
  int rows = M.rows;
     int cols = M.cols;
     int max_words = max_a_words;
-    VITIS_LOOP_77_1: for (int r = 0; r < rows; ++r) {
-        VITIS_LOOP_78_2: for (int c = 0; c < cols; ++c) {
+    VITIS_LOOP_76_1: for (int r = 0; r < rows; ++r) {
+        VITIS_LOOP_77_2: for (int c = 0; c < cols; ++c) {
 #pragma HLS PIPELINE II=1
  int idx = r * cols + c;
             if (idx >= 0 && idx < max_words && A_dram != nullptr) {
@@ -7492,7 +7491,7 @@ static inline int column_weight(const Matrix &M, int col_idx) {
 #pragma HLS INLINE
  int total_rows = M.rows + M.t;
     int cnt = 0;
-    VITIS_LOOP_93_1: for (int r = 0; r < total_rows; ++r) {
+    VITIS_LOOP_92_1: for (int r = 0; r < total_rows; ++r) {
 #pragma HLS PIPELINE II=1
  if (M.e[r][col_idx] != 0) ++cnt;
     }
@@ -7503,7 +7502,7 @@ static inline int num_additions(const Matrix &M) {
 #pragma HLS INLINE
  int total_cols = M.cols + M.t;
     int s = 0;
-    VITIS_LOOP_104_1: for (int c = 0; c < total_cols; ++c) {
+    VITIS_LOOP_103_1: for (int c = 0; c < total_cols; ++c) {
 #pragma HLS PIPELINE II=1
  int w = column_weight(M, c);
         s += (w > 0) ? (w - 1) : 0;
@@ -7515,7 +7514,7 @@ static void compute_pp_nn(const Matrix &M, int r1, int r2, int &pp, int &nn) {
 #pragma HLS INLINE
  pp = 0; nn = 0;
     int cols_non_t = M.cols;
-    VITIS_LOOP_116_1: for (int c = 0; c < cols_non_t; ++c) {
+    VITIS_LOOP_115_1: for (int c = 0; c < cols_non_t; ++c) {
 #pragma HLS PIPELINE II=1
  elem_t e1 = M.e[r1][c];
         if (e1 == 0) continue;
@@ -7535,7 +7534,7 @@ static void reduction_move(Matrix &M, int row1, int row2, int move_type) {
     M.e[row1][new_col] = 1;
     M.e[row2][new_col] = (move_type == 1) ? 1 : -1;
     int existing_cols = M.cols + M.t;
-    VITIS_LOOP_136_1: for (int c = 0; c < existing_cols; ++c) {
+    VITIS_LOOP_135_1: for (int c = 0; c < existing_cols; ++c) {
 #pragma HLS PIPELINE II=1
  elem_t e1 = M.e[row1][c];
         if (e1 == 0) continue;
@@ -7557,13 +7556,13 @@ static void reduction_move_undo(Matrix &M) {
     int rowt = M.rows + t_old;
     int colt = M.cols + t_old;
     int row1 = -1, row2 = -1; int move_type = 0;
-    VITIS_LOOP_158_1: for (int r = 0; r < rowt; ++r) {
+    VITIS_LOOP_157_1: for (int r = 0; r < rowt; ++r) {
 #pragma HLS PIPELINE II=1
  elem_t v = M.e[r][colt];
         if (v == 0) continue;
         if (v == 1) { row1 = r; break; }
     }
-    VITIS_LOOP_164_2: for (int r = rowt - 1; r > row1; --r) {
+    VITIS_LOOP_163_2: for (int r = rowt - 1; r > row1; --r) {
 #pragma HLS PIPELINE II=1
  elem_t v = M.e[r][colt];
         if (v == 0) continue;
@@ -7574,7 +7573,7 @@ static void reduction_move_undo(Matrix &M) {
     if (!(row1 >= 0 && row2 > row1 && (move_type == 1 || move_type == -1))) return;
     M.e[row1][colt] = 0;
     M.e[row2][colt] = 0;
-    VITIS_LOOP_175_3: for (int c = 0; c < colt; ++c) {
+    VITIS_LOOP_174_3: for (int c = 0; c < colt; ++c) {
 #pragma HLS PIPELINE II=1
  elem_t v = M.e[rowt][c];
         if (v == 0) continue;
@@ -7591,8 +7590,8 @@ static int total_potential(const Matrix &M) {
 #pragma HLS INLINE
  int R = M.rows + M.t;
     int s = 0;
-    VITIS_LOOP_192_1: for (int i = 0; i < R; ++i) {
-        VITIS_LOOP_193_2: for (int j = i+1; j < R; ++j) {
+    VITIS_LOOP_191_1: for (int i = 0; i < R; ++i) {
+        VITIS_LOOP_192_2: for (int j = i+1; j < R; ++j) {
 #pragma HLS PIPELINE II=1
  int p=0,n=0;
             compute_pp_nn(M, i, j, p, n);
@@ -7623,8 +7622,8 @@ static int find_best_move(Matrix &M, int &out_r1, int &out_r2, int &out_sign, in
 #pragma HLS INLINE
  int best_score = 0;
     int R = M.rows + M.t;
-    VITIS_LOOP_224_1: for (int i = 0; i < R; ++i) {
-        VITIS_LOOP_225_2: for (int j = i+1; j < R; ++j) {
+    VITIS_LOOP_223_1: for (int i = 0; i < R; ++i) {
+        VITIS_LOOP_224_2: for (int j = i+1; j < R; ++j) {
 #pragma HLS PIPELINE II=1
  int p=0, n=0;
             compute_pp_nn(M, i, j, p, n);
@@ -7659,7 +7658,7 @@ static void greedy_potential_reduce_with_debug(Matrix &M, int k1, int k2, volati
     }
 
     int iter = 0;
-    VITIS_LOOP_260_1: while (true) {
+    VITIS_LOOP_259_1: while (true) {
         int r1=0, r2=0, sign=0;
         int best = find_best_move(M, r1, r2, sign, k1, k2);
         if (best < 2) break;
@@ -7690,8 +7689,7 @@ extern "C" __attribute__((sdx_kernel("fmm_reduce_kernel", 0))) void fmm_reduce_k
                                   int debug_capacity) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=fmm_reduce_kernel
-# 288 "fmm_hls_greedy_potential.cpp"
-
+# 287 "fmm_hls_greedy_potential.cpp"
 
 #pragma HLS INTERFACE m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH
 #pragma HLS INTERFACE m_axi port=debug_dram offset=slave bundle=gmem2 depth=MAX_DEBUG_DEPTH
@@ -7718,7 +7716,6 @@ extern "C" __attribute__((sdx_kernel("fmm_reduce_kernel", 0))) void fmm_reduce_k
         }
         return;
     }
-
 
     load_matrix_from_dram_safe((const int32_t *)A_dram, M, rows, cols, t_capacity, MAX_A_DEPTH);
     greedy_potential_reduce_with_debug(M, k1, k2, debug_dram, debug_capacity);

@@ -366,14 +366,14 @@ set ArgLastReadFirstWriteLatency {
 		M_cols {Type O LastRead -1 FirstWrite 0}
 		M_t {Type O LastRead -1 FirstWrite 3}
 		M_t_capacity {Type O LastRead -1 FirstWrite 3}}
-	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2 {
+	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2 {
 		M_e {Type O LastRead -1 FirstWrite 2}}
-	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4 {
+	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4 {
 		cols {Type I LastRead 0 FirstWrite -1}
-		mul_ln59 {Type I LastRead 0 FirstWrite -1}
+		mul_ln58 {Type I LastRead 0 FirstWrite -1}
 		A_dram {Type I LastRead 0 FirstWrite -1}
 		gmem {Type I LastRead 12 FirstWrite -1}
-		sext_ln59 {Type I LastRead 0 FirstWrite -1}
+		sext_ln58 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type O LastRead -1 FirstWrite 13}}
 	greedy_potential_reduce_with_debug {
 		k1 {Type I LastRead 3 FirstWrite -1}
@@ -386,107 +386,107 @@ set ArgLastReadFirstWriteLatency {
 		M_rows {Type I LastRead 3 FirstWrite -1}
 		M_t {Type IO LastRead 14 FirstWrite 18}
 		M_t_capacity {Type I LastRead 13 FirstWrite -1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1 {
 		total_rows {Type I LastRead 0 FirstWrite -1}
-		mul_ln251 {Type I LastRead 0 FirstWrite -1}
+		mul_ln250 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 2 FirstWrite -1}
 		s_1_out {Type O LastRead -1 FirstWrite 3}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1 {
 		cols_non_t {Type I LastRead 0 FirstWrite -1}
-		mul_ln118 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 1 FirstWrite -1}
 		j_1 {Type I LastRead 0 FirstWrite -1}
 		n_out {Type O LastRead -1 FirstWrite 1}
 		p_out {Type O LastRead -1 FirstWrite 1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13 {
 		cols_non_t {Type I LastRead 0 FirstWrite -1}
-		mul_ln118 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 1 FirstWrite -1}
 		j_1 {Type I LastRead 0 FirstWrite -1}
 		p_2_out {Type O LastRead -1 FirstWrite 0}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1 {
 		new_col {Type I LastRead 0 FirstWrite -1}
-		mul_ln118 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type IO LastRead 1 FirstWrite 2}
-		mul_ln120277 {Type I LastRead 0 FirstWrite -1}
-		mul_ln145_1 {Type I LastRead 0 FirstWrite -1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1 {
-		zext_ln193 {Type I LastRead 0 FirstWrite -1}
+		mul_ln119277 {Type I LastRead 0 FirstWrite -1}
+		mul_ln144_1 {Type I LastRead 0 FirstWrite -1}}
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1 {
+		zext_ln192 {Type I LastRead 0 FirstWrite -1}
 		s_4 {Type I LastRead 0 FirstWrite -1}
 		cols_non_t {Type I LastRead 0 FirstWrite -1}
-		mul_ln192 {Type I LastRead 0 FirstWrite -1}
-		mul_ln118_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln191 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117_1 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 3 FirstWrite -1}
 		s_9_out {Type O LastRead -1 FirstWrite 3}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1 {
 		rowt {Type I LastRead 0 FirstWrite -1}
 		idxprom4_i12_i332_i_i {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 0 FirstWrite -1}
 		row1_ce_out {Type O LastRead -1 FirstWrite 1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2 {
-		zext_ln164 {Type I LastRead 0 FirstWrite -1}
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2 {
+		zext_ln163 {Type I LastRead 0 FirstWrite -1}
 		idxprom4_i12_i332_i_i {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 0 FirstWrite -1}
-		sext_ln164 {Type I LastRead 0 FirstWrite -1}
+		sext_ln163 {Type I LastRead 0 FirstWrite -1}
 		move_type_1_out {Type O LastRead -1 FirstWrite 1}
 		row2_1_out {Type O LastRead -1 FirstWrite 1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3 {
 		move_type_2 {Type I LastRead 0 FirstWrite -1}
 		colt {Type I LastRead 0 FirstWrite -1}
-		mul_ln177 {Type I LastRead 0 FirstWrite -1}
+		mul_ln176 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type IO LastRead 0 FirstWrite 1}
-		mul_ln173 {Type I LastRead 0 FirstWrite -1}
-		mul_ln174 {Type I LastRead 0 FirstWrite -1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14 {
+		mul_ln172 {Type I LastRead 0 FirstWrite -1}
+		mul_ln173 {Type I LastRead 0 FirstWrite -1}}
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14 {
 		cols_non_t {Type I LastRead 0 FirstWrite -1}
-		mul_ln118 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 1 FirstWrite -1}
 		j_1 {Type I LastRead 0 FirstWrite -1}
 		n_6_out {Type O LastRead -1 FirstWrite 1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15 {
 		new_col_2 {Type I LastRead 0 FirstWrite -1}
-		mul_ln118 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type IO LastRead 1 FirstWrite 3}
-		mul_ln120274 {Type I LastRead 0 FirstWrite -1}
-		mul_ln145_2 {Type I LastRead 0 FirstWrite -1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16 {
-		zext_ln193_3 {Type I LastRead 0 FirstWrite -1}
+		mul_ln119274 {Type I LastRead 0 FirstWrite -1}
+		mul_ln144_2 {Type I LastRead 0 FirstWrite -1}}
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16 {
+		zext_ln192_3 {Type I LastRead 0 FirstWrite -1}
 		s_11 {Type I LastRead 0 FirstWrite -1}
 		cols_non_t {Type I LastRead 0 FirstWrite -1}
-		mul_ln192_1 {Type I LastRead 0 FirstWrite -1}
-		mul_ln118_2 {Type I LastRead 0 FirstWrite -1}
+		mul_ln191_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln117_2 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 3 FirstWrite -1}
 		s_16_out {Type O LastRead -1 FirstWrite 3}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17 {
 		rowt_1 {Type I LastRead 0 FirstWrite -1}
 		idxprom4_i12_i_i_i {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 0 FirstWrite -1}
 		row1_3_ce_out {Type O LastRead -1 FirstWrite 1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28 {
-		zext_ln164_1 {Type I LastRead 0 FirstWrite -1}
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28 {
+		zext_ln163_1 {Type I LastRead 0 FirstWrite -1}
 		idxprom4_i12_i_i_i {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 0 FirstWrite -1}
-		sext_ln164_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln163_1 {Type I LastRead 0 FirstWrite -1}
 		move_type_4_out {Type O LastRead -1 FirstWrite 1}
 		row2_4_out {Type O LastRead -1 FirstWrite 1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39 {
 		move_type_5 {Type I LastRead 0 FirstWrite -1}
 		colt_1 {Type I LastRead 0 FirstWrite -1}
-		mul_ln177_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln176_1 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type IO LastRead 0 FirstWrite 1}
-		mul_ln173_1 {Type I LastRead 0 FirstWrite -1}
-		mul_ln174_1 {Type I LastRead 0 FirstWrite -1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110 {
+		mul_ln172_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln173_1 {Type I LastRead 0 FirstWrite -1}}
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110 {
 		new_col_3 {Type I LastRead 0 FirstWrite -1}
-		mul_ln133 {Type I LastRead 0 FirstWrite -1}
+		mul_ln132 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type IO LastRead 1 FirstWrite 3}
-		mul_ln134 {Type I LastRead 0 FirstWrite -1}
-		mul_ln145 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln134 {Type I LastRead 0 FirstWrite -1}
+		mul_ln133 {Type I LastRead 0 FirstWrite -1}
+		mul_ln144 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln133 {Type I LastRead 0 FirstWrite -1}
 		cmp34_i_i {Type I LastRead 0 FirstWrite -1}}
-	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111 {
+	greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111 {
 		total_rows_1 {Type I LastRead 0 FirstWrite -1}
-		mul_ln267 {Type I LastRead 0 FirstWrite -1}
+		mul_ln266 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 2 FirstWrite -1}
 		s_3_out {Type O LastRead -1 FirstWrite 3}}
 	store_matrix_to_dram_safe {
@@ -495,12 +495,12 @@ set ArgLastReadFirstWriteLatency {
 		M_rows {Type I LastRead 0 FirstWrite -1}
 		M_cols {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 3 FirstWrite -1}}
-	store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2 {
+	store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2 {
 		cols {Type I LastRead 0 FirstWrite -1}
 		bound {Type I LastRead 0 FirstWrite -1}
 		A_dram {Type I LastRead 0 FirstWrite -1}
 		gmem {Type O LastRead 6 FirstWrite 5}
-		sext_ln77 {Type I LastRead 0 FirstWrite -1}
+		sext_ln76 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type I LastRead 3 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0

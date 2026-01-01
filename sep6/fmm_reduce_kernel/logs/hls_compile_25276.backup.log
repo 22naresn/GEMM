@@ -1,0 +1,747 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/GEMM/sep6/fmm_reduce_kernel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/GEMM/sep6/fmm_reduce_kernel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/GEMM/sep6/fmm_reduce_kernel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/GEMM/sep6/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fmm_hls_greedy_potential.cpp' from C:/GEMM/sep6/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/GEMM/sep6/fmm_hls_greedy_potential.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_fmm_hls.cpp' from C:/GEMM/sep6/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/GEMM/sep6/tb_fmm_hls.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fmm_reduce_kernel' from C:/GEMM/sep6/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/GEMM/sep6/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-3' from C:/GEMM/sep6/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-3'
+INFO: [HLS 200-1465] Applying config ini 'cosim.trace_level=none' from C:/GEMM/sep6/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'cosim.wave_debug=0' from C:/GEMM/sep6/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.description=FMM row-reduction accelerator (greedy potential)' from C:/GEMM/sep6/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.display_name=fmm_reduce_kernel' from C:/GEMM/sep6/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.library=user' from C:/GEMM/sep6/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.taxonomy=Math/LinearAlgebra' from C:/GEMM/sep6/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.vendor=nilesh' from C:/GEMM/sep6/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.version=1.0' from C:/GEMM/sep6/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying config ini 'package.output.file=sep6_fmm_reduce_ip' from C:/GEMM/sep6/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/GEMM/sep6/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'vivado.clock=100' from C:/GEMM/sep6/hls_config.cfg(19)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/GEMM/sep6/fmm_reduce_kernel/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.245 seconds; current allocated memory: 156.961 MB.
+INFO: [HLS 200-10] Analyzing design file 'fmm_hls_greedy_potential.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (fmm_hls_greedy_potential.cpp:303:16)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (fmm_hls_greedy_potential.cpp:317:32)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (fmm_hls_greedy_potential.cpp:319:31)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (fmm_hls_greedy_potential.cpp:304:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 4 issue(s) in file fmm_hls_greedy_potential.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.618 seconds; current allocated memory: 160.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,119 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,315 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 833 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 873 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 863 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 873 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 873 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 843 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 863 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 891 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/GEMM/sep6/fmm_reduce_kernel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'column_weight(Matrix const&, int)' into 'num_additions(Matrix const&)' (fmm_hls_greedy_potential.cpp:106:10)
+INFO: [HLS 214-131] Inlining function 'compute_pp_nn(Matrix const&, int, int, int&, int&)' into 'total_potential(Matrix const&)' (fmm_hls_greedy_potential.cpp:196:13)
+INFO: [HLS 214-131] Inlining function 'compute_pp_nn(Matrix const&, int, int, int&, int&)' into 'compute_greedy_potential_score(Matrix&, int, int, int, int, int)' (fmm_hls_greedy_potential.cpp:207:5)
+INFO: [HLS 214-131] Inlining function 'reduction_move_undo(Matrix&)' into 'compute_greedy_potential_score(Matrix&, int, int, int, int, int)' (fmm_hls_greedy_potential.cpp:214:9)
+INFO: [HLS 214-131] Inlining function 'total_potential(Matrix const&)' into 'compute_greedy_potential_score(Matrix&, int, int, int, int, int)' (fmm_hls_greedy_potential.cpp:213:19)
+INFO: [HLS 214-131] Inlining function 'reduction_move(Matrix&, int, int, int)' into 'compute_greedy_potential_score(Matrix&, int, int, int, int, int)' (fmm_hls_greedy_potential.cpp:212:9)
+INFO: [HLS 214-131] Inlining function 'compute_pp_nn(Matrix const&, int, int, int&, int&)' into 'find_best_move(Matrix&, int&, int&, int&, int, int)' (fmm_hls_greedy_potential.cpp:228:13)
+INFO: [HLS 214-131] Inlining function 'compute_greedy_potential_score(Matrix&, int, int, int, int, int)' into 'find_best_move(Matrix&, int&, int&, int&, int, int)' (fmm_hls_greedy_potential.cpp:234:25)
+INFO: [HLS 214-131] Inlining function 'num_additions(Matrix const&)' into 'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)' (fmm_hls_greedy_potential.cpp:255:25)
+INFO: [HLS 214-131] Inlining function 'reduction_move(Matrix&, int, int, int)' into 'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)' (fmm_hls_greedy_potential.cpp:264:9)
+INFO: [HLS 214-131] Inlining function 'find_best_move(Matrix&, int&, int&, int&, int, int)' into 'greedy_potential_reduce_with_debug(Matrix&, int, int, int volatile*, int)' (fmm_hls_greedy_potential.cpp:262:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_116_1' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:116:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_136_1' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:136:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_192_1' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:192:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_193_2' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:193:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_158_1' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:158:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_164_2' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:164:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_175_3' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:175:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_93_1' is marked as complete unroll implied by the pipeline pragma (fmm_hls_greedy_potential.cpp:93:22)
+WARNING: [HLS 214-398] Updating loop lower bound from 1 to 320 for loop 'VITIS_LOOP_50_1' (fmm_hls_greedy_potential.cpp:50:22) in function 'load_matrix_from_dram_safe'. (fmm_hls_greedy_potential.cpp:43:0)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_116_1' (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:116:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_136_1' (fmm_hls_greedy_potential.cpp:136:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:136:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_192_1' (fmm_hls_greedy_potential.cpp:192:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:192:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_193_2' (fmm_hls_greedy_potential.cpp:193:27) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:193:27)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_158_1' (fmm_hls_greedy_potential.cpp:158:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:158:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_164_2' (fmm_hls_greedy_potential.cpp:164:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:164:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_175_3' (fmm_hls_greedy_potential.cpp:175:23) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:175:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_93_1' (fmm_hls_greedy_potential.cpp:93:22) in function 'greedy_potential_reduce_with_debug' as it has a variable trip count (fmm_hls_greedy_potential.cpp:93:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 9.9 seconds; current allocated memory: 163.766 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 163.766 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 170.008 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 173.000 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'fmm_reduce_kernel' (fmm_hls_greedy_potential.cpp:280:1), detected/extracted 3 process function(s): 
+	 'entry_proc'
+	 'Block_entry_proc.1'
+	 'Block_entry_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fmm_hls_greedy_potential.cpp:117:9) to (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fmm_hls_greedy_potential.cpp:117:9) to (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fmm_hls_greedy_potential.cpp:117:9) to (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fmm_hls_greedy_potential.cpp:117:9) to (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fmm_hls_greedy_potential.cpp:117:9) to (fmm_hls_greedy_potential.cpp:116:23) in function 'greedy_potential_reduce_with_debug'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.336 seconds; current allocated memory: 196.926 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_77_1'(fmm_hls_greedy_potential.cpp:77:22) and 'VITIS_LOOP_78_2'(fmm_hls_greedy_potential.cpp:78:26) in function 'store_matrix_to_dram_safe' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_50_1'(fmm_hls_greedy_potential.cpp:50:22) and 'VITIS_LOOP_52_2'(fmm_hls_greedy_potential.cpp:52:19) in function 'load_matrix_from_dram_safe' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_59_3'(fmm_hls_greedy_potential.cpp:59:22) and 'VITIS_LOOP_60_4'(fmm_hls_greedy_potential.cpp:60:26) in function 'load_matrix_from_dram_safe' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_104_1'(fmm_hls_greedy_potential.cpp:104:23) and 'VITIS_LOOP_93_1'(fmm_hls_greedy_potential.cpp:93:22) in function 'greedy_potential_reduce_with_debug' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_104_1'(fmm_hls_greedy_potential.cpp:104:23) and 'VITIS_LOOP_93_1'(fmm_hls_greedy_potential.cpp:93:22) in function 'greedy_potential_reduce_with_debug' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_77_1' (fmm_hls_greedy_potential.cpp:77:22) in function 'store_matrix_to_dram_safe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_1' (fmm_hls_greedy_potential.cpp:50:22) in function 'load_matrix_from_dram_safe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_59_3' (fmm_hls_greedy_potential.cpp:59:22) in function 'load_matrix_from_dram_safe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_104_1' (fmm_hls_greedy_potential.cpp:104:23) in function 'greedy_potential_reduce_with_debug'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_193_2' (fmm_hls_greedy_potential.cpp:193:27) in function 'greedy_potential_reduce_with_debug'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_192_1' (fmm_hls_greedy_potential.cpp:192:23) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_193_2' (fmm_hls_greedy_potential.cpp:193:27) in function 'greedy_potential_reduce_with_debug'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_192_1' (fmm_hls_greedy_potential.cpp:192:23) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_224_1' (fmm_hls_greedy_potential.cpp:224:23) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_104_1' (fmm_hls_greedy_potential.cpp:104:23) in function 'greedy_potential_reduce_with_debug'.
+WARNING: [HLS 200-1449] Process Block_entry_proc has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.848 seconds; current allocated memory: 411.598 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fmm_reduce_kernel' ...
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry_proc.1' to 'Block_entry_proc_1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 414.523 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 415.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 416.180 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 416.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_1_VITIS_LOOP_52_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_50_1_VITIS_LOOP_52_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.377 seconds; current allocated memory: 417.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 417.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_59_3_VITIS_LOOP_60_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, loop 'VITIS_LOOP_59_3_VITIS_LOOP_60_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 417.887 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 417.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_matrix_from_dram_safe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 418.051 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 418.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_104_1_VITIS_LOOP_93_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_104_1_VITIS_LOOP_93_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 418.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 418.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_116_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_116_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.817 seconds; current allocated memory: 419.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 419.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_116_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_116_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 419.488 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 419.496 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_136_1'.
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'load' operation 32 bit ('e2', fmm_hls_greedy_potential.cpp:140->fmm_hls_greedy_potential.cpp:212->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_9_write_ln144', fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:212->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_136_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.926 seconds; current allocated memory: 420.117 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 420.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) to 'select' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) (combination delay: 7.732 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) to 'select' operation 32 bit ('select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) (combination delay: 8.386 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) to 'store' operation 0 bit ('s_5_write_ln191', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) of variable 'select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262 on local variable 's', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262 (combination delay: 9.532 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'
+WARNING: [HLS 200-871] Estimated clock period (9.532 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' consists of the following:
+	'load' operation 32 bit ('p', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) on local variable 'p', fmm_hls_greedy_potential.cpp:195->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262 [29]  (0.000 ns)
+	'add' operation 32 bit ('add_ln197', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [38]  (0.000 ns)
+	'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [39]  (3.212 ns)
+	'select' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [40]  (0.654 ns)
+	'add' operation 32 bit ('add_ln198', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [43]  (0.000 ns)
+	'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [44]  (3.212 ns)
+	'select' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [45]  (0.654 ns)
+	'select' operation 32 bit ('select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) [64]  (0.654 ns)
+	'store' operation 0 bit ('s_5_write_ln191', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) of variable 'select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262 on local variable 's', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262 [94]  (1.146 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.994 seconds; current allocated memory: 420.973 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 421.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_158_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_158_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 421.383 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.934 seconds; current allocated memory: 421.387 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_164_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_164_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 422.004 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 422.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_175_3'.
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3' (loop 'VITIS_LOOP_175_3'): Unable to schedule 'store' operation 0 bit ('M_e_addr_write_ln179', fmm_hls_greedy_potential.cpp:179->fmm_hls_greedy_potential.cpp:214->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) of constant 0 on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_175_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 422.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 422.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_116_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_116_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.888 seconds; current allocated memory: 423.090 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 423.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_136_1'.
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'load' operation 32 bit ('e2', fmm_hls_greedy_potential.cpp:140->fmm_hls_greedy_potential.cpp:212->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_7_write_ln144', fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:212->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'VITIS_LOOP_136_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 423.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 423.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) to 'select' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) (combination delay: 7.732 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) to 'select' operation 32 bit ('select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) (combination delay: 8.386 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) to 'store' operation 0 bit ('s_write_ln191', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) of variable 'select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262 on local variable 's', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262 (combination delay: 9.532 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'
+WARNING: [HLS 200-871] Estimated clock period (9.532 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16' consists of the following:
+	'load' operation 32 bit ('p', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) on local variable 'p', fmm_hls_greedy_potential.cpp:195->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262 [29]  (0.000 ns)
+	'add' operation 32 bit ('add_ln197', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [38]  (0.000 ns)
+	'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [39]  (3.212 ns)
+	'select' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:197->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [40]  (0.654 ns)
+	'add' operation 32 bit ('add_ln198', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [43]  (0.000 ns)
+	'add' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [44]  (3.212 ns)
+	'select' operation 32 bit ('s', fmm_hls_greedy_potential.cpp:198->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [45]  (0.654 ns)
+	'select' operation 32 bit ('select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) [64]  (0.654 ns)
+	'store' operation 0 bit ('s_write_ln191', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) of variable 'select_ln193_1', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262 on local variable 's', fmm_hls_greedy_potential.cpp:191->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262 [94]  (1.146 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.949 seconds; current allocated memory: 424.043 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 424.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_158_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_158_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 424.633 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 424.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_164_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_164_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 424.770 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 424.773 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_175_3'.
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39' (loop 'VITIS_LOOP_175_3'): Unable to schedule 'store' operation 0 bit ('M_e_addr_write_ln179', fmm_hls_greedy_potential.cpp:179->fmm_hls_greedy_potential.cpp:214->fmm_hls_greedy_potential.cpp:234->fmm_hls_greedy_potential.cpp:262) of constant 0 on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_175_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.875 seconds; current allocated memory: 425.219 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 425.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_136_1'.
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'load' operation 32 bit ('e2', fmm_hls_greedy_potential.cpp:140->fmm_hls_greedy_potential.cpp:264) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_7_write_ln144', fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:264) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'VITIS_LOOP_136_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 425.668 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 425.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_104_1_VITIS_LOOP_93_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_104_1_VITIS_LOOP_93_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 426.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 426.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'greedy_potential_reduce_with_debug' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_225_2': contains subloop(s) that are not unrolled or flattened.
+WARNING: [HLS 200-871] Estimated clock period (7.732 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'greedy_potential_reduce_with_debug' consists of the following:
+	'call' operation 0 bit ('_ln193', fmm_hls_greedy_potential.cpp:193->fmm_hls_greedy_potential.cpp:213->fmm_hls_greedy_potential.cpp:230->fmm_hls_greedy_potential.cpp:262) to 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' [218]  (7.732 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 434.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 435.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_1_VITIS_LOOP_78_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_77_1_VITIS_LOOP_78_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 435.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 435.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_matrix_to_dram_safe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 435.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 435.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.417 seconds; current allocated memory: 435.086 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 435.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fmm_reduce_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 435.227 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 435.262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 436.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry_proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry_proc_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 437.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2' pipeline 'VITIS_LOOP_50_1_VITIS_LOOP_52_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 438.445 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4' pipeline 'VITIS_LOOP_59_3_VITIS_LOOP_60_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_31ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 439.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_matrix_from_dram_safe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_matrix_from_dram_safe'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 441.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1' pipeline 'VITIS_LOOP_104_1_VITIS_LOOP_93_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 441.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1' pipeline 'VITIS_LOOP_116_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 443.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13' pipeline 'VITIS_LOOP_116_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 444.766 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' pipeline 'VITIS_LOOP_136_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 445.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' pipeline 'VITIS_LOOP_193_2_VITIS_LOOP_116_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.556 seconds; current allocated memory: 447.133 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 449.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2' pipeline 'VITIS_LOOP_164_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 450.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3' pipeline 'VITIS_LOOP_175_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 451.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14' pipeline 'VITIS_LOOP_116_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 453.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' pipeline 'VITIS_LOOP_136_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 454.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16' pipeline 'VITIS_LOOP_193_2_VITIS_LOOP_116_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.532 seconds; current allocated memory: 455.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 457.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28' pipeline 'VITIS_LOOP_164_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 458.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39' pipeline 'VITIS_LOOP_175_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 460.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' pipeline 'VITIS_LOOP_136_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 461.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111' pipeline 'VITIS_LOOP_104_1_VITIS_LOOP_93_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 463.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'greedy_potential_reduce_with_debug' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_31ns_95_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'greedy_potential_reduce_with_debug'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 468.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2' pipeline 'VITIS_LOOP_77_1_VITIS_LOOP_78_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_31ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.501 seconds; current allocated memory: 482.781 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_matrix_to_dram_safe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_matrix_to_dram_safe'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 482.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'M_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'M_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'M_t' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'M_t_capacity' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry_proc'.
+INFO: [RTMG 210-278] Implementing memory 'fmm_reduce_kernel_Block_entry_proc_M_e_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 484.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fmm_reduce_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/A_dram' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/t_capacity' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/k1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/k2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/verbose' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/debug_dram' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fmm_reduce_kernel/debug_capacity' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fmm_reduce_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'rows', 'cols', 't_capacity', 'k1', 'k2', 'verbose', 'debug_capacity' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'A_dram' and 'debug_dram' to AXI-Lite port control_r.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fmm_reduce_kernel'.
+INFO: [RTMG 210-285] Implementing FIFO 'A_dram_c_U(fmm_reduce_kernel_fifo_w64_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 't_capacity_c_U(fmm_reduce_kernel_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'k1_c_U(fmm_reduce_kernel_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'k2_c_U(fmm_reduce_kernel_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'debug_dram_c_U(fmm_reduce_kernel_fifo_w64_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'rows_c_U(fmm_reduce_kernel_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cols_c_U(fmm_reduce_kernel_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'debug_capacity_c_U(fmm_reduce_kernel_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'spec_select_loc_channel_U(fmm_reduce_kernel_fifo_w1_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_loc_channel_U(fmm_reduce_kernel_fifo_w1_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.128 seconds; current allocated memory: 487.289 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 100', using 100 ns in generated Vivado XDC
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.998 seconds; current allocated memory: 492.078 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.563 seconds; current allocated memory: 507.953 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fmm_reduce_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for fmm_reduce_kernel.
+INFO: [HLS 200-789] **** Estimated Fmax: 104.91 MHz
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 3 seconds. Total elapsed time: 52.626 seconds; peak allocated memory: 507.988 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 56s

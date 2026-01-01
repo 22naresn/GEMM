@@ -199,14 +199,14 @@ set ArgLastReadFirstWriteLatency {
 		M_cols {Type O LastRead -1 FirstWrite 0}
 		M_t {Type O LastRead -1 FirstWrite 3}
 		M_t_capacity {Type O LastRead -1 FirstWrite 3}}
-	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2 {
+	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2 {
 		M_e {Type O LastRead -1 FirstWrite 2}}
-	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4 {
+	load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4 {
 		cols {Type I LastRead 0 FirstWrite -1}
-		mul_ln59 {Type I LastRead 0 FirstWrite -1}
+		mul_ln58 {Type I LastRead 0 FirstWrite -1}
 		A_dram {Type I LastRead 0 FirstWrite -1}
 		gmem {Type I LastRead 12 FirstWrite -1}
-		sext_ln59 {Type I LastRead 0 FirstWrite -1}
+		sext_ln58 {Type I LastRead 0 FirstWrite -1}
 		M_e {Type O LastRead -1 FirstWrite 13}}}
 
 set hasDtUnsupportedChannel 0

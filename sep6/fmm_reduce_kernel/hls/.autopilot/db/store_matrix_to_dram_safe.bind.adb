@@ -203,7 +203,7 @@
 						<name>A_dram_read</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -219,7 +219,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>72</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -260,7 +260,7 @@
 						<name>rows</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>74</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -276,7 +276,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>74</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -313,6 +313,118 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
+						<name>trunc_ln73</name>
+						<fileName>fmm_hls_greedy_potential.cpp</fileName>
+						<fileDirectory>C:\GEMM\sep6</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
+						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\GEMM\sep6</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>fmm_hls_greedy_potential.cpp</first>
+											<second>store_matrix_to_dram_safe</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>26</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_9">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>10</id>
+						<name>cols</name>
+						<fileName>fmm_hls_greedy_potential.cpp</fileName>
+						<fileDirectory>C:\GEMM\sep6</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
+						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\GEMM\sep6</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>fmm_hls_greedy_potential.cpp</first>
+											<second>store_matrix_to_dram_safe</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>cols</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>27</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>3</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_10">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>11</id>
 						<name>trunc_ln74</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
@@ -353,118 +465,6 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>26</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_9">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>10</id>
-						<name>cols</name>
-						<fileName>fmm_hls_greedy_potential.cpp</fileName>
-						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>75</lineNumber>
-						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
-						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\GEMM\sep6</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>fmm_hls_greedy_potential.cpp</first>
-											<second>store_matrix_to_dram_safe</second>
-										</first>
-										<second>75</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>cols</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>27</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>3</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_10">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>11</id>
-						<name>trunc_ln75</name>
-						<fileName>fmm_hls_greedy_potential.cpp</fileName>
-						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>75</lineNumber>
-						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
-						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\GEMM\sep6</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>fmm_hls_greedy_potential.cpp</first>
-											<second>store_matrix_to_dram_safe</second>
-										</first>
-										<second>75</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
 					<item>28</item>
 				</oprand_edges>
 				<opcode>trunc</opcode>
@@ -484,7 +484,7 @@
 						<name>empty</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>74</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -500,7 +500,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>74</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -541,7 +541,7 @@
 						<name>smax</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>74</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -557,7 +557,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>74</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -599,7 +599,7 @@
 						<name>empty_39</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -615,7 +615,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>75</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -656,7 +656,7 @@
 						<name>smax1</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -672,7 +672,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>75</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -714,7 +714,7 @@
 						<name>smax_cast</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>74</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -730,7 +730,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>74</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -770,7 +770,7 @@
 						<name>smax1_cast</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -786,7 +786,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>75</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -826,7 +826,7 @@
 						<name>bound</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>74</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -842,7 +842,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>74</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -880,10 +880,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>_ln75</name>
+						<name>_ln74</name>
 						<fileName>fmm_hls_greedy_potential.cpp</fileName>
 						<fileDirectory>C:\GEMM\sep6</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>store_matrix_to_dram_safe</contextFuncName>
 						<contextNormFuncName>store_matrix_to_dram_safe</contextNormFuncName>
 						<inlineStackInfo>
@@ -899,7 +899,7 @@
 											<first>fmm_hls_greedy_potential.cpp</first>
 											<second>store_matrix_to_dram_safe</second>
 										</first>
-										<second>75</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -1049,7 +1049,7 @@
 					<Obj>
 						<type>2</type>
 						<id>45</id>
-						<name>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</name>
+						<name>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1073,7 +1073,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2&gt;</content>
+				<content>&lt;constant:store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -1788,7 +1788,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln74_fu_61</first>
+			<first>trunc_ln73_fu_61</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1796,7 +1796,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln75_fu_69</first>
+			<first>trunc_ln74_fu_69</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1808,7 +1808,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40</first>
+			<first>grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

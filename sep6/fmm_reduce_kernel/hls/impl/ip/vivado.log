@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Oct 13 17:30:39 2025
+# Process ID         : 12548
+# Current directory  : C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/vivado.log
+# Journal file       : C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip\vivado.jou
+# Running On         : TUF15
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16779 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25369 MB
+# Available Virtual  : 5292 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/GEMM/sep6/fmm_reduce_kernel/hls/hls_data.json outdir=C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip srcdir=C:/GEMM/sep6/fmm_reduce_kernel/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/misc
+INFO: Copied 46 verilog file(s) to C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/hdl/verilog
+INFO: Copied 42 vhdl file(s) to C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 546.547 ; gain = 240.418
+INFO: Import ports from HDL: C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/hdl/vhdl/fmm_reduce_kernel.vhd (fmm_reduce_kernel)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add axi4lite interface s_axi_control_r
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Add axi4full interface m_axi_gmem
+INFO: Add axi4full interface m_axi_gmem2
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/component.xml
+INFO: Created IP archive C:/GEMM/sep6/fmm_reduce_kernel/hls/impl/ip/nilesh_user_fmm_reduce_kernel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 13 17:30:55 2025...

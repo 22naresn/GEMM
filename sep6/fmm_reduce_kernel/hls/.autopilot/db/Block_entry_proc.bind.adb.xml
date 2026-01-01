@@ -5,23 +5,23 @@
 
 <trans id="59" from="1" to="9">
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="1"/>
+<or_exp><and_exp><literal name="and_ln307" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="60" from="1" to="2">
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
-<literal name="icmp_ln310" val="1"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
+<literal name="icmp_ln308" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="61" from="1" to="8">
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
-<literal name="icmp_ln310" val="0"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
+<literal name="icmp_ln308" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -408,10 +408,10 @@ newFuncRoot:19 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, 
 
 <Node id="38" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-newFuncRoot:20 %and_ln309 = and i1 %p_read_2, i1 %p_read_1
+newFuncRoot:20 %and_ln307 = and i1 %p_read_2, i1 %p_read_1
 
 ]]></Node>
-<StgValue><ssdm name="and_ln309"/></StgValue>
+<StgValue><ssdm name="and_ln307"/></StgValue>
 </operation>
 
 <operation id="35" st_id="1" stage="1" lat="1">
@@ -423,58 +423,58 @@ newFuncRoot:20 %and_ln309 = and i1 %p_read_2, i1 %p_read_1
 
 <Node id="39" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-newFuncRoot:21 %br_ln309 = br i1 %and_ln309, void %land.lhs.true.i, void %if.end10.i
+newFuncRoot:21 %br_ln307 = br i1 %and_ln307, void %land.lhs.true.i, void %if.end10.i
 
 ]]></Node>
-<StgValue><ssdm name="br_ln309"/></StgValue>
+<StgValue><ssdm name="br_ln307"/></StgValue>
 </operation>
 
 <operation id="36" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="41" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-land.lhs.true.i:0 %icmp_ln310 = icmp_sgt  i32 %debug_capacity_read, i32 0
+land.lhs.true.i:0 %icmp_ln308 = icmp_sgt  i32 %debug_capacity_read, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln310"/></StgValue>
+<StgValue><ssdm name="icmp_ln308"/></StgValue>
 </operation>
 
 <operation id="37" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="42" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-land.lhs.true.i:1 %br_ln310 = br i1 %icmp_ln310, void %if.end.i, void %if.then9.i
+land.lhs.true.i:1 %br_ln308 = br i1 %icmp_ln308, void %if.end.i, void %if.then9.i
 
 ]]></Node>
-<StgValue><ssdm name="br_ln310"/></StgValue>
+<StgValue><ssdm name="br_ln308"/></StgValue>
 </operation>
 
 <operation id="38" st_id="1" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="1"/>
+<or_exp><and_exp><literal name="and_ln307" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32">
 <![CDATA[
-if.end10.i:0 %call_ln317 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity
+if.end10.i:0 %call_ln314 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity
 
 ]]></Node>
-<StgValue><ssdm name="call_ln317"/></StgValue>
+<StgValue><ssdm name="call_ln314"/></StgValue>
 </operation>
 </state>
 
@@ -489,10 +489,10 @@ if.end10.i:0 %call_ln317 = call void @load_matrix_from_dram_safe, i32 %gmem, i64
 
 <Node id="44" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-if.then9.i:0 %select_ln311 = select i1 %p_read_2, i32 4294966395, i32 4294966396
+if.then9.i:0 %select_ln309 = select i1 %p_read_2, i32 4294966395, i32 4294966396
 
 ]]></Node>
-<StgValue><ssdm name="select_ln311"/></StgValue>
+<StgValue><ssdm name="select_ln309"/></StgValue>
 </operation>
 
 <operation id="40" st_id="2" stage="1" lat="1">
@@ -519,10 +519,10 @@ if.then9.i:1 %trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i6
 
 <Node id="46" bw="64" op_0_bw="62">
 <![CDATA[
-if.then9.i:2 %sext_ln311 = sext i62 %trunc_ln
+if.then9.i:2 %sext_ln309 = sext i62 %trunc_ln
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln311"/></StgValue>
+<StgValue><ssdm name="sext_ln309"/></StgValue>
 </operation>
 
 <operation id="42" st_id="2" stage="1" lat="1">
@@ -534,7 +534,7 @@ if.then9.i:2 %sext_ln311 = sext i62 %trunc_ln
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="64">
 <![CDATA[
-if.then9.i:3 %gmem2_addr = getelementptr i32 %gmem2, i64 %sext_ln311
+if.then9.i:3 %gmem2_addr = getelementptr i32 %gmem2, i64 %sext_ln309
 
 ]]></Node>
 <StgValue><ssdm name="gmem2_addr"/></StgValue>
@@ -567,10 +567,10 @@ if.then9.i:4 %gmem2_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i32P1A, i32 
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="4" op_4_bw="0">
 <![CDATA[
-if.then9.i:5 %write_ln311 = write void @_ssdm_op_Write.m_axi.volatile.i32P1A, i32 %gmem2_addr, i32 %select_ln311, i4 15
+if.then9.i:5 %write_ln309 = write void @_ssdm_op_Write.m_axi.volatile.i32P1A, i32 %gmem2_addr, i32 %select_ln309, i4 15
 
 ]]></Node>
-<StgValue><ssdm name="write_ln311"/></StgValue>
+<StgValue><ssdm name="write_ln309"/></StgValue>
 </operation>
 </state>
 
@@ -652,8 +652,8 @@ if.then9.i:6 %gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i
 <core>m_axi</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
-<literal name="icmp_ln310" val="1"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
+<literal name="icmp_ln308" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -669,33 +669,33 @@ if.then9.i:6 %gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
-<literal name="icmp_ln310" val="1"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
+<literal name="icmp_ln308" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="51" bw="0" op_0_bw="0">
 <![CDATA[
-if.then9.i:7 %br_ln312 = br void %if.end.i
+if.then9.i:7 %br_ln310 = br void %if.end.i
 
 ]]></Node>
-<StgValue><ssdm name="br_ln312"/></StgValue>
+<StgValue><ssdm name="br_ln310"/></StgValue>
 </operation>
 
 <operation id="51" st_id="8" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="and_ln309" val="0"/>
+<or_exp><and_exp><literal name="and_ln307" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="53" bw="0" op_0_bw="0">
 <![CDATA[
-if.end.i:0 %br_ln313 = br void %entry.aft.aft.exitStub
+if.end.i:0 %br_ln311 = br void %entry.aft.aft.exitStub
 
 ]]></Node>
-<StgValue><ssdm name="br_ln313"/></StgValue>
+<StgValue><ssdm name="br_ln311"/></StgValue>
 </operation>
 
 <operation id="52" st_id="8" stage="1" lat="1">
@@ -725,10 +725,10 @@ entry.aft.aft.exitStub:0 %ret_ln0 = ret
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32">
 <![CDATA[
-if.end10.i:0 %call_ln317 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity
+if.end10.i:0 %call_ln314 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity
 
 ]]></Node>
-<StgValue><ssdm name="call_ln317"/></StgValue>
+<StgValue><ssdm name="call_ln314"/></StgValue>
 </operation>
 </state>
 
@@ -743,10 +743,10 @@ if.end10.i:0 %call_ln317 = call void @load_matrix_from_dram_safe, i32 %gmem, i64
 
 <Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="0" op_13_bw="0">
 <![CDATA[
-if.end10.i:1 %call_ln318 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity
+if.end10.i:1 %call_ln315 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity
 
 ]]></Node>
-<StgValue><ssdm name="call_ln318"/></StgValue>
+<StgValue><ssdm name="call_ln315"/></StgValue>
 </operation>
 </state>
 
@@ -761,10 +761,10 @@ if.end10.i:1 %call_ln318 = call void @greedy_potential_reduce_with_debug, i32 %k
 
 <Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="0" op_13_bw="0">
 <![CDATA[
-if.end10.i:1 %call_ln318 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity
+if.end10.i:1 %call_ln315 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity
 
 ]]></Node>
-<StgValue><ssdm name="call_ln318"/></StgValue>
+<StgValue><ssdm name="call_ln315"/></StgValue>
 </operation>
 </state>
 
@@ -779,10 +779,10 @@ if.end10.i:1 %call_ln318 = call void @greedy_potential_reduce_with_debug, i32 %k
 
 <Node id="57" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-if.end10.i:2 %call_ln319 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e
+if.end10.i:2 %call_ln316 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e
 
 ]]></Node>
-<StgValue><ssdm name="call_ln319"/></StgValue>
+<StgValue><ssdm name="call_ln316"/></StgValue>
 </operation>
 </state>
 
@@ -797,10 +797,10 @@ if.end10.i:2 %call_ln319 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 
 
 <Node id="57" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-if.end10.i:2 %call_ln319 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e
+if.end10.i:2 %call_ln316 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e
 
 ]]></Node>
-<StgValue><ssdm name="call_ln319"/></StgValue>
+<StgValue><ssdm name="call_ln316"/></StgValue>
 </operation>
 
 <operation id="58" st_id="13" stage="1" lat="1">
@@ -812,10 +812,10 @@ if.end10.i:2 %call_ln319 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 
 
 <Node id="58" bw="0" op_0_bw="0">
 <![CDATA[
-if.end10.i:3 %br_ln320 = br void %entry.aft.aft.exitStub
+if.end10.i:3 %br_ln317 = br void %entry.aft.aft.exitStub
 
 ]]></Node>
-<StgValue><ssdm name="br_ln320"/></StgValue>
+<StgValue><ssdm name="br_ln317"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -1320,45 +1320,45 @@ if.end10.i:3 %br_ln320 = br void %entry.aft.aft.exitStub
 </dataflow>
 <dataflow id="328" from="StgValue_96" to="specinterface_ln0" fromId="96" toId="33">
 </dataflow>
-<dataflow id="329" from="p_read_2" to="and_ln309" fromId="16" toId="34">
+<dataflow id="329" from="p_read_2" to="and_ln307" fromId="16" toId="34">
 </dataflow>
-<dataflow id="330" from="p_read_1" to="and_ln309" fromId="15" toId="34">
+<dataflow id="330" from="p_read_1" to="and_ln307" fromId="15" toId="34">
 </dataflow>
-<dataflow id="331" from="and_ln309" to="br_ln309" fromId="34" toId="35">
+<dataflow id="331" from="and_ln307" to="br_ln307" fromId="34" toId="35">
 </dataflow>
-<dataflow id="332" from="debug_capacity_read" to="icmp_ln310" fromId="17" toId="36">
+<dataflow id="332" from="debug_capacity_read" to="icmp_ln308" fromId="17" toId="36">
 </dataflow>
-<dataflow id="333" from="StgValue_96" to="icmp_ln310" fromId="96" toId="36">
+<dataflow id="333" from="StgValue_96" to="icmp_ln308" fromId="96" toId="36">
 </dataflow>
-<dataflow id="334" from="icmp_ln310" to="br_ln310" fromId="36" toId="37">
+<dataflow id="334" from="icmp_ln308" to="br_ln308" fromId="36" toId="37">
 </dataflow>
-<dataflow id="336" from="load_matrix_from_dram_safe" to="call_ln317" fromId="335" toId="38">
+<dataflow id="336" from="load_matrix_from_dram_safe" to="call_ln314" fromId="335" toId="38">
 </dataflow>
-<dataflow id="337" from="gmem" to="call_ln317" fromId="76" toId="38">
+<dataflow id="337" from="gmem" to="call_ln314" fromId="76" toId="38">
 </dataflow>
-<dataflow id="338" from="A_dram_read" to="call_ln317" fromId="31" toId="38">
+<dataflow id="338" from="A_dram_read" to="call_ln314" fromId="31" toId="38">
 </dataflow>
-<dataflow id="339" from="rows_read" to="call_ln317" fromId="29" toId="38">
+<dataflow id="339" from="rows_read" to="call_ln314" fromId="29" toId="38">
 </dataflow>
-<dataflow id="340" from="cols_read" to="call_ln317" fromId="27" toId="38">
+<dataflow id="340" from="cols_read" to="call_ln314" fromId="27" toId="38">
 </dataflow>
-<dataflow id="341" from="t_capacity_read" to="call_ln317" fromId="25" toId="38">
+<dataflow id="341" from="t_capacity_read" to="call_ln314" fromId="25" toId="38">
 </dataflow>
-<dataflow id="342" from="M_e" to="call_ln317" fromId="90" toId="38">
+<dataflow id="342" from="M_e" to="call_ln314" fromId="90" toId="38">
 </dataflow>
-<dataflow id="343" from="M_rows" to="call_ln317" fromId="86" toId="38">
+<dataflow id="343" from="M_rows" to="call_ln314" fromId="86" toId="38">
 </dataflow>
-<dataflow id="344" from="M_cols" to="call_ln317" fromId="87" toId="38">
+<dataflow id="344" from="M_cols" to="call_ln314" fromId="87" toId="38">
 </dataflow>
-<dataflow id="345" from="M_t" to="call_ln317" fromId="88" toId="38">
+<dataflow id="345" from="M_t" to="call_ln314" fromId="88" toId="38">
 </dataflow>
-<dataflow id="346" from="M_t_capacity" to="call_ln317" fromId="89" toId="38">
+<dataflow id="346" from="M_t_capacity" to="call_ln314" fromId="89" toId="38">
 </dataflow>
-<dataflow id="347" from="p_read_2" to="select_ln311" fromId="16" toId="39">
+<dataflow id="347" from="p_read_2" to="select_ln309" fromId="16" toId="39">
 </dataflow>
-<dataflow id="349" from="StgValue_348" to="select_ln311" fromId="348" toId="39">
+<dataflow id="349" from="StgValue_348" to="select_ln309" fromId="348" toId="39">
 </dataflow>
-<dataflow id="351" from="StgValue_350" to="select_ln311" fromId="350" toId="39">
+<dataflow id="351" from="StgValue_350" to="select_ln309" fromId="350" toId="39">
 </dataflow>
 <dataflow id="353" from="_ssdm_op_PartSelect.i62.i64.i32.i32" to="trunc_ln" fromId="352" toId="40">
 </dataflow>
@@ -1368,11 +1368,11 @@ if.end10.i:3 %br_ln320 = br void %entry.aft.aft.exitStub
 </dataflow>
 <dataflow id="357" from="StgValue_356" to="trunc_ln" fromId="356" toId="40">
 </dataflow>
-<dataflow id="358" from="trunc_ln" to="sext_ln311" fromId="40" toId="41">
+<dataflow id="358" from="trunc_ln" to="sext_ln309" fromId="40" toId="41">
 </dataflow>
 <dataflow id="359" from="gmem2" to="gmem2_addr" fromId="83" toId="42">
 </dataflow>
-<dataflow id="360" from="sext_ln311" to="gmem2_addr" fromId="41" toId="42">
+<dataflow id="360" from="sext_ln309" to="gmem2_addr" fromId="41" toId="42">
 </dataflow>
 <dataflow id="362" from="_ssdm_op_WriteReq.m_axi.i32P1A" to="gmem2_addr_req" fromId="361" toId="43">
 </dataflow>
@@ -1380,13 +1380,13 @@ if.end10.i:3 %br_ln320 = br void %entry.aft.aft.exitStub
 </dataflow>
 <dataflow id="365" from="StgValue_364" to="gmem2_addr_req" fromId="364" toId="43">
 </dataflow>
-<dataflow id="367" from="_ssdm_op_Write.m_axi.volatile.i32P1A" to="write_ln311" fromId="366" toId="44">
+<dataflow id="367" from="_ssdm_op_Write.m_axi.volatile.i32P1A" to="write_ln309" fromId="366" toId="44">
 </dataflow>
-<dataflow id="368" from="gmem2_addr" to="write_ln311" fromId="42" toId="44">
+<dataflow id="368" from="gmem2_addr" to="write_ln309" fromId="42" toId="44">
 </dataflow>
-<dataflow id="369" from="select_ln311" to="write_ln311" fromId="39" toId="44">
+<dataflow id="369" from="select_ln309" to="write_ln309" fromId="39" toId="44">
 </dataflow>
-<dataflow id="371" from="StgValue_370" to="write_ln311" fromId="370" toId="44">
+<dataflow id="371" from="StgValue_370" to="write_ln309" fromId="370" toId="44">
 </dataflow>
 <dataflow id="373" from="_ssdm_op_WriteResp.m_axi.i32P1A" to="gmem2_addr_resp" fromId="372" toId="45">
 </dataflow>
@@ -1408,103 +1408,103 @@ if.end10.i:3 %br_ln320 = br void %entry.aft.aft.exitStub
 </dataflow>
 <dataflow id="382" from="gmem2_addr" to="gmem2_addr_resp" fromId="42" toId="49">
 </dataflow>
-<dataflow id="383" from="load_matrix_from_dram_safe" to="call_ln317" fromId="335" toId="53">
+<dataflow id="383" from="load_matrix_from_dram_safe" to="call_ln314" fromId="335" toId="53">
 </dataflow>
-<dataflow id="384" from="gmem" to="call_ln317" fromId="76" toId="53">
+<dataflow id="384" from="gmem" to="call_ln314" fromId="76" toId="53">
 </dataflow>
-<dataflow id="385" from="A_dram_read" to="call_ln317" fromId="31" toId="53">
+<dataflow id="385" from="A_dram_read" to="call_ln314" fromId="31" toId="53">
 </dataflow>
-<dataflow id="386" from="rows_read" to="call_ln317" fromId="29" toId="53">
+<dataflow id="386" from="rows_read" to="call_ln314" fromId="29" toId="53">
 </dataflow>
-<dataflow id="387" from="cols_read" to="call_ln317" fromId="27" toId="53">
+<dataflow id="387" from="cols_read" to="call_ln314" fromId="27" toId="53">
 </dataflow>
-<dataflow id="388" from="t_capacity_read" to="call_ln317" fromId="25" toId="53">
+<dataflow id="388" from="t_capacity_read" to="call_ln314" fromId="25" toId="53">
 </dataflow>
-<dataflow id="389" from="M_e" to="call_ln317" fromId="90" toId="53">
+<dataflow id="389" from="M_e" to="call_ln314" fromId="90" toId="53">
 </dataflow>
-<dataflow id="390" from="M_rows" to="call_ln317" fromId="86" toId="53">
+<dataflow id="390" from="M_rows" to="call_ln314" fromId="86" toId="53">
 </dataflow>
-<dataflow id="391" from="M_cols" to="call_ln317" fromId="87" toId="53">
+<dataflow id="391" from="M_cols" to="call_ln314" fromId="87" toId="53">
 </dataflow>
-<dataflow id="392" from="M_t" to="call_ln317" fromId="88" toId="53">
+<dataflow id="392" from="M_t" to="call_ln314" fromId="88" toId="53">
 </dataflow>
-<dataflow id="393" from="M_t_capacity" to="call_ln317" fromId="89" toId="53">
+<dataflow id="393" from="M_t_capacity" to="call_ln314" fromId="89" toId="53">
 </dataflow>
-<dataflow id="395" from="greedy_potential_reduce_with_debug" to="call_ln318" fromId="394" toId="54">
+<dataflow id="395" from="greedy_potential_reduce_with_debug" to="call_ln315" fromId="394" toId="54">
 </dataflow>
-<dataflow id="396" from="k1_read" to="call_ln318" fromId="23" toId="54">
+<dataflow id="396" from="k1_read" to="call_ln315" fromId="23" toId="54">
 </dataflow>
-<dataflow id="397" from="k2_read" to="call_ln318" fromId="21" toId="54">
+<dataflow id="397" from="k2_read" to="call_ln315" fromId="21" toId="54">
 </dataflow>
-<dataflow id="398" from="gmem2" to="call_ln318" fromId="83" toId="54">
+<dataflow id="398" from="gmem2" to="call_ln315" fromId="83" toId="54">
 </dataflow>
-<dataflow id="399" from="debug_dram_read" to="call_ln318" fromId="19" toId="54">
+<dataflow id="399" from="debug_dram_read" to="call_ln315" fromId="19" toId="54">
 </dataflow>
-<dataflow id="400" from="debug_capacity_read" to="call_ln318" fromId="17" toId="54">
+<dataflow id="400" from="debug_capacity_read" to="call_ln315" fromId="17" toId="54">
 </dataflow>
-<dataflow id="401" from="M_e" to="call_ln318" fromId="90" toId="54">
+<dataflow id="401" from="M_e" to="call_ln315" fromId="90" toId="54">
 </dataflow>
-<dataflow id="402" from="M_cols" to="call_ln318" fromId="87" toId="54">
+<dataflow id="402" from="M_cols" to="call_ln315" fromId="87" toId="54">
 </dataflow>
-<dataflow id="403" from="M_rows" to="call_ln318" fromId="86" toId="54">
+<dataflow id="403" from="M_rows" to="call_ln315" fromId="86" toId="54">
 </dataflow>
-<dataflow id="404" from="M_t" to="call_ln318" fromId="88" toId="54">
+<dataflow id="404" from="M_t" to="call_ln315" fromId="88" toId="54">
 </dataflow>
-<dataflow id="405" from="M_t_capacity" to="call_ln318" fromId="89" toId="54">
+<dataflow id="405" from="M_t_capacity" to="call_ln315" fromId="89" toId="54">
 </dataflow>
-<dataflow id="406" from="greedy_potential_reduce_with_debug" to="call_ln318" fromId="394" toId="55">
+<dataflow id="406" from="greedy_potential_reduce_with_debug" to="call_ln315" fromId="394" toId="55">
 </dataflow>
-<dataflow id="407" from="k1_read" to="call_ln318" fromId="23" toId="55">
+<dataflow id="407" from="k1_read" to="call_ln315" fromId="23" toId="55">
 </dataflow>
-<dataflow id="408" from="k2_read" to="call_ln318" fromId="21" toId="55">
+<dataflow id="408" from="k2_read" to="call_ln315" fromId="21" toId="55">
 </dataflow>
-<dataflow id="409" from="gmem2" to="call_ln318" fromId="83" toId="55">
+<dataflow id="409" from="gmem2" to="call_ln315" fromId="83" toId="55">
 </dataflow>
-<dataflow id="410" from="debug_dram_read" to="call_ln318" fromId="19" toId="55">
+<dataflow id="410" from="debug_dram_read" to="call_ln315" fromId="19" toId="55">
 </dataflow>
-<dataflow id="411" from="debug_capacity_read" to="call_ln318" fromId="17" toId="55">
+<dataflow id="411" from="debug_capacity_read" to="call_ln315" fromId="17" toId="55">
 </dataflow>
-<dataflow id="412" from="M_e" to="call_ln318" fromId="90" toId="55">
+<dataflow id="412" from="M_e" to="call_ln315" fromId="90" toId="55">
 </dataflow>
-<dataflow id="413" from="M_cols" to="call_ln318" fromId="87" toId="55">
+<dataflow id="413" from="M_cols" to="call_ln315" fromId="87" toId="55">
 </dataflow>
-<dataflow id="414" from="M_rows" to="call_ln318" fromId="86" toId="55">
+<dataflow id="414" from="M_rows" to="call_ln315" fromId="86" toId="55">
 </dataflow>
-<dataflow id="415" from="M_t" to="call_ln318" fromId="88" toId="55">
+<dataflow id="415" from="M_t" to="call_ln315" fromId="88" toId="55">
 </dataflow>
-<dataflow id="416" from="M_t_capacity" to="call_ln318" fromId="89" toId="55">
+<dataflow id="416" from="M_t_capacity" to="call_ln315" fromId="89" toId="55">
 </dataflow>
-<dataflow id="418" from="store_matrix_to_dram_safe" to="call_ln319" fromId="417" toId="56">
+<dataflow id="418" from="store_matrix_to_dram_safe" to="call_ln316" fromId="417" toId="56">
 </dataflow>
-<dataflow id="419" from="gmem" to="call_ln319" fromId="76" toId="56">
+<dataflow id="419" from="gmem" to="call_ln316" fromId="76" toId="56">
 </dataflow>
-<dataflow id="420" from="A_dram_read" to="call_ln319" fromId="31" toId="56">
+<dataflow id="420" from="A_dram_read" to="call_ln316" fromId="31" toId="56">
 </dataflow>
-<dataflow id="421" from="M_rows" to="call_ln319" fromId="86" toId="56">
+<dataflow id="421" from="M_rows" to="call_ln316" fromId="86" toId="56">
 </dataflow>
-<dataflow id="422" from="M_cols" to="call_ln319" fromId="87" toId="56">
+<dataflow id="422" from="M_cols" to="call_ln316" fromId="87" toId="56">
 </dataflow>
-<dataflow id="423" from="M_e" to="call_ln319" fromId="90" toId="56">
+<dataflow id="423" from="M_e" to="call_ln316" fromId="90" toId="56">
 </dataflow>
-<dataflow id="424" from="store_matrix_to_dram_safe" to="call_ln319" fromId="417" toId="57">
+<dataflow id="424" from="store_matrix_to_dram_safe" to="call_ln316" fromId="417" toId="57">
 </dataflow>
-<dataflow id="425" from="gmem" to="call_ln319" fromId="76" toId="57">
+<dataflow id="425" from="gmem" to="call_ln316" fromId="76" toId="57">
 </dataflow>
-<dataflow id="426" from="A_dram_read" to="call_ln319" fromId="31" toId="57">
+<dataflow id="426" from="A_dram_read" to="call_ln316" fromId="31" toId="57">
 </dataflow>
-<dataflow id="427" from="M_rows" to="call_ln319" fromId="86" toId="57">
+<dataflow id="427" from="M_rows" to="call_ln316" fromId="86" toId="57">
 </dataflow>
-<dataflow id="428" from="M_cols" to="call_ln319" fromId="87" toId="57">
+<dataflow id="428" from="M_cols" to="call_ln316" fromId="87" toId="57">
 </dataflow>
-<dataflow id="429" from="M_e" to="call_ln319" fromId="90" toId="57">
+<dataflow id="429" from="M_e" to="call_ln316" fromId="90" toId="57">
 </dataflow>
-<dataflow id="430" from="and_ln309" to="StgValue_1" fromId="34" toId="1">
+<dataflow id="430" from="and_ln307" to="StgValue_1" fromId="34" toId="1">
 </dataflow>
-<dataflow id="431" from="and_ln309" to="StgValue_8" fromId="34" toId="8">
+<dataflow id="431" from="and_ln307" to="StgValue_8" fromId="34" toId="8">
 </dataflow>
-<dataflow id="432" from="icmp_ln310" to="StgValue_8" fromId="36" toId="8">
+<dataflow id="432" from="icmp_ln308" to="StgValue_8" fromId="36" toId="8">
 </dataflow>
-<dataflow id="433" from="icmp_ln310" to="StgValue_1" fromId="36" toId="1">
+<dataflow id="433" from="icmp_ln308" to="StgValue_1" fromId="36" toId="1">
 </dataflow>
 </dataflows>
 

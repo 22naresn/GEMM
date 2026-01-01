@@ -1,5 +1,4 @@
-// fmm_hls_greedy_potential.cpp
-// Hardened HLS kernel with runtime bounds checks and AXI depth pragmas for safe cosim.
+// Hardened HLS kernel with runtime bounds checks and AXI depth pragmas.
 
 #include <ap_int.h>
 #include <hls_stream.h>
@@ -39,7 +38,7 @@ static inline void mat_set_entry(Matrix &M, int r, int c, elem_t v) {
     M.e[r][c] = v;
 }
 
-// Safe loader: checks index bounds before reading A_dram
+// Safe loader: checks index bounds before reading A_dram 
 static void load_matrix_from_dram_safe(const int32_t *A_dram, Matrix &M, int rows, int cols, int t_capacity, int max_a_words) {
 #pragma HLS INLINE off
     M.rows = rows;
@@ -276,7 +275,7 @@ static void greedy_potential_reduce_with_debug(Matrix &M, int k1, int k2, volati
     }
 }
 
-// === Top-level wrapper (C linkage only here) ===
+// === Top-level wrapper ===
 extern "C" void fmm_reduce_kernel(volatile int *A_dram,
                                   int rows,
                                   int cols,
@@ -286,7 +285,6 @@ extern "C" void fmm_reduce_kernel(volatile int *A_dram,
                                   int verbose,
                                   volatile int *debug_dram,
                                   int debug_capacity) {
-    // For safe cosim, the AXI interfaces must declare a compile-time depth.
 #pragma HLS INTERFACE m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH
 #pragma HLS INTERFACE m_axi port=debug_dram offset=slave bundle=gmem2 depth=MAX_DEBUG_DEPTH
 
@@ -299,10 +297,10 @@ extern "C" void fmm_reduce_kernel(volatile int *A_dram,
 #pragma HLS INTERFACE s_axilite port=debug_capacity bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
-    // Use static storage for the large matrix to avoid stack overflow in cosim wrapper
+    // Using static storage for the large matrix to avoid stack overflow
     static Matrix M;
 #pragma HLS DATAFLOW
-    // runtime sanity checks (prevent segfaults in cosim)
+    // runtime sanity checks
     int64_t req_words = (int64_t)rows * (int64_t)cols;
     bool a_ok = (req_words > 0 && req_words <= MAX_A_DEPTH);
     bool debug_ok = (debug_capacity >= 0 && debug_capacity <= MAX_DEBUG_DEPTH);
@@ -313,7 +311,6 @@ extern "C" void fmm_reduce_kernel(volatile int *A_dram,
         return;
     }
 
-    // safe loads/stores that always check indices against max_a_words
     load_matrix_from_dram_safe((const int32_t *)A_dram, M, rows, cols, t_capacity, MAX_A_DEPTH);
     greedy_potential_reduce_with_debug(M, k1, k2, debug_dram, debug_capacity);
     store_matrix_to_dram_safe((int32_t *)A_dram, M, MAX_A_DEPTH);

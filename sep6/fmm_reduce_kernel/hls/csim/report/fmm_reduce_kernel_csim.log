@@ -1,6 +1,7 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
    Compiling ../../../../tb_fmm_hls.cpp in debug mode
+   Compiling ../../../../fmm_hls_greedy_potential.cpp in debug mode
    Generating csim.exe
 TB debug: full-matrix + per-iteration trace comparison
 

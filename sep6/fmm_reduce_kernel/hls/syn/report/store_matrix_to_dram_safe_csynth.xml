@@ -35,7 +35,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:72</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:71</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

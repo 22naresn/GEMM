@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'greedy_potential_reduce_with_debug'" level="0">
-<item name = "Date">Sun Sep  7 15:34:54 2025
+<item name = "Date">Mon Oct 13 17:12:22 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">fmm_reduce_kernel</item>
@@ -31,31 +31,31 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2, 3, 3, 30.000 ns, 30.000 ns, 1, 1, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28, 3, 3, 30.000 ns, 30.000 ns, 1, 1, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2, 3, 3, 30.000 ns, 30.000 ns, 1, 1, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28, 3, 3, 30.000 ns, 30.000 ns, 1, 1, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055">greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_260_1">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_224_1">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ VITIS_LOOP_225_2">?, ?, ?, -, -, 0, no</column>
-<column name="   +++ VITIS_LOOP_192_1">?, ?, ?, -, -, ?, no</column>
-<column name="   +++ VITIS_LOOP_192_1">?, ?, ?, -, -, ?, no</column>
+<column name="- VITIS_LOOP_259_1">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_223_1">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ VITIS_LOOP_224_2">?, ?, ?, -, -, 0, no</column>
+<column name="   +++ VITIS_LOOP_191_1">?, ?, ?, -, -, ?, no</column>
+<column name="   +++ VITIS_LOOP_191_1">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>
 </section>

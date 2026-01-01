@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_matrix_from_dram_safe'
 ================================================================
-* Date:           Sun Sep  7 15:34:58 2025
+* Date:           Mon Oct 13 17:12:26 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        fmm_reduce_kernel
@@ -38,8 +38,8 @@
         |                                                                               |                                                                     |  Latency (cycles) |  Latency (absolute) |     Interval    |                    Pipeline                    |
         |                                    Instance                                   |                                Module                               |   min   |   max   |    min   |    max   |   min  |   max  |                      Type                      |
         +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+---------+----------+----------+--------+--------+------------------------------------------------+
-        |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2  |   102402|   102402|  1.024 ms|  1.024 ms|  102401|  102401|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4  |        ?|        ?|         ?|         ?|       0|       0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2  |   102402|   102402|  1.024 ms|  1.024 ms|  102401|  102401|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4  |        ?|        ?|         ?|         ?|       0|       0|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+---------+----------+----------+--------+--------+------------------------------------------------+
 
         * Loop: 
@@ -74,8 +74,8 @@
     +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+----+------+-----+-----+
     |                                    Instance                                   |                                Module                               | BRAM_18K| DSP|  FF  | LUT | URAM|
     +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+----+------+-----+-----+
-    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2  |        0|   0|    56|  204|    0|
-    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4  |        0|   4|  1118|  763|    0|
+    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2  |        0|   0|    56|  204|    0|
+    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78  |load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4  |        0|   4|  1118|  763|    0|
     |mul_31ns_31ns_62_1_1_U28                                                       |mul_31ns_31ns_62_1_1                                                 |        0|   4|     0|   24|    0|
     +-------------------------------------------------------------------------------+---------------------------------------------------------------------+---------+----+------+-----+-----+
     |Total                                                                          |                                                                     |        0|   8|  1174|  991|    0|
@@ -120,9 +120,9 @@
     |                                            Name                                            | FF | LUT| Bits| Const Bits|
     +--------------------------------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                                                   |   4|   0|    4|          0|
-    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_ap_start_reg  |   1|   0|    1|          0|
-    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_ap_start_reg  |   1|   0|    1|          0|
-    |mul_ln59_reg_179                                                                            |  62|   0|   62|          0|
+    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_ap_start_reg  |   1|   0|    1|          0|
+    |grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_ap_start_reg  |   1|   0|    1|          0|
+    |mul_ln58_reg_179                                                                            |  62|   0|   62|          0|
     |smax2_reg_174                                                                               |  31|   0|   31|          0|
     |smax_reg_169                                                                                |  31|   0|   31|          0|
     +--------------------------------------------------------------------------------------------+----+----+-----+-----------+

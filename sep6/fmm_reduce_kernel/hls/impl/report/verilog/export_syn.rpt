@@ -1,0 +1,465 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Mon Oct 13 17:48:19 +0530 2025
+    * Version:         2025.1 (Build 6135595 on May 21 2025)
+    * Project:         fmm_reduce_kernel
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-3
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  100 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              11960
+FF:               11530
+DSP:              39
+BRAM:             257
+URAM:             0
+SRL:              643
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 100.000     |
+| Post-Synthesis | 8.447       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                                    | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                                    | 11960 | 11530 | 39  | 257  |      |     |        |      |         |          |        |
+|   A_dram_c_U                                                                            | 71    | 7     |     |      |      |     |        |      |         |          |        |
+|   Block_entry_proc_1_U0                                                                 | 118   | 38    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_64_1_1_U11                                                              | 92    |       | 2   |      |      |     |        |      |         |          |        |
+|   Block_entry_proc_U0                                                                   | 9036  | 8004  | 35  | 256  |      |     |        |      |         |          |        |
+|     (Block_entry_proc_U0)                                                               | 13    | 467   |     |      |      |     |        |      |         |          |        |
+|     M_e_U                                                                               | 516   | 3     |     | 256  |      |     |        |      |         |          |        |
+|     grp_greedy_potential_reduce_with_debug_fu_198                                       | 7373  | 6672  | 19  |      |      |     |        |      |         |          |        |
+|       (grp_greedy_potential_reduce_with_debug_fu_198)                                   | 2606  | 3929  | 2   |      |      |     |        |      |         |          |        |
+|       mul_31ns_31ns_62_1_1_U127                                                         | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|       mul_32ns_34ns_64_1_1_U128                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_32s_32s_32_1_1_U129                                                           |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_64ns_31ns_95_3_1_U130                                                         | 147   | 68    | 8   |      |      |     |        |      |         |          |        |
+|     grp_load_matrix_from_dram_safe_fu_174                                               | 515   | 471   | 8   |      |      |     |        |      |         |          |        |
+|       grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72     | 64    | 56    |     |      |      |     |        |      |         |          |        |
+|         (grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72) | 55    | 54    |     |      |      |     |        |      |         |          |        |
+|         flow_control_loop_pipe_sequential_init_U                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78     | 312   | 375   | 4   |      |      |     |        |      |         |          |        |
+|         (grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78) | 201   | 373   | 2   |      |      |     |        |      |         |          |        |
+|         flow_control_loop_pipe_sequential_init_U                                        |       |       |     |      |      |     |        |      |         |          |        |
+|         mul_32s_31ns_62_1_1_U20                                                         | 101   |       | 2   |      |      |     |        |      |         |          |        |
+|       mul_31ns_31ns_62_1_1_U28                                                          | 98    |       | 2   |      |      |     |        |      |         |          |        |
+|     grp_store_matrix_to_dram_safe_fu_218                                                | 622   | 391   | 8   |      |      |     |        |      |         |          |        |
+|       grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40      | 484   | 352   | 4   |      |      |     |        |      |         |          |        |
+|         (grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40)  | 375   | 350   | 2   |      |      |     |        |      |         |          |        |
+|         flow_control_loop_pipe_sequential_init_U                                        |       |       |     |      |      |     |        |      |         |          |        |
+|         mul_32s_31ns_62_1_1_U144                                                        | 101   |       | 2   |      |      |     |        |      |         |          |        |
+|       mul_31ns_31ns_62_1_1_U151                                                         | 98    |       | 2   |      |      |     |        |      |         |          |        |
+|   cols_c_U                                                                              | 39    | 70    |     |      |      |     |        |      |         |          |        |
+|   control_r_s_axi_U                                                                     | 110   | 169   |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                                       | 294   | 278   |     |      |      |     |        |      |         |          |        |
+|   debug_capacity_c_U                                                                    | 55    | 70    |     |      |      |     |        |      |         |          |        |
+|   debug_dram_c_U                                                                        | 71    | 7     |     |      |      |     |        |      |         |          |        |
+|   gmem2_m_axi_U                                                                         | 747   | 1015  |     |      |      |     |        |      |         |          |        |
+|   gmem_m_axi_U                                                                          | 1250  | 1762  |     | 1    |      |     |        |      |         |          |        |
+|   k1_c_U                                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|   k2_c_U                                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|   p_loc_channel_U                                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|   rows_c_U                                                                              | 23    | 70    |     |      |      |     |        |      |         |          |        |
+|   spec_select_loc_channel_U                                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   t_capacity_c_U                                                                        |       |       |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 22.48% | OK     |
+| FD                                                        | 50%       | 10.84% | OK     |
+| LUTRAM+SRL                                                | 25%       | 3.70%  | OK     |
+| MUXF7                                                     | 15%       | 0.13%  | OK     |
+| DSP                                                       | 80%       | 17.73% | OK     |
+| RAMB/FIFO                                                 | 80%       | 91.79% | REVIEW |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 54.76% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 275    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.83   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.425ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.298ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+--------+---------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  |  SLACK | STARTPOINT PIN                                                                        | ENDPOINT PIN                                                                                   | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |        |                                                                                       |                                                                                                |              |            |                |          DELAY |        DELAY |
++-------+--------+---------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 91.553 | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]/C | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[31]/D |            9 |        103 |          8.252 |          5.699 |        2.553 |
+| Path2 | 91.553 | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]/C | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[31]/D   |            9 |        103 |          8.252 |          5.699 |        2.553 |
+| Path3 | 91.553 | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]/C | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_reg_3315_reg[31]/D     |            9 |        103 |          8.252 |          5.699 |        2.553 |
+| Path4 | 91.572 | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]/C | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[29]/D |            9 |        103 |          8.239 |          5.683 |        2.556 |
+| Path5 | 91.572 | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]/C | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[29]/D   |            9 |        103 |          8.239 |          5.683 |        2.556 |
++-------+--------+---------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[31]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[31]                                                                     | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_reg_3315_reg[31]                                                                       | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[29]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[29]                                                                     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[31]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[31]                                                                     | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_reg_3315_reg[31]                                                                       | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[29]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[29]                                                                     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[31]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[31]                                                                     | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_reg_3315_reg[31]                                                                       | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[29]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[29]                                                                     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[31]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[31]                                                                     | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_reg_3315_reg[31]                                                                       | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[29]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[29]                                                                     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[31]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[31]                                                                     | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_reg_3315_reg[31]                                                                       | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_ln214_reg_3465_reg[29]                                                                   | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/ap_CS_fsm_reg[40]                                                                            | FLOP_LATCH.flop.FDRE |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_35 | LUT.others.LUT5      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/tmp_product__0_i_18 | LUT.others.LUT3      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__0                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/tmp_product__1                                                       | MULT.dsp.DSP48E1     |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483[19]_i_4                                             | LUT.others.LUT2      |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[19]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[23]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[27]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/mul_32s_32s_32_1_1_U129/score_2_reg_3483_reg[31]_i_1                                         | CARRY.others.CARRY4  |
+    | Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/score_2_reg_3483_reg[29]                                                                     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------------------+
+| Report Type              | Report Location                                                          |
++--------------------------+--------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/fmm_reduce_kernel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/fmm_reduce_kernel_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/fmm_reduce_kernel_power_synth.rpt                    |
+| timing                   | impl/verilog/report/fmm_reduce_kernel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/fmm_reduce_kernel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/fmm_reduce_kernel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/fmm_reduce_kernel_utilization_hierarchical_synth.rpt |
++--------------------------+--------------------------------------------------------------------------+
+
+

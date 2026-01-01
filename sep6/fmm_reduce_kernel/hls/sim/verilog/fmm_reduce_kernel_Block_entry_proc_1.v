@@ -80,20 +80,20 @@ wire    ap_CS_fsm_state1;
 reg    rows_c_blk_n;
 reg    cols_c_blk_n;
 reg    debug_capacity_c_blk_n;
-wire   [63:0] mul_ln306_fu_88_p2;
-reg   [63:0] mul_ln306_reg_155;
+wire   [63:0] mul_ln304_fu_88_p2;
+reg   [63:0] mul_ln304_reg_155;
 reg    ap_block_state1;
-wire   [0:0] and_ln308_fu_122_p2;
-reg   [0:0] and_ln308_reg_161;
-wire  signed [31:0] sext_ln306_fu_92_p0;
-wire  signed [31:0] sext_ln306_1_fu_97_p0;
+wire   [0:0] and_ln306_fu_122_p2;
+reg   [0:0] and_ln306_reg_161;
+wire  signed [31:0] sext_ln304_fu_92_p0;
+wire  signed [31:0] sext_ln304_1_fu_97_p0;
 wire   [0:0] tmp_fu_102_p3;
-wire   [0:0] icmp_ln308_fu_116_p2;
-wire   [0:0] xor_ln308_fu_110_p2;
+wire   [0:0] icmp_ln306_fu_116_p2;
+wire   [0:0] xor_ln306_fu_110_p2;
 wire    ap_CS_fsm_state2;
-wire   [0:0] icmp_ln307_fu_128_p2;
-wire   [0:0] icmp_ln307_1_fu_133_p2;
-wire   [0:0] and_ln307_fu_138_p2;
+wire   [0:0] icmp_ln305_fu_128_p2;
+wire   [0:0] icmp_ln305_1_fu_133_p2;
+wire   [0:0] and_ln305_fu_138_p2;
 reg   [1:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -112,9 +112,9 @@ fmm_reduce_kernel_mul_32s_32s_64_1_1 #(
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
 mul_32s_32s_64_1_1_U11(
-    .din0(sext_ln306_1_fu_97_p0),
-    .din1(sext_ln306_fu_92_p0),
-    .dout(mul_ln306_fu_88_p2)
+    .din0(sext_ln304_1_fu_97_p0),
+    .din1(sext_ln304_fu_92_p0),
+    .dout(mul_ln304_fu_88_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -139,8 +139,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        and_ln308_reg_161 <= and_ln308_fu_122_p2;
-        mul_ln306_reg_155 <= mul_ln306_fu_88_p2;
+        and_ln306_reg_161 <= and_ln306_fu_122_p2;
+        mul_ln304_reg_155 <= mul_ln304_fu_88_p2;
     end
 end
 
@@ -244,9 +244,9 @@ always @ (*) begin
     endcase
 end
 
-assign and_ln307_fu_138_p2 = (icmp_ln307_fu_128_p2 & icmp_ln307_1_fu_133_p2);
+assign and_ln305_fu_138_p2 = (icmp_ln305_fu_128_p2 & icmp_ln305_1_fu_133_p2);
 
-assign and_ln308_fu_122_p2 = (xor_ln308_fu_110_p2 & icmp_ln308_fu_116_p2);
+assign and_ln306_fu_122_p2 = (xor_ln306_fu_110_p2 & icmp_ln306_fu_116_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -256,28 +256,28 @@ always @ (*) begin
     ap_block_state1 = ((ap_start == 1'b0) | (debug_capacity_c_full_n == 1'b0) | (cols_c_full_n == 1'b0) | (rows_c_full_n == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign ap_return_0 = and_ln307_fu_138_p2;
+assign ap_return_0 = and_ln305_fu_138_p2;
 
-assign ap_return_1 = and_ln308_reg_161;
+assign ap_return_1 = and_ln306_reg_161;
 
 assign cols_c_din = cols;
 
 assign debug_capacity_c_din = debug_capacity;
 
-assign icmp_ln307_1_fu_133_p2 = (($signed(mul_ln306_reg_155) < $signed(64'd65537)) ? 1'b1 : 1'b0);
+assign icmp_ln305_1_fu_133_p2 = (($signed(mul_ln304_reg_155) < $signed(64'd65537)) ? 1'b1 : 1'b0);
 
-assign icmp_ln307_fu_128_p2 = (($signed(mul_ln306_reg_155) > $signed(64'd0)) ? 1'b1 : 1'b0);
+assign icmp_ln305_fu_128_p2 = (($signed(mul_ln304_reg_155) > $signed(64'd0)) ? 1'b1 : 1'b0);
 
-assign icmp_ln308_fu_116_p2 = (($signed(debug_capacity) < $signed(32'd4097)) ? 1'b1 : 1'b0);
+assign icmp_ln306_fu_116_p2 = (($signed(debug_capacity) < $signed(32'd4097)) ? 1'b1 : 1'b0);
 
 assign rows_c_din = rows;
 
-assign sext_ln306_1_fu_97_p0 = rows;
+assign sext_ln304_1_fu_97_p0 = rows;
 
-assign sext_ln306_fu_92_p0 = cols;
+assign sext_ln304_fu_92_p0 = cols;
 
 assign tmp_fu_102_p3 = debug_capacity[32'd31];
 
-assign xor_ln308_fu_110_p2 = (tmp_fu_102_p3 ^ 1'd1);
+assign xor_ln306_fu_110_p2 = (tmp_fu_102_p3 ^ 1'd1);
 
 endmodule //fmm_reduce_kernel_Block_entry_proc_1

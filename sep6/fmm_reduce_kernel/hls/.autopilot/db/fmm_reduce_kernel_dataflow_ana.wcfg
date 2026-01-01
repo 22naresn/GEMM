@@ -99,37 +99,37 @@
                <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_fu_174_activity.dataflowTxWaveData.Cycles</obj_property>
                <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_fu_174_activity.dataflowTxWaveData.OutStanding</obj_property>
                <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_fu_174_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity">
-                  <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity">
+                  <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity">
-                  <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity">
+                  <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
             <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_fu_198_activity">
@@ -147,261 +147,261 @@
                <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_fu_198_activity.dataflowTxWaveData.Cycles</obj_property>
                <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_fu_198_activity.dataflowTxWaveData.OutStanding</obj_property>
                <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_fu_198_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity">
-                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity">
+                  <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
             <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_fu_218_activity">
@@ -419,21 +419,21 @@
                <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_fu_218_activity.dataflowTxWaveData.Cycles</obj_property>
                <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_fu_218_activity.dataflowTxWaveData.OutStanding</obj_property>
                <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_fu_218_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity">
-                  <obj_property name="label">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity">
+                  <obj_property name="label">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
@@ -888,13 +888,13 @@
          <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_fu_174_group">
             <obj_property name="label">grp_load_matrix_from_dram_safe_fu_174</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity">
-               <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity">
+               <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity">
-               <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity">
+               <obj_property name="ElementShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_activity</obj_property>
             </wvobject>
             <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_fu_174_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
@@ -912,41 +912,41 @@
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_group">
-               <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72</obj_property>
+            <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_group">
+               <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_Handshake_group">
+               <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_group">
-               <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78</obj_property>
+            <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_group">
+               <obj_property name="label">grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_Handshake_group">
+               <wvobject type="group" fp_name="grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_load_matrix_from_dram_safe_fu_174/grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -956,69 +956,69 @@
          <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_fu_198_group">
             <obj_property name="label">grp_greedy_potential_reduce_with_debug_fu_198</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity">
-               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity">
+               <obj_property name="ElementShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_activity</obj_property>
             </wvobject>
             <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_fu_198_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
@@ -1036,321 +1036,321 @@
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_group">
-               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055</obj_property>
+            <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_group">
+               <obj_property name="label">grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055_Handshake_group">
+               <wvobject type="group" fp_name="grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_greedy_potential_reduce_with_debug_fu_198/grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -1360,9 +1360,9 @@
          <wvobject type="group" fp_name="grp_store_matrix_to_dram_safe_fu_218_group">
             <obj_property name="label">grp_store_matrix_to_dram_safe_fu_218</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity">
-               <obj_property name="ElementShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity">
+               <obj_property name="ElementShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_activity</obj_property>
             </wvobject>
             <wvobject type="group" fp_name="grp_store_matrix_to_dram_safe_fu_218_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
@@ -1380,21 +1380,21 @@
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_group">
-               <obj_property name="label">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40</obj_property>
+            <wvobject type="group" fp_name="grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_group">
+               <obj_property name="label">grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40_Handshake_group">
+               <wvobject type="group" fp_name="grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_fmm_reduce_kernel_top/AESL_inst_fmm_reduce_kernel/Block_entry_proc_U0/grp_store_matrix_to_dram_safe_fu_218/grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>

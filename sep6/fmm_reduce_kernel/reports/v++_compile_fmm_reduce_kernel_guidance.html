@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sun Sep  7 15:35:10 2025</td></tr>
+<tr><td><b>Date</b></td><td>Mon Oct 13 17:12:44 2025</td></tr>
 <tr><td><b>Host</b></td><td>TUF15 running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\GEMM\sep6\hls_config.cfg --work_dir fmm_reduce_kernel </td></tr>
 </table></center><br>
@@ -3445,221 +3445,34 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">40</td>
+<td align="left">12</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_175_3'
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_115_1'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">2</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Either use an argument of the function or declare the variable inside the dataflow loop body (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=317">fmm_hls_greedy_potential.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=304">fmm_hls_greedy_potential.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">30</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'VITIS_LOOP_136_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">15</td>
+<td align="left">22</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_9_write_ln144', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=144">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_104_1_VITIS_LOOP_93_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">29</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_7_write_ln144', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=144">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Latency</td>
-<td align="left">Cannot flatten loop 'VITIS_LOOP_192_1' (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">44</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_104_1_VITIS_LOOP_93_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">17</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) (combination delay: 7.732 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_50_1_VITIS_LOOP_52_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">41</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'load' operation 32 bit ('e2', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=140">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=264">fmm_hls_greedy_potential.cpp</a>) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">42</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_7_write_ln144', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=144">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=264">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">43</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'VITIS_LOOP_136_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Latency</td>
-<td align="left">Cannot flatten loop 'VITIS_LOOP_224_1' (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=224">fmm_hls_greedy_potential.cpp</a>) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'load' operation 32 bit ('e2', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=140">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">36</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The critical path in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16' consists of the following:
-	'load' operation 32 bit ('p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) on local variable 'p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=195">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> [29]  (0.000 ns)
-	'add' operation 32 bit ('add_ln197', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [38]  (0.000 ns)
-	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [39]  (3.212 ns)
-	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [40]  (0.654 ns)
-	'add' operation 32 bit ('add_ln198', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [43]  (0.000 ns)
-	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [44]  (3.212 ns)
-	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [45]  (0.654 ns)
-	'select' operation 32 bit ('select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [64]  (0.654 ns)
-	'store' operation 0 bit ('s_write_ln191', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> [94]  (1.146 ns)
+<td align="left">The critical path in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1' consists of the following:
+	'load' operation 32 bit ('p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) on local variable 'p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=194">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> [29]  (0.000 ns)
+	'add' operation 32 bit ('add_ln196', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [38]  (0.000 ns)
+	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [39]  (3.212 ns)
+	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [40]  (0.654 ns)
+	'add' operation 32 bit ('add_ln197', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [43]  (0.000 ns)
+	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [44]  (3.212 ns)
+	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [45]  (0.654 ns)
+	'select' operation 32 bit ('select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [64]  (0.654 ns)
+	'store' operation 0 bit ('s_5_write_ln190', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> [94]  (1.146 ns)
 
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">47</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_77_1_VITIS_LOOP_78_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">26</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_175_3'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3675,256 +3488,13 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">31</td>
+<td align="left">42</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) (combination delay: 7.732 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">46</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The critical path in module 'greedy_potential_reduce_with_debug' consists of the following:
-	'call' operation 0 bit ('_ln193', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' [218]  (7.732 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">24</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_164_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Either use an argument of the function or declare the variable inside the dataflow loop body (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=319">fmm_hls_greedy_potential.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">27</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_116_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">33</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'store' operation 0 bit ('s_write_ln191', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> (combination delay: 9.532 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 14, loop 'VITIS_LOOP_59_3_VITIS_LOOP_60_4'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">21</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Estimated clock period (9.532 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">25</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3' (loop 'VITIS_LOOP_175_3'): Unable to schedule 'store' operation 0 bit ('M_e_addr_write_ln179', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=179">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=214">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">18</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) (combination delay: 8.386 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_136_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Dataflow form checks found 4 issue(s) in file fmm_hls_greedy_potential.cpp
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Latency</td>
-<td align="left">Cannot flatten loop 'VITIS_LOOP_192_1' (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">38</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_164_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=303">fmm_hls_greedy_potential.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_116_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">34</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">37</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_158_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">23</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_158_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">28</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15' (loop 'VITIS_LOOP_136_1'): Unable to schedule 'load' operation 32 bit ('e2', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=140">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">20</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">22</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The critical path in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1' consists of the following:
-	'load' operation 32 bit ('p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) on local variable 'p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=195">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> [29]  (0.000 ns)
-	'add' operation 32 bit ('add_ln197', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [38]  (0.000 ns)
-	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [39]  (3.212 ns)
-	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [40]  (0.654 ns)
-	'add' operation 32 bit ('add_ln198', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [43]  (0.000 ns)
-	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [44]  (3.212 ns)
-	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=198">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [45]  (0.654 ns)
-	'select' operation 32 bit ('select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) [64]  (0.654 ns)
-	'store' operation 0 bit ('s_5_write_ln191', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> [94]  (1.146 ns)
-
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110' (loop 'VITIS_LOOP_135_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_7_write_ln143', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=143">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=263">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3935,18 +3505,73 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'store' operation 0 bit ('s_5_write_ln191', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=230">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a> (combination delay: 9.532 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'store' operation 0 bit ('s_5_write_ln190', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> (combination delay: 9.532 ns) to honor II or Latency constraint in region 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">39</td>
+<td align="left">41</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39' (loop 'VITIS_LOOP_175_3'): Unable to schedule 'store' operation 0 bit ('M_e_addr_write_ln179', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=179">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=214">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110' (loop 'VITIS_LOOP_135_1'): Unable to schedule 'load' operation 32 bit ('e2', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=139">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=263">fmm_hls_greedy_potential.cpp</a>) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) (combination delay: 7.732 ns) to honor II or Latency constraint in region 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">44</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_103_1_VITIS_LOOP_92_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) (combination delay: 8.386 ns) to honor II or Latency constraint in region 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15' (loop 'VITIS_LOOP_135_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_7_write_ln143', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=143">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=211">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_174_3'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3962,24 +3587,399 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">12</td>
+<td align="left">40</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_116_1'
+<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_174_3'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">32</td>
+<td align="left">21</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('select_ln193_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=193">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=234">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=262">fmm_hls_greedy_potential.cpp</a>) (combination delay: 8.386 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_2_VITIS_LOOP_116_1'.
+<td align="left">Estimated clock period (9.532 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_49_1_VITIS_LOOP_51_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">47</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_76_1_VITIS_LOOP_77_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">36</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The critical path in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16' consists of the following:
+	'load' operation 32 bit ('p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) on local variable 'p', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=194">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> [29]  (0.000 ns)
+	'add' operation 32 bit ('add_ln196', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [38]  (0.000 ns)
+	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [39]  (3.212 ns)
+	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [40]  (0.654 ns)
+	'add' operation 32 bit ('add_ln197', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [43]  (0.000 ns)
+	'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [44]  (3.212 ns)
+	'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [45]  (0.654 ns)
+	'select' operation 32 bit ('select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) [64]  (0.654 ns)
+	'store' operation 0 bit ('s_write_ln190', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> [94]  (1.146 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'VITIS_LOOP_135_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'store' operation 0 bit ('s_write_ln190', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of variable 'select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> on local variable 's', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=190">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a> (combination delay: 9.532 ns) to honor II or Latency constraint in region 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('select_ln192_1', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) (combination delay: 8.386 ns) to honor II or Latency constraint in region 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Either use an argument of the function or declare the variable inside the dataflow loop body (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=314">fmm_hls_greedy_potential.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Either use an argument of the function or declare the variable inside the dataflow loop body (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=316">fmm_hls_greedy_potential.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15' (loop 'VITIS_LOOP_135_1'): Unable to schedule 'load' operation 32 bit ('e2', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=139">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=211">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_135_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 14, loop 'VITIS_LOOP_58_3_VITIS_LOOP_59_4'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_115_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_163_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=301">fmm_hls_greedy_potential.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_115_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1' (loop 'VITIS_LOOP_135_1'): Unable to schedule 'store' operation 0 bit ('M_e_addr_9_write_ln143', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=143">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=211">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Latency</td>
+<td align="left">Cannot flatten loop 'VITIS_LOOP_223_1' (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=223">fmm_hls_greedy_potential.cpp</a>) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_157_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Latency</td>
+<td align="left">Cannot flatten loop 'VITIS_LOOP_191_1' (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_157_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">46</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The critical path in module 'greedy_potential_reduce_with_debug' consists of the following:
+	'call' operation 0 bit ('_ln192', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=192">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1' [218]  (7.732 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">39</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39' (loop 'VITIS_LOOP_174_3'): Unable to schedule 'store' operation 0 bit ('M_e_addr_write_ln178', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=178">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_103_1_VITIS_LOOP_92_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=302">fmm_hls_greedy_potential.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">38</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_163_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'VITIS_LOOP_135_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">Cannot meet target clock period from 'add' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=196">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) to 'select' operation 32 bit ('s', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=197">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=212">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=233">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) (combination delay: 7.732 ns) to honor II or Latency constraint in region 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Dataflow form checks found 4 issue(s) in file fmm_hls_greedy_potential.cpp
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3' (loop 'VITIS_LOOP_174_3'): Unable to schedule 'store' operation 0 bit ('M_e_addr_write_ln178', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=178">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=213">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) of constant 0 on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1' (loop 'VITIS_LOOP_135_1'): Unable to schedule 'load' operation 32 bit ('e2', <a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=139">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=211">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=229">fmm_hls_greedy_potential.cpp</a>-><a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=261">fmm_hls_greedy_potential.cpp</a>) on array 'M_e' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Latency</td>
+<td align="left">Cannot flatten loop 'VITIS_LOOP_191_1' (<a href="file:///C:/GEMM/sep6\fmm_hls_greedy_potential.cpp#line=191">fmm_hls_greedy_potential.cpp</a>) in function 'greedy_potential_reduce_with_debug' the outer loop is not a perfect loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_192_2_VITIS_LOOP_115_1'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

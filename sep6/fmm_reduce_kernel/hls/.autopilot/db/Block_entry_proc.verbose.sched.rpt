@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Block_entry_proc'
 ================================================================
-* Date:           Sun Sep  7 15:34:56 2025
+* Date:           Mon Oct 13 17:12:23 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        fmm_reduce_kernel
@@ -107,55 +107,55 @@ ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_1 : Operation 31 [1/1] ( I:3.22ns O:3.22ns )   --->   "%A_dram_read = read i64 @_ssdm_op_Read.ap_fifo.i64P0A, i64 %A_dram"   --->   Operation 31 'read' 'A_dram_read' <Predicate = true> <Delay = 3.22> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.22> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 3> <FIFO>
 ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem2, void @empty_19, i32 0, i32 0, void @empty_13, i32 0, i32 4096, void @empty_15, void @empty_14, void @empty_13, i32 16, i32 16, i32 16, i32 16, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_19, i32 0, i32 0, void @empty_13, i32 0, i32 65536, void @empty_10, void @empty_14, void @empty_13, i32 16, i32 16, i32 16, i32 16, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.71ns)   --->   "%and_ln309 = and i1 %p_read_2, i1 %p_read_1" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:309]   --->   Operation 34 'and' 'and_ln309' <Predicate = true> <Delay = 0.71> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln309 = br i1 %and_ln309, void %land.lhs.true.i, void %if.end10.i" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:309]   --->   Operation 35 'br' 'br_ln309' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (1.91ns)   --->   "%icmp_ln310 = icmp_sgt  i32 %debug_capacity_read, i32 0" [fmm_hls_greedy_potential.cpp:310->fmm_hls_greedy_potential.cpp:309]   --->   Operation 36 'icmp' 'icmp_ln310' <Predicate = (!and_ln309)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln310 = br i1 %icmp_ln310, void %if.end.i, void %if.then9.i" [fmm_hls_greedy_potential.cpp:310->fmm_hls_greedy_potential.cpp:309]   --->   Operation 37 'br' 'br_ln310' <Predicate = (!and_ln309)> <Delay = 0.00>
-ST_1 : Operation 38 [2/2] (2.53ns)   --->   "%call_ln317 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:317->fmm_hls_greedy_potential.cpp:309]   --->   Operation 38 'call' 'call_ln317' <Predicate = (and_ln309)> <Delay = 2.53> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 34 [1/1] (0.71ns)   --->   "%and_ln307 = and i1 %p_read_2, i1 %p_read_1" [fmm_hls_greedy_potential.cpp:307->fmm_hls_greedy_potential.cpp:307]   --->   Operation 34 'and' 'and_ln307' <Predicate = true> <Delay = 0.71> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln307 = br i1 %and_ln307, void %land.lhs.true.i, void %if.end10.i" [fmm_hls_greedy_potential.cpp:307->fmm_hls_greedy_potential.cpp:307]   --->   Operation 35 'br' 'br_ln307' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (1.91ns)   --->   "%icmp_ln308 = icmp_sgt  i32 %debug_capacity_read, i32 0" [fmm_hls_greedy_potential.cpp:308->fmm_hls_greedy_potential.cpp:307]   --->   Operation 36 'icmp' 'icmp_ln308' <Predicate = (!and_ln307)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln308 = br i1 %icmp_ln308, void %if.end.i, void %if.then9.i" [fmm_hls_greedy_potential.cpp:308->fmm_hls_greedy_potential.cpp:307]   --->   Operation 37 'br' 'br_ln308' <Predicate = (!and_ln307)> <Delay = 0.00>
+ST_1 : Operation 38 [2/2] (2.53ns)   --->   "%call_ln314 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:314->fmm_hls_greedy_potential.cpp:307]   --->   Operation 38 'call' 'call_ln314' <Predicate = (and_ln307)> <Delay = 2.53> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 7.30>
-ST_2 : Operation 39 [1/1] (0.51ns)   --->   "%select_ln311 = select i1 %p_read_2, i32 4294966395, i32 4294966396" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 39 'select' 'select_ln311' <Predicate = true> <Delay = 0.51> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %debug_dram_read, i32 2, i32 63" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 40 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%sext_ln311 = sext i62 %trunc_ln" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 41 'sext' 'sext_ln311' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%gmem2_addr = getelementptr i32 %gmem2, i64 %sext_ln311" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 42 'getelementptr' 'gmem2_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (7.30ns)   --->   "%gmem2_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i32P1A, i32 %gmem2_addr, i64 1" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 43 'writereq' 'gmem2_addr_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 39 [1/1] (0.51ns)   --->   "%select_ln309 = select i1 %p_read_2, i32 4294966395, i32 4294966396" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 39 'select' 'select_ln309' <Predicate = true> <Delay = 0.51> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %debug_dram_read, i32 2, i32 63" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 40 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%sext_ln309 = sext i62 %trunc_ln" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 41 'sext' 'sext_ln309' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%gmem2_addr = getelementptr i32 %gmem2, i64 %sext_ln309" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 42 'getelementptr' 'gmem2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (7.30ns)   --->   "%gmem2_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i32P1A, i32 %gmem2_addr, i64 1" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 43 'writereq' 'gmem2_addr_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 3 <SV = 2> <Delay = 7.30>
-ST_3 : Operation 44 [1/1] (7.30ns)   --->   "%write_ln311 = write void @_ssdm_op_Write.m_axi.volatile.i32P1A, i32 %gmem2_addr, i32 %select_ln311, i4 15" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 44 'write' 'write_ln311' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 44 [1/1] (7.30ns)   --->   "%write_ln309 = write void @_ssdm_op_Write.m_axi.volatile.i32P1A, i32 %gmem2_addr, i32 %select_ln309, i4 15" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 44 'write' 'write_ln309' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 4 <SV = 3> <Delay = 7.30>
-ST_4 : Operation 45 [5/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 45 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 45 [5/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 45 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 5 <SV = 4> <Delay = 7.30>
-ST_5 : Operation 46 [4/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 46 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 46 [4/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 46 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 7.30>
-ST_6 : Operation 47 [3/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 47 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 47 [3/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 47 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 7.30>
-ST_7 : Operation 48 [2/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 48 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 48 [2/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 48 'writeresp' 'gmem2_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 7.30>
-ST_8 : Operation 49 [1/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309]   --->   Operation 49 'writeresp' 'gmem2_addr_resp' <Predicate = (!and_ln309 & icmp_ln310)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln312 = br void %if.end.i" [fmm_hls_greedy_potential.cpp:312->fmm_hls_greedy_potential.cpp:309]   --->   Operation 50 'br' 'br_ln312' <Predicate = (!and_ln309 & icmp_ln310)> <Delay = 0.00>
-ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln313 = br void %entry.aft.aft.exitStub" [fmm_hls_greedy_potential.cpp:313->fmm_hls_greedy_potential.cpp:309]   --->   Operation 51 'br' 'br_ln313' <Predicate = (!and_ln309)> <Delay = 0.00>
+ST_8 : Operation 49 [1/5] (7.30ns)   --->   "%gmem2_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %gmem2_addr" [fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307]   --->   Operation 49 'writeresp' 'gmem2_addr_resp' <Predicate = (!and_ln307 & icmp_ln308)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln310 = br void %if.end.i" [fmm_hls_greedy_potential.cpp:310->fmm_hls_greedy_potential.cpp:307]   --->   Operation 50 'br' 'br_ln310' <Predicate = (!and_ln307 & icmp_ln308)> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln311 = br void %entry.aft.aft.exitStub" [fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:307]   --->   Operation 51 'br' 'br_ln311' <Predicate = (!and_ln307)> <Delay = 0.00>
 ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 52 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 State 9 <SV = 1> <Delay = 0.00>
-ST_9 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln317 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:317->fmm_hls_greedy_potential.cpp:309]   --->   Operation 53 'call' 'call_ln317' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln314 = call void @load_matrix_from_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_e, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:314->fmm_hls_greedy_potential.cpp:307]   --->   Operation 53 'call' 'call_ln314' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 2> <Delay = 7.30>
-ST_10 : Operation 54 [2/2] (7.30ns)   --->   "%call_ln318 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:318->fmm_hls_greedy_potential.cpp:309]   --->   Operation 54 'call' 'call_ln318' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 54 [2/2] (7.30ns)   --->   "%call_ln315 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:315->fmm_hls_greedy_potential.cpp:307]   --->   Operation 54 'call' 'call_ln315' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 3> <Delay = 7.04>
-ST_11 : Operation 55 [1/2] (7.04ns)   --->   "%call_ln318 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:318->fmm_hls_greedy_potential.cpp:309]   --->   Operation 55 'call' 'call_ln318' <Predicate = true> <Delay = 7.04> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 55 [1/2] (7.04ns)   --->   "%call_ln315 = call void @greedy_potential_reduce_with_debug, i32 %k1_read, i32 %k2_read, i32 %gmem2, i64 %debug_dram_read, i32 %debug_capacity_read, i32 %M_e, i32 %M_cols, i32 %M_rows, i32 %M_t, i32 %M_t_capacity" [fmm_hls_greedy_potential.cpp:315->fmm_hls_greedy_potential.cpp:307]   --->   Operation 55 'call' 'call_ln315' <Predicate = true> <Delay = 7.04> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 4> <Delay = 0.00>
-ST_12 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln319 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e" [fmm_hls_greedy_potential.cpp:319->fmm_hls_greedy_potential.cpp:309]   --->   Operation 56 'call' 'call_ln319' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln316 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e" [fmm_hls_greedy_potential.cpp:316->fmm_hls_greedy_potential.cpp:307]   --->   Operation 56 'call' 'call_ln316' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 5> <Delay = 0.00>
-ST_13 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln319 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e" [fmm_hls_greedy_potential.cpp:319->fmm_hls_greedy_potential.cpp:309]   --->   Operation 57 'call' 'call_ln319' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln320 = br void %entry.aft.aft.exitStub" [fmm_hls_greedy_potential.cpp:320->fmm_hls_greedy_potential.cpp:309]   --->   Operation 58 'br' 'br_ln320' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln316 = call void @store_matrix_to_dram_safe, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e" [fmm_hls_greedy_potential.cpp:316->fmm_hls_greedy_potential.cpp:307]   --->   Operation 57 'call' 'call_ln316' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln317 = br void %entry.aft.aft.exitStub" [fmm_hls_greedy_potential.cpp:317->fmm_hls_greedy_potential.cpp:307]   --->   Operation 58 'br' 'br_ln317' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -166,48 +166,48 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
  <State 1>: 6.475ns
 The critical path consists of the following:
 	wire read operation ('p_read_1') on port 'p_read1' [19]  (3.226 ns)
-	'and' operation 1 bit ('and_ln309', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:309) [38]  (0.712 ns)
-	'call' operation 0 bit ('call_ln317', fmm_hls_greedy_potential.cpp:317->fmm_hls_greedy_potential.cpp:309) to 'load_matrix_from_dram_safe' [55]  (2.537 ns)
+	'and' operation 1 bit ('and_ln307', fmm_hls_greedy_potential.cpp:307->fmm_hls_greedy_potential.cpp:307) [38]  (0.712 ns)
+	'call' operation 0 bit ('call_ln314', fmm_hls_greedy_potential.cpp:314->fmm_hls_greedy_potential.cpp:307) to 'load_matrix_from_dram_safe' [55]  (2.537 ns)
 
  <State 2>: 7.300ns
 The critical path consists of the following:
-	'getelementptr' operation 32 bit ('gmem2_addr', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [47]  (0.000 ns)
-	bus request operation ('gmem2_addr_req', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [48]  (7.300 ns)
+	'getelementptr' operation 32 bit ('gmem2_addr', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [47]  (0.000 ns)
+	bus request operation ('gmem2_addr_req', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [48]  (7.300 ns)
 
  <State 3>: 7.300ns
 The critical path consists of the following:
-	bus write operation ('write_ln311', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [49]  (7.300 ns)
+	bus write operation ('write_ln309', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [49]  (7.300 ns)
 
  <State 4>: 7.300ns
 The critical path consists of the following:
-	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [50]  (7.300 ns)
+	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [50]  (7.300 ns)
 
  <State 5>: 7.300ns
 The critical path consists of the following:
-	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [50]  (7.300 ns)
+	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [50]  (7.300 ns)
 
  <State 6>: 7.300ns
 The critical path consists of the following:
-	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [50]  (7.300 ns)
+	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [50]  (7.300 ns)
 
  <State 7>: 7.300ns
 The critical path consists of the following:
-	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [50]  (7.300 ns)
+	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [50]  (7.300 ns)
 
  <State 8>: 7.300ns
 The critical path consists of the following:
-	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) on port 'gmem2' (fmm_hls_greedy_potential.cpp:311->fmm_hls_greedy_potential.cpp:309) [50]  (7.300 ns)
+	bus response operation ('gmem2_addr_resp', fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) on port 'gmem2' (fmm_hls_greedy_potential.cpp:309->fmm_hls_greedy_potential.cpp:307) [50]  (7.300 ns)
 
  <State 9>: 0.000ns
 The critical path consists of the following:
 
  <State 10>: 7.300ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln318', fmm_hls_greedy_potential.cpp:318->fmm_hls_greedy_potential.cpp:309) to 'greedy_potential_reduce_with_debug' [56]  (7.300 ns)
+	'call' operation 0 bit ('call_ln315', fmm_hls_greedy_potential.cpp:315->fmm_hls_greedy_potential.cpp:307) to 'greedy_potential_reduce_with_debug' [56]  (7.300 ns)
 
  <State 11>: 7.044ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln318', fmm_hls_greedy_potential.cpp:318->fmm_hls_greedy_potential.cpp:309) to 'greedy_potential_reduce_with_debug' [56]  (7.044 ns)
+	'call' operation 0 bit ('call_ln315', fmm_hls_greedy_potential.cpp:315->fmm_hls_greedy_potential.cpp:307) to 'greedy_potential_reduce_with_debug' [56]  (7.044 ns)
 
  <State 12>: 0.000ns
 The critical path consists of the following:

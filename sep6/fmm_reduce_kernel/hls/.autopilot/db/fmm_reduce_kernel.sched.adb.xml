@@ -277,10 +277,10 @@ entry:29 %A_dram_c = alloca i64 1
 
 <Node id="81" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="64" op_10_bw="64">
 <![CDATA[
-entry:64 %call_ln304 = call void @entry_proc, i64 %A_dram_read, i64 %A_dram_c, i32 %t_capacity_read, i32 %t_capacity_c, i32 %k1_read, i32 %k1_c, i32 %k2_read, i32 %k2_c, i64 %debug_dram_read, i64 %debug_dram_c
+entry:64 %call_ln302 = call void @entry_proc, i64 %A_dram_read, i64 %A_dram_c, i32 %t_capacity_read, i32 %t_capacity_c, i32 %k1_read, i32 %k1_c, i32 %k2_read, i32 %k2_c, i64 %debug_dram_read, i64 %debug_dram_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln304"/></StgValue>
+<StgValue><ssdm name="call_ln302"/></StgValue>
 </operation>
 
 <operation id="22" st_id="1" stage="2" lat="2">
@@ -358,10 +358,10 @@ entry:67 %p_loc_channel = extractvalue i2 %call_ret
 
 <Node id="85" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="64" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="0" op_19_bw="0" op_20_bw="0">
 <![CDATA[
-entry:68 %call_ln309 = call void @Block_entry_proc, i1 %spec_select_loc_channel, i1 %p_loc_channel, i32 %gmem, i64 %A_dram_c, i32 %rows_c, i32 %cols_c, i32 %t_capacity_c, i32 %k1_c, i32 %k2_c, i32 %gmem2, i64 %debug_dram_c, i32 %debug_capacity_c, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e
+entry:68 %call_ln307 = call void @Block_entry_proc, i1 %spec_select_loc_channel, i1 %p_loc_channel, i32 %gmem, i64 %A_dram_c, i32 %rows_c, i32 %cols_c, i32 %t_capacity_c, i32 %k1_c, i32 %k2_c, i32 %gmem2, i64 %debug_dram_c, i32 %debug_capacity_c, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e
 
 ]]></Node>
-<StgValue><ssdm name="call_ln309"/></StgValue>
+<StgValue><ssdm name="call_ln307"/></StgValue>
 </operation>
 </state>
 
@@ -391,10 +391,10 @@ entry:9 %empty = specchannel i32 @_ssdm_op_SpecChannel, void @debug_capacity_c_s
 
 <Node id="27" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:10 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %debug_capacity_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:10 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i32 %debug_capacity_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="29" st_id="4" stage="1" lat="1">
@@ -421,10 +421,10 @@ entry:12 %empty_57 = specchannel i32 @_ssdm_op_SpecChannel, void @debug_dram_c_s
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:13 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i64 %debug_dram_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:13 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i64 %debug_dram_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="31" st_id="4" stage="1" lat="1">
@@ -451,10 +451,10 @@ entry:15 %empty_58 = specchannel i32 @_ssdm_op_SpecChannel, void @k2_c_str, i32 
 
 <Node id="33" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:16 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %k2_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:16 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i32 %k2_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="33" st_id="4" stage="1" lat="1">
@@ -481,10 +481,10 @@ entry:18 %empty_59 = specchannel i32 @_ssdm_op_SpecChannel, void @k1_c_str, i32 
 
 <Node id="36" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:19 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %k1_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:19 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i32 %k1_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="35" st_id="4" stage="1" lat="1">
@@ -511,10 +511,10 @@ entry:21 %empty_60 = specchannel i32 @_ssdm_op_SpecChannel, void @t_capacity_c_s
 
 <Node id="39" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:22 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:22 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="37" st_id="4" stage="1" lat="1">
@@ -541,10 +541,10 @@ entry:24 %empty_61 = specchannel i32 @_ssdm_op_SpecChannel, void @cols_c_str, i3
 
 <Node id="42" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:25 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %cols_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:25 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i32 %cols_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="39" st_id="4" stage="1" lat="1">
@@ -571,10 +571,10 @@ entry:27 %empty_62 = specchannel i32 @_ssdm_op_SpecChannel, void @rows_c_str, i3
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:28 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i32 %rows_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:28 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i32 %rows_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="41" st_id="4" stage="1" lat="1">
@@ -601,10 +601,10 @@ entry:30 %empty_63 = specchannel i32 @_ssdm_op_SpecChannel, void @A_dram_c_str, 
 
 <Node id="48" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:31 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:31 %specinterface_ln302 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln304"/></StgValue>
+<StgValue><ssdm name="specinterface_ln302"/></StgValue>
 </operation>
 
 <operation id="43" st_id="4" stage="1" lat="1">
@@ -616,10 +616,10 @@ entry:31 %specinterface_ln304 = specinterface void @_ssdm_op_SpecInterface, i64 
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-entry:32 %specdataflowpipeline_ln304 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_13
+entry:32 %specdataflowpipeline_ln302 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_13
 
 ]]></Node>
-<StgValue><ssdm name="specdataflowpipeline_ln304"/></StgValue>
+<StgValue><ssdm name="specdataflowpipeline_ln302"/></StgValue>
 </operation>
 
 <operation id="44" st_id="4" stage="1" lat="1">
@@ -631,10 +631,10 @@ entry:32 %specdataflowpipeline_ln304 = specdataflowpipeline void @_ssdm_op_SpecD
 
 <Node id="50" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:33 %spectopmodule_ln280 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty
+entry:33 %spectopmodule_ln279 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln280"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln279"/></StgValue>
 </operation>
 
 <operation id="45" st_id="4" stage="1" lat="1">
@@ -1096,10 +1096,10 @@ entry:63 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0,
 
 <Node id="85" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="32" op_4_bw="64" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="64" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="0" op_19_bw="0" op_20_bw="0">
 <![CDATA[
-entry:68 %call_ln309 = call void @Block_entry_proc, i1 %spec_select_loc_channel, i1 %p_loc_channel, i32 %gmem, i64 %A_dram_c, i32 %rows_c, i32 %cols_c, i32 %t_capacity_c, i32 %k1_c, i32 %k2_c, i32 %gmem2, i64 %debug_dram_c, i32 %debug_capacity_c, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e
+entry:68 %call_ln307 = call void @Block_entry_proc, i1 %spec_select_loc_channel, i1 %p_loc_channel, i32 %gmem, i64 %A_dram_c, i32 %rows_c, i32 %cols_c, i32 %t_capacity_c, i32 %k1_c, i32 %k2_c, i32 %gmem2, i64 %debug_dram_c, i32 %debug_capacity_c, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e
 
 ]]></Node>
-<StgValue><ssdm name="call_ln309"/></StgValue>
+<StgValue><ssdm name="call_ln307"/></StgValue>
 </operation>
 
 <operation id="76" st_id="4" stage="1" lat="1">
@@ -1111,10 +1111,10 @@ entry:68 %call_ln309 = call void @Block_entry_proc, i1 %spec_select_loc_channel,
 
 <Node id="86" bw="0">
 <![CDATA[
-entry:69 %ret_ln320 = ret
+entry:69 %ret_ln317 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln320"/></StgValue>
+<StgValue><ssdm name="ret_ln317"/></StgValue>
 </operation>
 </state>
 </state_list>

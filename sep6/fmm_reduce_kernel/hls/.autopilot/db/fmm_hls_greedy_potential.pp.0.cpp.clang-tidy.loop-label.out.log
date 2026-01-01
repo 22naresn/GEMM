@@ -1,110 +1,110 @@
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2257:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2256:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high+1; ++i) {
     ^~~
     VITIS_LOOP_676_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2257:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2271:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2256:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2270:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high+1; ++i) {
     ^~~
     VITIS_LOOP_690_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2271:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2285:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2270:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2284:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high+1; ++i) {
     ^~~
     VITIS_LOOP_704_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2285:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:4253:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:2284:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:4252:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1248_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:4253:7: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7452:5: warning: Added loop label VITIS_LOOP_50_1:   [xilinx-label-all-loops]
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:4252:7: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7451:5: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
     for (int r = 0; r < MAX_TOTAL_ROWS; ++r) {
     ^~~
-    VITIS_LOOP_50_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7452:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7454:2: warning: Added loop label VITIS_LOOP_52_2:   [xilinx-label-all-loops]
+    VITIS_LOOP_49_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7451:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7453:2: warning: Added loop label VITIS_LOOP_51_2:   [xilinx-label-all-loops]
  for (int c = 0; c < MAX_TOTAL_COLS; ++c) {
  ^~~
- VITIS_LOOP_52_2: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7454:2: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7461:5: warning: Added loop label VITIS_LOOP_59_3:   [xilinx-label-all-loops]
+ VITIS_LOOP_51_2: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7453:2: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7460:5: warning: Added loop label VITIS_LOOP_58_3:   [xilinx-label-all-loops]
     for (int r = 0; r < rows; ++r) {
     ^~~
-    VITIS_LOOP_59_3: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7461:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7462:9: warning: Added loop label VITIS_LOOP_60_4:   [xilinx-label-all-loops]
+    VITIS_LOOP_58_3: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7460:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7461:9: warning: Added loop label VITIS_LOOP_59_4:   [xilinx-label-all-loops]
         for (int c = 0; c < cols; ++c) {
         ^~~
-        VITIS_LOOP_60_4: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7462:9: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7479:5: warning: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_59_4: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7461:9: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7478:5: warning: Added loop label VITIS_LOOP_76_1:   [xilinx-label-all-loops]
     for (int r = 0; r < rows; ++r) {
     ^~~
-    VITIS_LOOP_77_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7479:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7480:9: warning: Added loop label VITIS_LOOP_78_2:   [xilinx-label-all-loops]
+    VITIS_LOOP_76_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7478:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7479:9: warning: Added loop label VITIS_LOOP_77_2:   [xilinx-label-all-loops]
         for (int c = 0; c < cols; ++c) {
         ^~~
-        VITIS_LOOP_78_2: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7480:9: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7495:5: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_77_2: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7479:9: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7494:5: warning: Added loop label VITIS_LOOP_92_1:   [xilinx-label-all-loops]
     for (int r = 0; r < total_rows; ++r) {
     ^~~
-    VITIS_LOOP_93_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7495:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7506:5: warning: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+    VITIS_LOOP_92_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7494:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7505:5: warning: Added loop label VITIS_LOOP_103_1:   [xilinx-label-all-loops]
     for (int c = 0; c < total_cols; ++c) {
     ^~~
-    VITIS_LOOP_104_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7506:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7518:5: warning: Added loop label VITIS_LOOP_116_1:   [xilinx-label-all-loops]
+    VITIS_LOOP_103_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7505:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7517:5: warning: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
     for (int c = 0; c < cols_non_t; ++c) {
     ^~~
-    VITIS_LOOP_116_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7518:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7538:5: warning: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    VITIS_LOOP_115_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7517:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7537:5: warning: Added loop label VITIS_LOOP_135_1:   [xilinx-label-all-loops]
     for (int c = 0; c < existing_cols; ++c) {
     ^~~
-    VITIS_LOOP_136_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7538:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7560:5: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+    VITIS_LOOP_135_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7537:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7559:5: warning: Added loop label VITIS_LOOP_157_1:   [xilinx-label-all-loops]
     for (int r = 0; r < rowt; ++r) {
     ^~~
-    VITIS_LOOP_158_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7560:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7566:5: warning: Added loop label VITIS_LOOP_164_2:   [xilinx-label-all-loops]
+    VITIS_LOOP_157_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7559:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7565:5: warning: Added loop label VITIS_LOOP_163_2:   [xilinx-label-all-loops]
     for (int r = rowt - 1; r > row1; --r) {
     ^~~
-    VITIS_LOOP_164_2: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7566:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7577:5: warning: Added loop label VITIS_LOOP_175_3:   [xilinx-label-all-loops]
+    VITIS_LOOP_163_2: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7565:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7576:5: warning: Added loop label VITIS_LOOP_174_3:   [xilinx-label-all-loops]
     for (int c = 0; c < colt; ++c) {
     ^~~
-    VITIS_LOOP_175_3: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7577:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7594:5: warning: Added loop label VITIS_LOOP_192_1:   [xilinx-label-all-loops]
+    VITIS_LOOP_174_3: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7576:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7593:5: warning: Added loop label VITIS_LOOP_191_1:   [xilinx-label-all-loops]
     for (int i = 0; i < R; ++i) {
     ^~~
-    VITIS_LOOP_192_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7594:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7595:9: warning: Added loop label VITIS_LOOP_193_2:   [xilinx-label-all-loops]
+    VITIS_LOOP_191_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7593:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7594:9: warning: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
         for (int j = i+1; j < R; ++j) {
         ^~~
-        VITIS_LOOP_193_2: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7595:9: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7626:5: warning: Added loop label VITIS_LOOP_224_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_192_2: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7594:9: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7625:5: warning: Added loop label VITIS_LOOP_223_1:   [xilinx-label-all-loops]
     for (int i = 0; i < R; ++i) {
     ^~~
-    VITIS_LOOP_224_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7626:5: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7627:9: warning: Added loop label VITIS_LOOP_225_2:   [xilinx-label-all-loops]
+    VITIS_LOOP_223_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7625:5: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7626:9: warning: Added loop label VITIS_LOOP_224_2:   [xilinx-label-all-loops]
         for (int j = i+1; j < R; ++j) {
         ^~~
-        VITIS_LOOP_225_2: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7627:9: note: FIX-IT applied suggested code changes
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7662:5: warning: Added loop label VITIS_LOOP_260_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_224_2: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7626:9: note: FIX-IT applied suggested code changes
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7661:5: warning: Added loop label VITIS_LOOP_259_1:   [xilinx-label-all-loops]
     while (true) {
     ^~~~~
-    VITIS_LOOP_260_1: 
-C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7662:5: note: FIX-IT applied suggested code changes
+    VITIS_LOOP_259_1: 
+C:\GEMM\sep6\fmm_reduce_kernel\hls\.autopilot\db\fmm_hls_greedy_potential.pp.0.cpp:7661:5: note: FIX-IT applied suggested code changes

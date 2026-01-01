@@ -1,0 +1,212 @@
+
+
+================================================================
+== Vitis HLS Report for 'greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110'
+================================================================
+* Date:           Mon Oct 13 17:12:19 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        fmm_reduce_kernel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.285 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_135_1  |        ?|        ?|         6|          3|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 3, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 3, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.21>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%c_2 = alloca i32 1" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 9 'alloca' 'c_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%cmp34_i_i_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp34_i_i"   --->   Operation 10 'read' 'cmp34_i_i_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%icmp_ln133_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln133"   --->   Operation 11 'read' 'icmp_ln133_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%mul_ln144_read = read i17 @_ssdm_op_Read.ap_auto.i17, i17 %mul_ln144"   --->   Operation 12 'read' 'mul_ln144_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%mul_ln133_read = read i17 @_ssdm_op_Read.ap_auto.i17, i17 %mul_ln133"   --->   Operation 13 'read' 'mul_ln133_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%mul_ln132_read = read i17 @_ssdm_op_Read.ap_auto.i17, i17 %mul_ln132"   --->   Operation 14 'read' 'mul_ln132_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%new_col_3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %new_col_3"   --->   Operation 15 'read' 'new_col_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.14ns)   --->   "%store_ln135 = store i31 0, i31 %c_2" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 16 'store' 'store_ln135' <Predicate = true> <Delay = 1.14>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.i47.i"   --->   Operation 17 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%c = load i31 %c_2" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 18 'load' 'c' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln135 = zext i31 %c" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 19 'zext' 'zext_ln135' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.91ns)   --->   "%icmp_ln135 = icmp_slt  i32 %zext_ln135, i32 %new_col_3_read" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 20 'icmp' 'icmp_ln135' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (1.89ns)   --->   "%add_ln135 = add i31 %c, i31 1" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 21 'add' 'add_ln135' <Predicate = true> <Delay = 1.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln135 = br i1 %icmp_ln135, void %for.cond.cleanup.i.i.exitStub, void %for.body.i47.split.i" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 22 'br' 'br_ln135' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln137 = trunc i31 %c" [fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263]   --->   Operation 23 'trunc' 'trunc_ln137' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.65ns)   --->   "%add_ln137 = add i17 %mul_ln132_read, i17 %trunc_ln137" [fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263]   --->   Operation 24 'add' 'add_ln137' <Predicate = (icmp_ln135)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln137 = zext i17 %add_ln137" [fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263]   --->   Operation 25 'zext' 'zext_ln137' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%M_e_addr_5 = getelementptr i32 %M_e, i64 0, i64 %zext_ln137" [fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263]   --->   Operation 26 'getelementptr' 'M_e_addr_5' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_1 : Operation 27 [2/2] (2.41ns)   --->   "%e1 = load i17 %M_e_addr_5" [fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263]   --->   Operation 27 'load' 'e1' <Predicate = (icmp_ln135)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+ST_1 : Operation 28 [1/1] (1.14ns)   --->   "%store_ln135 = store i31 %add_ln135, i31 %c_2" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 28 'store' 'store_ln135' <Predicate = (icmp_ln135)> <Delay = 1.14>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln135 = br void %for.body.i47.i" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 29 'br' 'br_ln135' <Predicate = (icmp_ln135)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.33>
+ST_2 : Operation 30 [1/1] (1.65ns)   --->   "%add_ln139 = add i17 %mul_ln133_read, i17 %trunc_ln137" [fmm_hls_greedy_potential.cpp:139->fmm_hls_greedy_potential.cpp:263]   --->   Operation 30 'add' 'add_ln139' <Predicate = (icmp_ln135)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln139 = zext i17 %add_ln139" [fmm_hls_greedy_potential.cpp:139->fmm_hls_greedy_potential.cpp:263]   --->   Operation 31 'zext' 'zext_ln139' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%M_e_addr_7 = getelementptr i32 %M_e, i64 0, i64 %zext_ln139" [fmm_hls_greedy_potential.cpp:139->fmm_hls_greedy_potential.cpp:263]   --->   Operation 32 'getelementptr' 'M_e_addr_7' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (1.65ns)   --->   "%add_ln144 = add i17 %mul_ln144_read, i17 %trunc_ln137" [fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:263]   --->   Operation 33 'add' 'add_ln144' <Predicate = (icmp_ln135)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln144 = zext i17 %add_ln144" [fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:263]   --->   Operation 34 'zext' 'zext_ln144' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%M_e_addr = getelementptr i32 %M_e, i64 0, i64 %zext_ln144" [fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:263]   --->   Operation 35 'getelementptr' 'M_e_addr' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%specpipeline_ln136 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_13" [fmm_hls_greedy_potential.cpp:136->fmm_hls_greedy_potential.cpp:263]   --->   Operation 36 'specpipeline' 'specpipeline_ln136' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%specloopname_ln135 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263]   --->   Operation 37 'specloopname' 'specloopname_ln135' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 38 [1/2] ( I:2.41ns O:2.41ns )   --->   "%e1 = load i17 %M_e_addr_5" [fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263]   --->   Operation 38 'load' 'e1' <Predicate = (icmp_ln135)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+ST_2 : Operation 39 [1/1] (1.91ns)   --->   "%icmp_ln138 = icmp_eq  i32 %e1, i32 0" [fmm_hls_greedy_potential.cpp:138->fmm_hls_greedy_potential.cpp:263]   --->   Operation 39 'icmp' 'icmp_ln138' <Predicate = (icmp_ln135)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln138 = br i1 %icmp_ln138, void %if.end23.i.i, void %cleanup56.i.i" [fmm_hls_greedy_potential.cpp:138->fmm_hls_greedy_potential.cpp:263]   --->   Operation 40 'br' 'br_ln138' <Predicate = (icmp_ln135)> <Delay = 0.00>
+ST_2 : Operation 41 [2/2] (2.41ns)   --->   "%e2 = load i17 %M_e_addr_7" [fmm_hls_greedy_potential.cpp:139->fmm_hls_greedy_potential.cpp:263]   --->   Operation 41 'load' 'e2' <Predicate = (icmp_ln135 & !icmp_ln138)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+
+State 3 <SV = 2> <Delay = 6.28>
+ST_3 : Operation 42 [1/2] ( I:2.41ns O:2.41ns )   --->   "%e2 = load i17 %M_e_addr_7" [fmm_hls_greedy_potential.cpp:139->fmm_hls_greedy_potential.cpp:263]   --->   Operation 42 'load' 'e2' <Predicate = (icmp_ln135 & !icmp_ln138)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+ST_3 : Operation 43 [1/1] (1.91ns)   --->   "%icmp_ln140 = icmp_eq  i32 %e2, i32 0" [fmm_hls_greedy_potential.cpp:140->fmm_hls_greedy_potential.cpp:263]   --->   Operation 43 'icmp' 'icmp_ln140' <Predicate = (icmp_ln135 & !icmp_ln138)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln140 = br i1 %icmp_ln140, void %if.end31.i.i, void %cleanup56.i.i" [fmm_hls_greedy_potential.cpp:140->fmm_hls_greedy_potential.cpp:263]   --->   Operation 44 'br' 'br_ln140' <Predicate = (icmp_ln135 & !icmp_ln138)> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.91ns)   --->   "%icmp_ln141 = icmp_eq  i32 %e1, i32 %e2" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 45 'icmp' 'icmp_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.71ns)   --->   "%and_ln141 = and i1 %icmp_ln133_read, i1 %icmp_ln141" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 46 'and' 'and_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140)> <Delay = 0.71> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 47 [1/1] (0.71ns)   --->   "%or_ln141 = or i1 %and_ln141, i1 %cmp34_i_i_read" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 47 'or' 'or_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140)> <Delay = 0.71> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln141 = br i1 %or_ln141, void %land.rhs.i.i, void %lor.end.i.i" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 48 'br' 'br_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%sext_ln141 = sext i32 %e2" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 49 'sext' 'sext_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140 & !or_ln141)> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (1.91ns)   --->   "%sub_ln141 = sub i33 0, i33 %sext_ln141" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 50 'sub' 'sub_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140 & !or_ln141)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%sext_ln141_1 = sext i32 %e1" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 51 'sext' 'sext_ln141_1' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140 & !or_ln141)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (1.95ns)   --->   "%icmp_ln141_1 = icmp_eq  i33 %sext_ln141_1, i33 %sub_ln141" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 52 'icmp' 'icmp_ln141_1' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140 & !or_ln141)> <Delay = 1.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln141 = br i1 %icmp_ln141_1, void %if.end55.i.i, void %if.then37.i.i" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 53 'br' 'br_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140 & !or_ln141)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln141 = br i1 %and_ln141, void %if.end55.i.i, void %if.then37.i.i" [fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263]   --->   Operation 54 'br' 'br_ln141' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140 & or_ln141)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln146 = br void %cleanup56.i.i" [fmm_hls_greedy_potential.cpp:146->fmm_hls_greedy_potential.cpp:263]   --->   Operation 55 'br' 'br_ln146' <Predicate = (icmp_ln135 & !icmp_ln138 & !icmp_ln140)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (1.14ns)   --->   "%ret_ln0 = ret"   --->   Operation 60 'ret' 'ret_ln0' <Predicate = (!icmp_ln135)> <Delay = 1.14>
+
+State 4 <SV = 3> <Delay = 2.41>
+ST_4 : Operation 56 [1/1] ( I:2.41ns O:2.41ns )   --->   "%store_ln142 = store i32 0, i17 %M_e_addr_5" [fmm_hls_greedy_potential.cpp:142->fmm_hls_greedy_potential.cpp:263]   --->   Operation 56 'store' 'store_ln142' <Predicate = (!icmp_ln138 & !icmp_ln140 & or_ln141 & and_ln141) | (!icmp_ln138 & !icmp_ln140 & !or_ln141 & icmp_ln141_1)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+
+State 5 <SV = 4> <Delay = 2.41>
+ST_5 : Operation 57 [1/1] ( I:2.41ns O:2.41ns )   --->   "%store_ln143 = store i32 0, i17 %M_e_addr_7" [fmm_hls_greedy_potential.cpp:143->fmm_hls_greedy_potential.cpp:263]   --->   Operation 57 'store' 'store_ln143' <Predicate = (!icmp_ln138 & !icmp_ln140 & or_ln141 & and_ln141) | (!icmp_ln138 & !icmp_ln140 & !or_ln141 & icmp_ln141_1)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+
+State 6 <SV = 5> <Delay = 2.41>
+ST_6 : Operation 58 [1/1] ( I:2.41ns O:2.41ns )   --->   "%store_ln144 = store i32 %e1, i17 %M_e_addr" [fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:263]   --->   Operation 58 'store' 'store_ln144' <Predicate = (!icmp_ln138 & !icmp_ln140 & or_ln141 & and_ln141) | (!icmp_ln138 & !icmp_ln140 & !or_ln141 & icmp_ln141_1)> <Delay = 2.41> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.41> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 102400> <RAM>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln145 = br void %if.end55.i.i" [fmm_hls_greedy_potential.cpp:145->fmm_hls_greedy_potential.cpp:263]   --->   Operation 59 'br' 'br_ln145' <Predicate = (!icmp_ln138 & !icmp_ln140 & or_ln141 & and_ln141) | (!icmp_ln138 & !icmp_ln140 & !or_ln141 & icmp_ln141_1)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.216ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln135', fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263) of constant 0 on local variable 'c', fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263 [15]  (1.146 ns)
+	'load' operation 31 bit ('c', fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263) on local variable 'c', fmm_hls_greedy_potential.cpp:135->fmm_hls_greedy_potential.cpp:263 [18]  (0.000 ns)
+	'add' operation 17 bit ('add_ln137', fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263) [25]  (1.653 ns)
+	'getelementptr' operation 17 bit ('M_e_addr_5', fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263) [27]  (0.000 ns)
+	'load' operation 32 bit ('e1', fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263) on array 'M_e' [36]  (2.417 ns)
+
+ <State 2>: 4.333ns
+The critical path consists of the following:
+	'load' operation 32 bit ('e1', fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263) on array 'M_e' [36]  (2.417 ns)
+	'icmp' operation 1 bit ('icmp_ln138', fmm_hls_greedy_potential.cpp:138->fmm_hls_greedy_potential.cpp:263) [37]  (1.916 ns)
+
+ <State 3>: 6.285ns
+The critical path consists of the following:
+	'load' operation 32 bit ('e2', fmm_hls_greedy_potential.cpp:139->fmm_hls_greedy_potential.cpp:263) on array 'M_e' [40]  (2.417 ns)
+	'sub' operation 33 bit ('sub_ln141', fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263) [50]  (1.916 ns)
+	'icmp' operation 1 bit ('icmp_ln141_1', fmm_hls_greedy_potential.cpp:141->fmm_hls_greedy_potential.cpp:263) [52]  (1.952 ns)
+
+ <State 4>: 2.417ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln142', fmm_hls_greedy_potential.cpp:142->fmm_hls_greedy_potential.cpp:263) of constant 0 on array 'M_e' [57]  (2.417 ns)
+
+ <State 5>: 2.417ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln143', fmm_hls_greedy_potential.cpp:143->fmm_hls_greedy_potential.cpp:263) of constant 0 on array 'M_e' [58]  (2.417 ns)
+
+ <State 6>: 2.417ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln144', fmm_hls_greedy_potential.cpp:144->fmm_hls_greedy_potential.cpp:263) of variable 'e1', fmm_hls_greedy_potential.cpp:137->fmm_hls_greedy_potential.cpp:263 on array 'M_e' [59]  (2.417 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

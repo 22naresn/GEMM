@@ -1,5 +1,4 @@
 // Testbench for fmm_hls_greedy_potential kernel with debug buffer.
-// Builds test matrices, calls kernel (C-sim / C/RTL cosim), runs CPU reference,
 // prints full matrices, prints per-iteration traces and compares kernel vs CPU.
 
 #include <iostream>
@@ -13,10 +12,10 @@
 using namespace std;
 
 // Simulator/AXI depths — MUST match the pragma 'depth=' values in the kernel
-constexpr int SIM_A_DEPTH = 65536;    // words (256 * 256)
-constexpr int SIM_DEBUG_DEPTH = 4096; // words (debug buffer)
+constexpr int SIM_A_DEPTH = 65536;    // 256 * 256)
+constexpr int SIM_DEBUG_DEPTH = 4096; // debug buffer
 
-// Kernel prototype (must match your kernel file exactly)
+// Kernel prototype 
 extern "C" {
 void fmm_reduce_kernel(volatile int *A_dram,
                        int rows,
@@ -29,7 +28,7 @@ void fmm_reduce_kernel(volatile int *A_dram,
                        int debug_capacity);
 }
 
-// ---------- CPU reference implementation (mirrors kernel logic) ----------
+// ---------- CPU reference implementation ----------
 struct MatCPU {
     int rows;
     int cols;
@@ -257,8 +256,8 @@ int main() {
     const int T_CAP = 64;
     const int K1 = 5;
     const int K2 = 1;
-    // make runtime debug capacity match simulator depth (safe)
-    const int DEBUG_CAPACITY = SIM_DEBUG_DEPTH; // words
+    // make runtime debug capacity match simulator depth
+    const int DEBUG_CAPACITY = SIM_DEBUG_DEPTH; 
 
     vector<MatCPU> tests;
     MatCPU a; build_handcrafted(a); tests.push_back(a);
@@ -282,15 +281,15 @@ int main() {
         vector<int32_t> dram_for_kernel(SIM_A_DEPTH, 0);
         for (size_t i = 0; i < dram.size(); ++i) dram_for_kernel[i] = dram[i];
 
-        // Debug buffer sized to the AXI debug depth (wrapper expects this many words)
+        // Debug buffer sized to the AXI debug depth
         vector<int> debug_kern(SIM_DEBUG_DEPTH, -1);
 
-        // Run kernel (C-sim / C/RTL cosim will access the whole SIM_A_DEPTH / SIM_DEBUG_DEPTH region)
+        // Run kernel
         fmm_reduce_kernel((volatile int*)dram_for_kernel.data(),
                           mat.rows, mat.cols, T_CAP, K1, K2, 0,
                           (volatile int*)debug_kern.data(), DEBUG_CAPACITY);
 
-        // Run CPU ref and capture trace
+        // Run CPU ref and capture the trace
         MatCPU ref; ref.init(mat.rows, mat.cols, T_CAP); unflatten_to_matcpu(dram, ref);
         vector<int> debug_cpu;
         greedy_potential_reduce_cpu_with_trace(ref, K1, K2, debug_cpu);
@@ -306,7 +305,7 @@ int main() {
             for (int k=0;k<rec_size;k++) kern_trace.push_back(debug_kern[base + k]);
         }
 
-        // Print full kernel output matrix (original region only)
+        // Print full kernel output matrix 
         MatCPU kern; kern.init(mat.rows, mat.cols, T_CAP);
         for (int r = 0; r < mat.rows; ++r) {
             for (int c = 0; c < mat.cols; ++c) {

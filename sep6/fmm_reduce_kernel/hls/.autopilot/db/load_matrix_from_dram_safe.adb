@@ -636,10 +636,10 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>M_rows_write_ln45</name>
+              <name>M_rows_write_ln44</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
+              <lineNumber>44</lineNumber>
               <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
               <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
               <inlineStackInfo>
@@ -655,7 +655,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>load_matrix_from_dram_safe</second>
                       </first>
-                      <second>45</second>
+                      <second>44</second>
                     </item>
                   </second>
                 </item>
@@ -693,7 +693,64 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>M_cols_write_ln46</name>
+              <name>M_cols_write_ln45</name>
+              <fileName>fmm_hls_greedy_potential.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>45</lineNumber>
+              <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
+              <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GEMM\sep6</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>fmm_hls_greedy_potential.cpp</first>
+                        <second>load_matrix_from_dram_safe</second>
+                      </first>
+                      <second>45</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>47</item>
+            <item>48</item>
+          </oprand_edges>
+          <opcode>store</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>6</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_19">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>20</id>
+              <name>M_t_write_ln46</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
@@ -733,8 +790,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>47</item>
-            <item>48</item>
+            <item>50</item>
+            <item>51</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -742,15 +799,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>6</m_topoIndex>
+          <m_topoIndex>18</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_19">
+        <item class_id_reference="9" object_id="_20">
           <Value>
             <Obj>
               <type>0</type>
-              <id>20</id>
-              <name>M_t_write_ln47</name>
+              <id>21</id>
+              <name>M_t_capacity_write_ln47</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>47</lineNumber>
@@ -770,63 +827,6 @@
                         <second>load_matrix_from_dram_safe</second>
                       </first>
                       <second>47</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>50</item>
-            <item>51</item>
-          </oprand_edges>
-          <opcode>store</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>18</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_20">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>21</id>
-              <name>M_t_capacity_write_ln48</name>
-              <fileName>fmm_hls_greedy_potential.cpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>48</lineNumber>
-              <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
-              <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>C:\GEMM\sep6</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>fmm_hls_greedy_potential.cpp</first>
-                        <second>load_matrix_from_dram_safe</second>
-                      </first>
-                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -875,7 +875,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72</rtlName>
+              <rtlName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1081,10 +1081,10 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>zext_ln59</name>
+              <name>zext_ln58</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
               <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
               <inlineStackInfo>
@@ -1100,13 +1100,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>load_matrix_from_dram_safe</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_ln59_fu_91_p00</rtlName>
+              <rtlName>mul_ln58_fu_91_p00</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1137,10 +1137,10 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>zext_ln59_1</name>
+              <name>zext_ln58_1</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
               <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
               <inlineStackInfo>
@@ -1156,13 +1156,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>load_matrix_from_dram_safe</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_ln59_fu_91_p10</rtlName>
+              <rtlName>mul_ln58_fu_91_p10</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1193,10 +1193,10 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>mul_ln59</name>
+              <name>mul_ln58</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
               <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
               <inlineStackInfo>
@@ -1212,7 +1212,7 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>load_matrix_from_dram_safe</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                   </second>
                 </item>
@@ -1250,10 +1250,10 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>_ln59</name>
+              <name>_ln58</name>
               <fileName>fmm_hls_greedy_potential.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>load_matrix_from_dram_safe</contextFuncName>
               <contextNormFuncName>load_matrix_from_dram_safe</contextNormFuncName>
               <inlineStackInfo>
@@ -1269,13 +1269,13 @@
                         <first>fmm_hls_greedy_potential.cpp</first>
                         <second>load_matrix_from_dram_safe</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78</rtlName>
+              <rtlName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1390,7 +1390,7 @@
             <Obj>
               <type>2</type>
               <id>54</id>
-              <name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</name>
+              <name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -1414,7 +1414,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2&gt;</content>
+          <content>&lt;constant:load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_33">
           <Value>
@@ -1452,7 +1452,7 @@
             <Obj>
               <type>2</type>
               <id>72</id>
-              <name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</name>
+              <name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -1476,7 +1476,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4&gt;</content>
+          <content>&lt;constant:load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -2041,7 +2041,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2)</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -2056,7 +2056,7 @@
           </second>
         </item>
         <item>
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4)</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2368,7 +2368,7 @@
           </second>
         </item>
         <item>
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72_ap_start_reg</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2387,7 +2387,7 @@
           </second>
         </item>
         <item>
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78_ap_start_reg</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2406,7 +2406,7 @@
           </second>
         </item>
         <item>
-          <first>mul_ln59_reg_179</first>
+          <first>mul_ln58_reg_179</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2467,14 +2467,14 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2492,7 +2492,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2)</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2500,7 +2500,7 @@
           </second>
         </item>
         <item>
-          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4)</first>
+          <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78 (load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2914,7 +2914,7 @@
         </second>
       </item>
       <item>
-        <first>mul_ln59_fu_91</first>
+        <first>mul_ln58_fu_91</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2938,7 +2938,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln59_1_fu_147</first>
+        <first>zext_ln58_1_fu_147</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2946,7 +2946,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln59_fu_143</first>
+        <first>zext_ln58_fu_143</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2958,7 +2958,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72</first>
+        <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2967,7 +2967,7 @@
         </second>
       </item>
       <item>
-        <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78</first>
+        <first>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3004,7 +3004,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln45_store_fu_103</first>
+        <first>store_ln44_store_fu_103</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3012,7 +3012,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln46_store_fu_109</first>
+        <first>store_ln45_store_fu_109</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3020,7 +3020,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln47_store_fu_151</first>
+        <first>store_ln46_store_fu_151</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3028,7 +3028,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln48_store_fu_157</first>
+        <first>store_ln47_store_fu_157</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3116,7 +3116,7 @@
         </second>
       </item>
       <item>
-        <first>mul_ln59_reg_179</first>
+        <first>mul_ln58_reg_179</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

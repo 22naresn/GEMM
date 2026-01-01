@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2025.1
+Project:             fmm_reduce_kernel
+Solution:            hls
+Device target:       xc7z020-clg400-3
+Report date:         Mon Oct 13 17:48:16 +0530 2025
+
+#=== Post-Implementation Resource usage ===
+SLICE:         4168
+LUT:          11317
+FF:           11530
+DSP:             39
+BRAM:           257
+URAM:             0
+LATCH:            0
+SRL:            375
+CLB:              0
+
+#=== Final timing ===
+CP required:                     100.000
+CP achieved post-synthesis:      8.447
+CP achieved post-implementation: 21.687
+Timing met

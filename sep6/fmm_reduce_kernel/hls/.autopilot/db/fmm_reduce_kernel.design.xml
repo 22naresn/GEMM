@@ -29,14 +29,14 @@
 <ID>174</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2_fu_72</InstName>
-<ModuleName>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</ModuleName>
+<InstName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_72</InstName>
+<ModuleName>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>72</ID>
 </Instance>
 <Instance>
-<InstName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4_fu_78</InstName>
-<ModuleName>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</ModuleName>
+<InstName>grp_load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4_fu_78</InstName>
+<ModuleName>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>78</ID>
 </Instance>
@@ -49,98 +49,98 @@
 <ID>198</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1_fu_895</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1_fu_895</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>895</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>904</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>915</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>925</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>935</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>948</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>957</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>968</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>979</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>989</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>999</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1012</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1021</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1032</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1043</ID>
 </Instance>
 <Instance>
-<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055</InstName>
-<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</ModuleName>
+<InstName>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055</InstName>
+<ModuleName>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1055</ID>
 </Instance>
@@ -153,8 +153,8 @@
 <ID>218</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2_fu_40</InstName>
-<ModuleName>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</ModuleName>
+<InstName>grp_store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_40</InstName>
+<ModuleName>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>40</ID>
 </Instance>
@@ -643,7 +643,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:306</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:304</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -966,9 +966,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Name>
+<Name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Name>
 <Loops>
-<VITIS_LOOP_50_1_VITIS_LOOP_52_2></VITIS_LOOP_50_1_VITIS_LOOP_52_2>
+<VITIS_LOOP_49_1_VITIS_LOOP_51_2></VITIS_LOOP_49_1_VITIS_LOOP_51_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -988,8 +988,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_50_1_VITIS_LOOP_52_2>
-<Name>VITIS_LOOP_50_1_VITIS_LOOP_52_2</Name>
+<VITIS_LOOP_49_1_VITIS_LOOP_51_2>
+<Name>VITIS_LOOP_49_1_VITIS_LOOP_51_2</Name>
 <Slack>7.30</Slack>
 <TripCount>102400</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -1001,19 +1001,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_50_1_VITIS_LOOP_52_2>
+</VITIS_LOOP_49_1_VITIS_LOOP_51_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:52</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:51</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_50_1_VITIS_LOOP_52_2>
-<Name>VITIS_LOOP_50_1_VITIS_LOOP_52_2</Name>
+<VITIS_LOOP_49_1_VITIS_LOOP_51_2>
+<Name>VITIS_LOOP_49_1_VITIS_LOOP_51_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:50</SourceLocation>
-</VITIS_LOOP_50_1_VITIS_LOOP_52_2>
+<SourceLocation>fmm_hls_greedy_potential.cpp:49</SourceLocation>
+</VITIS_LOOP_49_1_VITIS_LOOP_51_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -1039,7 +1039,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1050,7 +1050,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1061,7 +1061,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1072,7 +1072,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1083,7 +1083,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1094,7 +1094,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_52_2</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1150,9 +1150,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Name>
+<Name>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Name>
 <Loops>
-<VITIS_LOOP_59_3_VITIS_LOOP_60_4></VITIS_LOOP_59_3_VITIS_LOOP_60_4>
+<VITIS_LOOP_58_3_VITIS_LOOP_59_4></VITIS_LOOP_58_3_VITIS_LOOP_59_4>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -1172,8 +1172,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_59_3_VITIS_LOOP_60_4>
-<Name>VITIS_LOOP_59_3_VITIS_LOOP_60_4</Name>
+<VITIS_LOOP_58_3_VITIS_LOOP_59_4>
+<Name>VITIS_LOOP_58_3_VITIS_LOOP_59_4</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -1185,19 +1185,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_59_3_VITIS_LOOP_60_4>
+</VITIS_LOOP_58_3_VITIS_LOOP_59_4>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:60</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:59</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_59_3_VITIS_LOOP_60_4>
-<Name>VITIS_LOOP_59_3_VITIS_LOOP_60_4</Name>
+<VITIS_LOOP_58_3_VITIS_LOOP_59_4>
+<Name>VITIS_LOOP_58_3_VITIS_LOOP_59_4</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:60</SourceLocation>
-</VITIS_LOOP_59_3_VITIS_LOOP_60_4>
+<SourceLocation>fmm_hls_greedy_potential.cpp:59</SourceLocation>
+</VITIS_LOOP_58_3_VITIS_LOOP_59_4>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -1223,7 +1223,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1234,7 +1234,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1245,7 +1245,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1256,7 +1256,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1267,7 +1267,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1278,7 +1278,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_59_3_VITIS_LOOP_60_4</Object>
+<Object>load_matrix_from_dram_safe_Pipeline_VITIS_LOOP_58_3_VITIS_LOOP_59_4</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1805,8 +1805,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln59</name>
-<Object>mul_ln59</Object>
+<name>mul_ln58</name>
+<Object>mul_ln58</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1827,8 +1827,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln59</name>
-<Object>sext_ln59</Object>
+<name>sext_ln58</name>
+<Object>sext_ln58</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1905,7 +1905,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:45</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:44</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -2679,9 +2679,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Name>
 <Loops>
-<VITIS_LOOP_104_1_VITIS_LOOP_93_1></VITIS_LOOP_104_1_VITIS_LOOP_93_1>
+<VITIS_LOOP_103_1_VITIS_LOOP_92_1></VITIS_LOOP_103_1_VITIS_LOOP_92_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -2701,8 +2701,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_104_1_VITIS_LOOP_93_1>
-<Name>VITIS_LOOP_104_1_VITIS_LOOP_93_1</Name>
+<VITIS_LOOP_103_1_VITIS_LOOP_92_1>
+<Name>VITIS_LOOP_103_1_VITIS_LOOP_92_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -2714,19 +2714,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_104_1_VITIS_LOOP_93_1>
+</VITIS_LOOP_103_1_VITIS_LOOP_92_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:92~fmm_hls_greedy_potential.cpp:106~fmm_hls_greedy_potential.cpp:255</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:91~fmm_hls_greedy_potential.cpp:105~fmm_hls_greedy_potential.cpp:254</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_104_1_VITIS_LOOP_93_1>
-<Name>VITIS_LOOP_104_1_VITIS_LOOP_93_1</Name>
+<VITIS_LOOP_103_1_VITIS_LOOP_92_1>
+<Name>VITIS_LOOP_103_1_VITIS_LOOP_92_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:93~fmm_hls_greedy_potential.cpp:106~fmm_hls_greedy_potential.cpp:255</SourceLocation>
-</VITIS_LOOP_104_1_VITIS_LOOP_93_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:92~fmm_hls_greedy_potential.cpp:105~fmm_hls_greedy_potential.cpp:254</SourceLocation>
+</VITIS_LOOP_103_1_VITIS_LOOP_92_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -2752,7 +2752,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2763,7 +2763,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2774,7 +2774,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2785,7 +2785,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2796,7 +2796,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2807,7 +2807,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2828,8 +2828,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln251</name>
-<Object>mul_ln251</Object>
+<name>mul_ln250</name>
+<Object>mul_ln250</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2896,9 +2896,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Name>
 <Loops>
-<VITIS_LOOP_116_1></VITIS_LOOP_116_1>
+<VITIS_LOOP_115_1></VITIS_LOOP_115_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -2919,8 +2919,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_115_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -2932,19 +2932,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_116_1>
+</VITIS_LOOP_115_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:227~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:226~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_115_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:116~fmm_hls_greedy_potential.cpp:228~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_116_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:115~fmm_hls_greedy_potential.cpp:227~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_115_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -2970,7 +2970,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2981,7 +2981,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2992,7 +2992,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3003,7 +3003,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3014,7 +3014,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3025,7 +3025,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3046,8 +3046,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118</name>
-<Object>mul_ln118</Object>
+<name>mul_ln117</name>
+<Object>mul_ln117</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3180,9 +3180,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Name>
 <Loops>
-<VITIS_LOOP_116_1></VITIS_LOOP_116_1>
+<VITIS_LOOP_115_1></VITIS_LOOP_115_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -3203,8 +3203,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_115_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -3216,19 +3216,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_116_1>
+</VITIS_LOOP_115_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:206~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:205~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_115_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:116~fmm_hls_greedy_potential.cpp:207~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_116_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:115~fmm_hls_greedy_potential.cpp:206~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_115_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -3254,7 +3254,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3265,7 +3265,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3276,7 +3276,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3287,7 +3287,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3298,7 +3298,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3309,7 +3309,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3330,8 +3330,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118</name>
-<Object>mul_ln118</Object>
+<name>mul_ln117</name>
+<Object>mul_ln117</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3442,9 +3442,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Name>
 <Loops>
-<VITIS_LOOP_136_1></VITIS_LOOP_136_1>
+<VITIS_LOOP_135_1></VITIS_LOOP_135_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -3465,8 +3465,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_136_1>
-<Name>VITIS_LOOP_136_1</Name>
+<VITIS_LOOP_135_1>
+<Name>VITIS_LOOP_135_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -3478,19 +3478,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_136_1>
+</VITIS_LOOP_135_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:136~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:135~fmm_hls_greedy_potential.cpp:211~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_136_1>
-<Name>VITIS_LOOP_136_1</Name>
+<VITIS_LOOP_135_1>
+<Name>VITIS_LOOP_135_1</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:136~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_136_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:135~fmm_hls_greedy_potential.cpp:211~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_135_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -3516,7 +3516,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3527,7 +3527,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3538,7 +3538,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3549,7 +3549,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3560,7 +3560,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3571,7 +3571,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3592,8 +3592,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118</name>
-<Object>mul_ln118</Object>
+<name>mul_ln117</name>
+<Object>mul_ln117</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3713,8 +3713,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln120277</name>
-<Object>mul_ln120277</Object>
+<name>mul_ln119277</name>
+<Object>mul_ln119277</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3724,8 +3724,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln145_1</name>
-<Object>mul_ln145_1</Object>
+<name>mul_ln144_1</name>
+<Object>mul_ln144_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3737,9 +3737,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Name>
 <Loops>
-<VITIS_LOOP_193_2_VITIS_LOOP_116_1></VITIS_LOOP_193_2_VITIS_LOOP_116_1>
+<VITIS_LOOP_192_2_VITIS_LOOP_115_1></VITIS_LOOP_192_2_VITIS_LOOP_115_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -3760,8 +3760,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_193_2_VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_193_2_VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_192_2_VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_192_2_VITIS_LOOP_115_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -3773,19 +3773,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_193_2_VITIS_LOOP_116_1>
+</VITIS_LOOP_192_2_VITIS_LOOP_115_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:195~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:194~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_193_2_VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_193_2_VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_192_2_VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_192_2_VITIS_LOOP_115_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:198~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_193_2_VITIS_LOOP_116_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:197~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_192_2_VITIS_LOOP_115_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -3811,7 +3811,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3822,7 +3822,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3833,7 +3833,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3844,7 +3844,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3855,7 +3855,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3866,7 +3866,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3876,8 +3876,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln193</name>
-<Object>zext_ln193</Object>
+<name>zext_ln192</name>
+<Object>zext_ln192</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3909,8 +3909,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln192</name>
-<Object>mul_ln192</Object>
+<name>mul_ln191</name>
+<Object>mul_ln191</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3920,8 +3920,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118_1</name>
-<Object>mul_ln118_1</Object>
+<name>mul_ln117_1</name>
+<Object>mul_ln117_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4021,9 +4021,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Name>
 <Loops>
-<VITIS_LOOP_158_1></VITIS_LOOP_158_1>
+<VITIS_LOOP_157_1></VITIS_LOOP_157_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -4044,8 +4044,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_158_1>
-<Name>VITIS_LOOP_158_1</Name>
+<VITIS_LOOP_157_1>
+<Name>VITIS_LOOP_157_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -4057,19 +4057,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_158_1>
+</VITIS_LOOP_157_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:157~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:156~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_158_1>
-<Name>VITIS_LOOP_158_1</Name>
+<VITIS_LOOP_157_1>
+<Name>VITIS_LOOP_157_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:158~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_158_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:157~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_157_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -4095,7 +4095,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4106,7 +4106,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4117,7 +4117,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4128,7 +4128,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4139,7 +4139,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4150,7 +4150,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4239,9 +4239,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Name>
 <Loops>
-<VITIS_LOOP_164_2></VITIS_LOOP_164_2>
+<VITIS_LOOP_163_2></VITIS_LOOP_163_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -4262,8 +4262,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_164_2>
-<Name>VITIS_LOOP_164_2</Name>
+<VITIS_LOOP_163_2>
+<Name>VITIS_LOOP_163_2</Name>
 <Slack>7.30</Slack>
 <TripCount>0</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -4275,19 +4275,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_164_2>
+</VITIS_LOOP_163_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:157~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:156~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_164_2>
-<Name>VITIS_LOOP_164_2</Name>
+<VITIS_LOOP_163_2>
+<Name>VITIS_LOOP_163_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:167~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_164_2>
+<SourceLocation>fmm_hls_greedy_potential.cpp:166~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_163_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -4313,7 +4313,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4324,7 +4324,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4335,7 +4335,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4346,7 +4346,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4357,7 +4357,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4368,7 +4368,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4378,8 +4378,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln164</name>
-<Object>zext_ln164</Object>
+<name>zext_ln163</name>
+<Object>zext_ln163</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4433,8 +4433,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln164</name>
-<Object>sext_ln164</Object>
+<name>sext_ln163</name>
+<Object>sext_ln163</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4490,9 +4490,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Name>
 <Loops>
-<VITIS_LOOP_175_3></VITIS_LOOP_175_3>
+<VITIS_LOOP_174_3></VITIS_LOOP_174_3>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -4513,8 +4513,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_175_3>
-<Name>VITIS_LOOP_175_3</Name>
+<VITIS_LOOP_174_3>
+<Name>VITIS_LOOP_174_3</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -4526,19 +4526,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_175_3>
+</VITIS_LOOP_174_3>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:175~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:174~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_175_3>
-<Name>VITIS_LOOP_175_3</Name>
+<VITIS_LOOP_174_3>
+<Name>VITIS_LOOP_174_3</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:175~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_175_3>
+<SourceLocation>fmm_hls_greedy_potential.cpp:174~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_174_3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -4564,7 +4564,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4575,7 +4575,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4586,7 +4586,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4597,7 +4597,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4608,7 +4608,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4619,7 +4619,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4651,8 +4651,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln177</name>
-<Object>mul_ln177</Object>
+<name>mul_ln176</name>
+<Object>mul_ln176</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4761,8 +4761,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln173</name>
-<Object>mul_ln173</Object>
+<name>mul_ln172</name>
+<Object>mul_ln172</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4772,8 +4772,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln174</name>
-<Object>mul_ln174</Object>
+<name>mul_ln173</name>
+<Object>mul_ln173</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4785,9 +4785,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Name>
 <Loops>
-<VITIS_LOOP_116_1></VITIS_LOOP_116_1>
+<VITIS_LOOP_115_1></VITIS_LOOP_115_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -4808,8 +4808,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_115_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -4821,19 +4821,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_116_1>
+</VITIS_LOOP_115_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:206~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:205~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_115_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:116~fmm_hls_greedy_potential.cpp:207~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_116_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:115~fmm_hls_greedy_potential.cpp:206~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_115_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -4859,7 +4859,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4870,7 +4870,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4881,7 +4881,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4892,7 +4892,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4903,7 +4903,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4914,7 +4914,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4935,8 +4935,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118</name>
-<Object>mul_ln118</Object>
+<name>mul_ln117</name>
+<Object>mul_ln117</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5047,9 +5047,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Name>
 <Loops>
-<VITIS_LOOP_136_1></VITIS_LOOP_136_1>
+<VITIS_LOOP_135_1></VITIS_LOOP_135_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -5070,8 +5070,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_136_1>
-<Name>VITIS_LOOP_136_1</Name>
+<VITIS_LOOP_135_1>
+<Name>VITIS_LOOP_135_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -5083,19 +5083,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_136_1>
+</VITIS_LOOP_135_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:136~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:135~fmm_hls_greedy_potential.cpp:211~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_136_1>
-<Name>VITIS_LOOP_136_1</Name>
+<VITIS_LOOP_135_1>
+<Name>VITIS_LOOP_135_1</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:136~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_136_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:135~fmm_hls_greedy_potential.cpp:211~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_135_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -5121,7 +5121,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5132,7 +5132,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5143,7 +5143,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5154,7 +5154,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5165,7 +5165,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5176,7 +5176,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5197,8 +5197,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118</name>
-<Object>mul_ln118</Object>
+<name>mul_ln117</name>
+<Object>mul_ln117</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5285,8 +5285,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln120274</name>
-<Object>mul_ln120274</Object>
+<name>mul_ln119274</name>
+<Object>mul_ln119274</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5296,8 +5296,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln145_2</name>
-<Object>mul_ln145_2</Object>
+<name>mul_ln144_2</name>
+<Object>mul_ln144_2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5309,9 +5309,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Name>
 <Loops>
-<VITIS_LOOP_193_2_VITIS_LOOP_116_1></VITIS_LOOP_193_2_VITIS_LOOP_116_1>
+<VITIS_LOOP_192_2_VITIS_LOOP_115_1></VITIS_LOOP_192_2_VITIS_LOOP_115_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -5332,8 +5332,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_193_2_VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_193_2_VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_192_2_VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_192_2_VITIS_LOOP_115_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -5345,19 +5345,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_193_2_VITIS_LOOP_116_1>
+</VITIS_LOOP_192_2_VITIS_LOOP_115_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:195~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:194~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_193_2_VITIS_LOOP_116_1>
-<Name>VITIS_LOOP_193_2_VITIS_LOOP_116_1</Name>
+<VITIS_LOOP_192_2_VITIS_LOOP_115_1>
+<Name>VITIS_LOOP_192_2_VITIS_LOOP_115_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:198~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_193_2_VITIS_LOOP_116_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:197~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_192_2_VITIS_LOOP_115_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -5383,7 +5383,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5394,7 +5394,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5405,7 +5405,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5416,7 +5416,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5427,7 +5427,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5438,7 +5438,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5448,8 +5448,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln193_3</name>
-<Object>zext_ln193_3</Object>
+<name>zext_ln192_3</name>
+<Object>zext_ln192_3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5481,8 +5481,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln192_1</name>
-<Object>mul_ln192_1</Object>
+<name>mul_ln191_1</name>
+<Object>mul_ln191_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5492,8 +5492,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln118_2</name>
-<Object>mul_ln118_2</Object>
+<name>mul_ln117_2</name>
+<Object>mul_ln117_2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5593,9 +5593,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Name>
 <Loops>
-<VITIS_LOOP_158_1></VITIS_LOOP_158_1>
+<VITIS_LOOP_157_1></VITIS_LOOP_157_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -5616,8 +5616,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_158_1>
-<Name>VITIS_LOOP_158_1</Name>
+<VITIS_LOOP_157_1>
+<Name>VITIS_LOOP_157_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -5629,19 +5629,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_158_1>
+</VITIS_LOOP_157_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:157~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:156~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_158_1>
-<Name>VITIS_LOOP_158_1</Name>
+<VITIS_LOOP_157_1>
+<Name>VITIS_LOOP_157_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:158~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_158_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:157~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_157_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -5667,7 +5667,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5678,7 +5678,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5689,7 +5689,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5700,7 +5700,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5711,7 +5711,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5722,7 +5722,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5811,9 +5811,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Name>
 <Loops>
-<VITIS_LOOP_164_2></VITIS_LOOP_164_2>
+<VITIS_LOOP_163_2></VITIS_LOOP_163_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -5834,8 +5834,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_164_2>
-<Name>VITIS_LOOP_164_2</Name>
+<VITIS_LOOP_163_2>
+<Name>VITIS_LOOP_163_2</Name>
 <Slack>7.30</Slack>
 <TripCount>0</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -5847,19 +5847,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_164_2>
+</VITIS_LOOP_163_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:157~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:156~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_164_2>
-<Name>VITIS_LOOP_164_2</Name>
+<VITIS_LOOP_163_2>
+<Name>VITIS_LOOP_163_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:167~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_164_2>
+<SourceLocation>fmm_hls_greedy_potential.cpp:166~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_163_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -5885,7 +5885,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5896,7 +5896,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5907,7 +5907,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5918,7 +5918,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5929,7 +5929,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5940,7 +5940,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5950,8 +5950,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln164_1</name>
-<Object>zext_ln164_1</Object>
+<name>zext_ln163_1</name>
+<Object>zext_ln163_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6005,8 +6005,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln164_1</name>
-<Object>sext_ln164_1</Object>
+<name>sext_ln163_1</name>
+<Object>sext_ln163_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6062,9 +6062,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Name>
 <Loops>
-<VITIS_LOOP_175_3></VITIS_LOOP_175_3>
+<VITIS_LOOP_174_3></VITIS_LOOP_174_3>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -6085,8 +6085,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_175_3>
-<Name>VITIS_LOOP_175_3</Name>
+<VITIS_LOOP_174_3>
+<Name>VITIS_LOOP_174_3</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6098,19 +6098,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_175_3>
+</VITIS_LOOP_174_3>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:175~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:174~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_175_3>
-<Name>VITIS_LOOP_175_3</Name>
+<VITIS_LOOP_174_3>
+<Name>VITIS_LOOP_174_3</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:175~fmm_hls_greedy_potential.cpp:214~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_175_3>
+<SourceLocation>fmm_hls_greedy_potential.cpp:174~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_174_3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -6136,7 +6136,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6147,7 +6147,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6158,7 +6158,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6169,7 +6169,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6180,7 +6180,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6191,7 +6191,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6223,8 +6223,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln177_1</name>
-<Object>mul_ln177_1</Object>
+<name>mul_ln176_1</name>
+<Object>mul_ln176_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6333,8 +6333,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln173_1</name>
-<Object>mul_ln173_1</Object>
+<name>mul_ln172_1</name>
+<Object>mul_ln172_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6344,8 +6344,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln174_1</name>
-<Object>mul_ln174_1</Object>
+<name>mul_ln173_1</name>
+<Object>mul_ln173_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6357,9 +6357,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Name>
 <Loops>
-<VITIS_LOOP_136_1></VITIS_LOOP_136_1>
+<VITIS_LOOP_135_1></VITIS_LOOP_135_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -6379,8 +6379,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_136_1>
-<Name>VITIS_LOOP_136_1</Name>
+<VITIS_LOOP_135_1>
+<Name>VITIS_LOOP_135_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6392,19 +6392,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_136_1>
+</VITIS_LOOP_135_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:136~fmm_hls_greedy_potential.cpp:264</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:135~fmm_hls_greedy_potential.cpp:263</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_136_1>
-<Name>VITIS_LOOP_136_1</Name>
+<VITIS_LOOP_135_1>
+<Name>VITIS_LOOP_135_1</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:136~fmm_hls_greedy_potential.cpp:264</SourceLocation>
-</VITIS_LOOP_136_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:135~fmm_hls_greedy_potential.cpp:263</SourceLocation>
+</VITIS_LOOP_135_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -6430,7 +6430,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6441,7 +6441,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6452,7 +6452,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6463,7 +6463,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6474,7 +6474,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6485,7 +6485,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6506,8 +6506,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln133</name>
-<Object>mul_ln133</Object>
+<name>mul_ln132</name>
+<Object>mul_ln132</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6594,8 +6594,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln134</name>
-<Object>mul_ln134</Object>
+<name>mul_ln133</name>
+<Object>mul_ln133</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6605,8 +6605,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln145</name>
-<Object>mul_ln145</Object>
+<name>mul_ln144</name>
+<Object>mul_ln144</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6616,8 +6616,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>icmp_ln134</name>
-<Object>icmp_ln134</Object>
+<name>icmp_ln133</name>
+<Object>icmp_ln133</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6640,9 +6640,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Name>
+<Name>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Name>
 <Loops>
-<VITIS_LOOP_104_1_VITIS_LOOP_93_1></VITIS_LOOP_104_1_VITIS_LOOP_93_1>
+<VITIS_LOOP_103_1_VITIS_LOOP_92_1></VITIS_LOOP_103_1_VITIS_LOOP_92_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -6662,8 +6662,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_104_1_VITIS_LOOP_93_1>
-<Name>VITIS_LOOP_104_1_VITIS_LOOP_93_1</Name>
+<VITIS_LOOP_103_1_VITIS_LOOP_92_1>
+<Name>VITIS_LOOP_103_1_VITIS_LOOP_92_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6675,19 +6675,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_104_1_VITIS_LOOP_93_1>
+</VITIS_LOOP_103_1_VITIS_LOOP_92_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:92~fmm_hls_greedy_potential.cpp:106~fmm_hls_greedy_potential.cpp:272</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:91~fmm_hls_greedy_potential.cpp:105~fmm_hls_greedy_potential.cpp:271</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_104_1_VITIS_LOOP_93_1>
-<Name>VITIS_LOOP_104_1_VITIS_LOOP_93_1</Name>
+<VITIS_LOOP_103_1_VITIS_LOOP_92_1>
+<Name>VITIS_LOOP_103_1_VITIS_LOOP_92_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:93~fmm_hls_greedy_potential.cpp:106~fmm_hls_greedy_potential.cpp:272</SourceLocation>
-</VITIS_LOOP_104_1_VITIS_LOOP_93_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:92~fmm_hls_greedy_potential.cpp:105~fmm_hls_greedy_potential.cpp:271</SourceLocation>
+</VITIS_LOOP_103_1_VITIS_LOOP_92_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -6713,7 +6713,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6724,7 +6724,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6735,7 +6735,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6746,7 +6746,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6757,7 +6757,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6768,7 +6768,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111</Object>
+<Object>greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6789,8 +6789,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul_ln267</name>
-<Object>mul_ln267</Object>
+<name>mul_ln266</name>
+<Object>mul_ln266</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6859,14 +6859,14 @@
 <Module>
 <Name>greedy_potential_reduce_with_debug</Name>
 <Loops>
-<VITIS_LOOP_260_1>
-<VITIS_LOOP_224_1>
-<VITIS_LOOP_225_2>
-<VITIS_LOOP_192_1></VITIS_LOOP_192_1>
-<VITIS_LOOP_192_1></VITIS_LOOP_192_1>
-</VITIS_LOOP_225_2>
-</VITIS_LOOP_224_1>
-</VITIS_LOOP_260_1>
+<VITIS_LOOP_259_1>
+<VITIS_LOOP_223_1>
+<VITIS_LOOP_224_2>
+<VITIS_LOOP_191_1></VITIS_LOOP_191_1>
+<VITIS_LOOP_191_1></VITIS_LOOP_191_1>
+</VITIS_LOOP_224_2>
+</VITIS_LOOP_223_1>
+</VITIS_LOOP_259_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -6886,8 +6886,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_260_1>
-<Name>VITIS_LOOP_260_1</Name>
+<VITIS_LOOP_259_1>
+<Name>VITIS_LOOP_259_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6898,11 +6898,11 @@
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_110_fu_1043</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_93_111_fu_1055</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_110_fu_1043</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_103_1_VITIS_LOOP_92_111_fu_1055</Instance>
 </InstanceList>
-<VITIS_LOOP_224_1>
-<Name>VITIS_LOOP_224_1</Name>
+<VITIS_LOOP_223_1>
+<Name>VITIS_LOOP_223_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6914,8 +6914,8 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-<VITIS_LOOP_225_2>
-<Name>VITIS_LOOP_225_2</Name>
+<VITIS_LOOP_224_2>
+<Name>VITIS_LOOP_224_2</Name>
 <Slack>7.30</Slack>
 <TripCount>0</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6926,20 +6926,20 @@
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_1_fu_904</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_13_fu_915</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_1_fu_925</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_1_fu_948</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_2_fu_957</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_3_fu_968</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_116_14_fu_979</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_136_15_fu_989</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_158_17_fu_1012</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_164_28_fu_1021</Instance>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_175_39_fu_1032</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_1_fu_904</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_13_fu_915</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_1_fu_925</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_1_fu_948</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_2_fu_957</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_3_fu_968</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_115_14_fu_979</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_135_15_fu_989</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_157_17_fu_1012</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_163_28_fu_1021</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_174_39_fu_1032</Instance>
 </InstanceList>
-<VITIS_LOOP_192_1>
-<Name>VITIS_LOOP_192_1</Name>
+<VITIS_LOOP_191_1>
+<Name>VITIS_LOOP_191_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6950,11 +6950,11 @@
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_1_fu_935</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_1_fu_935</Instance>
 </InstanceList>
-</VITIS_LOOP_192_1>
-<VITIS_LOOP_192_1>
-<Name>VITIS_LOOP_192_1</Name>
+</VITIS_LOOP_191_1>
+<VITIS_LOOP_191_1>
+<Name>VITIS_LOOP_191_1</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -6965,48 +6965,48 @@
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
-<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_193_2_VITIS_LOOP_116_16_fu_999</Instance>
+<Instance>grp_greedy_potential_reduce_with_debug_Pipeline_VITIS_LOOP_192_2_VITIS_LOOP_115_16_fu_999</Instance>
 </InstanceList>
-</VITIS_LOOP_192_1>
-</VITIS_LOOP_225_2>
-</VITIS_LOOP_224_1>
-</VITIS_LOOP_260_1>
+</VITIS_LOOP_191_1>
+</VITIS_LOOP_224_2>
+</VITIS_LOOP_223_1>
+</VITIS_LOOP_259_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:245</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:244</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_260_1>
-<Name>VITIS_LOOP_260_1</Name>
+<VITIS_LOOP_259_1>
+<Name>VITIS_LOOP_259_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:260</SourceLocation>
-<VITIS_LOOP_224_1>
-<Name>VITIS_LOOP_224_1</Name>
+<SourceLocation>fmm_hls_greedy_potential.cpp:259</SourceLocation>
+<VITIS_LOOP_223_1>
+<Name>VITIS_LOOP_223_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:223~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-<VITIS_LOOP_225_2>
-<Name>VITIS_LOOP_225_2</Name>
+<SourceLocation>fmm_hls_greedy_potential.cpp:222~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+<VITIS_LOOP_224_2>
+<Name>VITIS_LOOP_224_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:223~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-<VITIS_LOOP_192_1>
-<Name>VITIS_LOOP_192_1</Name>
+<SourceLocation>fmm_hls_greedy_potential.cpp:222~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+<VITIS_LOOP_191_1>
+<Name>VITIS_LOOP_191_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:192~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:230~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_192_1>
-<VITIS_LOOP_192_1>
-<Name>VITIS_LOOP_192_1</Name>
+<SourceLocation>fmm_hls_greedy_potential.cpp:191~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:229~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_191_1>
+<VITIS_LOOP_191_1>
+<Name>VITIS_LOOP_191_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:192~fmm_hls_greedy_potential.cpp:213~fmm_hls_greedy_potential.cpp:234~fmm_hls_greedy_potential.cpp:262</SourceLocation>
-</VITIS_LOOP_192_1>
-</VITIS_LOOP_225_2>
-</VITIS_LOOP_224_1>
-</VITIS_LOOP_260_1>
+<SourceLocation>fmm_hls_greedy_potential.cpp:191~fmm_hls_greedy_potential.cpp:212~fmm_hls_greedy_potential.cpp:233~fmm_hls_greedy_potential.cpp:261</SourceLocation>
+</VITIS_LOOP_191_1>
+</VITIS_LOOP_224_2>
+</VITIS_LOOP_223_1>
+</VITIS_LOOP_259_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -7825,9 +7825,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Name>
+<Name>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Name>
 <Loops>
-<VITIS_LOOP_77_1_VITIS_LOOP_78_2></VITIS_LOOP_77_1_VITIS_LOOP_78_2>
+<VITIS_LOOP_76_1_VITIS_LOOP_77_2></VITIS_LOOP_76_1_VITIS_LOOP_77_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -7847,8 +7847,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_77_1_VITIS_LOOP_78_2>
-<Name>VITIS_LOOP_77_1_VITIS_LOOP_78_2</Name>
+<VITIS_LOOP_76_1_VITIS_LOOP_77_2>
+<Name>VITIS_LOOP_76_1_VITIS_LOOP_77_2</Name>
 <Slack>7.30</Slack>
 <TripCount>undef</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -7860,19 +7860,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_77_1_VITIS_LOOP_78_2>
+</VITIS_LOOP_76_1_VITIS_LOOP_77_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:78</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:77</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_77_1_VITIS_LOOP_78_2>
-<Name>VITIS_LOOP_77_1_VITIS_LOOP_78_2</Name>
+<VITIS_LOOP_76_1_VITIS_LOOP_77_2>
+<Name>VITIS_LOOP_76_1_VITIS_LOOP_77_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:78</SourceLocation>
-</VITIS_LOOP_77_1_VITIS_LOOP_78_2>
+<SourceLocation>fmm_hls_greedy_potential.cpp:77</SourceLocation>
+</VITIS_LOOP_76_1_VITIS_LOOP_77_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -7898,7 +7898,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Object>
+<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7909,7 +7909,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Object>
+<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7920,7 +7920,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Object>
+<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7931,7 +7931,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Object>
+<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7942,7 +7942,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Object>
+<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7953,7 +7953,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2</Object>
+<Object>store_matrix_to_dram_safe_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8502,8 +8502,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln77</name>
-<Object>sext_ln77</Object>
+<name>sext_ln76</name>
+<Object>sext_ln76</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8569,7 +8569,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:72</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:71</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -9254,7 +9254,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:309~fmm_hls_greedy_potential.cpp:309</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:307~fmm_hls_greedy_potential.cpp:307</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -10853,7 +10853,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fmm_hls_greedy_potential.cpp:304</SourceLocation>
+<SourceLocation>fmm_hls_greedy_potential.cpp:302</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
