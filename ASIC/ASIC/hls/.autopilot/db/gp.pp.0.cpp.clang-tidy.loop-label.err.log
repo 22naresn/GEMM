@@ -1,0 +1,4 @@
+1 warning and 1 error generated.
+Error while processing C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp.
+clang-tidy applied 22 of 22 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

@@ -1,0 +1,13 @@
+{
+  "name": "ASIC",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "ASIC"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

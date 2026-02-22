@@ -1,0 +1,4 @@
+C:\GEMM\ASIC\gp.cpp:260:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+    #pragma HLS RESOURCE variable=M.e core=RAM_1P_LUTRAM
+            ^
+C:\GEMM\ASIC\gp.cpp:260:13: error: Resource with core_name: RAM_1P_LUTRAM pragma is ignored, because this core doesn't exist at all 

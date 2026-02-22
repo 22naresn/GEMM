@@ -1,0 +1,716 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 184, Column: 13 }
+Function:        _ZL15total_potentialRK6Matrix
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'total_potential(Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 176, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 195, Column: 5 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: gp.cpp, Line: 202, Column: 9 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reduction_move_undo(Matrix&)'
+    DebugLoc:        { File: gp.cpp, Line: 139, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: gp.cpp, Line: 201, Column: 19 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'total_potential(Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 176, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: gp.cpp, Line: 200, Column: 9 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reduction_move(Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 222, Column: 25 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - Callee:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 216, Column: 13 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 235, Column: 16 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - Callee:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: gp.cpp, Line: 237, Column: 5 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'reduction_move(Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 264, Column: 2 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 265, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 266, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'store_matrix_to_dram(int*, Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: gp.cpp, Line: 261, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          'Adding '''
+  - Name:            'fmm_reduce_kernel::M'
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: gp.cpp, Line: 261, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          'Adding '''
+  - Name:            'fmm_reduce_kernel::M'
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: gp.cpp, Line: 258, Column: 0 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            'fmm_reduce_kernel::M'
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '320'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_49_1
+  - String:          ''' ('
+  - LoopLoc:         'gp.cpp:49:22'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          load_matrix_from_dram
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 195, Column: 5 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 216, Column: 13 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 218, Column: 25 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - Callee:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 235, Column: 16 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - Callee:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 264, Column: 2 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 265, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 266, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'store_matrix_to_dram(int*, Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_fmm_reduce_kernel_ir
+Args:            
+  - Callee:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_fmm_reduce_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: gp.cpp, Line: 59, Column: 34 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          A_dram
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: gp.cpp, Line: 71, Column: 34 }
+Function:        _ZL20store_matrix_to_dramPiRK6Matrix
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          A_dram
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       A_dram
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       A_dram
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: gp.cpp, Line: 258, Column: 0 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ17fmm_reduce_kernelE1M.e
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_232_1
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:232:19'
+  - String:          ' '
+  - Function:        'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: gp.cpp, Line: 152, Column: 23 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_152_2
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:152:23'
+  - String:          ' '
+  - Function:        'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: gp.cpp, Line: 59, Column: 34 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          A_dram
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: gp.cpp, Line: 71, Column: 34 }
+Function:        _ZL20store_matrix_to_dramPiRK6Matrix
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          A_dram
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_232_1
+  - String:          '''('
+  - LoopLoc:         'gp.cpp:232:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: gp.cpp, Line: 218, Column: 25 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_213_2
+  - String:          '''('
+  - LoopLoc:         'gp.cpp:213:27'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: gp.cpp, Line: 222, Column: 25 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then11
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_213_2
+  - String:          '''('
+  - LoopLoc:         'gp.cpp:213:27'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: gp.cpp, Line: 152, Column: 23 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_152_2
+  - String:          '''('
+  - LoopLoc:         'gp.cpp:152:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_69_2
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:69:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_124_1
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:124:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_146_1
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:146:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_152_2
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:152:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_163_3
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:163:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_104_1
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:104:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_124_1
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:124:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_51_2
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:51:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_57_4
+  - String:          '> at '
+  - LoopLoc:         'gp.cpp:57:26'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        VITIS_LOOP_232_1
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  greedy_potential_reduce
+  - String:          ' '
+  - PragmaSrcLoc:    'gp.cpp:232:19'
+    DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
+  - LoopName:        VITIS_LOOP_232_1
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:232:19'
+    DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       A_dram
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+Function:        fmm_reduce_kernel
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       A_dram
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 195, Column: 5 }
+Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 216, Column: 13 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - Callee:          'compute_pp_nn(Matrix const&, int, int, int&, int&)'
+    DebugLoc:        { File: gp.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 218, Column: 25 }
+Function:        _ZL14find_best_moveR6MatrixRiS1_S1_ii
+Args:            
+  - Callee:          'compute_greedy_potential_score(Matrix&, int, int, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 235, Column: 16 }
+Function:        _ZL23greedy_potential_reduceR6Matrixii
+Args:            
+  - Callee:          'find_best_move(Matrix&, int&, int&, int&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 208, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 264, Column: 2 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 265, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'greedy_potential_reduce(Matrix&, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 230, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gp.cpp, Line: 266, Column: 9 }
+Function:        fmm_reduce_kernel
+Args:            
+  - Callee:          'store_matrix_to_dram(int*, Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fmm_reduce_kernel
+    DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

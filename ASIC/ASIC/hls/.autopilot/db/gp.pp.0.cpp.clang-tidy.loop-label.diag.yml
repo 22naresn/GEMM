@@ -1,0 +1,207 @@
+---
+MainSourceFile:  'C:/GEMM/ASIC/ASIC/hls/.autopilot/db/gp.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          279592
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          280058
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          280525
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          574995
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          959419
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_2:  '
+    FileOffset:      51
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          959504
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_3:  '
+    FileOffset:      56
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          959595
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_4:  '
+    FileOffset:      57
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          959636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          959883
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_2:  '
+    FileOffset:      69
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          959924
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_1:  '
+    FileOffset:      81
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          960170
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_92_1:  '
+    FileOffset:      92
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          960397
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_92_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_1:  '
+    FileOffset:      104
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          960685
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_1:  '
+    FileOffset:      124
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          961237
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_146_1:  '
+    FileOffset:      146
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          961842
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_146_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_2:  '
+    FileOffset:      152
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          961990
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_163_3:  '
+    FileOffset:      163
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          962311
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_163_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_1:  '
+    FileOffset:      180
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          962679
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_2:  '
+    FileOffset:      181
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          962717
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_212_1:  '
+    FileOffset:      212
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          963564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_212_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_2:  '
+    FileOffset:      213
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          963602
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_232_1:  '
+    FileOffset:      232
+    FilePath:        gp.cpp
+    Replacements:    
+      - FilePath:        'C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp'
+        Offset:          964255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_232_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      260
+    FilePath:        gp.cpp
+    Replacements:    
+...

@@ -1,0 +1,127 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6 3 1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "gp.cpp",
+    "fileloc": 242,
+    "instructions": 13,
+    "memory_accesses": 0,
+    "name": "fmm_reduce_kernel",
+    "total_instructions": 857
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 64,
+    "instructions": 28,
+    "loads": {
+      "G": 3
+    },
+    "memory_accesses": 2,
+    "name": "store_matrix_to_dram",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 28
+  },
+  "2": {
+    "basicblocks": 49,
+    "calls": "4 4",
+    "control_depth": 3,
+    "def_use_depth": 6,
+    "file": "gp.cpp",
+    "fileloc": 192,
+    "instructions": 210,
+    "loads": {
+      "G": 13,
+      "L": 4
+    },
+    "memory_accesses": 11,
+    "name": "compute_greedy_potential_score",
+    "stores": {
+      "G": 12,
+      "L": 5
+    },
+    "total_instructions": 290
+  },
+  "3": {
+    "basicblocks": 18,
+    "calls": "5",
+    "control_depth": 3,
+    "def_use_depth": 6,
+    "file": "gp.cpp",
+    "fileloc": 230,
+    "instructions": 89,
+    "loads": {
+      "G": 6,
+      "L": 4
+    },
+    "memory_accesses": 5,
+    "name": "greedy_potential_reduce",
+    "stores": {
+      "G": 6,
+      "L": 3
+    },
+    "total_instructions": 772
+  },
+  "4": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 5,
+    "def_use_depth": 4,
+    "file": "gp.cpp",
+    "fileloc": 100,
+    "instructions": 40,
+    "loads": {
+      "G": 3
+    },
+    "memory_accesses": 4,
+    "name": "compute_pp_nn",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 40
+  },
+  "5": {
+    "basicblocks": 15,
+    "calls": "4 2 2",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 208,
+    "instructions": 63,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "find_best_move",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 683
+  },
+  "6": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 40,
+    "instructions": 44,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 3,
+    "name": "load_matrix_from_dram",
+    "stores": {
+      "G": 6
+    },
+    "total_instructions": 44
+  }
+}

@@ -1,0 +1,5 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="gp.cpp:232:19" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="gp.cpp:232:19" LoopName="VITIS_LOOP_232_1" ParentFunc="greedy_potential_reduce(Matrix&amp;, int, int)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="gp.cpp:152:23" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="gp.cpp:152:23" LoopName="VITIS_LOOP_152_2" ParentFunc="compute_greedy_potential_score(Matrix&amp;, int, int, int, int, int)"/>
+</VitisHLS:BurstInfo>
+

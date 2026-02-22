@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\GEMM\\ASIC",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=fmm_reduce_kernel",
+      "-c",
+      "C:\\GEMM\\ASIC\\gp.cpp"
+    ],
+    "file": "C:\\GEMM\\ASIC\\gp.cpp"
+  },
+  {
+    "directory": "C:\\GEMM\\ASIC",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\GEMM\\ASIC\\tb.cpp"
+    ],
+    "file": "C:\\GEMM\\ASIC\\tb.cpp"
+  }
+]

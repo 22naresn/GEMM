@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2'
+================================================================
+* Date:           Sun Feb 22 21:56:53 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        ASIC
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.935 ns|     1.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        3|        3|  30.000 ns|  30.000 ns|    1|    1|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_152_2  |        1|        1|         2|          1|          1|     0|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     219|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       0|      17|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      58|    -|
+|Register         |        -|    -|     168|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     168|     294|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+------------------------+---------+----+---+----+-----+
+    |          Instance          |         Module         | BRAM_18K| DSP| FF| LUT| URAM|
+    +----------------------------+------------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_32_1_1_x_U67  |sparsemux_9_2_32_1_1_x  |        0|   0|  0|  17|    0|
+    +----------------------------+------------------------+---------+----+---+----+-----+
+    |Total                       |                        |        0|   0|  0|  17|    0|
+    +----------------------------+------------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln152_fu_252_p2    |         +|   0|  0|  41|          34|           2|
+    |add_ln154_1_fu_228_p2  |         +|   0|  0|  15|          15|          15|
+    |add_ln154_fu_234_p2    |         +|   0|  0|  15|          15|          15|
+    |or_cond44_fu_316_p2    |       and|   0|  0|   2|           1|           1|
+    |icmp_ln152_fu_258_p2   |      icmp|   0|  0|  41|          34|          34|
+    |icmp_ln155_fu_293_p2   |      icmp|   0|  0|  39|          32|           1|
+    |move_type_1_out        |    select|   0|  0|  32|           1|          32|
+    |row2_1_out             |    select|   0|  0|  32|           1|          32|
+    |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 219|         134|         134|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_r_1     |  13|          3|   34|        102|
+    |move_type_fu_76          |   9|          2|   32|         64|
+    |r_fu_84                  |   9|          2|   34|         68|
+    |row2_fu_80               |   9|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  58|         13|  134|        302|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |add_ln152_reg_386        |  34|   0|   34|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |icmp_ln152_reg_391       |   1|   0|    1|          0|
+    |move_type_fu_76          |  32|   0|   32|          0|
+    |r_fu_84                  |  34|   0|   34|          0|
+    |row2_fu_80               |  32|   0|   32|          0|
+    |trunc_ln155_reg_381      |  32|   0|   32|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 168|   0|  168|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |                       Source Object                      |    C Type    |
++------------------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2|  return value|
+|zext_ln152              |   in|   32|     ap_none|                                                zext_ln152|        scalar|
+|zext_ln144              |   in|   15|     ap_none|                                                zext_ln144|        scalar|
+|add_ln144               |   in|    2|     ap_none|                                                 add_ln144|        scalar|
+|sext_ln152              |   in|   32|     ap_none|                                                sext_ln152|        scalar|
+|move_type_1_out         |  out|   32|      ap_vld|                                           move_type_1_out|       pointer|
+|move_type_1_out_ap_vld  |  out|    1|      ap_vld|                                           move_type_1_out|       pointer|
+|row2_1_out              |  out|   32|      ap_vld|                                                row2_1_out|       pointer|
+|row2_1_out_ap_vld       |  out|    1|      ap_vld|                                                row2_1_out|       pointer|
+|M_e_0_address0          |  out|   15|   ap_memory|                                                     M_e_0|         array|
+|M_e_0_ce0               |  out|    1|   ap_memory|                                                     M_e_0|         array|
+|M_e_0_q0                |   in|   32|   ap_memory|                                                     M_e_0|         array|
+|M_e_1_address0          |  out|   15|   ap_memory|                                                     M_e_1|         array|
+|M_e_1_ce0               |  out|    1|   ap_memory|                                                     M_e_1|         array|
+|M_e_1_q0                |   in|   32|   ap_memory|                                                     M_e_1|         array|
+|M_e_2_address0          |  out|   15|   ap_memory|                                                     M_e_2|         array|
+|M_e_2_ce0               |  out|    1|   ap_memory|                                                     M_e_2|         array|
+|M_e_2_q0                |   in|   32|   ap_memory|                                                     M_e_2|         array|
+|M_e_3_address0          |  out|   15|   ap_memory|                                                     M_e_3|         array|
+|M_e_3_ce0               |  out|    1|   ap_memory|                                                     M_e_3|         array|
+|M_e_3_q0                |   in|   32|   ap_memory|                                                     M_e_3|         array|
++------------------------+-----+-----+------------+----------------------------------------------------------+--------------+
+

@@ -1,0 +1,47 @@
+<pragmas>
+<pragma file="gp.cpp" line="177" pragmaType="inline" parentfunction="total_potential" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><32, true>(int, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="101" pragmaType="inline" parentfunction="compute_pp_nn" off="1" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="140" pragmaType="inline" parentfunction="reduction_move_undo" off="0" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="193" pragmaType="inline" parentfunction="compute_greedy_potential_score" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int<33>(ap_int<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="41" pragmaType="inline" parentfunction="load_matrix_from_dram" off="1" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="50" pragmaType="loop_tripcount" parentfunction="load_matrix_from_dram" min="1" max="320" avg="160"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator==<33, true>(ap_int_base<33, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::RType<32, true>::minus operator-<1, false, 32, true>(ap_int_base<1, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="231" pragmaType="inline" parentfunction="greedy_potential_reduce" off="1" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="233" pragmaType="loop_tripcount" parentfunction="greedy_potential_reduce" min="1" max="5000" avg="2500"/>
+<pragma file="gp.cpp" line="255" pragmaType="pipeline" parentfunction="fmm_reduce_kernel" off="1" ii="0" style=""/>
+<pragma file="gp.cpp" line="248" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_none" port="A_dram" name="" register="0"/>
+<pragma file="gp.cpp" line="249" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_none" port="rows" name="" register="0"/>
+<pragma file="gp.cpp" line="250" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_none" port="cols" name="" register="0"/>
+<pragma file="gp.cpp" line="251" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_none" port="t_capacity" name="" register="0"/>
+<pragma file="gp.cpp" line="252" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_none" port="k1" name="" register="0"/>
+<pragma file="gp.cpp" line="253" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_none" port="k2" name="" register="0"/>
+<pragma file="gp.cpp" line="254" pragmaType="interface" parentfunction="fmm_reduce_kernel" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="gp.cpp" line="260" pragmaType="bind_storage" parentfunction="fmm_reduce_kernel" op="666" impl="19" latency="-1" variable=""/>
+<pragma file="gp.cpp" line="261" pragmaType="array_partition" parentfunction="fmm_reduce_kernel" dim="2" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="209" pragmaType="inline" parentfunction="find_best_move" off="1" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="117" pragmaType="inline" parentfunction="reduction_move" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<32, true>(ap_int_base<32, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator-() const" off="0" region="0" recursive="0"/>
+<pragma file="gp.cpp" line="65" pragmaType="inline" parentfunction="store_matrix_to_dram" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>& operator+=<32, true>(ap_int_base<32, true>&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>& ap_int_base<32, true>::operator+=<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

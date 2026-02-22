@@ -1,0 +1,52 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'compute_greedy_potential_score'" level="0">
+<item name = "Date">Sun Feb 22 21:56:47 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">ASIC</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 9.117 ns, 1.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_compute_pp_nn_fu_399">compute_pp_nn, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1_fu_417">compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_146_1_fu_435">compute_greedy_potential_score_Pipeline_VITIS_LOOP_146_1, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2_fu_451">compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2, 3, 3, 30.000 ns, 30.000 ns, 1, 1, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3_fu_469">compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_180_1">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_181_2">?, ?, ?, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

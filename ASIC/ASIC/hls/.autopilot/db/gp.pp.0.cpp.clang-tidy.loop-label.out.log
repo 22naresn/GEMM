@@ -1,0 +1,113 @@
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:2257:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:2257:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:2271:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:2271:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:2285:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:2285:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:4253:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:4253:7: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6480:5: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < MAX_TOTAL_ROWS; ++r) {
+    ^~~
+    VITIS_LOOP_49_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6480:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6482:2: warning: Added loop label VITIS_LOOP_51_2:   [xilinx-label-all-loops]
+ for (int c = 0; c < MAX_TOTAL_COLS; ++c) {
+ ^~~
+ VITIS_LOOP_51_2: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6482:2: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6487:5: warning: Added loop label VITIS_LOOP_56_3:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; ++r) {
+    ^~~
+    VITIS_LOOP_56_3: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6487:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6488:9: warning: Added loop label VITIS_LOOP_57_4:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; ++c) {
+        ^~~
+        VITIS_LOOP_57_4: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6488:9: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6499:5: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; ++r) {
+    ^~~
+    VITIS_LOOP_68_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6499:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6500:9: warning: Added loop label VITIS_LOOP_69_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; ++c) {
+        ^~~
+        VITIS_LOOP_69_2: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6500:9: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6512:5: warning: Added loop label VITIS_LOOP_81_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < total_rows; ++r) {
+    ^~~
+    VITIS_LOOP_81_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6512:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6523:5: warning: Added loop label VITIS_LOOP_92_1:   [xilinx-label-all-loops]
+    for (int c = 0; c < total_cols; ++c) {
+    ^~~
+    VITIS_LOOP_92_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6523:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6535:5: warning: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+    for (int c = 0; c < cols_non_t; ++c) {
+    ^~~
+    VITIS_LOOP_104_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6535:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6555:5: warning: Added loop label VITIS_LOOP_124_1:   [xilinx-label-all-loops]
+    for (int c = 0; c < existing_cols; ++c) {
+    ^~~
+    VITIS_LOOP_124_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6555:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6577:5: warning: Added loop label VITIS_LOOP_146_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rowt; ++r) {
+    ^~~
+    VITIS_LOOP_146_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6577:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6583:5: warning: Added loop label VITIS_LOOP_152_2:   [xilinx-label-all-loops]
+    for (int r = rowt - 1; r > row1; --r) {
+    ^~~
+    VITIS_LOOP_152_2: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6583:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6594:5: warning: Added loop label VITIS_LOOP_163_3:   [xilinx-label-all-loops]
+    for (int c = 0; c < colt; ++c) {
+    ^~~
+    VITIS_LOOP_163_3: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6594:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6611:5: warning: Added loop label VITIS_LOOP_180_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < R; ++i) {
+    ^~~
+    VITIS_LOOP_180_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6611:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6612:9: warning: Added loop label VITIS_LOOP_181_2:   [xilinx-label-all-loops]
+        for (int j = i+1; j < R; ++j) {
+        ^~~
+        VITIS_LOOP_181_2: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6612:9: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6643:5: warning: Added loop label VITIS_LOOP_212_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < R; ++i) {
+    ^~~
+    VITIS_LOOP_212_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6643:5: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6644:9: warning: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+        for (int j = i+1; j < R; ++j) {
+        ^~~
+        VITIS_LOOP_213_2: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6644:9: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6663:1: warning: Added loop label VITIS_LOOP_232_1:   [xilinx-label-all-loops]
+for (int iter = 0; iter < MAX_ITERS; ++iter) {
+^~~
+VITIS_LOOP_232_1: 
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6663:1: note: FIX-IT applied suggested code changes
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6695:9: error: Resource with core_name: RAM_1P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=M.e core=RAM_1P_LUTRAM
+        ^

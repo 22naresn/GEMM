@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_pp_nn'
+================================================================
+* Date:           Sun Feb 22 21:56:41 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        ASIC
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.832 ns|     1.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.96>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%r2_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %r2"   --->   Operation 4 'read' 'r2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%r1_read = read i31 @_ssdm_op_Read.ap_auto.i31, i31 %r1"   --->   Operation 5 'read' 'r1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%nn_write_assign_loc = alloca i64 1"   --->   Operation 6 'alloca' 'nn_write_assign_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%pp_write_assign_loc = alloca i64 1"   --->   Operation 7 'alloca' 'pp_write_assign_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%cols_non_t = load i32 %M_cols" [gp.cpp:103]   --->   Operation 8 'load' 'cols_non_t' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns) (grouped into LUT with out node add_ln106)   --->   "%shl_ln106 = shl i31 %r1_read, i31 6" [gp.cpp:106]   --->   Operation 9 'shl' 'shl_ln106' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node add_ln106)   --->   "%shl_ln106_1 = shl i31 %r1_read, i31 4" [gp.cpp:106]   --->   Operation 10 'shl' 'shl_ln106_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.66ns) (out node of the LUT)   --->   "%add_ln106 = add i31 %shl_ln106, i31 %shl_ln106_1" [gp.cpp:106]   --->   Operation 11 'add' 'add_ln106' <Predicate = true> <Delay = 2.66> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln106 = trunc i31 %add_ln106" [gp.cpp:106]   --->   Operation 12 'trunc' 'trunc_ln106' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i9.i6, i9 %r2_read, i6 0" [gp.cpp:108]   --->   Operation 13 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_5 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %r2_read, i4 0" [gp.cpp:108]   --->   Operation 14 'bitconcatenate' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln104 = zext i13 %tmp_5" [gp.cpp:104]   --->   Operation 15 'zext' 'zext_ln104' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (2.14ns)   --->   "%add_ln104 = add i15 %tmp, i15 %zext_ln104" [gp.cpp:104]   --->   Operation 16 'add' 'add_ln104' <Predicate = true> <Delay = 2.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [2/2] (4.29ns)   --->   "%call_ln103 = call void @compute_pp_nn_Pipeline_VITIS_LOOP_104_1, i32 %cols_non_t, i15 %trunc_ln106, i15 %add_ln104, i32 %pp_write_assign_loc, i32 %nn_write_assign_loc, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:103]   --->   Operation 17 'call' 'call_ln103' <Predicate = true> <Delay = 4.29> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln103 = call void @compute_pp_nn_Pipeline_VITIS_LOOP_104_1, i32 %cols_non_t, i15 %trunc_ln106, i15 %add_ln104, i32 %pp_write_assign_loc, i32 %nn_write_assign_loc, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:103]   --->   Operation 18 'call' 'call_ln103' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_0, i64 666, i64 19, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_1, i64 666, i64 19, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_2, i64 666, i64 19, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_3, i64 666, i64 19, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%pp_write_assign_loc_load = load i32 %pp_write_assign_loc"   --->   Operation 23 'load' 'pp_write_assign_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%nn_write_assign_loc_load = load i32 %nn_write_assign_loc"   --->   Operation 24 'load' 'nn_write_assign_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%mrv = insertvalue i64 <undef>, i32 %pp_write_assign_loc_load" [gp.cpp:113]   --->   Operation 25 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i64 %mrv, i32 %nn_write_assign_loc_load" [gp.cpp:113]   --->   Operation 26 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln113 = ret i64 %mrv_1" [gp.cpp:113]   --->   Operation 27 'ret' 'ret_ln113' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 1.000ns.
+
+ <State 1>: 6.961ns
+The critical path consists of the following:
+	wire read operation ('r1_read') on port 'r1' [9]  (0.000 ns)
+	'shl' operation 31 bit ('shl_ln106_1', gp.cpp:106) [18]  (0.000 ns)
+	'add' operation 31 bit ('add_ln106', gp.cpp:106) [19]  (2.667 ns)
+	'call' operation 0 bit ('call_ln103', gp.cpp:103) to 'compute_pp_nn_Pipeline_VITIS_LOOP_104_1' [25]  (4.294 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

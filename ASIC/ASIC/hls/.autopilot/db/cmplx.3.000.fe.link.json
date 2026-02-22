@@ -1,0 +1,176 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "8 5 6",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "gp.cpp",
+    "fileloc": 242,
+    "instructions": 13,
+    "memory_accesses": 0,
+    "name": "fmm_reduce_kernel",
+    "total_instructions": 4138
+  },
+  "1": {
+    "basicblocks": 49,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 139,
+    "instructions": 214,
+    "loads": {
+      "L": 14
+    },
+    "memory_accesses": 22,
+    "name": "reduction_move_undo",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 501
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "9 3 7 1",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 192,
+    "instructions": 48,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 0,
+    "name": "compute_greedy_potential_score",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 1554
+  },
+  "3": {
+    "basicblocks": 27,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 4,
+    "file": "gp.cpp",
+    "fileloc": 116,
+    "instructions": 165,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 17,
+    "name": "reduction_move",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 390
+  },
+  "4": {
+    "basicblocks": 21,
+    "calls": "9 2 2",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 208,
+    "instructions": 87,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "find_best_move",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 3533
+  },
+  "5": {
+    "basicblocks": 12,
+    "calls": "4 3",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 230,
+    "instructions": 44,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 0,
+    "name": "greedy_potential_reduce",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 3972
+  },
+  "6": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "gp.cpp",
+    "fileloc": 64,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 2,
+    "name": "store_matrix_to_dram",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 41
+  },
+  "7": {
+    "basicblocks": 17,
+    "calls": "9",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "gp.cpp",
+    "fileloc": 176,
+    "instructions": 57,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "total_potential",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 313
+  },
+  "8": {
+    "basicblocks": 28,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 40,
+    "instructions": 82,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 7,
+    "name": "load_matrix_from_dram",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 112
+  },
+  "9": {
+    "basicblocks": 20,
+    "calls": "",
+    "control_depth": 5,
+    "def_use_depth": 2,
+    "file": "gp.cpp",
+    "fileloc": 100,
+    "instructions": 76,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 13,
+    "name": "compute_pp_nn",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 241
+  }
+}
