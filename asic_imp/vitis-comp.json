@@ -1,0 +1,13 @@
+{
+  "name": "asic_imp",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "asic_imp"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}
