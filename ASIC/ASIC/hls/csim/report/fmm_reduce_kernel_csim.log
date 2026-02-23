@@ -1,7 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../gp.cpp in debug mode
-   Generating csim.exe
+make: 'csim.exe' is up to date.
 fmm_reduce_kernel testbench
 
 === Handcrafted (k1=5,k2=1) ===
