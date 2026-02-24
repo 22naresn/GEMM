@@ -267,21 +267,6 @@ reg    ap_ST_fsm_state10_blk;
 wire    ap_ST_fsm_state11_blk;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 11'd1;
-#0 grp_compute_pp_nn_fu_272_ap_start_reg = 1'b0;
-#0 grp_compute_greedy_potential_score_fu_288_ap_start_reg = 1'b0;
-#0 i_fu_54 = 31'd0;
-#0 empty_fu_58 = 32'd0;
-#0 out_sign_0_fu_62 = 32'd0;
-#0 write_flag9_0_fu_66 = 1'd0;
-#0 out_r2_0_fu_70 = 32'd0;
-#0 write_flag6_0_fu_74 = 1'd0;
-#0 out_r1_0_fu_78 = 32'd0;
-#0 write_flag3_0_fu_82 = 1'd0;
-#0 agg_result_0_fu_86 = 32'd0;
-end
 
 fmm_reduce_kernel_compute_pp_nn grp_compute_pp_nn_fu_272(
     .ap_clk(ap_clk),
@@ -382,10 +367,12 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         agg_result_0_fu_86 <= 32'd0;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+    end else if ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1)) begin
+        agg_result_0_fu_86 <= 32'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         agg_result_0_fu_86 <= ap_phi_mux_agg_result_3_phi_fu_195_p4;
     end
 end
@@ -422,18 +409,22 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         empty_fu_58 <= 32'd0;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+    end else if ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1)) begin
+        empty_fu_58 <= 32'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         empty_fu_58 <= ap_phi_mux_empty_42_phi_fu_265_p4;
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         i_fu_54 <= 31'd0;
-    end else if (((icmp_ln213_1_reg_772 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+    end else if ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1)) begin
+        i_fu_54 <= 31'd0;
+    end else if ((icmp_ln213_1_reg_772 == 1'd1) & (1'b1 == ap_CS_fsm_state4)) begin
         i_fu_54 <= j_3_reg_762;
     end
 end
@@ -494,10 +485,12 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         write_flag3_0_fu_82 <= 1'd0;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+    end else if ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1)) begin
+        write_flag3_0_fu_82 <= 1'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         write_flag3_0_fu_82 <= ap_phi_mux_write_flag3_3_phi_fu_205_p4;
     end
 end
@@ -518,10 +511,12 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         write_flag6_0_fu_74 <= 1'd0;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+    end else if ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1)) begin
+        write_flag6_0_fu_74 <= 1'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         write_flag6_0_fu_74 <= ap_phi_mux_write_flag6_3_phi_fu_225_p4;
     end
 end
@@ -542,10 +537,12 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         write_flag9_0_fu_66 <= 1'd0;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+    end else if ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1)) begin
+        write_flag9_0_fu_66 <= 1'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         write_flag9_0_fu_66 <= ap_phi_mux_write_flag9_3_phi_fu_245_p4;
     end
 end
@@ -624,10 +621,26 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state11)) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
+        out_r1_0_fu_78 <= 32'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         out_r1_0_fu_78 <= ap_phi_mux_out_r1_3_phi_fu_215_p4;
+    end
+end
+
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
+        out_r2_0_fu_70 <= 32'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         out_r2_0_fu_70 <= ap_phi_mux_out_r2_3_phi_fu_235_p4;
+    end
+end
+
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
+        out_sign_0_fu_62 <= 32'd0;
+    end else if (1'b1 == ap_CS_fsm_state11) begin
         out_sign_0_fu_62 <= ap_phi_mux_out_sign_3_phi_fu_255_p4;
     end
 end
@@ -638,7 +651,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         M_e_0_address0 = grp_compute_pp_nn_fu_272_M_e_0_address0;
     end else begin
-        M_e_0_address0 = 'bx;
+        M_e_0_address0 = 15'd0;
     end
 end
 
@@ -666,7 +679,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         M_e_1_address0 = grp_compute_pp_nn_fu_272_M_e_1_address0;
     end else begin
-        M_e_1_address0 = 'bx;
+        M_e_1_address0 = 15'd0;
     end
 end
 
@@ -694,7 +707,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         M_e_2_address0 = grp_compute_pp_nn_fu_272_M_e_2_address0;
     end else begin
-        M_e_2_address0 = 'bx;
+        M_e_2_address0 = 15'd0;
     end
 end
 
@@ -722,7 +735,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         M_e_3_address0 = grp_compute_pp_nn_fu_272_M_e_3_address0;
     end else begin
-        M_e_3_address0 = 'bx;
+        M_e_3_address0 = 15'd0;
     end
 end
 
@@ -900,7 +913,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
         grp_compute_greedy_potential_score_fu_288_sign = 2'd1;
     end else begin
-        grp_compute_greedy_potential_score_fu_288_sign = 'bx;
+        grp_compute_greedy_potential_score_fu_288_sign = 2'd0;
     end
 end
 
@@ -970,7 +983,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         default : begin
-            ap_NS_fsm = 'bx;
+            ap_NS_fsm = ap_NS_fsm_state1;
         end
     endcase
 end
@@ -1083,8 +1096,11 @@ assign zext_ln213_1_fu_398_p1 = j_3_fu_392_p2;
 
 assign zext_ln213_fu_383_p1 = i_fu_54;
 
-always @ (posedge ap_clk) begin
-    zext_ln213_reg_753[31] <= 1'b0;
+always @(posedge ap_clk) begin
+    if (ap_rst)
+        zext_ln213_reg_753[31] <= 1'b0;
+    else
+        zext_ln213_reg_753[31] <= zext_ln213_reg_753[31];
 end
 
 endmodule //fmm_reduce_kernel_find_best_move

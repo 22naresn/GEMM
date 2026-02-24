@@ -48,12 +48,6 @@ reg ap_done_cache;
 input   ap_loop_exit_ready;
 input   ap_loop_exit_done;
 
-// power-on initialization
-initial begin
-#0 ap_loop_init_int = 1'b1;
-#0 ap_done_cache = 1'b0;
-end
-
 assign ap_start_int = ap_start;
 
 assign ap_continue_int = 1'b1;

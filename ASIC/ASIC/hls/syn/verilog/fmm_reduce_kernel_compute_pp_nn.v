@@ -101,11 +101,7 @@ reg    ap_ST_fsm_state2_blk;
 wire    ap_ST_fsm_state3_blk;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 3'd1;
-#0 grp_compute_pp_nn_Pipeline_VITIS_LOOP_104_1_fu_64_ap_start_reg = 1'b0;
-end
+
 
 fmm_reduce_kernel_compute_pp_nn_Pipeline_VITIS_LOOP_104_1 grp_compute_pp_nn_Pipeline_VITIS_LOOP_104_1_fu_64(
     .ap_clk(ap_clk),
@@ -156,8 +152,11 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state1)) begin
-        add_ln104_reg_174[14 : 4] <= add_ln104_fu_129_p2[14 : 4];
+    if (ap_rst) begin
+        add_ln104_reg_174[14:4] <= 11'd0;
+        trunc_ln106_reg_169 <= 15'd0;
+    end else if (1'b1 == ap_CS_fsm_state1) begin
+        add_ln104_reg_174[14:4] <= add_ln104_fu_129_p2[14:4];
         trunc_ln106_reg_169 <= trunc_ln106_fu_104_p1;
     end
 end
@@ -224,7 +223,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state1;
         end
         default : begin
-            ap_NS_fsm = 'bx;
+            ap_NS_fsm = ap_ST_fsm_state1;
         end
     endcase
 end

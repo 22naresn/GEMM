@@ -352,11 +352,6 @@ wire   [62:0] mul_ln56_fu_140_p10;
 wire    ap_ce_reg;
 
 // power-on initialization
-initial begin
-#0 ap_CS_fsm = 13'd1;
-#0 grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_106_ap_start_reg = 1'b0;
-#0 grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_56_3_VITIS_LOOP_57_4_fu_118_ap_start_reg = 1'b0;
-end
 
 fmm_reduce_kernel_load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2 grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_106(
     .ap_clk(ap_clk),

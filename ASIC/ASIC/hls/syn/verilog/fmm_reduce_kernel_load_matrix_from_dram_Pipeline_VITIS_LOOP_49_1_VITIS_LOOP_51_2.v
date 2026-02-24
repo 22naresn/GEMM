@@ -111,15 +111,6 @@ wire    ap_done_sig;
 wire    ap_ce_reg;
 
 // power-on initialization
-initial begin
-#0 ap_CS_fsm = 1'd1;
-#0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 ap_enable_reg_pp0_iter2 = 1'b0;
-#0 c_fu_68 = 9'd0;
-#0 r_fu_72 = 9'd0;
-#0 indvar_flatten_fu_76 = 17'd0;
-#0 ap_done_reg = 1'b0;
-end
 
 fmm_reduce_kernel_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
     .ap_clk(ap_clk),
@@ -181,7 +172,9 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        c_fu_68 <= 9'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             c_fu_68 <= 9'd0;
         end else if (((icmp_ln49_fu_154_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
@@ -191,7 +184,9 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        indvar_flatten_fu_76 <= 17'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             indvar_flatten_fu_76 <= 17'd0;
         end else if (((icmp_ln49_fu_154_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
@@ -201,7 +196,9 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        r_fu_72 <= 9'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             r_fu_72 <= 9'd0;
         end else if (((icmp_ln49_fu_154_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
@@ -211,7 +208,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        add_ln53_reg_316 <= 15'd0;
+        trunc_ln51_reg_312 <= 2'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         add_ln53_reg_316 <= add_ln53_fu_244_p2;
         trunc_ln51_reg_312 <= trunc_ln51_fu_226_p1;
     end

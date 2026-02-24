@@ -274,11 +274,6 @@ wire   [62:0] mul_ln68_fu_101_p00;
 wire   [62:0] mul_ln68_fu_101_p10;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 11'd1;
-#0 grp_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_79_ap_start_reg = 1'b0;
-end
 
 fmm_reduce_kernel_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2 grp_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_79(
     .ap_clk(ap_clk),

@@ -458,18 +458,6 @@ reg    ap_ST_fsm_state22_blk;
 wire    ap_ST_fsm_state23_blk;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 23'd1;
-#0 grp_compute_pp_nn_fu_399_ap_start_reg = 1'b0;
-#0 grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1_fu_417_ap_start_reg = 1'b0;
-#0 grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_146_1_fu_435_ap_start_reg = 1'b0;
-#0 grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2_fu_451_ap_start_reg = 1'b0;
-#0 grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3_fu_469_ap_start_reg = 1'b0;
-#0 i_fu_122 = 31'd0;
-#0 s_fu_126 = 32'd0;
-#0 ap_return_preg = 32'd0;
-end
 
 fmm_reduce_kernel_compute_pp_nn grp_compute_pp_nn_fu_399(
     .ap_clk(ap_clk),
@@ -633,9 +621,19 @@ mul_32s_32s_32_1_1_U92(
     .dout(grp_fu_486_p2)
 );
 
-always @ (posedge ap_clk) begin
+always @(posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_CS_fsm <= ap_ST_fsm_state1;
+
+        grp_compute_pp_nn_fu_399_ap_start_reg <= 1'b0;
+        grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1_fu_417_ap_start_reg <= 1'b0;
+        grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_146_1_fu_435_ap_start_reg <= 1'b0;
+        grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2_fu_451_ap_start_reg <= 1'b0;
+        grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3_fu_469_ap_start_reg <= 1'b0;
+
+        i_fu_122 <= 31'd0;
+        s_fu_126 <= 32'd0;
+        ap_return_preg <= 32'd0;
     end else begin
         ap_CS_fsm <= ap_NS_fsm;
     end
@@ -1633,7 +1631,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state1;
         end
         default : begin
-            ap_NS_fsm = 'bx;
+            ap_NS_fsm = ap_NS_fsm_state1;
         end
     endcase
 end

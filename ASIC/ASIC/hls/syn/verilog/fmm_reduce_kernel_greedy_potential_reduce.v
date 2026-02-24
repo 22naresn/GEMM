@@ -253,12 +253,6 @@ reg    ap_ST_fsm_state7_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
-initial begin
-#0 ap_CS_fsm = 7'd1;
-#0 grp_find_best_move_fu_202_ap_start_reg = 1'b0;
-#0 grp_greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1_fu_224_ap_start_reg = 1'b0;
-#0 iter_fu_90 = 13'd0;
-end
 
 fmm_reduce_kernel_find_best_move grp_find_best_move_fu_202(
     .ap_clk(ap_clk),
@@ -377,9 +371,12 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+    if (ap_rst == 1'b1) begin
         iter_fu_90 <= 13'd0;
-    end else if (((1'b0 == ap_block_state7_on_subcall_done) & (1'b1 == ap_CS_fsm_state7))) begin
+    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+        iter_fu_90 <= 13'd0;
+    end else if (((1'b0 == ap_block_state7_on_subcall_done) & 
+                   (1'b1 == ap_CS_fsm_state7))) begin
         iter_fu_90 <= iter_3_reg_546;
     end
 end

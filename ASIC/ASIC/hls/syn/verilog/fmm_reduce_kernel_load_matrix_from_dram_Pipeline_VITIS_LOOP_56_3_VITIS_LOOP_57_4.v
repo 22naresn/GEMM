@@ -223,17 +223,7 @@ wire    ap_done_sig;
 wire    ap_ce_reg;
 
 // power-on initialization
-initial begin
-#0 ap_CS_fsm = 1'd1;
-#0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 ap_enable_reg_pp0_iter2 = 1'b0;
-#0 ap_enable_reg_pp0_iter3 = 1'b0;
-#0 ap_block_pp0_stage0_subdone_grp0_done_reg = 1'b0;
-#0 c_1_fu_82 = 31'd0;
-#0 r_fu_86 = 31'd0;
-#0 indvar_flatten7_fu_90 = 62'd0;
-#0 ap_done_reg = 1'b0;
-end
+
 
 fmm_reduce_kernel_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
     .ap_clk(ap_clk),

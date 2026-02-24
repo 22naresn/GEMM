@@ -124,15 +124,6 @@ wire  signed [1:0] v_fu_270_p5;
 wire   [1:0] v_fu_270_p7;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 1'd1;
-#0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 move_type_fu_76 = 32'd0;
-#0 row2_fu_80 = 32'd0;
-#0 r_fu_84 = 34'd0;
-#0 ap_done_reg = 1'b0;
-end
 
 (* dissolve_hierarchy = "yes" *) fmm_reduce_kernel_sparsemux_9_2_32_1_1_x #(
     .ID( 1 ),
@@ -206,7 +197,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        move_type_fu_76 <= 32'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) &
+                  (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             move_type_fu_76 <= 32'd0;
         end else if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
@@ -216,7 +210,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        r_fu_84 <= 34'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) &
+                  (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             r_fu_84 <= zext_ln152_cast_fu_182_p1;
         end else if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
@@ -226,7 +223,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (ap_rst == 1'b1) begin
+        row2_fu_80 <= 32'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) &
+                  (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             row2_fu_80 <= 32'd4294967295;
         end else if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
@@ -236,8 +236,14 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        add_ln152_reg_386 <= add_ln152_fu_252_p2;
+    if (ap_rst == 1'b1) begin
+        add_ln152_reg_386   <= 34'd0;
+        icmp_ln152_reg_391 <= 1'b0;
+        trunc_ln155_reg_381 <= 32'd0;
+    end
+    else if (((1'b0 == ap_block_pp0_stage0_11001) &
+              (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        add_ln152_reg_386   <= add_ln152_fu_252_p2;
         icmp_ln152_reg_391 <= icmp_ln152_fu_258_p2;
         trunc_ln155_reg_381 <= trunc_ln155_fu_248_p1;
     end

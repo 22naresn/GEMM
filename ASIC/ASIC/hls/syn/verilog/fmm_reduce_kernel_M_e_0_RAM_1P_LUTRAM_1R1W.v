@@ -27,9 +27,7 @@ input clk;
 
 (* ram_style = "distributed"  *)reg [DataWidth-1:0] ram[0:AddressRange-1];
 
-initial begin
-    $readmemh("./fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W.dat", ram);
-end 
+
 
  
 
@@ -38,15 +36,17 @@ end
 
 
 //read first
-always @(posedge clk)  
-begin 
-    if (ce0) begin
-        if (we0) 
-            ram[address0] <= d0; 
-        q0 <= ram[address0];
-
+always @(posedge clk) begin
+    if (reset) begin
+        q0 <= {DataWidth{1'b0}};
+    end else begin
+        if (ce0) begin
+            if (we0)
+                ram[address0] <= d0;
+            q0 <= ram[address0];
+        end
     end
-end 
+end
  
  
 

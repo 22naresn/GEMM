@@ -107,12 +107,6 @@ wire  signed [1:0] v_fu_221_p5;
 wire   [1:0] v_fu_221_p7;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 2'd1;
-#0 row1_fu_68 = 31'd0;
-#0 ap_done_reg = 1'b0;
-end
 
 (* dissolve_hierarchy = "yes" *) fmm_reduce_kernel_sparsemux_9_2_32_1_1_x #(
     .ID( 1 ),
@@ -182,9 +176,15 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (ap_loop_init == 1'b1))) begin
+    if (ap_rst == 1'b1) begin
         row1_fu_68 <= 31'd0;
-    end else if (((icmp_ln146_reg_271 == 1'd1) & (icmp_ln149_fu_244_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+    end else if (((1'b0 == ap_block_state1_pp0_stage0_iter0) &
+                   (1'b1 == ap_CS_fsm_state1) &
+                   (ap_loop_init == 1'b1))) begin
+        row1_fu_68 <= 31'd0;
+    end else if (((icmp_ln146_reg_271 == 1'd1) &
+                   (icmp_ln149_fu_244_p2 == 1'd0) &
+                   (1'b1 == ap_CS_fsm_state2))) begin
         row1_fu_68 <= add_ln146_reg_275;
     end
 end

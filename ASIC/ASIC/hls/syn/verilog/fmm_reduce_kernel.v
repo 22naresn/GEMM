@@ -407,17 +407,7 @@ wire    ap_ST_fsm_state6_blk;
 reg    ap_ST_fsm_state7_blk;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 7'd1;
-#0 M_rows = 32'd0;
-#0 M_cols = 32'd0;
-#0 M_t = 32'd0;
-#0 M_t_capacity = 32'd0;
-#0 grp_load_matrix_from_dram_fu_136_ap_start_reg = 1'b0;
-#0 grp_greedy_potential_reduce_fu_162_ap_start_reg = 1'b0;
-#0 grp_store_matrix_to_dram_fu_184_ap_start_reg = 1'b0;
-end
+// power-on initialization removed; replaced by synchronous resets
 
 fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W #(
     .DataWidth( 32 ),
@@ -865,10 +855,14 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        M_t <= grp_greedy_potential_reduce_fu_162_M_t_o;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_t_ap_vld == 1'b1))) begin
-        M_t <= grp_load_matrix_from_dram_fu_136_M_t;
+    if (ap_rst_n_inv == 1'b1) begin
+        M_t <= 32'd0;
+    end else begin
+        if (((grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            M_t <= grp_greedy_potential_reduce_fu_162_M_t_o;
+        end else if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_t_ap_vld == 1'b1))) begin
+            M_t <= grp_load_matrix_from_dram_fu_136_M_t;
+        end
     end
 end
 
@@ -884,20 +878,32 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_cols_ap_vld == 1'b1))) begin
-        M_cols <= grp_load_matrix_from_dram_fu_136_M_cols;
+    if (ap_rst_n_inv == 1'b1) begin
+        M_cols <= 32'd0;
+    end else begin
+        if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_cols_ap_vld == 1'b1))) begin
+            M_cols <= grp_load_matrix_from_dram_fu_136_M_cols;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_rows_ap_vld == 1'b1))) begin
-        M_rows <= grp_load_matrix_from_dram_fu_136_M_rows;
+    if (ap_rst_n_inv == 1'b1) begin
+        M_rows <= 32'd0;
+    end else begin
+        if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_rows_ap_vld == 1'b1))) begin
+            M_rows <= grp_load_matrix_from_dram_fu_136_M_rows;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld == 1'b1))) begin
-        M_t_capacity <= grp_load_matrix_from_dram_fu_136_M_t_capacity;
+    if (ap_rst_n_inv == 1'b1) begin
+        M_t_capacity <= 32'd0;
+    end else begin
+        if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld == 1'b1))) begin
+            M_t_capacity <= grp_load_matrix_from_dram_fu_136_M_t_capacity;
+        end
     end
 end
 

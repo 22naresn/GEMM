@@ -157,18 +157,6 @@ wire  signed [1:0] e2_fu_322_p5;
 wire  signed [1:0] e2_fu_322_p7;
 wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 2'd1;
-#0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 empty_fu_74 = 32'd0;
-#0 empty_43_fu_78 = 32'd0;
-#0 c_fu_82 = 31'd0;
-#0 nn_write_assign_fu_86 = 32'd0;
-#0 pp_write_assign_fu_90 = 32'd0;
-#0 ap_done_reg = 1'b0;
-end
 
 (* dissolve_hierarchy = "yes" *) fmm_reduce_kernel_sparsemux_9_2_32_1_1 #(
     .ID( 1 ),
@@ -275,42 +263,73 @@ always @ (posedge ap_clk) begin
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         c_fu_82 <= 31'd0;
-    end else if (((icmp_ln104_reg_544 == 1'd1) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+    end
+    else if ((~ap_block_pp0_stage0_11001) & ap_CS_fsm_pp0_stage0 & ap_loop_init) begin
+        c_fu_82 <= 31'd0;
+    end
+    else if ((icmp_ln104_reg_544 == 1'd1) &
+             ap_enable_reg_pp0_iter0_reg &
+             (~ap_block_pp0_stage1_11001) &
+             ap_CS_fsm_pp0_stage1) begin
         c_fu_82 <= add_ln104_fu_278_p2;
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         empty_43_fu_78 <= 32'd0;
-    end else if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+    end
+    else if ((~ap_block_pp0_stage0_11001) & ap_CS_fsm_pp0_stage0 & ap_loop_init) begin
+        empty_43_fu_78 <= 32'd0;
+    end
+    else if ((~ap_block_pp0_stage1_11001) &
+             ap_enable_reg_pp0_iter1 &
+             ap_CS_fsm_pp0_stage1) begin
         empty_43_fu_78 <= empty_44_fu_457_p3;
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         empty_fu_74 <= 32'd0;
-    end else if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+    end
+    else if ((~ap_block_pp0_stage0_11001) & ap_CS_fsm_pp0_stage0 & ap_loop_init) begin
+        empty_fu_74 <= 32'd0;
+    end
+    else if ((~ap_block_pp0_stage1_11001) &
+             ap_enable_reg_pp0_iter1 &
+             ap_CS_fsm_pp0_stage1) begin
         empty_fu_74 <= empty_45_fu_465_p3;
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         nn_write_assign_fu_86 <= 32'd0;
-    end else if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+    end
+    else if ((~ap_block_pp0_stage0_11001) & ap_CS_fsm_pp0_stage0 & ap_loop_init) begin
+        nn_write_assign_fu_86 <= 32'd0;
+    end
+    else if ((~ap_block_pp0_stage1_11001) &
+             ap_enable_reg_pp0_iter1 &
+             ap_CS_fsm_pp0_stage1) begin
         nn_write_assign_fu_86 <= nn_1_fu_449_p3;
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+always @(posedge ap_clk) begin
+    if (ap_rst) begin
         pp_write_assign_fu_90 <= 32'd0;
-    end else if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+    end
+    else if ((~ap_block_pp0_stage0_11001) & ap_CS_fsm_pp0_stage0 & ap_loop_init) begin
+        pp_write_assign_fu_90 <= 32'd0;
+    end
+    else if ((~ap_block_pp0_stage1_11001) &
+             ap_enable_reg_pp0_iter1 &
+             ap_CS_fsm_pp0_stage1) begin
         pp_write_assign_fu_90 <= pp_1_fu_435_p3;
     end
 end
