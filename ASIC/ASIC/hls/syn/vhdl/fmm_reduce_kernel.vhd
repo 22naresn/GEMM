@@ -9,48 +9,151 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity fmm_reduce_kernel is
+generic (
+    C_M_AXI_GMEM_ADDR_WIDTH : INTEGER := 64;
+    C_M_AXI_GMEM_ID_WIDTH : INTEGER := 1;
+    C_M_AXI_GMEM_AWUSER_WIDTH : INTEGER := 1;
+    C_M_AXI_GMEM_DATA_WIDTH : INTEGER := 32;
+    C_M_AXI_GMEM_WUSER_WIDTH : INTEGER := 1;
+    C_M_AXI_GMEM_ARUSER_WIDTH : INTEGER := 1;
+    C_M_AXI_GMEM_RUSER_WIDTH : INTEGER := 1;
+    C_M_AXI_GMEM_BUSER_WIDTH : INTEGER := 1;
+    C_S_AXI_CONTROL_ADDR_WIDTH : INTEGER := 6;
+    C_S_AXI_CONTROL_DATA_WIDTH : INTEGER := 32;
+    C_S_AXI_CONTROL_R_ADDR_WIDTH : INTEGER := 5;
+    C_S_AXI_CONTROL_R_DATA_WIDTH : INTEGER := 32;
+    C_M_AXI_GMEM_USER_VALUE : INTEGER := 0;
+    C_M_AXI_GMEM_PROT_VALUE : INTEGER := 0;
+    C_M_AXI_GMEM_CACHE_VALUE : INTEGER := 3 );
 port (
     ap_clk : IN STD_LOGIC;
-    ap_rst : IN STD_LOGIC;
-    ap_start : IN STD_LOGIC;
-    ap_done : OUT STD_LOGIC;
-    ap_idle : OUT STD_LOGIC;
-    ap_ready : OUT STD_LOGIC;
-    A_dram_i : IN STD_LOGIC_VECTOR (31 downto 0);
-    A_dram_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-    rows : IN STD_LOGIC_VECTOR (31 downto 0);
-    cols : IN STD_LOGIC_VECTOR (31 downto 0);
-    t_capacity : IN STD_LOGIC_VECTOR (31 downto 0);
-    k1 : IN STD_LOGIC_VECTOR (31 downto 0);
-    k2 : IN STD_LOGIC_VECTOR (31 downto 0) );
+    ap_rst_n : IN STD_LOGIC;
+    m_axi_gmem_AWVALID : OUT STD_LOGIC;
+    m_axi_gmem_AWREADY : IN STD_LOGIC;
+    m_axi_gmem_AWADDR : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_ADDR_WIDTH-1 downto 0);
+    m_axi_gmem_AWID : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_ID_WIDTH-1 downto 0);
+    m_axi_gmem_AWLEN : OUT STD_LOGIC_VECTOR (7 downto 0);
+    m_axi_gmem_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_AWUSER_WIDTH-1 downto 0);
+    m_axi_gmem_WVALID : OUT STD_LOGIC;
+    m_axi_gmem_WREADY : IN STD_LOGIC;
+    m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_DATA_WIDTH-1 downto 0);
+    m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_DATA_WIDTH/8-1 downto 0);
+    m_axi_gmem_WLAST : OUT STD_LOGIC;
+    m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_ID_WIDTH-1 downto 0);
+    m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_WUSER_WIDTH-1 downto 0);
+    m_axi_gmem_ARVALID : OUT STD_LOGIC;
+    m_axi_gmem_ARREADY : IN STD_LOGIC;
+    m_axi_gmem_ARADDR : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_ADDR_WIDTH-1 downto 0);
+    m_axi_gmem_ARID : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_ID_WIDTH-1 downto 0);
+    m_axi_gmem_ARLEN : OUT STD_LOGIC_VECTOR (7 downto 0);
+    m_axi_gmem_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (C_M_AXI_GMEM_ARUSER_WIDTH-1 downto 0);
+    m_axi_gmem_RVALID : IN STD_LOGIC;
+    m_axi_gmem_RREADY : OUT STD_LOGIC;
+    m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (C_M_AXI_GMEM_DATA_WIDTH-1 downto 0);
+    m_axi_gmem_RLAST : IN STD_LOGIC;
+    m_axi_gmem_RID : IN STD_LOGIC_VECTOR (C_M_AXI_GMEM_ID_WIDTH-1 downto 0);
+    m_axi_gmem_RUSER : IN STD_LOGIC_VECTOR (C_M_AXI_GMEM_RUSER_WIDTH-1 downto 0);
+    m_axi_gmem_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_BVALID : IN STD_LOGIC;
+    m_axi_gmem_BREADY : OUT STD_LOGIC;
+    m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_BID : IN STD_LOGIC_VECTOR (C_M_AXI_GMEM_ID_WIDTH-1 downto 0);
+    m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (C_M_AXI_GMEM_BUSER_WIDTH-1 downto 0);
+    s_axi_control_AWVALID : IN STD_LOGIC;
+    s_axi_control_AWREADY : OUT STD_LOGIC;
+    s_axi_control_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
+    s_axi_control_WVALID : IN STD_LOGIC;
+    s_axi_control_WREADY : OUT STD_LOGIC;
+    s_axi_control_WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH-1 downto 0);
+    s_axi_control_WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH/8-1 downto 0);
+    s_axi_control_ARVALID : IN STD_LOGIC;
+    s_axi_control_ARREADY : OUT STD_LOGIC;
+    s_axi_control_ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
+    s_axi_control_RVALID : OUT STD_LOGIC;
+    s_axi_control_RREADY : IN STD_LOGIC;
+    s_axi_control_RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH-1 downto 0);
+    s_axi_control_RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+    s_axi_control_BVALID : OUT STD_LOGIC;
+    s_axi_control_BREADY : IN STD_LOGIC;
+    s_axi_control_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+    interrupt : OUT STD_LOGIC;
+    s_axi_control_r_AWVALID : IN STD_LOGIC;
+    s_axi_control_r_AWREADY : OUT STD_LOGIC;
+    s_axi_control_r_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_R_ADDR_WIDTH-1 downto 0);
+    s_axi_control_r_WVALID : IN STD_LOGIC;
+    s_axi_control_r_WREADY : OUT STD_LOGIC;
+    s_axi_control_r_WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_R_DATA_WIDTH-1 downto 0);
+    s_axi_control_r_WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_R_DATA_WIDTH/8-1 downto 0);
+    s_axi_control_r_ARVALID : IN STD_LOGIC;
+    s_axi_control_r_ARREADY : OUT STD_LOGIC;
+    s_axi_control_r_ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_R_ADDR_WIDTH-1 downto 0);
+    s_axi_control_r_RVALID : OUT STD_LOGIC;
+    s_axi_control_r_RREADY : IN STD_LOGIC;
+    s_axi_control_r_RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_CONTROL_R_DATA_WIDTH-1 downto 0);
+    s_axi_control_r_RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+    s_axi_control_r_BVALID : OUT STD_LOGIC;
+    s_axi_control_r_BREADY : IN STD_LOGIC;
+    s_axi_control_r_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0) );
 end;
 
 
 architecture behav of fmm_reduce_kernel is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "fmm_reduce_kernel_fmm_reduce_kernel,hls_ip_2025_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a200t-fbg676-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.116857,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=5535,HLS_SYN_LUT=61590,HLS_VERSION=2025_1}";
+    "fmm_reduce_kernel_fmm_reduce_kernel,hls_ip_2025_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a200t-fbg676-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.116857,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=10,HLS_SYN_DSP=0,HLS_SYN_FF=7220,HLS_SYN_LUT=63492,HLS_VERSION=2025_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (5 downto 0) := "000010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (5 downto 0) := "000100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (5 downto 0) := "001000";
-    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (5 downto 0) := "010000";
-    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (5 downto 0) := "100000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (6 downto 0) := "0000001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (6 downto 0) := "0000010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (6 downto 0) := "0000100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (6 downto 0) := "0001000";
+    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (6 downto 0) := "0010000";
+    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (6 downto 0) := "0100000";
+    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (6 downto 0) := "1000000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
-    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
+    constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
+    constant C_M_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
+    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
     constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
+    constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
+    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    constant ap_const_lv13_0 : STD_LOGIC_VECTOR (12 downto 0) := "0000000000000";
 
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (5 downto 0) := "000001";
+    signal ap_rst_n_inv : STD_LOGIC;
+    signal ap_start : STD_LOGIC;
+    signal ap_done : STD_LOGIC;
+    signal ap_idle : STD_LOGIC;
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (6 downto 0) := "0000001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
+    signal ap_ready : STD_LOGIC;
+    signal A_dram : STD_LOGIC_VECTOR (63 downto 0);
+    signal rows : STD_LOGIC_VECTOR (31 downto 0);
+    signal cols : STD_LOGIC_VECTOR (31 downto 0);
+    signal t_capacity : STD_LOGIC_VECTOR (31 downto 0);
+    signal k1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal k2 : STD_LOGIC_VECTOR (31 downto 0);
     signal M_rows : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal M_cols : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal M_t : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
@@ -75,97 +178,173 @@ architecture behav of fmm_reduce_kernel is
     signal M_e_3_we0 : STD_LOGIC;
     signal M_e_3_d0 : STD_LOGIC_VECTOR (31 downto 0);
     signal M_e_3_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal t_capacity_read_reg_174 : STD_LOGIC_VECTOR (31 downto 0);
-    signal cols_read_reg_179 : STD_LOGIC_VECTOR (31 downto 0);
-    signal rows_read_reg_184 : STD_LOGIC_VECTOR (31 downto 0);
-    signal A_dram_read_reg_189 : STD_LOGIC_VECTOR (31 downto 0);
-    signal k2_read_reg_194 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_CS_fsm_state3 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal k1_read_reg_199 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_ap_start : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_ap_done : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_ap_idle : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_ap_ready : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_rows : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_rows_ap_vld : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_cols : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_cols_ap_vld : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_t : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_t_ap_vld : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_t_capacity : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_t_capacity_ap_vld : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_0_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_0_ce0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_0_we0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_0_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_1_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_1_ce0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_1_we0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_1_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_2_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_2_ce0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_2_we0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_2_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_3_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_load_matrix_from_dram_fu_104_M_e_3_ce0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_3_we0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_M_e_3_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_ap_start : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_ap_done : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_ap_idle : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_ap_ready : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_t_o : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_t_o_ap_vld : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_0_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_0_ce0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_0_we0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_0_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_1_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_1_ce0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_1_we0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_1_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_2_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_2_ce0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_2_we0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_2_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_3_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_greedy_potential_reduce_fu_132_M_e_3_ce0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_3_we0 : STD_LOGIC;
-    signal grp_greedy_potential_reduce_fu_132_M_e_3_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_store_matrix_to_dram_fu_156_ap_start : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_ap_done : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_ap_idle : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_ap_ready : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_A_dram : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_store_matrix_to_dram_fu_156_A_dram_ap_vld : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_M_e_0_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_store_matrix_to_dram_fu_156_M_e_0_ce0 : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_M_e_1_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_store_matrix_to_dram_fu_156_M_e_1_ce0 : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_M_e_2_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_store_matrix_to_dram_fu_156_M_e_2_ce0 : STD_LOGIC;
-    signal grp_store_matrix_to_dram_fu_156_M_e_3_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_store_matrix_to_dram_fu_156_M_e_3_ce0 : STD_LOGIC;
-    signal grp_load_matrix_from_dram_fu_104_ap_start_reg : STD_LOGIC := '0';
+    signal k2_read_reg_203 : STD_LOGIC_VECTOR (31 downto 0);
+    signal k1_read_reg_208 : STD_LOGIC_VECTOR (31 downto 0);
+    signal t_capacity_read_reg_213 : STD_LOGIC_VECTOR (31 downto 0);
+    signal cols_read_reg_218 : STD_LOGIC_VECTOR (31 downto 0);
+    signal rows_read_reg_223 : STD_LOGIC_VECTOR (31 downto 0);
+    signal A_dram_read_reg_228 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_ap_start : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_ap_done : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_ap_idle : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_ap_ready : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_rows : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_rows_ap_vld : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_cols : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_cols_ap_vld : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_t : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_t_ap_vld : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_t_capacity : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_0_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_0_ce0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_0_we0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_0_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_1_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_1_ce0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_1_we0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_1_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_2_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_2_ce0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_2_we0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_2_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_3_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_load_matrix_from_dram_fu_136_M_e_3_ce0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_3_we0 : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_M_e_3_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_ap_start : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_ap_done : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_ap_idle : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_ap_ready : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_t_o : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_0_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_0_ce0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_0_we0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_0_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_1_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_1_ce0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_1_we0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_1_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_2_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_2_ce0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_2_we0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_2_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_3_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_greedy_potential_reduce_fu_162_M_e_3_ce0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_3_we0 : STD_LOGIC;
+    signal grp_greedy_potential_reduce_fu_162_M_e_3_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_ap_start : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_ap_done : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_ap_idle : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_ap_ready : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_M_e_0_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_M_e_0_ce0 : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_M_e_1_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_M_e_1_ce0 : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_M_e_2_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_M_e_2_ce0 : STD_LOGIC;
+    signal grp_store_matrix_to_dram_fu_184_M_e_3_address0 : STD_LOGIC_VECTOR (14 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_M_e_3_ce0 : STD_LOGIC;
+    signal gmem_0_AWVALID : STD_LOGIC;
+    signal gmem_0_AWREADY : STD_LOGIC;
+    signal gmem_0_WVALID : STD_LOGIC;
+    signal gmem_0_WREADY : STD_LOGIC;
+    signal gmem_0_ARVALID : STD_LOGIC;
+    signal gmem_0_ARREADY : STD_LOGIC;
+    signal gmem_0_RVALID : STD_LOGIC;
+    signal gmem_0_RREADY : STD_LOGIC;
+    signal gmem_0_RDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal gmem_0_RFIFONUM : STD_LOGIC_VECTOR (12 downto 0);
+    signal gmem_0_BVALID : STD_LOGIC;
+    signal gmem_0_BREADY : STD_LOGIC;
+    signal grp_load_matrix_from_dram_fu_136_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal grp_greedy_potential_reduce_fu_132_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state3 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
+    signal grp_greedy_potential_reduce_fu_162_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal grp_store_matrix_to_dram_fu_156_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
-    signal A_dram_o_reg : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_store_matrix_to_dram_fu_184_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_CS_fsm_state7 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (6 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
     signal ap_ST_fsm_state4_blk : STD_LOGIC;
     signal ap_ST_fsm_state5_blk : STD_LOGIC;
     signal ap_ST_fsm_state6_blk : STD_LOGIC;
+    signal ap_ST_fsm_state7_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
     component fmm_reduce_kernel_load_matrix_from_dram IS
@@ -176,7 +355,53 @@ architecture behav of fmm_reduce_kernel is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        A_dram_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (12 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        A_dram : IN STD_LOGIC_VECTOR (63 downto 0);
         rows : IN STD_LOGIC_VECTOR (31 downto 0);
         cols : IN STD_LOGIC_VECTOR (31 downto 0);
         t_capacity : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -254,8 +479,53 @@ architecture behav of fmm_reduce_kernel is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        A_dram : OUT STD_LOGIC_VECTOR (31 downto 0);
-        A_dram_ap_vld : OUT STD_LOGIC;
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (12 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        A_dram : IN STD_LOGIC_VECTOR (63 downto 0);
         M_rows : IN STD_LOGIC_VECTOR (31 downto 0);
         M_cols : IN STD_LOGIC_VECTOR (31 downto 0);
         M_e_0_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
@@ -289,6 +559,167 @@ architecture behav of fmm_reduce_kernel is
     end component;
 
 
+    component fmm_reduce_kernel_control_s_axi IS
+    generic (
+        C_S_AXI_ADDR_WIDTH : INTEGER;
+        C_S_AXI_DATA_WIDTH : INTEGER );
+    port (
+        AWVALID : IN STD_LOGIC;
+        AWREADY : OUT STD_LOGIC;
+        AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
+        WVALID : IN STD_LOGIC;
+        WREADY : OUT STD_LOGIC;
+        WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
+        WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH/8-1 downto 0);
+        ARVALID : IN STD_LOGIC;
+        ARREADY : OUT STD_LOGIC;
+        ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
+        RVALID : OUT STD_LOGIC;
+        RREADY : IN STD_LOGIC;
+        RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
+        RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+        BVALID : OUT STD_LOGIC;
+        BREADY : IN STD_LOGIC;
+        BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+        ACLK : IN STD_LOGIC;
+        ARESET : IN STD_LOGIC;
+        ACLK_EN : IN STD_LOGIC;
+        rows : OUT STD_LOGIC_VECTOR (31 downto 0);
+        cols : OUT STD_LOGIC_VECTOR (31 downto 0);
+        t_capacity : OUT STD_LOGIC_VECTOR (31 downto 0);
+        k1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        k2 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        ap_start : OUT STD_LOGIC;
+        interrupt : OUT STD_LOGIC;
+        ap_ready : IN STD_LOGIC;
+        ap_done : IN STD_LOGIC;
+        ap_idle : IN STD_LOGIC );
+    end component;
+
+
+    component fmm_reduce_kernel_control_r_s_axi IS
+    generic (
+        C_S_AXI_ADDR_WIDTH : INTEGER;
+        C_S_AXI_DATA_WIDTH : INTEGER );
+    port (
+        AWVALID : IN STD_LOGIC;
+        AWREADY : OUT STD_LOGIC;
+        AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
+        WVALID : IN STD_LOGIC;
+        WREADY : OUT STD_LOGIC;
+        WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
+        WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH/8-1 downto 0);
+        ARVALID : IN STD_LOGIC;
+        ARREADY : OUT STD_LOGIC;
+        ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
+        RVALID : OUT STD_LOGIC;
+        RREADY : IN STD_LOGIC;
+        RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
+        RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+        BVALID : OUT STD_LOGIC;
+        BREADY : IN STD_LOGIC;
+        BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+        ACLK : IN STD_LOGIC;
+        ARESET : IN STD_LOGIC;
+        ACLK_EN : IN STD_LOGIC;
+        A_dram : OUT STD_LOGIC_VECTOR (63 downto 0) );
+    end component;
+
+
+    component fmm_reduce_kernel_gmem_m_axi IS
+    generic (
+        CONSERVATIVE : INTEGER;
+        USER_MAXREQS : INTEGER;
+        MAX_READ_BURST_LENGTH : INTEGER;
+        MAX_WRITE_BURST_LENGTH : INTEGER;
+        C_M_AXI_ID_WIDTH : INTEGER;
+        C_M_AXI_ADDR_WIDTH : INTEGER;
+        C_M_AXI_DATA_WIDTH : INTEGER;
+        C_M_AXI_AWUSER_WIDTH : INTEGER;
+        C_M_AXI_ARUSER_WIDTH : INTEGER;
+        C_M_AXI_WUSER_WIDTH : INTEGER;
+        C_M_AXI_RUSER_WIDTH : INTEGER;
+        C_M_AXI_BUSER_WIDTH : INTEGER;
+        C_USER_VALUE : INTEGER;
+        C_PROT_VALUE : INTEGER;
+        C_CACHE_VALUE : INTEGER;
+        CH0_NUM_READ_OUTSTANDING : INTEGER;
+        CH0_NUM_WRITE_OUTSTANDING : INTEGER;
+        CH0_USER_RFIFONUM_WIDTH : INTEGER;
+        CH0_USER_DW : INTEGER;
+        CH0_USER_AW : INTEGER;
+        NUM_READ_OUTSTANDING : INTEGER;
+        NUM_WRITE_OUTSTANDING : INTEGER );
+    port (
+        AWVALID : OUT STD_LOGIC;
+        AWREADY : IN STD_LOGIC;
+        AWADDR : OUT STD_LOGIC_VECTOR (C_M_AXI_ADDR_WIDTH-1 downto 0);
+        AWID : OUT STD_LOGIC_VECTOR (C_M_AXI_ID_WIDTH-1 downto 0);
+        AWLEN : OUT STD_LOGIC_VECTOR (7 downto 0);
+        AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        AWUSER : OUT STD_LOGIC_VECTOR (C_M_AXI_AWUSER_WIDTH-1 downto 0);
+        WVALID : OUT STD_LOGIC;
+        WREADY : IN STD_LOGIC;
+        WDATA : OUT STD_LOGIC_VECTOR (C_M_AXI_DATA_WIDTH-1 downto 0);
+        WSTRB : OUT STD_LOGIC_VECTOR (C_M_AXI_DATA_WIDTH/8-1 downto 0);
+        WLAST : OUT STD_LOGIC;
+        WID : OUT STD_LOGIC_VECTOR (C_M_AXI_ID_WIDTH-1 downto 0);
+        WUSER : OUT STD_LOGIC_VECTOR (C_M_AXI_WUSER_WIDTH-1 downto 0);
+        ARVALID : OUT STD_LOGIC;
+        ARREADY : IN STD_LOGIC;
+        ARADDR : OUT STD_LOGIC_VECTOR (C_M_AXI_ADDR_WIDTH-1 downto 0);
+        ARID : OUT STD_LOGIC_VECTOR (C_M_AXI_ID_WIDTH-1 downto 0);
+        ARLEN : OUT STD_LOGIC_VECTOR (7 downto 0);
+        ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        ARUSER : OUT STD_LOGIC_VECTOR (C_M_AXI_ARUSER_WIDTH-1 downto 0);
+        RVALID : IN STD_LOGIC;
+        RREADY : OUT STD_LOGIC;
+        RDATA : IN STD_LOGIC_VECTOR (C_M_AXI_DATA_WIDTH-1 downto 0);
+        RLAST : IN STD_LOGIC;
+        RID : IN STD_LOGIC_VECTOR (C_M_AXI_ID_WIDTH-1 downto 0);
+        RUSER : IN STD_LOGIC_VECTOR (C_M_AXI_RUSER_WIDTH-1 downto 0);
+        RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        BVALID : IN STD_LOGIC;
+        BREADY : OUT STD_LOGIC;
+        BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        BID : IN STD_LOGIC_VECTOR (C_M_AXI_ID_WIDTH-1 downto 0);
+        BUSER : IN STD_LOGIC_VECTOR (C_M_AXI_BUSER_WIDTH-1 downto 0);
+        ACLK : IN STD_LOGIC;
+        ARESET : IN STD_LOGIC;
+        ACLK_EN : IN STD_LOGIC;
+        I_CH0_ARVALID : IN STD_LOGIC;
+        I_CH0_ARREADY : OUT STD_LOGIC;
+        I_CH0_ARADDR : IN STD_LOGIC_VECTOR (63 downto 0);
+        I_CH0_ARLEN : IN STD_LOGIC_VECTOR (31 downto 0);
+        I_CH0_RVALID : OUT STD_LOGIC;
+        I_CH0_RREADY : IN STD_LOGIC;
+        I_CH0_RDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        I_CH0_RFIFONUM : OUT STD_LOGIC_VECTOR (12 downto 0);
+        I_CH0_AWVALID : IN STD_LOGIC;
+        I_CH0_AWREADY : OUT STD_LOGIC;
+        I_CH0_AWADDR : IN STD_LOGIC_VECTOR (63 downto 0);
+        I_CH0_AWLEN : IN STD_LOGIC_VECTOR (31 downto 0);
+        I_CH0_WVALID : IN STD_LOGIC;
+        I_CH0_WREADY : OUT STD_LOGIC;
+        I_CH0_WDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        I_CH0_WSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
+        I_CH0_BVALID : OUT STD_LOGIC;
+        I_CH0_BREADY : IN STD_LOGIC );
+    end component;
+
+
 
 begin
     M_e_0_U : component fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W
@@ -298,7 +729,7 @@ begin
         AddressWidth => 15)
     port map (
         clk => ap_clk,
-        reset => ap_rst,
+        reset => ap_rst_n_inv,
         address0 => M_e_0_address0,
         ce0 => M_e_0_ce0,
         we0 => M_e_0_we0,
@@ -312,7 +743,7 @@ begin
         AddressWidth => 15)
     port map (
         clk => ap_clk,
-        reset => ap_rst,
+        reset => ap_rst_n_inv,
         address0 => M_e_1_address0,
         ce0 => M_e_1_ce0,
         we0 => M_e_1_we0,
@@ -326,7 +757,7 @@ begin
         AddressWidth => 15)
     port map (
         clk => ap_clk,
-        reset => ap_rst,
+        reset => ap_rst_n_inv,
         address0 => M_e_2_address0,
         ce0 => M_e_2_ce0,
         we0 => M_e_2_we0,
@@ -340,111 +771,357 @@ begin
         AddressWidth => 15)
     port map (
         clk => ap_clk,
-        reset => ap_rst,
+        reset => ap_rst_n_inv,
         address0 => M_e_3_address0,
         ce0 => M_e_3_ce0,
         we0 => M_e_3_we0,
         d0 => M_e_3_d0,
         q0 => M_e_3_q0);
 
-    grp_load_matrix_from_dram_fu_104 : component fmm_reduce_kernel_load_matrix_from_dram
+    grp_load_matrix_from_dram_fu_136 : component fmm_reduce_kernel_load_matrix_from_dram
     port map (
         ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => grp_load_matrix_from_dram_fu_104_ap_start,
-        ap_done => grp_load_matrix_from_dram_fu_104_ap_done,
-        ap_idle => grp_load_matrix_from_dram_fu_104_ap_idle,
-        ap_ready => grp_load_matrix_from_dram_fu_104_ap_ready,
-        A_dram_read => A_dram_read_reg_189,
-        rows => rows_read_reg_184,
-        cols => cols_read_reg_179,
-        t_capacity => t_capacity_read_reg_174,
-        M_rows => grp_load_matrix_from_dram_fu_104_M_rows,
-        M_rows_ap_vld => grp_load_matrix_from_dram_fu_104_M_rows_ap_vld,
-        M_cols => grp_load_matrix_from_dram_fu_104_M_cols,
-        M_cols_ap_vld => grp_load_matrix_from_dram_fu_104_M_cols_ap_vld,
-        M_t => grp_load_matrix_from_dram_fu_104_M_t,
-        M_t_ap_vld => grp_load_matrix_from_dram_fu_104_M_t_ap_vld,
-        M_t_capacity => grp_load_matrix_from_dram_fu_104_M_t_capacity,
-        M_t_capacity_ap_vld => grp_load_matrix_from_dram_fu_104_M_t_capacity_ap_vld,
-        M_e_0_address0 => grp_load_matrix_from_dram_fu_104_M_e_0_address0,
-        M_e_0_ce0 => grp_load_matrix_from_dram_fu_104_M_e_0_ce0,
-        M_e_0_we0 => grp_load_matrix_from_dram_fu_104_M_e_0_we0,
-        M_e_0_d0 => grp_load_matrix_from_dram_fu_104_M_e_0_d0,
-        M_e_1_address0 => grp_load_matrix_from_dram_fu_104_M_e_1_address0,
-        M_e_1_ce0 => grp_load_matrix_from_dram_fu_104_M_e_1_ce0,
-        M_e_1_we0 => grp_load_matrix_from_dram_fu_104_M_e_1_we0,
-        M_e_1_d0 => grp_load_matrix_from_dram_fu_104_M_e_1_d0,
-        M_e_2_address0 => grp_load_matrix_from_dram_fu_104_M_e_2_address0,
-        M_e_2_ce0 => grp_load_matrix_from_dram_fu_104_M_e_2_ce0,
-        M_e_2_we0 => grp_load_matrix_from_dram_fu_104_M_e_2_we0,
-        M_e_2_d0 => grp_load_matrix_from_dram_fu_104_M_e_2_d0,
-        M_e_3_address0 => grp_load_matrix_from_dram_fu_104_M_e_3_address0,
-        M_e_3_ce0 => grp_load_matrix_from_dram_fu_104_M_e_3_ce0,
-        M_e_3_we0 => grp_load_matrix_from_dram_fu_104_M_e_3_we0,
-        M_e_3_d0 => grp_load_matrix_from_dram_fu_104_M_e_3_d0);
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_load_matrix_from_dram_fu_136_ap_start,
+        ap_done => grp_load_matrix_from_dram_fu_136_ap_done,
+        ap_idle => grp_load_matrix_from_dram_fu_136_ap_idle,
+        ap_ready => grp_load_matrix_from_dram_fu_136_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => ap_const_logic_0,
+        m_axi_gmem_0_AWADDR => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => ap_const_logic_0,
+        m_axi_gmem_0_WDATA => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => gmem_0_ARREADY,
+        m_axi_gmem_0_ARADDR => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => gmem_0_RVALID,
+        m_axi_gmem_0_RREADY => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => gmem_0_RDATA,
+        m_axi_gmem_0_RLAST => ap_const_logic_0,
+        m_axi_gmem_0_RID => ap_const_lv1_0,
+        m_axi_gmem_0_RFIFONUM => gmem_0_RFIFONUM,
+        m_axi_gmem_0_RUSER => ap_const_lv1_0,
+        m_axi_gmem_0_RRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BVALID => ap_const_logic_0,
+        m_axi_gmem_0_BREADY => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BID => ap_const_lv1_0,
+        m_axi_gmem_0_BUSER => ap_const_lv1_0,
+        A_dram => A_dram_read_reg_228,
+        rows => rows_read_reg_223,
+        cols => cols_read_reg_218,
+        t_capacity => t_capacity_read_reg_213,
+        M_rows => grp_load_matrix_from_dram_fu_136_M_rows,
+        M_rows_ap_vld => grp_load_matrix_from_dram_fu_136_M_rows_ap_vld,
+        M_cols => grp_load_matrix_from_dram_fu_136_M_cols,
+        M_cols_ap_vld => grp_load_matrix_from_dram_fu_136_M_cols_ap_vld,
+        M_t => grp_load_matrix_from_dram_fu_136_M_t,
+        M_t_ap_vld => grp_load_matrix_from_dram_fu_136_M_t_ap_vld,
+        M_t_capacity => grp_load_matrix_from_dram_fu_136_M_t_capacity,
+        M_t_capacity_ap_vld => grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld,
+        M_e_0_address0 => grp_load_matrix_from_dram_fu_136_M_e_0_address0,
+        M_e_0_ce0 => grp_load_matrix_from_dram_fu_136_M_e_0_ce0,
+        M_e_0_we0 => grp_load_matrix_from_dram_fu_136_M_e_0_we0,
+        M_e_0_d0 => grp_load_matrix_from_dram_fu_136_M_e_0_d0,
+        M_e_1_address0 => grp_load_matrix_from_dram_fu_136_M_e_1_address0,
+        M_e_1_ce0 => grp_load_matrix_from_dram_fu_136_M_e_1_ce0,
+        M_e_1_we0 => grp_load_matrix_from_dram_fu_136_M_e_1_we0,
+        M_e_1_d0 => grp_load_matrix_from_dram_fu_136_M_e_1_d0,
+        M_e_2_address0 => grp_load_matrix_from_dram_fu_136_M_e_2_address0,
+        M_e_2_ce0 => grp_load_matrix_from_dram_fu_136_M_e_2_ce0,
+        M_e_2_we0 => grp_load_matrix_from_dram_fu_136_M_e_2_we0,
+        M_e_2_d0 => grp_load_matrix_from_dram_fu_136_M_e_2_d0,
+        M_e_3_address0 => grp_load_matrix_from_dram_fu_136_M_e_3_address0,
+        M_e_3_ce0 => grp_load_matrix_from_dram_fu_136_M_e_3_ce0,
+        M_e_3_we0 => grp_load_matrix_from_dram_fu_136_M_e_3_we0,
+        M_e_3_d0 => grp_load_matrix_from_dram_fu_136_M_e_3_d0);
 
-    grp_greedy_potential_reduce_fu_132 : component fmm_reduce_kernel_greedy_potential_reduce
+    grp_greedy_potential_reduce_fu_162 : component fmm_reduce_kernel_greedy_potential_reduce
     port map (
         ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => grp_greedy_potential_reduce_fu_132_ap_start,
-        ap_done => grp_greedy_potential_reduce_fu_132_ap_done,
-        ap_idle => grp_greedy_potential_reduce_fu_132_ap_idle,
-        ap_ready => grp_greedy_potential_reduce_fu_132_ap_ready,
-        k1 => k1_read_reg_199,
-        k2 => k2_read_reg_194,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_greedy_potential_reduce_fu_162_ap_start,
+        ap_done => grp_greedy_potential_reduce_fu_162_ap_done,
+        ap_idle => grp_greedy_potential_reduce_fu_162_ap_idle,
+        ap_ready => grp_greedy_potential_reduce_fu_162_ap_ready,
+        k1 => k1_read_reg_208,
+        k2 => k2_read_reg_203,
         M_rows => M_rows,
         M_t_i => M_t,
-        M_t_o => grp_greedy_potential_reduce_fu_132_M_t_o,
-        M_t_o_ap_vld => grp_greedy_potential_reduce_fu_132_M_t_o_ap_vld,
+        M_t_o => grp_greedy_potential_reduce_fu_162_M_t_o,
+        M_t_o_ap_vld => grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld,
         M_cols => M_cols,
-        M_e_0_address0 => grp_greedy_potential_reduce_fu_132_M_e_0_address0,
-        M_e_0_ce0 => grp_greedy_potential_reduce_fu_132_M_e_0_ce0,
-        M_e_0_we0 => grp_greedy_potential_reduce_fu_132_M_e_0_we0,
-        M_e_0_d0 => grp_greedy_potential_reduce_fu_132_M_e_0_d0,
+        M_e_0_address0 => grp_greedy_potential_reduce_fu_162_M_e_0_address0,
+        M_e_0_ce0 => grp_greedy_potential_reduce_fu_162_M_e_0_ce0,
+        M_e_0_we0 => grp_greedy_potential_reduce_fu_162_M_e_0_we0,
+        M_e_0_d0 => grp_greedy_potential_reduce_fu_162_M_e_0_d0,
         M_e_0_q0 => M_e_0_q0,
-        M_e_1_address0 => grp_greedy_potential_reduce_fu_132_M_e_1_address0,
-        M_e_1_ce0 => grp_greedy_potential_reduce_fu_132_M_e_1_ce0,
-        M_e_1_we0 => grp_greedy_potential_reduce_fu_132_M_e_1_we0,
-        M_e_1_d0 => grp_greedy_potential_reduce_fu_132_M_e_1_d0,
+        M_e_1_address0 => grp_greedy_potential_reduce_fu_162_M_e_1_address0,
+        M_e_1_ce0 => grp_greedy_potential_reduce_fu_162_M_e_1_ce0,
+        M_e_1_we0 => grp_greedy_potential_reduce_fu_162_M_e_1_we0,
+        M_e_1_d0 => grp_greedy_potential_reduce_fu_162_M_e_1_d0,
         M_e_1_q0 => M_e_1_q0,
-        M_e_2_address0 => grp_greedy_potential_reduce_fu_132_M_e_2_address0,
-        M_e_2_ce0 => grp_greedy_potential_reduce_fu_132_M_e_2_ce0,
-        M_e_2_we0 => grp_greedy_potential_reduce_fu_132_M_e_2_we0,
-        M_e_2_d0 => grp_greedy_potential_reduce_fu_132_M_e_2_d0,
+        M_e_2_address0 => grp_greedy_potential_reduce_fu_162_M_e_2_address0,
+        M_e_2_ce0 => grp_greedy_potential_reduce_fu_162_M_e_2_ce0,
+        M_e_2_we0 => grp_greedy_potential_reduce_fu_162_M_e_2_we0,
+        M_e_2_d0 => grp_greedy_potential_reduce_fu_162_M_e_2_d0,
         M_e_2_q0 => M_e_2_q0,
-        M_e_3_address0 => grp_greedy_potential_reduce_fu_132_M_e_3_address0,
-        M_e_3_ce0 => grp_greedy_potential_reduce_fu_132_M_e_3_ce0,
-        M_e_3_we0 => grp_greedy_potential_reduce_fu_132_M_e_3_we0,
-        M_e_3_d0 => grp_greedy_potential_reduce_fu_132_M_e_3_d0,
+        M_e_3_address0 => grp_greedy_potential_reduce_fu_162_M_e_3_address0,
+        M_e_3_ce0 => grp_greedy_potential_reduce_fu_162_M_e_3_ce0,
+        M_e_3_we0 => grp_greedy_potential_reduce_fu_162_M_e_3_we0,
+        M_e_3_d0 => grp_greedy_potential_reduce_fu_162_M_e_3_d0,
         M_e_3_q0 => M_e_3_q0,
         M_t_capacity => M_t_capacity);
 
-    grp_store_matrix_to_dram_fu_156 : component fmm_reduce_kernel_store_matrix_to_dram
+    grp_store_matrix_to_dram_fu_184 : component fmm_reduce_kernel_store_matrix_to_dram
     port map (
         ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => grp_store_matrix_to_dram_fu_156_ap_start,
-        ap_done => grp_store_matrix_to_dram_fu_156_ap_done,
-        ap_idle => grp_store_matrix_to_dram_fu_156_ap_idle,
-        ap_ready => grp_store_matrix_to_dram_fu_156_ap_ready,
-        A_dram => grp_store_matrix_to_dram_fu_156_A_dram,
-        A_dram_ap_vld => grp_store_matrix_to_dram_fu_156_A_dram_ap_vld,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_store_matrix_to_dram_fu_184_ap_start,
+        ap_done => grp_store_matrix_to_dram_fu_184_ap_done,
+        ap_idle => grp_store_matrix_to_dram_fu_184_ap_idle,
+        ap_ready => grp_store_matrix_to_dram_fu_184_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => gmem_0_AWREADY,
+        m_axi_gmem_0_AWADDR => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => gmem_0_WREADY,
+        m_axi_gmem_0_WDATA => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => ap_const_logic_0,
+        m_axi_gmem_0_ARADDR => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => ap_const_logic_0,
+        m_axi_gmem_0_RREADY => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => ap_const_lv32_0,
+        m_axi_gmem_0_RLAST => ap_const_logic_0,
+        m_axi_gmem_0_RID => ap_const_lv1_0,
+        m_axi_gmem_0_RFIFONUM => ap_const_lv13_0,
+        m_axi_gmem_0_RUSER => ap_const_lv1_0,
+        m_axi_gmem_0_RRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BVALID => gmem_0_BVALID,
+        m_axi_gmem_0_BREADY => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BID => ap_const_lv1_0,
+        m_axi_gmem_0_BUSER => ap_const_lv1_0,
+        A_dram => A_dram_read_reg_228,
         M_rows => M_rows,
         M_cols => M_cols,
-        M_e_0_address0 => grp_store_matrix_to_dram_fu_156_M_e_0_address0,
-        M_e_0_ce0 => grp_store_matrix_to_dram_fu_156_M_e_0_ce0,
+        M_e_0_address0 => grp_store_matrix_to_dram_fu_184_M_e_0_address0,
+        M_e_0_ce0 => grp_store_matrix_to_dram_fu_184_M_e_0_ce0,
         M_e_0_q0 => M_e_0_q0,
-        M_e_1_address0 => grp_store_matrix_to_dram_fu_156_M_e_1_address0,
-        M_e_1_ce0 => grp_store_matrix_to_dram_fu_156_M_e_1_ce0,
+        M_e_1_address0 => grp_store_matrix_to_dram_fu_184_M_e_1_address0,
+        M_e_1_ce0 => grp_store_matrix_to_dram_fu_184_M_e_1_ce0,
         M_e_1_q0 => M_e_1_q0,
-        M_e_2_address0 => grp_store_matrix_to_dram_fu_156_M_e_2_address0,
-        M_e_2_ce0 => grp_store_matrix_to_dram_fu_156_M_e_2_ce0,
+        M_e_2_address0 => grp_store_matrix_to_dram_fu_184_M_e_2_address0,
+        M_e_2_ce0 => grp_store_matrix_to_dram_fu_184_M_e_2_ce0,
         M_e_2_q0 => M_e_2_q0,
-        M_e_3_address0 => grp_store_matrix_to_dram_fu_156_M_e_3_address0,
-        M_e_3_ce0 => grp_store_matrix_to_dram_fu_156_M_e_3_ce0,
+        M_e_3_address0 => grp_store_matrix_to_dram_fu_184_M_e_3_address0,
+        M_e_3_ce0 => grp_store_matrix_to_dram_fu_184_M_e_3_ce0,
         M_e_3_q0 => M_e_3_q0);
+
+    control_s_axi_U : component fmm_reduce_kernel_control_s_axi
+    generic map (
+        C_S_AXI_ADDR_WIDTH => C_S_AXI_CONTROL_ADDR_WIDTH,
+        C_S_AXI_DATA_WIDTH => C_S_AXI_CONTROL_DATA_WIDTH)
+    port map (
+        AWVALID => s_axi_control_AWVALID,
+        AWREADY => s_axi_control_AWREADY,
+        AWADDR => s_axi_control_AWADDR,
+        WVALID => s_axi_control_WVALID,
+        WREADY => s_axi_control_WREADY,
+        WDATA => s_axi_control_WDATA,
+        WSTRB => s_axi_control_WSTRB,
+        ARVALID => s_axi_control_ARVALID,
+        ARREADY => s_axi_control_ARREADY,
+        ARADDR => s_axi_control_ARADDR,
+        RVALID => s_axi_control_RVALID,
+        RREADY => s_axi_control_RREADY,
+        RDATA => s_axi_control_RDATA,
+        RRESP => s_axi_control_RRESP,
+        BVALID => s_axi_control_BVALID,
+        BREADY => s_axi_control_BREADY,
+        BRESP => s_axi_control_BRESP,
+        ACLK => ap_clk,
+        ARESET => ap_rst_n_inv,
+        ACLK_EN => ap_const_logic_1,
+        rows => rows,
+        cols => cols,
+        t_capacity => t_capacity,
+        k1 => k1,
+        k2 => k2,
+        ap_start => ap_start,
+        interrupt => interrupt,
+        ap_ready => ap_ready,
+        ap_done => ap_done,
+        ap_idle => ap_idle);
+
+    control_r_s_axi_U : component fmm_reduce_kernel_control_r_s_axi
+    generic map (
+        C_S_AXI_ADDR_WIDTH => C_S_AXI_CONTROL_R_ADDR_WIDTH,
+        C_S_AXI_DATA_WIDTH => C_S_AXI_CONTROL_R_DATA_WIDTH)
+    port map (
+        AWVALID => s_axi_control_r_AWVALID,
+        AWREADY => s_axi_control_r_AWREADY,
+        AWADDR => s_axi_control_r_AWADDR,
+        WVALID => s_axi_control_r_WVALID,
+        WREADY => s_axi_control_r_WREADY,
+        WDATA => s_axi_control_r_WDATA,
+        WSTRB => s_axi_control_r_WSTRB,
+        ARVALID => s_axi_control_r_ARVALID,
+        ARREADY => s_axi_control_r_ARREADY,
+        ARADDR => s_axi_control_r_ARADDR,
+        RVALID => s_axi_control_r_RVALID,
+        RREADY => s_axi_control_r_RREADY,
+        RDATA => s_axi_control_r_RDATA,
+        RRESP => s_axi_control_r_RRESP,
+        BVALID => s_axi_control_r_BVALID,
+        BREADY => s_axi_control_r_BREADY,
+        BRESP => s_axi_control_r_BRESP,
+        ACLK => ap_clk,
+        ARESET => ap_rst_n_inv,
+        ACLK_EN => ap_const_logic_1,
+        A_dram => A_dram);
+
+    gmem_m_axi_U : component fmm_reduce_kernel_gmem_m_axi
+    generic map (
+        CONSERVATIVE => 1,
+        USER_MAXREQS => 7,
+        MAX_READ_BURST_LENGTH => 256,
+        MAX_WRITE_BURST_LENGTH => 256,
+        C_M_AXI_ID_WIDTH => C_M_AXI_GMEM_ID_WIDTH,
+        C_M_AXI_ADDR_WIDTH => C_M_AXI_GMEM_ADDR_WIDTH,
+        C_M_AXI_DATA_WIDTH => C_M_AXI_GMEM_DATA_WIDTH,
+        C_M_AXI_AWUSER_WIDTH => C_M_AXI_GMEM_AWUSER_WIDTH,
+        C_M_AXI_ARUSER_WIDTH => C_M_AXI_GMEM_ARUSER_WIDTH,
+        C_M_AXI_WUSER_WIDTH => C_M_AXI_GMEM_WUSER_WIDTH,
+        C_M_AXI_RUSER_WIDTH => C_M_AXI_GMEM_RUSER_WIDTH,
+        C_M_AXI_BUSER_WIDTH => C_M_AXI_GMEM_BUSER_WIDTH,
+        C_USER_VALUE => C_M_AXI_GMEM_USER_VALUE,
+        C_PROT_VALUE => C_M_AXI_GMEM_PROT_VALUE,
+        C_CACHE_VALUE => C_M_AXI_GMEM_CACHE_VALUE,
+        CH0_NUM_READ_OUTSTANDING => 16,
+        CH0_NUM_WRITE_OUTSTANDING => 16,
+        CH0_USER_RFIFONUM_WIDTH => 13,
+        CH0_USER_DW => 32,
+        CH0_USER_AW => 64,
+        NUM_READ_OUTSTANDING => 16,
+        NUM_WRITE_OUTSTANDING => 16)
+    port map (
+        AWVALID => m_axi_gmem_AWVALID,
+        AWREADY => m_axi_gmem_AWREADY,
+        AWADDR => m_axi_gmem_AWADDR,
+        AWID => m_axi_gmem_AWID,
+        AWLEN => m_axi_gmem_AWLEN,
+        AWSIZE => m_axi_gmem_AWSIZE,
+        AWBURST => m_axi_gmem_AWBURST,
+        AWLOCK => m_axi_gmem_AWLOCK,
+        AWCACHE => m_axi_gmem_AWCACHE,
+        AWPROT => m_axi_gmem_AWPROT,
+        AWQOS => m_axi_gmem_AWQOS,
+        AWREGION => m_axi_gmem_AWREGION,
+        AWUSER => m_axi_gmem_AWUSER,
+        WVALID => m_axi_gmem_WVALID,
+        WREADY => m_axi_gmem_WREADY,
+        WDATA => m_axi_gmem_WDATA,
+        WSTRB => m_axi_gmem_WSTRB,
+        WLAST => m_axi_gmem_WLAST,
+        WID => m_axi_gmem_WID,
+        WUSER => m_axi_gmem_WUSER,
+        ARVALID => m_axi_gmem_ARVALID,
+        ARREADY => m_axi_gmem_ARREADY,
+        ARADDR => m_axi_gmem_ARADDR,
+        ARID => m_axi_gmem_ARID,
+        ARLEN => m_axi_gmem_ARLEN,
+        ARSIZE => m_axi_gmem_ARSIZE,
+        ARBURST => m_axi_gmem_ARBURST,
+        ARLOCK => m_axi_gmem_ARLOCK,
+        ARCACHE => m_axi_gmem_ARCACHE,
+        ARPROT => m_axi_gmem_ARPROT,
+        ARQOS => m_axi_gmem_ARQOS,
+        ARREGION => m_axi_gmem_ARREGION,
+        ARUSER => m_axi_gmem_ARUSER,
+        RVALID => m_axi_gmem_RVALID,
+        RREADY => m_axi_gmem_RREADY,
+        RDATA => m_axi_gmem_RDATA,
+        RLAST => m_axi_gmem_RLAST,
+        RID => m_axi_gmem_RID,
+        RUSER => m_axi_gmem_RUSER,
+        RRESP => m_axi_gmem_RRESP,
+        BVALID => m_axi_gmem_BVALID,
+        BREADY => m_axi_gmem_BREADY,
+        BRESP => m_axi_gmem_BRESP,
+        BID => m_axi_gmem_BID,
+        BUSER => m_axi_gmem_BUSER,
+        ACLK => ap_clk,
+        ARESET => ap_rst_n_inv,
+        ACLK_EN => ap_const_logic_1,
+        I_CH0_ARVALID => gmem_0_ARVALID,
+        I_CH0_ARREADY => gmem_0_ARREADY,
+        I_CH0_ARADDR => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARADDR,
+        I_CH0_ARLEN => grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLEN,
+        I_CH0_RVALID => gmem_0_RVALID,
+        I_CH0_RREADY => gmem_0_RREADY,
+        I_CH0_RDATA => gmem_0_RDATA,
+        I_CH0_RFIFONUM => gmem_0_RFIFONUM,
+        I_CH0_AWVALID => gmem_0_AWVALID,
+        I_CH0_AWREADY => gmem_0_AWREADY,
+        I_CH0_AWADDR => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWADDR,
+        I_CH0_AWLEN => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLEN,
+        I_CH0_WVALID => gmem_0_WVALID,
+        I_CH0_WREADY => gmem_0_WREADY,
+        I_CH0_WDATA => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WDATA,
+        I_CH0_WSTRB => grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WSTRB,
+        I_CH0_BVALID => gmem_0_BVALID,
+        I_CH0_BREADY => gmem_0_BREADY);
 
 
 
@@ -453,7 +1130,7 @@ begin
     ap_CS_fsm_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
+            if (ap_rst_n_inv = '1') then
                 ap_CS_fsm <= ap_ST_fsm_state1;
             else
                 ap_CS_fsm <= ap_NS_fsm;
@@ -462,48 +1139,48 @@ begin
     end process;
 
 
-    grp_greedy_potential_reduce_fu_132_ap_start_reg_assign_proc : process(ap_clk)
+    grp_greedy_potential_reduce_fu_162_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                grp_greedy_potential_reduce_fu_132_ap_start_reg <= ap_const_logic_0;
+            if (ap_rst_n_inv = '1') then
+                grp_greedy_potential_reduce_fu_162_ap_start_reg <= ap_const_logic_0;
             else
-                if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-                    grp_greedy_potential_reduce_fu_132_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_greedy_potential_reduce_fu_132_ap_ready = ap_const_logic_1)) then 
-                    grp_greedy_potential_reduce_fu_132_ap_start_reg <= ap_const_logic_0;
+                if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
+                    grp_greedy_potential_reduce_fu_162_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_greedy_potential_reduce_fu_162_ap_ready = ap_const_logic_1)) then 
+                    grp_greedy_potential_reduce_fu_162_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_load_matrix_from_dram_fu_104_ap_start_reg_assign_proc : process(ap_clk)
+    grp_load_matrix_from_dram_fu_136_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                grp_load_matrix_from_dram_fu_104_ap_start_reg <= ap_const_logic_0;
+            if (ap_rst_n_inv = '1') then
+                grp_load_matrix_from_dram_fu_136_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-                    grp_load_matrix_from_dram_fu_104_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_load_matrix_from_dram_fu_104_ap_ready = ap_const_logic_1)) then 
-                    grp_load_matrix_from_dram_fu_104_ap_start_reg <= ap_const_logic_0;
+                if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+                    grp_load_matrix_from_dram_fu_136_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_load_matrix_from_dram_fu_136_ap_ready = ap_const_logic_1)) then 
+                    grp_load_matrix_from_dram_fu_136_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_store_matrix_to_dram_fu_156_ap_start_reg_assign_proc : process(ap_clk)
+    grp_store_matrix_to_dram_fu_184_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                grp_store_matrix_to_dram_fu_156_ap_start_reg <= ap_const_logic_0;
+            if (ap_rst_n_inv = '1') then
+                grp_store_matrix_to_dram_fu_184_ap_start_reg <= ap_const_logic_0;
             else
-                if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-                    grp_store_matrix_to_dram_fu_156_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_store_matrix_to_dram_fu_156_ap_ready = ap_const_logic_1)) then 
-                    grp_store_matrix_to_dram_fu_156_ap_start_reg <= ap_const_logic_0;
+                if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
+                    grp_store_matrix_to_dram_fu_184_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_store_matrix_to_dram_fu_184_ap_ready = ap_const_logic_1)) then 
+                    grp_store_matrix_to_dram_fu_184_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -513,67 +1190,52 @@ begin
     M_t_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_greedy_potential_reduce_fu_132_M_t_o_ap_vld = ap_const_logic_1))) then 
-                M_t <= grp_greedy_potential_reduce_fu_132_M_t_o;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_load_matrix_from_dram_fu_104_M_t_ap_vld = ap_const_logic_1))) then 
-                M_t <= grp_load_matrix_from_dram_fu_104_M_t;
+            if (((grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+                M_t <= grp_greedy_potential_reduce_fu_162_M_t_o;
+            elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_load_matrix_from_dram_fu_136_M_t_ap_vld = ap_const_logic_1))) then 
+                M_t <= grp_load_matrix_from_dram_fu_136_M_t;
             end if; 
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state6) and (grp_store_matrix_to_dram_fu_156_A_dram_ap_vld = ap_const_logic_1))) then
-                A_dram_o_reg <= grp_store_matrix_to_dram_fu_156_A_dram;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                A_dram_read_reg_189 <= A_dram_i;
-                cols_read_reg_179 <= cols;
-                rows_read_reg_184 <= rows;
-                t_capacity_read_reg_174 <= t_capacity;
+                A_dram_read_reg_228 <= A_dram;
+                cols_read_reg_218 <= cols;
+                k1_read_reg_208 <= k1;
+                k2_read_reg_203 <= k2;
+                rows_read_reg_223 <= rows;
+                t_capacity_read_reg_213 <= t_capacity;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_load_matrix_from_dram_fu_104_M_cols_ap_vld = ap_const_logic_1))) then
-                M_cols <= grp_load_matrix_from_dram_fu_104_M_cols;
+            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_load_matrix_from_dram_fu_136_M_cols_ap_vld = ap_const_logic_1))) then
+                M_cols <= grp_load_matrix_from_dram_fu_136_M_cols;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_load_matrix_from_dram_fu_104_M_rows_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
-                M_rows <= grp_load_matrix_from_dram_fu_104_M_rows;
+            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_load_matrix_from_dram_fu_136_M_rows_ap_vld = ap_const_logic_1))) then
+                M_rows <= grp_load_matrix_from_dram_fu_136_M_rows;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_load_matrix_from_dram_fu_104_M_t_capacity_ap_vld = ap_const_logic_1))) then
-                M_t_capacity <= grp_load_matrix_from_dram_fu_104_M_t_capacity;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                k1_read_reg_199 <= k1;
-                k2_read_reg_194 <= k2;
+            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld = ap_const_logic_1))) then
+                M_t_capacity <= grp_load_matrix_from_dram_fu_136_M_t_capacity;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_load_matrix_from_dram_fu_104_ap_done, grp_greedy_potential_reduce_fu_132_ap_done, grp_store_matrix_to_dram_fu_156_ap_done, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_load_matrix_from_dram_fu_136_ap_done, grp_greedy_potential_reduce_fu_162_ap_done, grp_store_matrix_to_dram_fu_184_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -583,244 +1245,236 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_load_matrix_from_dram_fu_104_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
-                    ap_NS_fsm <= ap_ST_fsm_state3;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state2;
-                end if;
+                ap_NS_fsm <= ap_ST_fsm_state3;
             when ap_ST_fsm_state3 => 
-                ap_NS_fsm <= ap_ST_fsm_state4;
-            when ap_ST_fsm_state4 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_greedy_potential_reduce_fu_132_ap_done = ap_const_logic_1))) then
-                    ap_NS_fsm <= ap_ST_fsm_state5;
-                else
+                if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_load_matrix_from_dram_fu_136_ap_done = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state3;
                 end if;
+            when ap_ST_fsm_state4 => 
+                ap_NS_fsm <= ap_ST_fsm_state5;
             when ap_ST_fsm_state5 => 
-                ap_NS_fsm <= ap_ST_fsm_state6;
+                if (((grp_greedy_potential_reduce_fu_162_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                    ap_NS_fsm <= ap_ST_fsm_state6;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state5;
+                end if;
             when ap_ST_fsm_state6 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state6) and (grp_store_matrix_to_dram_fu_156_ap_done = ap_const_logic_1))) then
+                ap_NS_fsm <= ap_ST_fsm_state7;
+            when ap_ST_fsm_state7 => 
+                if (((grp_store_matrix_to_dram_fu_184_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
-                    ap_NS_fsm <= ap_ST_fsm_state6;
+                    ap_NS_fsm <= ap_ST_fsm_state7;
                 end if;
             when others =>  
-                ap_NS_fsm <= "XXXXXX";
+                ap_NS_fsm <= "XXXXXXX";
         end case;
     end process;
 
-    A_dram_o_assign_proc : process(grp_store_matrix_to_dram_fu_156_A_dram, grp_store_matrix_to_dram_fu_156_A_dram_ap_vld, A_dram_o_reg, ap_CS_fsm_state6)
+    M_e_0_address0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_0_address0, grp_greedy_potential_reduce_fu_162_M_e_0_address0, grp_store_matrix_to_dram_fu_184_M_e_0_address0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state6) and (grp_store_matrix_to_dram_fu_156_A_dram_ap_vld = ap_const_logic_1))) then 
-            A_dram_o <= grp_store_matrix_to_dram_fu_156_A_dram;
-        else 
-            A_dram_o <= A_dram_o_reg;
-        end if; 
-    end process;
-
-
-    M_e_0_address0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_0_address0, grp_greedy_potential_reduce_fu_132_M_e_0_address0, grp_store_matrix_to_dram_fu_156_M_e_0_address0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_0_address0 <= grp_store_matrix_to_dram_fu_156_M_e_0_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_0_address0 <= grp_greedy_potential_reduce_fu_132_M_e_0_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_0_address0 <= grp_load_matrix_from_dram_fu_104_M_e_0_address0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_0_address0 <= grp_store_matrix_to_dram_fu_184_M_e_0_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_0_address0 <= grp_greedy_potential_reduce_fu_162_M_e_0_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_0_address0 <= grp_load_matrix_from_dram_fu_136_M_e_0_address0;
         else 
             M_e_0_address0 <= "XXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_0_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_0_ce0, grp_greedy_potential_reduce_fu_132_M_e_0_ce0, grp_store_matrix_to_dram_fu_156_M_e_0_ce0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_0_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_0_ce0, grp_greedy_potential_reduce_fu_162_M_e_0_ce0, grp_store_matrix_to_dram_fu_184_M_e_0_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_0_ce0 <= grp_store_matrix_to_dram_fu_156_M_e_0_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_0_ce0 <= grp_greedy_potential_reduce_fu_132_M_e_0_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_0_ce0 <= grp_load_matrix_from_dram_fu_104_M_e_0_ce0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_0_ce0 <= grp_store_matrix_to_dram_fu_184_M_e_0_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_0_ce0 <= grp_greedy_potential_reduce_fu_162_M_e_0_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_0_ce0 <= grp_load_matrix_from_dram_fu_136_M_e_0_ce0;
         else 
             M_e_0_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_0_d0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_0_d0, grp_greedy_potential_reduce_fu_132_M_e_0_d0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_0_d0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_0_d0, grp_greedy_potential_reduce_fu_162_M_e_0_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_0_d0 <= grp_greedy_potential_reduce_fu_132_M_e_0_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_0_d0 <= grp_load_matrix_from_dram_fu_104_M_e_0_d0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_0_d0 <= grp_greedy_potential_reduce_fu_162_M_e_0_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_0_d0 <= grp_load_matrix_from_dram_fu_136_M_e_0_d0;
         else 
             M_e_0_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_0_we0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_0_we0, grp_greedy_potential_reduce_fu_132_M_e_0_we0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_0_we0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_0_we0, grp_greedy_potential_reduce_fu_162_M_e_0_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_0_we0 <= grp_greedy_potential_reduce_fu_132_M_e_0_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_0_we0 <= grp_load_matrix_from_dram_fu_104_M_e_0_we0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_0_we0 <= grp_greedy_potential_reduce_fu_162_M_e_0_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_0_we0 <= grp_load_matrix_from_dram_fu_136_M_e_0_we0;
         else 
             M_e_0_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_1_address0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_1_address0, grp_greedy_potential_reduce_fu_132_M_e_1_address0, grp_store_matrix_to_dram_fu_156_M_e_1_address0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_1_address0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_1_address0, grp_greedy_potential_reduce_fu_162_M_e_1_address0, grp_store_matrix_to_dram_fu_184_M_e_1_address0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_1_address0 <= grp_store_matrix_to_dram_fu_156_M_e_1_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_1_address0 <= grp_greedy_potential_reduce_fu_132_M_e_1_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_1_address0 <= grp_load_matrix_from_dram_fu_104_M_e_1_address0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_1_address0 <= grp_store_matrix_to_dram_fu_184_M_e_1_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_1_address0 <= grp_greedy_potential_reduce_fu_162_M_e_1_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_1_address0 <= grp_load_matrix_from_dram_fu_136_M_e_1_address0;
         else 
             M_e_1_address0 <= "XXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_1_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_1_ce0, grp_greedy_potential_reduce_fu_132_M_e_1_ce0, grp_store_matrix_to_dram_fu_156_M_e_1_ce0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_1_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_1_ce0, grp_greedy_potential_reduce_fu_162_M_e_1_ce0, grp_store_matrix_to_dram_fu_184_M_e_1_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_1_ce0 <= grp_store_matrix_to_dram_fu_156_M_e_1_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_1_ce0 <= grp_greedy_potential_reduce_fu_132_M_e_1_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_1_ce0 <= grp_load_matrix_from_dram_fu_104_M_e_1_ce0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_1_ce0 <= grp_store_matrix_to_dram_fu_184_M_e_1_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_1_ce0 <= grp_greedy_potential_reduce_fu_162_M_e_1_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_1_ce0 <= grp_load_matrix_from_dram_fu_136_M_e_1_ce0;
         else 
             M_e_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_1_d0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_1_d0, grp_greedy_potential_reduce_fu_132_M_e_1_d0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_1_d0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_1_d0, grp_greedy_potential_reduce_fu_162_M_e_1_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_1_d0 <= grp_greedy_potential_reduce_fu_132_M_e_1_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_1_d0 <= grp_load_matrix_from_dram_fu_104_M_e_1_d0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_1_d0 <= grp_greedy_potential_reduce_fu_162_M_e_1_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_1_d0 <= grp_load_matrix_from_dram_fu_136_M_e_1_d0;
         else 
             M_e_1_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_1_we0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_1_we0, grp_greedy_potential_reduce_fu_132_M_e_1_we0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_1_we0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_1_we0, grp_greedy_potential_reduce_fu_162_M_e_1_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_1_we0 <= grp_greedy_potential_reduce_fu_132_M_e_1_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_1_we0 <= grp_load_matrix_from_dram_fu_104_M_e_1_we0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_1_we0 <= grp_greedy_potential_reduce_fu_162_M_e_1_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_1_we0 <= grp_load_matrix_from_dram_fu_136_M_e_1_we0;
         else 
             M_e_1_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_2_address0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_2_address0, grp_greedy_potential_reduce_fu_132_M_e_2_address0, grp_store_matrix_to_dram_fu_156_M_e_2_address0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_2_address0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_2_address0, grp_greedy_potential_reduce_fu_162_M_e_2_address0, grp_store_matrix_to_dram_fu_184_M_e_2_address0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_2_address0 <= grp_store_matrix_to_dram_fu_156_M_e_2_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_2_address0 <= grp_greedy_potential_reduce_fu_132_M_e_2_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_2_address0 <= grp_load_matrix_from_dram_fu_104_M_e_2_address0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_2_address0 <= grp_store_matrix_to_dram_fu_184_M_e_2_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_2_address0 <= grp_greedy_potential_reduce_fu_162_M_e_2_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_2_address0 <= grp_load_matrix_from_dram_fu_136_M_e_2_address0;
         else 
             M_e_2_address0 <= "XXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_2_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_2_ce0, grp_greedy_potential_reduce_fu_132_M_e_2_ce0, grp_store_matrix_to_dram_fu_156_M_e_2_ce0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_2_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_2_ce0, grp_greedy_potential_reduce_fu_162_M_e_2_ce0, grp_store_matrix_to_dram_fu_184_M_e_2_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_2_ce0 <= grp_store_matrix_to_dram_fu_156_M_e_2_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_2_ce0 <= grp_greedy_potential_reduce_fu_132_M_e_2_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_2_ce0 <= grp_load_matrix_from_dram_fu_104_M_e_2_ce0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_2_ce0 <= grp_store_matrix_to_dram_fu_184_M_e_2_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_2_ce0 <= grp_greedy_potential_reduce_fu_162_M_e_2_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_2_ce0 <= grp_load_matrix_from_dram_fu_136_M_e_2_ce0;
         else 
             M_e_2_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_2_d0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_2_d0, grp_greedy_potential_reduce_fu_132_M_e_2_d0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_2_d0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_2_d0, grp_greedy_potential_reduce_fu_162_M_e_2_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_2_d0 <= grp_greedy_potential_reduce_fu_132_M_e_2_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_2_d0 <= grp_load_matrix_from_dram_fu_104_M_e_2_d0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_2_d0 <= grp_greedy_potential_reduce_fu_162_M_e_2_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_2_d0 <= grp_load_matrix_from_dram_fu_136_M_e_2_d0;
         else 
             M_e_2_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_2_we0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_2_we0, grp_greedy_potential_reduce_fu_132_M_e_2_we0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_2_we0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_2_we0, grp_greedy_potential_reduce_fu_162_M_e_2_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_2_we0 <= grp_greedy_potential_reduce_fu_132_M_e_2_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_2_we0 <= grp_load_matrix_from_dram_fu_104_M_e_2_we0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_2_we0 <= grp_greedy_potential_reduce_fu_162_M_e_2_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_2_we0 <= grp_load_matrix_from_dram_fu_136_M_e_2_we0;
         else 
             M_e_2_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_3_address0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_3_address0, grp_greedy_potential_reduce_fu_132_M_e_3_address0, grp_store_matrix_to_dram_fu_156_M_e_3_address0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_3_address0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_3_address0, grp_greedy_potential_reduce_fu_162_M_e_3_address0, grp_store_matrix_to_dram_fu_184_M_e_3_address0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_3_address0 <= grp_store_matrix_to_dram_fu_156_M_e_3_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_3_address0 <= grp_greedy_potential_reduce_fu_132_M_e_3_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_3_address0 <= grp_load_matrix_from_dram_fu_104_M_e_3_address0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_3_address0 <= grp_store_matrix_to_dram_fu_184_M_e_3_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_3_address0 <= grp_greedy_potential_reduce_fu_162_M_e_3_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_3_address0 <= grp_load_matrix_from_dram_fu_136_M_e_3_address0;
         else 
             M_e_3_address0 <= "XXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_3_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_3_ce0, grp_greedy_potential_reduce_fu_132_M_e_3_ce0, grp_store_matrix_to_dram_fu_156_M_e_3_ce0, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6)
+    M_e_3_ce0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_3_ce0, grp_greedy_potential_reduce_fu_162_M_e_3_ce0, grp_store_matrix_to_dram_fu_184_M_e_3_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-            M_e_3_ce0 <= grp_store_matrix_to_dram_fu_156_M_e_3_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_3_ce0 <= grp_greedy_potential_reduce_fu_132_M_e_3_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_3_ce0 <= grp_load_matrix_from_dram_fu_104_M_e_3_ce0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+            M_e_3_ce0 <= grp_store_matrix_to_dram_fu_184_M_e_3_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_3_ce0 <= grp_greedy_potential_reduce_fu_162_M_e_3_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_3_ce0 <= grp_load_matrix_from_dram_fu_136_M_e_3_ce0;
         else 
             M_e_3_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    M_e_3_d0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_3_d0, grp_greedy_potential_reduce_fu_132_M_e_3_d0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_3_d0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_3_d0, grp_greedy_potential_reduce_fu_162_M_e_3_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_3_d0 <= grp_greedy_potential_reduce_fu_132_M_e_3_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_3_d0 <= grp_load_matrix_from_dram_fu_104_M_e_3_d0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_3_d0 <= grp_greedy_potential_reduce_fu_162_M_e_3_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_3_d0 <= grp_load_matrix_from_dram_fu_136_M_e_3_d0;
         else 
             M_e_3_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    M_e_3_we0_assign_proc : process(grp_load_matrix_from_dram_fu_104_M_e_3_we0, grp_greedy_potential_reduce_fu_132_M_e_3_we0, ap_CS_fsm_state2, ap_CS_fsm_state4)
+    M_e_3_we0_assign_proc : process(grp_load_matrix_from_dram_fu_136_M_e_3_we0, grp_greedy_potential_reduce_fu_162_M_e_3_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            M_e_3_we0 <= grp_greedy_potential_reduce_fu_132_M_e_3_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            M_e_3_we0 <= grp_load_matrix_from_dram_fu_104_M_e_3_we0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            M_e_3_we0 <= grp_greedy_potential_reduce_fu_162_M_e_3_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            M_e_3_we0 <= grp_load_matrix_from_dram_fu_136_M_e_3_we0;
         else 
             M_e_3_we0 <= ap_const_logic_0;
         end if; 
@@ -832,6 +1486,7 @@ begin
     ap_CS_fsm_state4 <= ap_CS_fsm(3);
     ap_CS_fsm_state5 <= ap_CS_fsm(4);
     ap_CS_fsm_state6 <= ap_CS_fsm(5);
+    ap_CS_fsm_state7 <= ap_CS_fsm(6);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_start)
     begin
@@ -842,42 +1497,43 @@ begin
         end if; 
     end process;
 
+    ap_ST_fsm_state2_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state2_blk_assign_proc : process(grp_load_matrix_from_dram_fu_104_ap_done)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_load_matrix_from_dram_fu_136_ap_done)
     begin
-        if ((grp_load_matrix_from_dram_fu_104_ap_done = ap_const_logic_0)) then 
-            ap_ST_fsm_state2_blk <= ap_const_logic_1;
+        if ((grp_load_matrix_from_dram_fu_136_ap_done = ap_const_logic_0)) then 
+            ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
-            ap_ST_fsm_state2_blk <= ap_const_logic_0;
+            ap_ST_fsm_state3_blk <= ap_const_logic_0;
         end if; 
     end process;
 
-    ap_ST_fsm_state3_blk <= ap_const_logic_0;
+    ap_ST_fsm_state4_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state4_blk_assign_proc : process(grp_greedy_potential_reduce_fu_132_ap_done)
+    ap_ST_fsm_state5_blk_assign_proc : process(grp_greedy_potential_reduce_fu_162_ap_done)
     begin
-        if ((grp_greedy_potential_reduce_fu_132_ap_done = ap_const_logic_0)) then 
-            ap_ST_fsm_state4_blk <= ap_const_logic_1;
+        if ((grp_greedy_potential_reduce_fu_162_ap_done = ap_const_logic_0)) then 
+            ap_ST_fsm_state5_blk <= ap_const_logic_1;
         else 
-            ap_ST_fsm_state4_blk <= ap_const_logic_0;
+            ap_ST_fsm_state5_blk <= ap_const_logic_0;
         end if; 
     end process;
 
-    ap_ST_fsm_state5_blk <= ap_const_logic_0;
+    ap_ST_fsm_state6_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state6_blk_assign_proc : process(grp_store_matrix_to_dram_fu_156_ap_done)
+    ap_ST_fsm_state7_blk_assign_proc : process(grp_store_matrix_to_dram_fu_184_ap_done)
     begin
-        if ((grp_store_matrix_to_dram_fu_156_ap_done = ap_const_logic_0)) then 
-            ap_ST_fsm_state6_blk <= ap_const_logic_1;
+        if ((grp_store_matrix_to_dram_fu_184_ap_done = ap_const_logic_0)) then 
+            ap_ST_fsm_state7_blk <= ap_const_logic_1;
         else 
-            ap_ST_fsm_state6_blk <= ap_const_logic_0;
+            ap_ST_fsm_state7_blk <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    ap_done_assign_proc : process(grp_store_matrix_to_dram_fu_156_ap_done, ap_CS_fsm_state6)
+    ap_done_assign_proc : process(grp_store_matrix_to_dram_fu_184_ap_done, ap_CS_fsm_state7)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state6) and (grp_store_matrix_to_dram_fu_156_ap_done = ap_const_logic_1))) then 
+        if (((grp_store_matrix_to_dram_fu_184_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -895,16 +1551,72 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(grp_store_matrix_to_dram_fu_156_ap_done, ap_CS_fsm_state6)
+    ap_ready_assign_proc : process(grp_store_matrix_to_dram_fu_184_ap_done, ap_CS_fsm_state7)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state6) and (grp_store_matrix_to_dram_fu_156_ap_done = ap_const_logic_1))) then 
+        if (((grp_store_matrix_to_dram_fu_184_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_greedy_potential_reduce_fu_132_ap_start <= grp_greedy_potential_reduce_fu_132_ap_start_reg;
-    grp_load_matrix_from_dram_fu_104_ap_start <= grp_load_matrix_from_dram_fu_104_ap_start_reg;
-    grp_store_matrix_to_dram_fu_156_ap_start <= grp_store_matrix_to_dram_fu_156_ap_start_reg;
+
+    ap_rst_n_inv_assign_proc : process(ap_rst_n)
+    begin
+                ap_rst_n_inv <= not(ap_rst_n);
+    end process;
+
+
+    gmem_0_ARVALID_assign_proc : process(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID, ap_CS_fsm_state2, ap_CS_fsm_state3)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state3) or (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+            gmem_0_ARVALID <= grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID;
+        else 
+            gmem_0_ARVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    gmem_0_AWVALID_assign_proc : process(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID, ap_CS_fsm_state6, ap_CS_fsm_state7)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+            gmem_0_AWVALID <= grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID;
+        else 
+            gmem_0_AWVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    gmem_0_BREADY_assign_proc : process(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY, ap_CS_fsm_state6, ap_CS_fsm_state7)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+            gmem_0_BREADY <= grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY;
+        else 
+            gmem_0_BREADY <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    gmem_0_RREADY_assign_proc : process(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY, ap_CS_fsm_state2, ap_CS_fsm_state3)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state3) or (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+            gmem_0_RREADY <= grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY;
+        else 
+            gmem_0_RREADY <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    gmem_0_WVALID_assign_proc : process(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID, ap_CS_fsm_state6, ap_CS_fsm_state7)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+            gmem_0_WVALID <= grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID;
+        else 
+            gmem_0_WVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    grp_greedy_potential_reduce_fu_162_ap_start <= grp_greedy_potential_reduce_fu_162_ap_start_reg;
+    grp_load_matrix_from_dram_fu_136_ap_start <= grp_load_matrix_from_dram_fu_136_ap_start_reg;
+    grp_store_matrix_to_dram_fu_184_ap_start <= grp_store_matrix_to_dram_fu_184_ap_start_reg;
 end behav;

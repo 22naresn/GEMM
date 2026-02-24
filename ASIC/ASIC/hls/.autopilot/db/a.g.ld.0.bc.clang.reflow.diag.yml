@@ -122,7 +122,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 264, Column: 2 }
+DebugLoc:        { File: gp.cpp, Line: 266, Column: 2 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
@@ -135,7 +135,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 265, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 267, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'greedy_potential_reduce(Matrix&, int, int)'
@@ -148,7 +148,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 266, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 268, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'store_matrix_to_dram(int*, Matrix const&)'
@@ -161,7 +161,7 @@ Args:
 --- !Passed
 Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
-DebugLoc:        { File: gp.cpp, Line: 261, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 263, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - String:          'Adding '''
@@ -172,7 +172,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrReason
-DebugLoc:        { File: gp.cpp, Line: 261, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 263, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - String:          'Adding '''
@@ -183,7 +183,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: gp.cpp, Line: 258, Column: 0 }
+DebugLoc:        { File: gp.cpp, Line: 260, Column: 0 }
 Function:        _ZL23greedy_potential_reduceR6Matrixii
 Args:            
   - String:          'Disaggregating variable '''
@@ -266,7 +266,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 264, Column: 2 }
+DebugLoc:        { File: gp.cpp, Line: 266, Column: 2 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
@@ -279,7 +279,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 265, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 267, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'greedy_potential_reduce(Matrix&, int, int)'
@@ -292,7 +292,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 266, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 268, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'store_matrix_to_dram(int*, Matrix const&)'
@@ -313,53 +313,11 @@ Args:
   - Caller:          apatb_fmm_reduce_kernel_ir
   - String:          ' because it should never be inlined (cost=never)'
 ...
---- !Failure
-Pass:            reflow-syncheck
-Name:            AdderessOnRegister
-DebugLoc:        { File: gp.cpp, Line: 59, Column: 34 }
-Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
-Args:            
-  - String:          Ignore address on register port
-  - String:          ' '''
-  - String:          A_dram
-  - String:          ''''
-...
---- !Failure
-Pass:            reflow-syncheck
-Name:            AdderessOnRegister
-DebugLoc:        { File: gp.cpp, Line: 71, Column: 34 }
-Function:        _ZL20store_matrix_to_dramPiRK6Matrix
-Args:            
-  - String:          Ignore address on register port
-  - String:          ' '''
-  - String:          A_dram
-  - String:          ''''
-...
---- !Failure
-Pass:            reflow-array-undecay
-Name:            WarnOnUnsupportedVLAUnDecay
-DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
-Function:        fmm_reduce_kernel
-Args:            
-  - String:          'Skipping array undecay on variable length array '''
-  - ArrayName:       A_dram
-  - String:          '''.'
-...
---- !Failure
-Pass:            reflow-array-undecay
-Name:            WarnOnUnsupportedVLAUnDecay
-DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
-Function:        fmm_reduce_kernel
-Args:            
-  - String:          'Skipping array undecay on variable length array '''
-  - ArrayName:       A_dram
-  - String:          '''.'
-...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: gp.cpp, Line: 258, Column: 0 }
-Function:        _ZL30compute_greedy_potential_scoreR6Matrixiiiii
+DebugLoc:        { File: gp.cpp, Line: 260, Column: 0 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -407,27 +365,121 @@ Args:
     DebugLoc:        { File: gp.cpp, Line: 192, Column: 0 }
   - String:          ' '
 ...
---- !Failure
-Pass:            reflow-syncheck
-Name:            AdderessOnRegister
-DebugLoc:        { File: gp.cpp, Line: 59, Column: 34 }
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: gp.cpp, Line: 56, Column: 22 }
 Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
 Args:            
-  - String:          Ignore address on register port
-  - String:          ' '''
-  - String:          A_dram
-  - String:          ''''
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        A_dram2seq
+  - ArrayName:       A_dram
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_56_3
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:56:22'
+  - String:          ' '
+  - Function:        'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: gp.cpp, Line: 59, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          for.inc33.load.14
 ...
---- !Failure
-Pass:            reflow-syncheck
-Name:            AdderessOnRegister
-DebugLoc:        { File: gp.cpp, Line: 71, Column: 34 }
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: gp.cpp, Line: 68, Column: 22 }
 Function:        _ZL20store_matrix_to_dramPiRK6Matrix
 Args:            
-  - String:          Ignore address on register port
-  - String:          ' '''
-  - String:          A_dram
-  - String:          ''''
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        A_dram2seq
+  - ArrayName:       A_dram
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_68_1
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:68:22'
+  - String:          ' '
+  - Function:        'store_matrix_to_dram(int*, Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: gp.cpp, Line: 71, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.19
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: gp.cpp, Line: 56, Column: 22 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: gp.cpp, Line: 56, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          A_dram2seq
+  - ArrayName:       A_dram
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_57_4
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:57:26'
+  - String:          ' '
+  - Function:        'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
+    DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: gp.cpp, Line: 68, Column: 22 }
+Function:        _ZL20store_matrix_to_dramPiRK6Matrix
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: gp.cpp, Line: 68, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          A_dram2seq
+  - ArrayName:       A_dram
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_69_2
+  - String:          ' '
+  - LoopLoc:         'gp.cpp:69:26'
+  - String:          ' '
+  - Function:        'store_matrix_to_dram(int*, Matrix const&)'
+    DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
+  - String:          ' '
 ...
 --- !Failure
 Pass:            reflow-occurrence-inference
@@ -603,25 +655,87 @@ Args:
     DebugLoc:        { File: gp.cpp, Line: 232, Column: 19 }
   - String:          ' '
 ...
---- !Failure
-Pass:            reflow-array-undecay
-Name:            WarnOnUnsupportedVLAUnDecay
-DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
-Function:        fmm_reduce_kernel
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: gp.cpp, Line: 56, Column: 22 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii.1
 Args:            
-  - String:          'Skipping array undecay on variable length array '''
-  - ArrayName:       A_dram
-  - String:          '''.'
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'load_matrix_from_dram(int const*, Matrix&, int, int, int) (.1)'
+    DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
+  - String:          ' '
 ...
---- !Failure
-Pass:            reflow-array-undecay
-Name:            WarnOnUnsupportedVLAUnDecay
-DebugLoc:        { File: gp.cpp, Line: 247, Column: 0 }
-Function:        fmm_reduce_kernel
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: gp.cpp, Line: 56, Column: 22 }
+Function:        _ZL21load_matrix_from_dramPKiR6Matrixiii.1
 Args:            
-  - String:          'Skipping array undecay on variable length array '''
-  - ArrayName:       A_dram
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
   - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: gp.cpp, Line: 68, Column: 22 }
+Function:        _ZL20store_matrix_to_dramPiRK6Matrix.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'store_matrix_to_dram(int*, Matrix const&) (.1)'
+    DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: gp.cpp, Line: 68, Column: 22 }
+Function:        _ZL20store_matrix_to_dramPiRK6Matrix.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...
 --- !Missed
 Pass:            inline
@@ -678,10 +792,10 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 264, Column: 2 }
+DebugLoc:        { File: gp.cpp, Line: 266, Column: 2 }
 Function:        fmm_reduce_kernel
 Args:            
-  - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int)'
+  - Callee:          'load_matrix_from_dram(int const*, Matrix&, int, int, int) (.1)'
     DebugLoc:        { File: gp.cpp, Line: 40, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          fmm_reduce_kernel
@@ -691,7 +805,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 265, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 267, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
   - Callee:          'greedy_potential_reduce(Matrix&, int, int)'
@@ -704,10 +818,10 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: gp.cpp, Line: 266, Column: 9 }
+DebugLoc:        { File: gp.cpp, Line: 268, Column: 9 }
 Function:        fmm_reduce_kernel
 Args:            
-  - Callee:          'store_matrix_to_dram(int*, Matrix const&)'
+  - Callee:          'store_matrix_to_dram(int*, Matrix const&) (.1)'
     DebugLoc:        { File: gp.cpp, Line: 64, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          fmm_reduce_kernel

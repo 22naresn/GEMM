@@ -1,3 +1,3 @@
 relativeroot=C:/GEMM/ASIC
-original_argv=--mode hls --cosim --config C:\GEMM\ASIC\hls_config.cfg --work_dir ASIC 
+original_argv=-c --mode hls --config C:\GEMM\ASIC\hls_config.cfg --work_dir ASIC 
 

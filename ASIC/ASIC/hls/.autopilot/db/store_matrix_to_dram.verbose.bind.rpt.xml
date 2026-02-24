@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'store_matrix_to_dram'" level="0">
-<item name = "Date">Sun Feb 22 21:56:49 2026
+<item name = "Date">Tue Feb 24 22:02:01 2026
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">ASIC</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.455 ns, 1.00 ns</column>
+<column name="ap_clk">10.00 ns, 9.000 ns, 1.00 ns</column>
 </table>
 </item>
 </section>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_28">store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_79">store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

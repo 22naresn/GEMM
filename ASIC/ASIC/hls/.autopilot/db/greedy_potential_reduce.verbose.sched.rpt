@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'greedy_potential_reduce'
 ================================================================
-* Date:           Sun Feb 22 21:56:49 2026
+* Date:           Tue Feb 24 22:01:59 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -211,8 +211,8 @@ The critical path consists of the following:
 	'load' operation 32 bit ('M_t_load', gp.cpp:118->gp.cpp:237) on static variable 'M_t' [34]  (0.000 ns)
 	'add' operation 32 bit ('new_col', gp.cpp:119->gp.cpp:237) [41]  (2.702 ns)
 	'add' operation 15 bit ('add_ln121', gp.cpp:121->gp.cpp:237) [52]  (2.142 ns)
-	'getelementptr' operation 15 bit ('M_e_2_addr', gp.cpp:121->gp.cpp:237) [56]  (0.000 ns)
-	'store' operation 0 bit ('store_ln121', gp.cpp:121->gp.cpp:237) of constant 1 on array 'M_e_2' [73]  (2.152 ns)
+	'getelementptr' operation 15 bit ('M_e_3_addr', gp.cpp:121->gp.cpp:237) [57]  (0.000 ns)
+	'store' operation 0 bit ('store_ln121', gp.cpp:121->gp.cpp:237) of constant 1 on array 'M_e_3' [85]  (2.152 ns)
 
  <State 5>: 2.702ns
 The critical path consists of the following:

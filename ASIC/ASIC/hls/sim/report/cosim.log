@@ -1,9 +1,0 @@
-INFO: [COSIM-47] Using XSIM for RTL simulation.
-INFO: [COSIM-14] Instrumenting C test bench ...
-   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
-   Compiling tb.cpp_pre.cpp.tb.cpp
-   Compiling gp.cpp_pre.cpp.tb.cpp
-   Compiling apatb_fmm_reduce_kernel.cpp
-   Compiling apatb_fmm_reduce_kernel_ir.ll
-   Generating cosim.tv.exe
-INFO: [COSIM-302] Starting C TB testing ... 

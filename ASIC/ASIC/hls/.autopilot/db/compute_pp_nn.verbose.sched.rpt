@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'compute_pp_nn'
 ================================================================
-* Date:           Sun Feb 22 21:56:41 2026
+* Date:           Tue Feb 24 22:01:53 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -115,7 +115,7 @@ Target clock period: 10.000ns, clock uncertainty: 1.000ns.
  <State 1>: 6.961ns
 The critical path consists of the following:
 	wire read operation ('r1_read') on port 'r1' [9]  (0.000 ns)
-	'shl' operation 31 bit ('shl_ln106_1', gp.cpp:106) [18]  (0.000 ns)
+	'shl' operation 31 bit ('shl_ln106', gp.cpp:106) [17]  (0.000 ns)
 	'add' operation 31 bit ('add_ln106', gp.cpp:106) [19]  (2.667 ns)
 	'call' operation 0 bit ('call_ln103', gp.cpp:103) to 'compute_pp_nn_Pipeline_VITIS_LOOP_104_1' [25]  (4.294 ns)
 

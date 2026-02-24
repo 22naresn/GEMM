@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2'
 ================================================================
-* Date:           Sun Feb 22 21:56:45 2026
+* Date:           Tue Feb 24 22:01:55 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -125,9 +125,9 @@ ST_1 : Operation 40 [1/1] (2.74ns)   --->   "%icmp_ln152 = icmp_sgt  i34 %add_ln
 State 2 <SV = 1> <Delay = 8.93>
 ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%move_type_2 = load i32 %move_type" [gp.cpp:155->gp.cpp:202]   --->   Operation 41 'load' 'move_type_2' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%row2_2 = load i32 %row2" [gp.cpp:155->gp.cpp:202]   --->   Operation 42 'load' 'row2_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%specpipeline_ln145 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [gp.cpp:145->gp.cpp:202]   --->   Operation 43 'specpipeline' 'specpipeline_ln145' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%specpipeline_ln145 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13" [gp.cpp:145->gp.cpp:202]   --->   Operation 43 'specpipeline' 'specpipeline_ln145' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%speclooptripcount_ln145 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 0, i64 0" [gp.cpp:145->gp.cpp:202]   --->   Operation 44 'speclooptripcount' 'speclooptripcount_ln145' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [gp.cpp:152->gp.cpp:202]   --->   Operation 45 'specloopname' 'specloopname_ln152' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [gp.cpp:152->gp.cpp:202]   --->   Operation 45 'specloopname' 'specloopname_ln152' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 46 [1/2] ( I:2.15ns O:2.15ns )   --->   "%M_e_0_load = load i15 %M_e_0_addr" [gp.cpp:154->gp.cpp:202]   --->   Operation 46 'load' 'M_e_0_load' <Predicate = (add_ln144_read == 1)> <Delay = 2.15> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 86 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 25600> <RAM>
 ST_2 : Operation 47 [1/2] ( I:2.15ns O:2.15ns )   --->   "%M_e_1_load = load i15 %M_e_1_addr" [gp.cpp:154->gp.cpp:202]   --->   Operation 47 'load' 'M_e_1_load' <Predicate = (add_ln144_read == 2)> <Delay = 2.15> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 86 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 25600> <RAM>
 ST_2 : Operation 48 [1/2] ( I:2.15ns O:2.15ns )   --->   "%M_e_2_load = load i15 %M_e_2_addr" [gp.cpp:154->gp.cpp:202]   --->   Operation 48 'load' 'M_e_2_load' <Predicate = (add_ln144_read == 3)> <Delay = 2.15> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 86 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 25600> <RAM>
@@ -483,7 +483,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -510,7 +510,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_7"/></StgValue>
 </bind>
 </comp>
 

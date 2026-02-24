@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'find_best_move'
 ================================================================
-* Date:           Sun Feb 22 21:56:54 2026
+* Date:           Tue Feb 24 22:02:06 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -154,15 +154,15 @@
     |agg_result_3_reg_192                            |   9|          2|   32|         64|
     |ap_NS_fsm                                       |  49|         12|    1|         12|
     |ap_phi_mux_agg_result_3_phi_fu_195_p4           |   9|          2|   32|         64|
-    |ap_phi_mux_empty_26_phi_fu_265_p4               |   9|          2|   32|         64|
+    |ap_phi_mux_empty_42_phi_fu_265_p4               |   9|          2|   32|         64|
     |ap_phi_mux_out_r1_3_phi_fu_215_p4               |   9|          2|   32|         64|
     |ap_phi_mux_out_r2_3_phi_fu_235_p4               |   9|          2|   32|         64|
     |ap_phi_mux_out_sign_3_phi_fu_255_p4             |   9|          2|   32|         64|
     |ap_phi_mux_write_flag3_3_phi_fu_205_p4          |   9|          2|    1|          2|
     |ap_phi_mux_write_flag6_3_phi_fu_225_p4          |   9|          2|    1|          2|
     |ap_phi_mux_write_flag9_3_phi_fu_245_p4          |   9|          2|    1|          2|
-    |empty_25_reg_182                                |   9|          2|   32|         64|
-    |empty_26_reg_262                                |   9|          2|   32|         64|
+    |empty_41_reg_182                                |   9|          2|   32|         64|
+    |empty_42_reg_262                                |   9|          2|   32|         64|
     |empty_fu_58                                     |   9|          2|   32|         64|
     |grp_compute_greedy_potential_score_fu_288_sign  |  13|          3|    2|          6|
     |i_fu_54                                         |   9|          2|   31|         62|
@@ -198,8 +198,8 @@
     |ap_CS_fsm                                               |  11|   0|   11|          0|
     |best_score_1_reg_887                                    |  32|   0|   32|          0|
     |best_score_reg_836                                      |  32|   0|   32|          0|
-    |empty_25_reg_182                                        |  32|   0|   32|          0|
-    |empty_26_reg_262                                        |  32|   0|   32|          0|
+    |empty_41_reg_182                                        |  32|   0|   32|          0|
+    |empty_42_reg_262                                        |  32|   0|   32|          0|
     |empty_fu_58                                             |  32|   0|   32|          0|
     |grp_compute_greedy_potential_score_fu_288_ap_start_reg  |   1|   0|    1|          0|
     |grp_compute_pp_nn_fu_272_ap_start_reg                   |   1|   0|    1|          0|

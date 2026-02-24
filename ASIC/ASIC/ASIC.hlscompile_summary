@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "02/22/26 21:56:22",
- "timestampMillis": "1771777582096",
+ "dateTimestamp": "02/24/26 22:01:34",
+ "timestampMillis": "1771950694445",
  "buildStep": {
-  "cmdId": "a9a09d37-a0b7-48e6-8aec-67c4298ed3d6",
+  "cmdId": "3c92a412-0517-4287-983a-e91bc778153d",
   "name": "v++",
   "logFile": "C:/GEMM\\ASIC\\ASIC\\logs\\ASIC.steps.log",
   "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GEMM\\ASIC\\hls_config.cfg --work_dir ASIC ",
@@ -28,7 +28,7 @@
   "iniFiles": [
    {
     "path": "C:/GEMM\\ASIC\\hls_config.cfg",
-    "content": "part=xc7a200tfbg676-1\n\n[hls]\nflow_target=vivado\nsyn.file=gp.cpp\ntb.file=tb.cpp\nsyn.top=fmm_reduce_kernel\npackage.output.format=rtl\npackage.output.syn=false\nclock=10ns\nclock_uncertainty=1ns"
+    "content": "part=xc7a200tfbg676-1\n\n[hls]\nflow_target=vivado\nsyn.file=gp.cpp\ntb.file=tb.cpp\nsyn.top=fmm_reduce_kernel\npackage.output.format=rtl\npackage.output.syn=false\nclock=10ns\nclock_uncertainty=1ns\ncosim.tool=xsim"
    }
   ],
   "cwd": "C:\\GEMM\\ASIC"
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "02/22/26 21:56:22",
- "timestampMillis": "1771777582097",
+ "dateTimestamp": "02/24/26 22:01:34",
+ "timestampMillis": "1771950694445",
  "status": {
-  "cmdId": "a9a09d37-a0b7-48e6-8aec-67c4298ed3d6",
+  "cmdId": "3c92a412-0517-4287-983a-e91bc778153d",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "02/22/26 21:56:26",
- "timestampMillis": "1771777586118",
+ "dateTimestamp": "02/24/26 22:01:37",
+ "timestampMillis": "1771950697422",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -85,10 +85,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "02/22/26 21:56:26",
- "timestampMillis": "1771777586119",
+ "dateTimestamp": "02/24/26 22:01:37",
+ "timestampMillis": "1771950697423",
  "buildStep": {
-  "cmdId": "4736b969-6f61-4e22-ad45-f4af49c68a8b",
+  "cmdId": "d1825ed5-7309-4c1e-8e0d-5dec0bb0a2d7",
   "name": "",
   "logFile": "C:/GEMM\\ASIC\\ASIC\\hls\\hls.log",
   "commandLine": "",
@@ -101,10 +101,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "02/22/26 21:56:26",
- "timestampMillis": "1771777586119",
+ "dateTimestamp": "02/24/26 22:01:37",
+ "timestampMillis": "1771950697423",
  "status": {
-  "cmdId": "4736b969-6f61-4e22-ad45-f4af49c68a8b",
+  "cmdId": "d1825ed5-7309-4c1e-8e0d-5dec0bb0a2d7",
   "state": "CS_RUNNING"
  }
 }
@@ -112,8 +112,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:26",
- "timestampMillis": "1771777586119",
+ "dateTimestamp": "02/24/26 22:01:37",
+ "timestampMillis": "1771950697423",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\hls\\hls_data.json",
   "name": "",
@@ -126,8 +126,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:26",
- "timestampMillis": "1771777586120",
+ "dateTimestamp": "02/24/26 22:01:37",
+ "timestampMillis": "1771950697423",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\hls\\syn\\report\\csynth.rpt",
   "name": "",
@@ -140,8 +140,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:26",
- "timestampMillis": "1771777586121",
+ "dateTimestamp": "02/24/26 22:01:37",
+ "timestampMillis": "1771950697424",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\hls\\syn\\report\\csynth.xml",
   "name": "",
@@ -154,8 +154,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619546",
+ "dateTimestamp": "02/24/26 22:02:09",
+ "timestampMillis": "1771950729948",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\hls",
   "name": "",
@@ -168,8 +168,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619547",
+ "dateTimestamp": "02/24/26 22:02:09",
+ "timestampMillis": "1771950729949",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\hls",
   "name": "",
@@ -182,8 +182,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619547",
+ "dateTimestamp": "02/24/26 22:02:09",
+ "timestampMillis": "1771950729949",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\hls",
   "name": "",
@@ -196,10 +196,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619548",
+ "dateTimestamp": "02/24/26 22:02:09",
+ "timestampMillis": "1771950729949",
  "status": {
-  "cmdId": "4736b969-6f61-4e22-ad45-f4af49c68a8b",
+  "cmdId": "d1825ed5-7309-4c1e-8e0d-5dec0bb0a2d7",
   "state": "CS_PASSED"
  }
 }
@@ -207,10 +207,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619664",
+ "dateTimestamp": "02/24/26 22:02:10",
+ "timestampMillis": "1771950730051",
  "status": {
-  "cmdId": "a9a09d37-a0b7-48e6-8aec-67c4298ed3d6",
+  "cmdId": "3c92a412-0517-4287-983a-e91bc778153d",
   "state": "CS_PASSED"
  }
 }
@@ -218,8 +218,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619685",
+ "dateTimestamp": "02/24/26 22:02:10",
+ "timestampMillis": "1771950730073",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\reports\\v++_compile_ASIC_guidance.html",
   "name": "",
@@ -232,8 +232,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "02/22/26 21:56:59",
- "timestampMillis": "1771777619686",
+ "dateTimestamp": "02/24/26 22:02:10",
+ "timestampMillis": "1771950730074",
  "report": {
   "path": "C:/GEMM\\ASIC\\ASIC\\reports\\.db\\v++_compile_ASIC_guidance.pb3",
   "name": "",

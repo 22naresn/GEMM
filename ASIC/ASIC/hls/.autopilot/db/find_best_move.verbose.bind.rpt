@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'find_best_move'
 ================================================================
-* Date:           Sun Feb 22 21:56:47 2026
+* Date:           Tue Feb 24 22:01:57 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -125,7 +125,7 @@ ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln213 = zext i31 %i_1" [gp.cp
 ST_2 : Operation 35 [1/1] (2.70ns)   --->   "%icmp_ln213 = icmp_slt  i32 %zext_ln213, i32 %R" [gp.cpp:213]   --->   Operation 35 'icmp' 'icmp_ln213' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 36 [1/1] (2.66ns)   --->   "%j_3 = add i31 %i_1, i31 1" [gp.cpp:213]   --->   Operation 36 'add' 'j_3' <Predicate = true> <Delay = 2.66> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln212 = br i1 %icmp_ln213, void %for.end23, void %VITIS_LOOP_213_2.split" [gp.cpp:212]   --->   Operation 37 'br' 'br_ln212' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln212 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [gp.cpp:212]   --->   Operation 38 'specloopname' 'specloopname_ln212' <Predicate = (icmp_ln213)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln212 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [gp.cpp:212]   --->   Operation 38 'specloopname' 'specloopname_ln212' <Predicate = (icmp_ln213)> <Delay = 0.00>
 ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln213_1 = zext i31 %j_3" [gp.cpp:213]   --->   Operation 39 'zext' 'zext_ln213_1' <Predicate = (icmp_ln213)> <Delay = 0.00>
 ST_2 : Operation 40 [1/1] (1.61ns)   --->   "%br_ln213 = br void %for.body5" [gp.cpp:213]   --->   Operation 40 'br' 'br_ln213' <Predicate = (icmp_ln213)> <Delay = 1.61>
 ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%out_sign_0_load = load i32 %out_sign_0" [gp.cpp:228]   --->   Operation 41 'load' 'out_sign_0_load' <Predicate = (!icmp_ln213)> <Delay = 0.00>
@@ -164,7 +164,7 @@ ST_4 : Operation 69 [1/1] (1.61ns)   --->   "%store_ln212 = store i31 %j_3, i31 
 ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%br_ln212 = br void %VITIS_LOOP_213_2" [gp.cpp:212]   --->   Operation 70 'br' 'br_ln212' <Predicate = (icmp_ln213_1)> <Delay = 0.00>
 
 State 5 <SV = 4> <Delay = 4.27>
-ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%specloopname_ln213 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [gp.cpp:213]   --->   Operation 71 'specloopname' 'specloopname_ln213' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%specloopname_ln213 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [gp.cpp:213]   --->   Operation 71 'specloopname' 'specloopname_ln213' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 72 [1/2] (0.00ns)   --->   "%call_ret = call i64 @compute_pp_nn, i31 %i_1, i9 %trunc_ln213, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:216]   --->   Operation 72 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_5 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln217)   --->   "%p = extractvalue i64 %call_ret" [gp.cpp:216]   --->   Operation 73 'extractvalue' 'p' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%n = extractvalue i64 %call_ret" [gp.cpp:216]   --->   Operation 74 'extractvalue' 'n' <Predicate = true> <Delay = 0.00>
@@ -200,7 +200,7 @@ ST_9 : Operation 95 [1/1] (0.00ns)   --->   "%write_flag6_2 = phi i1 %write_flag
 ST_9 : Operation 96 [1/1] (0.00ns)   --->   "%out_r2_2 = phi i32 %out_r2_0_load_1, void %for.body5.split, i32 %select_ln219_2, void %if.then" [gp.cpp:219]   --->   Operation 96 'phi' 'out_r2_2' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 97 [1/1] (0.00ns)   --->   "%write_flag9_2 = phi i1 %write_flag9_0_load_1, void %for.body5.split, i1 %or_ln219_2, void %if.then" [gp.cpp:219]   --->   Operation 97 'phi' 'write_flag9_2' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 98 [1/1] (0.00ns)   --->   "%out_sign_2 = phi i32 %out_sign_0_load_1, void %for.body5.split, i32 %select_ln219_3, void %if.then" [gp.cpp:219]   --->   Operation 98 'phi' 'out_sign_2' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 99 [1/1] (0.00ns)   --->   "%empty_25 = phi i32 %p_load, void %for.body5.split, i32 %select_ln219_4, void %if.then" [gp.cpp:219]   --->   Operation 99 'phi' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 99 [1/1] (0.00ns)   --->   "%empty_41 = phi i32 %p_load, void %for.body5.split, i32 %select_ln219_4, void %if.then" [gp.cpp:219]   --->   Operation 99 'phi' 'empty_41' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 100 [1/1] (1.61ns)   --->   "%br_ln221 = br i1 %icmp_ln221, void %for.inc, void %if.then11" [gp.cpp:221]   --->   Operation 100 'br' 'br_ln221' <Predicate = true> <Delay = 1.61>
 ST_9 : Operation 101 [2/2] (8.47ns)   --->   "%best_score_1 = call i32 @compute_greedy_potential_score, i31 %i_1, i9 %trunc_ln213, i2 3, i32 %k1_read, i32 %k2_read, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3, i32 %M_t, i32 %M_t_capacity, i32 %M_rows" [gp.cpp:222]   --->   Operation 101 'call' 'best_score_1' <Predicate = (icmp_ln221)> <Delay = 8.47> <CoreType = "Generic">   --->   Generic Core
 
@@ -208,7 +208,7 @@ State 10 <SV = 9> <Delay = 4.34>
 ST_10 : Operation 102 [1/2] (4.34ns)   --->   "%best_score_1 = call i32 @compute_greedy_potential_score, i31 %i_1, i9 %trunc_ln213, i2 3, i32 %k1_read, i32 %k2_read, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3, i32 %M_t, i32 %M_t_capacity, i32 %M_rows" [gp.cpp:222]   --->   Operation 102 'call' 'best_score_1' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 6.90>
-ST_11 : Operation 103 [1/1] (2.70ns)   --->   "%icmp_ln223 = icmp_sgt  i32 %best_score_1, i32 %empty_25" [gp.cpp:223]   --->   Operation 103 'icmp' 'icmp_ln223' <Predicate = (icmp_ln221)> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 103 [1/1] (2.70ns)   --->   "%icmp_ln223 = icmp_sgt  i32 %best_score_1, i32 %empty_41" [gp.cpp:223]   --->   Operation 103 'icmp' 'icmp_ln223' <Predicate = (icmp_ln221)> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 104 [1/1] (0.79ns)   --->   "%select_ln223 = select i1 %icmp_ln223, i32 %best_score_1, i32 %agg_result_2" [gp.cpp:223]   --->   Operation 104 'select' 'select_ln223' <Predicate = (icmp_ln221)> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_11 : Operation 105 [1/1] (0.97ns)   --->   "%or_ln223 = or i1 %icmp_ln223, i1 %write_flag3_2" [gp.cpp:223]   --->   Operation 105 'or' 'or_ln223' <Predicate = (icmp_ln221)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 106 [1/1] (0.79ns)   --->   "%select_ln223_1 = select i1 %icmp_ln223, i32 %zext_ln213, i32 %out_r1_2" [gp.cpp:223]   --->   Operation 106 'select' 'select_ln223_1' <Predicate = (icmp_ln221)> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -216,7 +216,7 @@ ST_11 : Operation 107 [1/1] (0.97ns)   --->   "%or_ln223_1 = or i1 %icmp_ln223, 
 ST_11 : Operation 108 [1/1] (0.79ns)   --->   "%select_ln223_2 = select i1 %icmp_ln223, i32 %j, i32 %out_r2_2" [gp.cpp:223]   --->   Operation 108 'select' 'select_ln223_2' <Predicate = (icmp_ln221)> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_11 : Operation 109 [1/1] (0.97ns)   --->   "%or_ln223_2 = or i1 %icmp_ln223, i1 %write_flag9_2" [gp.cpp:223]   --->   Operation 109 'or' 'or_ln223_2' <Predicate = (icmp_ln221)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 110 [1/1] (0.79ns)   --->   "%select_ln223_3 = select i1 %icmp_ln223, i32 4294967295, i32 %out_sign_2" [gp.cpp:223]   --->   Operation 110 'select' 'select_ln223_3' <Predicate = (icmp_ln221)> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 111 [1/1] (0.79ns)   --->   "%select_ln223_4 = select i1 %icmp_ln223, i32 %best_score_1, i32 %empty_25" [gp.cpp:223]   --->   Operation 111 'select' 'select_ln223_4' <Predicate = (icmp_ln221)> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 111 [1/1] (0.79ns)   --->   "%select_ln223_4 = select i1 %icmp_ln223, i32 %best_score_1, i32 %empty_41" [gp.cpp:223]   --->   Operation 111 'select' 'select_ln223_4' <Predicate = (icmp_ln221)> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_11 : Operation 112 [1/1] (1.61ns)   --->   "%br_ln223 = br void %for.inc" [gp.cpp:223]   --->   Operation 112 'br' 'br_ln223' <Predicate = (icmp_ln221)> <Delay = 1.61>
 ST_11 : Operation 113 [1/1] (0.00ns)   --->   "%agg_result_3 = phi i32 %agg_result_2, void %if.end9, i32 %select_ln223, void %if.then11" [gp.cpp:219]   --->   Operation 113 'phi' 'agg_result_3' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 114 [1/1] (0.00ns)   --->   "%write_flag3_3 = phi i1 %write_flag3_2, void %if.end9, i1 %or_ln223, void %if.then11" [gp.cpp:219]   --->   Operation 114 'phi' 'write_flag3_3' <Predicate = true> <Delay = 0.00>
@@ -225,7 +225,7 @@ ST_11 : Operation 116 [1/1] (0.00ns)   --->   "%write_flag6_3 = phi i1 %write_fl
 ST_11 : Operation 117 [1/1] (0.00ns)   --->   "%out_r2_3 = phi i32 %out_r2_2, void %if.end9, i32 %select_ln223_2, void %if.then11" [gp.cpp:219]   --->   Operation 117 'phi' 'out_r2_3' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 118 [1/1] (0.00ns)   --->   "%write_flag9_3 = phi i1 %write_flag9_2, void %if.end9, i1 %or_ln223_2, void %if.then11" [gp.cpp:219]   --->   Operation 118 'phi' 'write_flag9_3' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 119 [1/1] (0.00ns)   --->   "%out_sign_3 = phi i32 %out_sign_2, void %if.end9, i32 %select_ln223_3, void %if.then11" [gp.cpp:219]   --->   Operation 119 'phi' 'out_sign_3' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 120 [1/1] (0.00ns)   --->   "%empty_26 = phi i32 %empty_25, void %if.end9, i32 %select_ln223_4, void %if.then11" [gp.cpp:219]   --->   Operation 120 'phi' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 120 [1/1] (0.00ns)   --->   "%empty_42 = phi i32 %empty_41, void %if.end9, i32 %select_ln223_4, void %if.then11" [gp.cpp:219]   --->   Operation 120 'phi' 'empty_42' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 121 [1/1] (2.70ns)   --->   "%j_2 = add i32 %j, i32 1" [gp.cpp:213]   --->   Operation 121 'add' 'j_2' <Predicate = true> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 122 [1/1] (1.61ns)   --->   "%store_ln219 = store i32 %agg_result_3, i32 %agg_result_0" [gp.cpp:219]   --->   Operation 122 'store' 'store_ln219' <Predicate = true> <Delay = 1.61>
 ST_11 : Operation 123 [1/1] (1.61ns)   --->   "%store_ln219 = store i1 %write_flag3_3, i1 %write_flag3_0" [gp.cpp:219]   --->   Operation 123 'store' 'store_ln219' <Predicate = true> <Delay = 1.61>
@@ -234,7 +234,7 @@ ST_11 : Operation 125 [1/1] (1.61ns)   --->   "%store_ln219 = store i1 %write_fl
 ST_11 : Operation 126 [1/1] (0.00ns)   --->   "%store_ln219 = store i32 %out_r2_3, i32 %out_r2_0" [gp.cpp:219]   --->   Operation 126 'store' 'store_ln219' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 127 [1/1] (1.61ns)   --->   "%store_ln219 = store i1 %write_flag9_3, i1 %write_flag9_0" [gp.cpp:219]   --->   Operation 127 'store' 'store_ln219' <Predicate = true> <Delay = 1.61>
 ST_11 : Operation 128 [1/1] (0.00ns)   --->   "%store_ln219 = store i32 %out_sign_3, i32 %out_sign_0" [gp.cpp:219]   --->   Operation 128 'store' 'store_ln219' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 129 [1/1] (1.61ns)   --->   "%store_ln219 = store i32 %empty_26, i32 %empty" [gp.cpp:219]   --->   Operation 129 'store' 'store_ln219' <Predicate = true> <Delay = 1.61>
+ST_11 : Operation 129 [1/1] (1.61ns)   --->   "%store_ln219 = store i32 %empty_42, i32 %empty" [gp.cpp:219]   --->   Operation 129 'store' 'store_ln219' <Predicate = true> <Delay = 1.61>
 ST_11 : Operation 130 [1/1] (0.00ns)   --->   "%br_ln213 = br void %for.body5" [gp.cpp:213]   --->   Operation 130 'br' 'br_ln213' <Predicate = true> <Delay = 0.00>
 
 
@@ -350,7 +350,7 @@ write_flag6_2        (phi         ) [ 000000000111]
 out_r2_2             (phi         ) [ 000000000111]
 write_flag9_2        (phi         ) [ 000000000111]
 out_sign_2           (phi         ) [ 000000000111]
-empty_25             (phi         ) [ 000000000111]
+empty_41             (phi         ) [ 000000000111]
 br_ln221             (br          ) [ 001111111111]
 best_score_1         (call        ) [ 001111111101]
 icmp_ln223           (icmp        ) [ 000000000000]
@@ -370,7 +370,7 @@ write_flag6_3        (phi         ) [ 000000000001]
 out_r2_3             (phi         ) [ 000000000001]
 write_flag9_3        (phi         ) [ 000000000001]
 out_sign_3           (phi         ) [ 000000000001]
-empty_26             (phi         ) [ 000000000001]
+empty_42             (phi         ) [ 000000000001]
 j_2                  (add         ) [ 001111111111]
 store_ln219          (store       ) [ 000000000000]
 store_ln219          (store       ) [ 000000000000]
@@ -548,7 +548,7 @@ br_ln213             (br          ) [ 001111111111]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_6"/></StgValue>
+<StgValue><ssdm name="empty_15"/></StgValue>
 </bind>
 </comp>
 
@@ -575,7 +575,7 @@ br_ln213             (br          ) [ 001111111111]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -948,17 +948,17 @@ br_ln213             (br          ) [ 001111111111]
 </bind>
 </comp>
 
-<comp id="182" class="1005" name="empty_25_reg_182">
+<comp id="182" class="1005" name="empty_41_reg_182">
 <pin_list>
 <pin id="183" dir="0" index="0" bw="32" slack="2"/>
 <pin id="184" dir="1" index="1" bw="32" slack="2"/>
 </pin_list>
 <bind>
-<opset="empty_25 (phireg) "/>
+<opset="empty_41 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="185" class="1004" name="empty_25_phi_fu_185">
+<comp id="185" class="1004" name="empty_41_phi_fu_185">
 <pin_list>
 <pin id="186" dir="0" index="0" bw="32" slack="2147483647"/>
 <pin id="187" dir="0" index="1" bw="0" slack="2147483647"/>
@@ -968,7 +968,7 @@ br_ln213             (br          ) [ 001111111111]
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="empty_25/9 "/>
+<opset="empty_41/9 "/>
 </bind>
 </comp>
 
@@ -1140,17 +1140,17 @@ br_ln213             (br          ) [ 001111111111]
 </bind>
 </comp>
 
-<comp id="262" class="1005" name="empty_26_reg_262">
+<comp id="262" class="1005" name="empty_42_reg_262">
 <pin_list>
 <pin id="263" dir="0" index="0" bw="32" slack="2147483647"/>
 <pin id="264" dir="1" index="1" bw="32" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="empty_26 (phireg) "/>
+<opset="empty_42 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="265" class="1004" name="empty_26_phi_fu_265">
+<comp id="265" class="1004" name="empty_42_phi_fu_265">
 <pin_list>
 <pin id="266" dir="0" index="0" bw="32" slack="2"/>
 <pin id="267" dir="0" index="1" bw="0" slack="2147483647"/>
@@ -1160,7 +1160,7 @@ br_ln213             (br          ) [ 001111111111]
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="empty_26/11 "/>
+<opset="empty_42/11 "/>
 </bind>
 </comp>
 
@@ -2960,7 +2960,7 @@ br_ln213             (br          ) [ 001111111111]
 		out_r2_3 : 2
 		write_flag9_3 : 1
 		out_sign_3 : 2
-		empty_26 : 2
+		empty_42 : 2
 		store_ln219 : 3
 		store_ln219 : 2
 		store_ln219 : 3
@@ -3050,8 +3050,8 @@ N/A
 |    agg_result_3_reg_192    |   32   |
 |    best_score_1_reg_887    |   32   |
 |     best_score_reg_836     |   32   |
-|      empty_25_reg_182      |   32   |
-|      empty_26_reg_262      |   32   |
+|      empty_41_reg_182      |   32   |
+|      empty_42_reg_262      |   32   |
 |        empty_reg_678       |   32   |
 |         i_1_reg_747        |   31   |
 |          i_reg_671         |   31   |

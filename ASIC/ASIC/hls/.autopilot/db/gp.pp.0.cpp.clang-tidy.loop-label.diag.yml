@@ -201,7 +201,7 @@ Diagnostics:
         ReplacementText: 'VITIS_LOOP_232_1: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Resource with core_name: RAM_1P_LUTRAM pragma is ignored, because this core doesn''t exist at all '
-    FileOffset:      260
+    FileOffset:      262
     FilePath:        gp.cpp
     Replacements:    
 ...

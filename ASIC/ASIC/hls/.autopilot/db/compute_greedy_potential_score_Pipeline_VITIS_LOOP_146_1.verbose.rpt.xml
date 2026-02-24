@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_146_1'" level="0">
-<item name = "Date">Sun Feb 22 21:56:53 2026
+<item name = "Date">Tue Feb 24 22:02:04 2026
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">ASIC</item>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_9_2_32_1_1_x_U57">sparsemux_9_2_32_1_1_x, 0, 0, 0, 17, 0</column>
+<column name="sparsemux_9_2_32_1_1_x_U61">sparsemux_9_2_32_1_1_x, 0, 0, 0, 17, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

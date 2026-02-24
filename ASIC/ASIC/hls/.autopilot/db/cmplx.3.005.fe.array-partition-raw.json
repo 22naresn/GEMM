@@ -1,38 +1,19 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "6 2 5",
+    "calls": "6 1 4",
     "control_depth": 0,
     "def_use_depth": 0,
     "file": "gp.cpp",
     "fileloc": 242,
-    "instructions": 23,
+    "instructions": 26,
     "memory_accesses": 0,
     "name": "fmm_reduce_kernel",
-    "total_instructions": 1526
+    "total_instructions": 1529
   },
   "1": {
-    "basicblocks": 13,
-    "calls": "3 4 4",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "gp.cpp",
-    "fileloc": 208,
-    "instructions": 61,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "memory_accesses": 0,
-    "name": "find_best_move",
-    "stores": {
-      "L": 11
-    },
-    "total_instructions": 1194
-  },
-  "2": {
     "basicblocks": 42,
-    "calls": "1",
+    "calls": "5",
     "control_depth": 5,
     "def_use_depth": 7,
     "file": "gp.cpp",
@@ -50,7 +31,7 @@
     },
     "total_instructions": 1377
   },
-  "3": {
+  "2": {
     "basicblocks": 10,
     "calls": "",
     "control_depth": 5,
@@ -68,9 +49,9 @@
     },
     "total_instructions": 59
   },
-  "4": {
+  "3": {
     "basicblocks": 91,
-    "calls": "3 3",
+    "calls": "2 2",
     "control_depth": 5,
     "def_use_depth": 7,
     "file": "gp.cpp",
@@ -88,7 +69,7 @@
     },
     "total_instructions": 537
   },
-  "5": {
+  "4": {
     "basicblocks": 7,
     "calls": "",
     "control_depth": 0,
@@ -105,6 +86,25 @@
       "L": 1
     },
     "total_instructions": 36
+  },
+  "5": {
+    "basicblocks": 13,
+    "calls": "2 3 3",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gp.cpp",
+    "fileloc": 208,
+    "instructions": 61,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "find_best_move",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 1194
   },
   "6": {
     "basicblocks": 21,

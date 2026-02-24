@@ -1,15 +1,15 @@
 set ModuleHierarchy {[{
 "Name" : "fmm_reduce_kernel", "RefName" : "fmm_reduce_kernel","ID" : "0","Type" : "sequential",
 "SubInsts" : [
-	{"Name" : "grp_load_matrix_from_dram_fu_104", "RefName" : "load_matrix_from_dram","ID" : "1","Type" : "sequential",
+	{"Name" : "grp_load_matrix_from_dram_fu_136", "RefName" : "load_matrix_from_dram","ID" : "1","Type" : "sequential",
 		"SubInsts" : [
-		{"Name" : "grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_68", "RefName" : "load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2","ID" : "2","Type" : "sequential",
+		{"Name" : "grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_fu_106", "RefName" : "load_matrix_from_dram_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2","ID" : "2","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "VITIS_LOOP_49_1_VITIS_LOOP_51_2","RefName" : "VITIS_LOOP_49_1_VITIS_LOOP_51_2","ID" : "3","Type" : "pipeline"},]},
-		{"Name" : "grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_56_3_VITIS_LOOP_57_4_fu_80", "RefName" : "load_matrix_from_dram_Pipeline_VITIS_LOOP_56_3_VITIS_LOOP_57_4","ID" : "4","Type" : "sequential",
+		{"Name" : "grp_load_matrix_from_dram_Pipeline_VITIS_LOOP_56_3_VITIS_LOOP_57_4_fu_118", "RefName" : "load_matrix_from_dram_Pipeline_VITIS_LOOP_56_3_VITIS_LOOP_57_4","ID" : "4","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "VITIS_LOOP_56_3_VITIS_LOOP_57_4","RefName" : "VITIS_LOOP_56_3_VITIS_LOOP_57_4","ID" : "5","Type" : "pipeline"},]},]},
-	{"Name" : "grp_greedy_potential_reduce_fu_132", "RefName" : "greedy_potential_reduce","ID" : "6","Type" : "sequential",
+	{"Name" : "grp_greedy_potential_reduce_fu_162", "RefName" : "greedy_potential_reduce","ID" : "6","Type" : "sequential",
 		"SubLoops" : [
 		{"Name" : "VITIS_LOOP_232_1","RefName" : "VITIS_LOOP_232_1","ID" : "7","Type" : "no",
 		"SubInsts" : [
@@ -50,9 +50,9 @@ set ModuleHierarchy {[{
 		{"Name" : "grp_greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1_fu_224", "RefName" : "greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1","ID" : "28","Type" : "sequential",
 				"SubLoops" : [
 				{"Name" : "VITIS_LOOP_124_1","RefName" : "VITIS_LOOP_124_1","ID" : "29","Type" : "pipeline"},]},]},]},
-	{"Name" : "grp_store_matrix_to_dram_fu_156", "RefName" : "store_matrix_to_dram","ID" : "30","Type" : "sequential",
+	{"Name" : "grp_store_matrix_to_dram_fu_184", "RefName" : "store_matrix_to_dram","ID" : "30","Type" : "sequential",
 		"SubInsts" : [
-		{"Name" : "grp_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_28", "RefName" : "store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2","ID" : "31","Type" : "sequential",
+		{"Name" : "grp_store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_79", "RefName" : "store_matrix_to_dram_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2","ID" : "31","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "VITIS_LOOP_68_1_VITIS_LOOP_69_2","RefName" : "VITIS_LOOP_68_1_VITIS_LOOP_69_2","ID" : "32","Type" : "pipeline"},]},]},]
 }]}

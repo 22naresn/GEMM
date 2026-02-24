@@ -222,7 +222,7 @@ end
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U113(
+sparsemux_9_2_32_1_1_U117(
     .din0(M_e_0_q0),
     .din1(M_e_1_q0),
     .din2(M_e_2_q0),
@@ -246,7 +246,7 @@ sparsemux_9_2_32_1_1_U113(
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U114(
+sparsemux_9_2_32_1_1_U118(
     .din0(M_e_0_q0),
     .din1(M_e_1_q0),
     .din2(M_e_2_q0),

@@ -245,13 +245,15 @@ extern "C" void fmm_reduce_kernel(int32_t *A_dram,
                                   int t_capacity,
                                   int k1,
                                   int k2) {
-    #pragma HLS INTERFACE ap_none port=A_dram
-    #pragma HLS INTERFACE ap_none port=rows
-    #pragma HLS INTERFACE ap_none port=cols
-    #pragma HLS INTERFACE ap_none port=t_capacity
-    #pragma HLS INTERFACE ap_none port=k1
-    #pragma HLS INTERFACE ap_none port=k2
-    #pragma HLS INTERFACE ap_ctrl_hs port=return
+    #pragma HLS INTERFACE m_axi     port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH
+
+    #pragma HLS INTERFACE s_axilite port=rows       bundle=control
+    #pragma HLS INTERFACE s_axilite port=cols       bundle=control
+    #pragma HLS INTERFACE s_axilite port=t_capacity bundle=control
+    #pragma HLS INTERFACE s_axilite port=k1         bundle=control
+    #pragma HLS INTERFACE s_axilite port=k2         bundle=control
+    #pragma HLS INTERFACE s_axilite port=return     bundle=control
+    #pragma HLS INTERFACE m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH max_read_burst_length=256 max_write_burst_length=256
     #pragma HLS PIPELINE off
 
 

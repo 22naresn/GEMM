@@ -171,7 +171,7 @@
 
 <trans id="273" from="19" to="22">
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_31" val="0"/>
+<or_exp><and_exp><literal name="empty_47" val="0"/>
 </and_exp><and_exp><literal name="and_ln160" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -180,7 +180,7 @@
 <trans id="274" from="19" to="20">
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -1716,7 +1716,7 @@ for.body.i13:4 %br_ln180 = br i1 %icmp_ln181, void %_ZL15total_potentialRK6Matri
 
 <Node id="116" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.i13.split:0 %specloopname_ln180 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12
+for.body.i13.split:0 %specloopname_ln180 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln180"/></StgValue>
@@ -2113,7 +2113,7 @@ for.body5.i.split:12 %icmp_ln186 = icmp_sgt  i31 %tmp_11, i31 0
 
 <Node id="126" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body5.i.split:2 %specloopname_ln181 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11
+for.body5.i.split:2 %specloopname_ln181 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln181"/></StgValue>
@@ -2723,10 +2723,10 @@ land.lhs.true40.i:0 %empty = icmp_eq  i32 %move_type_2, i32 4294967295
 
 <Node id="185" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-land.lhs.true40.i:1 %empty_30 = icmp_eq  i32 %move_type_2, i32 1
+land.lhs.true40.i:1 %empty_46 = icmp_eq  i32 %move_type_2, i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_30"/></StgValue>
+<StgValue><ssdm name="empty_46"/></StgValue>
 </operation>
 
 <operation id="182" st_id="19" stage="1" lat="1">
@@ -2739,10 +2739,10 @@ land.lhs.true40.i:1 %empty_30 = icmp_eq  i32 %move_type_2, i32 1
 
 <Node id="186" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-land.lhs.true40.i:2 %empty_31 = or i1 %empty_30, i1 %empty
+land.lhs.true40.i:2 %empty_47 = or i1 %empty_46, i1 %empty
 
 ]]></Node>
-<StgValue><ssdm name="empty_31"/></StgValue>
+<StgValue><ssdm name="empty_47"/></StgValue>
 </operation>
 
 <operation id="183" st_id="19" stage="1" lat="1">
@@ -2755,7 +2755,7 @@ land.lhs.true40.i:2 %empty_31 = or i1 %empty_30, i1 %empty
 
 <Node id="187" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-land.lhs.true40.i:3 %br_ln0 = br i1 %empty_31, void %if.then43.i, void %if.end44.i
+land.lhs.true40.i:3 %br_ln0 = br i1 %empty_47, void %if.then43.i, void %if.end44.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -2765,7 +2765,7 @@ land.lhs.true40.i:3 %br_ln0 = br i1 %empty_31, void %if.then43.i, void %if.end44
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_31" val="0"/>
+<or_exp><and_exp><literal name="empty_47" val="0"/>
 </and_exp><and_exp><literal name="and_ln160" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -2783,7 +2783,7 @@ if.then43.i:0 %br_ln160 = br void %_ZL19reduction_move_undoR6Matrix.exit
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2800,7 +2800,7 @@ if.end44.i:0 %trunc_ln161 = trunc i32 %select_ln145
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2817,7 +2817,7 @@ if.end44.i:1 %p_shl7 = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i9.i6, i9
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2834,7 +2834,7 @@ if.end44.i:2 %trunc_ln161_1 = trunc i32 %select_ln145
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2851,7 +2851,7 @@ if.end44.i:3 %p_shl8 = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i11.i4, i
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2868,7 +2868,7 @@ if.end44.i:4 %add_ln161_1 = add i15 %p_shl7, i15 %p_shl8
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2885,7 +2885,7 @@ if.end44.i:5 %add_ln161 = add i15 %add_ln161_1, i15 %lshr_ln4
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2902,7 +2902,7 @@ if.end44.i:6 %zext_ln161 = zext i15 %add_ln161
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2919,7 +2919,7 @@ if.end44.i:7 %M_e_0_addr_8 = getelementptr i32 %M_e_0, i64 0, i64 %zext_ln161
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2936,7 +2936,7 @@ if.end44.i:8 %M_e_1_addr_8 = getelementptr i32 %M_e_1, i64 0, i64 %zext_ln161
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2953,7 +2953,7 @@ if.end44.i:9 %M_e_2_addr_8 = getelementptr i32 %M_e_2, i64 0, i64 %zext_ln161
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2970,7 +2970,7 @@ if.end44.i:10 %M_e_3_addr_8 = getelementptr i32 %M_e_3, i64 0, i64 %zext_ln161
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2987,7 +2987,7 @@ if.end44.i:11 %trunc_ln162 = trunc i32 %row2_2
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3004,7 +3004,7 @@ if.end44.i:12 %p_shl = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i9.i6, i9
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3021,7 +3021,7 @@ if.end44.i:13 %trunc_ln162_1 = trunc i32 %row2_2
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3038,7 +3038,7 @@ if.end44.i:14 %p_shl9 = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i11.i4, 
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3055,7 +3055,7 @@ if.end44.i:15 %add_ln162_1 = add i15 %p_shl, i15 %p_shl9
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3072,7 +3072,7 @@ if.end44.i:16 %add_ln162 = add i15 %add_ln162_1, i15 %lshr_ln4
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3089,7 +3089,7 @@ if.end44.i:17 %zext_ln162 = zext i15 %add_ln162
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3106,7 +3106,7 @@ if.end44.i:18 %M_e_0_addr_9 = getelementptr i32 %M_e_0, i64 0, i64 %zext_ln162
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3123,7 +3123,7 @@ if.end44.i:19 %M_e_1_addr_9 = getelementptr i32 %M_e_1, i64 0, i64 %zext_ln162
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3140,7 +3140,7 @@ if.end44.i:20 %M_e_2_addr_9 = getelementptr i32 %M_e_2, i64 0, i64 %zext_ln162
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3157,7 +3157,7 @@ if.end44.i:21 %M_e_3_addr_9 = getelementptr i32 %M_e_3, i64 0, i64 %zext_ln162
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3174,7 +3174,7 @@ if.end44.i:22 %switch_ln161 = switch i2 %add_ln144, void %arrayidx554.i.case.2, 
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 <literal name="add_ln144" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -3192,7 +3192,7 @@ arrayidx554.i.case.3:0 %store_ln161 = store i32 0, i15 %M_e_3_addr_8
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 <literal name="add_ln144" val="-2"/>
 </and_exp></or_exp>
 </condition>
@@ -3210,7 +3210,7 @@ arrayidx554.i.case.1:0 %store_ln161 = store i32 0, i15 %M_e_1_addr_8
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 <literal name="add_ln144" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -3228,7 +3228,7 @@ arrayidx554.i.case.0:0 %store_ln161 = store i32 0, i15 %M_e_0_addr_8
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 <literal name="add_ln144" val="-1"/>
 </and_exp></or_exp>
 </condition>
@@ -3399,7 +3399,7 @@ arrayidx554.i.exit:0 %call_ln145 = call void @compute_greedy_potential_score_Pip
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln141" val="0"/>
 <literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -3417,7 +3417,7 @@ arrayidx554.i.exit:0 %call_ln145 = call void @compute_greedy_potential_score_Pip
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln141" val="0"/>
 <literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -4112,7 +4112,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="549" from="_ssdm_op_SpecLoopName" to="specloopname_ln180" fromId="548" toId="117">
 </dataflow>
-<dataflow id="551" from="empty_12" to="specloopname_ln180" fromId="550" toId="117">
+<dataflow id="551" from="empty_8" to="specloopname_ln180" fromId="550" toId="117">
 </dataflow>
 <dataflow id="552" from="j_6" to="zext_ln181_1" fromId="115" toId="118">
 </dataflow>
@@ -4237,7 +4237,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="608" from="_ssdm_op_SpecLoopName" to="specloopname_ln181" fromId="548" toId="142">
 </dataflow>
-<dataflow id="610" from="empty_11" to="specloopname_ln181" fromId="609" toId="142">
+<dataflow id="610" from="empty_2" to="specloopname_ln181" fromId="609" toId="142">
 </dataflow>
 <dataflow id="611" from="s_3" to="add_ln186" fromId="139" toId="143">
 </dataflow>
@@ -4465,15 +4465,15 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="719" from="StgValue_432" to="empty" fromId="432" toId="180">
 </dataflow>
-<dataflow id="720" from="move_type_2" to="empty_30" fromId="172" toId="181">
+<dataflow id="720" from="move_type_2" to="empty_46" fromId="172" toId="181">
 </dataflow>
-<dataflow id="721" from="StgValue_341" to="empty_30" fromId="341" toId="181">
+<dataflow id="721" from="StgValue_341" to="empty_46" fromId="341" toId="181">
 </dataflow>
-<dataflow id="722" from="empty_30" to="empty_31" fromId="181" toId="182">
+<dataflow id="722" from="empty_46" to="empty_47" fromId="181" toId="182">
 </dataflow>
-<dataflow id="723" from="empty" to="empty_31" fromId="180" toId="182">
+<dataflow id="723" from="empty" to="empty_47" fromId="180" toId="182">
 </dataflow>
-<dataflow id="724" from="empty_31" to="br_ln0" fromId="182" toId="183">
+<dataflow id="724" from="empty_47" to="br_ln0" fromId="182" toId="183">
 </dataflow>
 <dataflow id="725" from="select_ln145" to="trunc_ln161" fromId="163" toId="185">
 </dataflow>
@@ -4672,7 +4672,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="821" from="M_t_loc_0" to="M_t_new_2" fromId="103" toId="225">
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_31" val="0"/>
+<or_exp><and_exp><literal name="empty_47" val="0"/>
 </and_exp><and_exp><literal name="and_ln160" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -4683,7 +4683,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln141" val="0"/>
 <literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
@@ -4700,7 +4700,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="827" from="M_t_flag_0" to="M_t_flag_2" fromId="104" toId="226">
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_31" val="0"/>
+<or_exp><and_exp><literal name="empty_47" val="0"/>
 </and_exp><and_exp><literal name="and_ln160" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -4711,7 +4711,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln141" val="0"/>
 <literal name="and_ln160" val="1"/>
-<literal name="empty_31" val="1"/>
+<literal name="empty_47" val="1"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
@@ -4778,7 +4778,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="854" from="and_ln160" to="StgValue_19" fromId="178" toId="19">
 </dataflow>
-<dataflow id="855" from="empty_31" to="StgValue_19" fromId="182" toId="19">
+<dataflow id="855" from="empty_47" to="StgValue_19" fromId="182" toId="19">
 </dataflow>
 <dataflow id="856" from="add_ln144" to="StgValue_19" fromId="151" toId="19">
 </dataflow>
@@ -4788,7 +4788,7 @@ cleanup:1 %ret_ln206 = ret i32 %agg_result_0
 </dataflow>
 <dataflow id="859" from="and_ln160" to="StgValue_22" fromId="178" toId="22">
 </dataflow>
-<dataflow id="860" from="empty_31" to="StgValue_22" fromId="182" toId="22">
+<dataflow id="860" from="empty_47" to="StgValue_22" fromId="182" toId="22">
 </dataflow>
 <dataflow id="861" from="icmp_ln197" to="StgValue_23" fromId="37" toId="23">
 </dataflow>

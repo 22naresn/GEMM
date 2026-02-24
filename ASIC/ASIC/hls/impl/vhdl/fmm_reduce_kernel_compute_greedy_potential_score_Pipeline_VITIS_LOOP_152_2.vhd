@@ -157,7 +157,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_9_2_32_1_1_x_U67 : component fmm_reduce_kernel_sparsemux_9_2_32_1_1_x
+    sparsemux_9_2_32_1_1_x_U71 : component fmm_reduce_kernel_sparsemux_9_2_32_1_1_x
     generic map (
         ID => 1,
         NUM_STAGE => 1,

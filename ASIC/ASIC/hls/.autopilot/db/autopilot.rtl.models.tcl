@@ -8,6 +8,7 @@ set SynModuleInfo {
   {SRCNAME load_matrix_from_dram MODELNAME load_matrix_from_dram RTLNAME fmm_reduce_kernel_load_matrix_from_dram
     SUBMODULES {
       {MODELNAME fmm_reduce_kernel_mul_31ns_31ns_62_1_1 RTLNAME fmm_reduce_kernel_mul_31ns_31ns_62_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME fmm_reduce_kernel_mul_32ns_32ns_63_1_1 RTLNAME fmm_reduce_kernel_mul_32ns_32ns_63_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME compute_pp_nn_Pipeline_VITIS_LOOP_104_1 MODELNAME compute_pp_nn_Pipeline_VITIS_LOOP_104_1 RTLNAME fmm_reduce_kernel_compute_pp_nn_Pipeline_VITIS_LOOP_104_1
@@ -37,6 +38,9 @@ set SynModuleInfo {
   {SRCNAME fmm_reduce_kernel MODELNAME fmm_reduce_kernel RTLNAME fmm_reduce_kernel IS_TOP 1
     SUBMODULES {
       {MODELNAME fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W RTLNAME fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W BINDTYPE storage TYPE ram_1p IMPL lutram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME fmm_reduce_kernel_gmem_m_axi RTLNAME fmm_reduce_kernel_gmem_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
+      {MODELNAME fmm_reduce_kernel_control_s_axi RTLNAME fmm_reduce_kernel_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+      {MODELNAME fmm_reduce_kernel_control_r_s_axi RTLNAME fmm_reduce_kernel_control_r_s_axi BINDTYPE interface TYPE interface_s_axilite}
     }
   }
 }

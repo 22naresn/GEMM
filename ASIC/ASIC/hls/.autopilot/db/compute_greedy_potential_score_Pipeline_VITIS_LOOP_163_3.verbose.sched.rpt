@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3'
 ================================================================
-* Date:           Sun Feb 22 21:56:45 2026
+* Date:           Tue Feb 24 22:01:55 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -122,8 +122,8 @@ ST_1 : Operation 38 [2/2] (2.15ns)   --->   "%M_e_3_load = load i15 %M_e_3_addr"
 ST_1 : Operation 80 [1/1] (1.61ns)   --->   "%ret_ln0 = ret"   --->   Operation 80 'ret' 'ret_ln0' <Predicate = (!icmp_ln163)> <Delay = 1.61>
 
 State 2 <SV = 1> <Delay = 8.68>
-ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%specpipeline_ln163 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [gp.cpp:163->gp.cpp:202]   --->   Operation 39 'specpipeline' 'specpipeline_ln163' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln163 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [gp.cpp:163->gp.cpp:202]   --->   Operation 40 'specloopname' 'specloopname_ln163' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%specpipeline_ln163 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13" [gp.cpp:163->gp.cpp:202]   --->   Operation 39 'specpipeline' 'specpipeline_ln163' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln163 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [gp.cpp:163->gp.cpp:202]   --->   Operation 40 'specloopname' 'specloopname_ln163' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln168 = zext i15 %add_ln168" [gp.cpp:168->gp.cpp:202]   --->   Operation 41 'zext' 'zext_ln168' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%M_e_0_addr_4 = getelementptr i32 %M_e_0, i64 0, i64 %zext_ln168" [gp.cpp:168->gp.cpp:202]   --->   Operation 42 'getelementptr' 'M_e_0_addr_4' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln170 = zext i15 %add_ln170" [gp.cpp:170->gp.cpp:202]   --->   Operation 43 'zext' 'zext_ln170' <Predicate = true> <Delay = 0.00>
@@ -192,11 +192,11 @@ The critical path consists of the following:
 
  <State 3>: 2.152ns
 The critical path consists of the following:
-	'store' operation 0 bit ('store_ln168', gp.cpp:168->gp.cpp:202) of variable 'v', gp.cpp:165->gp.cpp:202 on array 'M_e_1' [70]  (2.152 ns)
+	'store' operation 0 bit ('store_ln168', gp.cpp:168->gp.cpp:202) of variable 'v', gp.cpp:165->gp.cpp:202 on array 'M_e_0' [75]  (2.152 ns)
 
  <State 4>: 2.152ns
 The critical path consists of the following:
-	'store' operation 0 bit ('store_ln170', gp.cpp:170->gp.cpp:202) of variable 'v2', gp.cpp:169->gp.cpp:202 on array 'M_e_2' [66]  (2.152 ns)
+	'store' operation 0 bit ('store_ln170', gp.cpp:170->gp.cpp:202) of variable 'v2', gp.cpp:169->gp.cpp:202 on array 'M_e_0' [76]  (2.152 ns)
 
 
 ============================================================

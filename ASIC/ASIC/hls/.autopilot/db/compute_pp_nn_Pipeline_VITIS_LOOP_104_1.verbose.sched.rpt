@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'compute_pp_nn_Pipeline_VITIS_LOOP_104_1'
 ================================================================
-* Date:           Sun Feb 22 21:56:41 2026
+* Date:           Tue Feb 24 22:01:51 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -88,7 +88,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 5.90>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty = alloca i32 1"   --->   Operation 7 'alloca' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%empty_27 = alloca i32 1"   --->   Operation 8 'alloca' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%empty_43 = alloca i32 1"   --->   Operation 8 'alloca' 'empty_43' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%c = alloca i32 1" [gp.cpp:104]   --->   Operation 9 'alloca' 'c' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%nn_write_assign = alloca i32 1"   --->   Operation 10 'alloca' 'nn_write_assign' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%pp_write_assign = alloca i32 1"   --->   Operation 11 'alloca' 'pp_write_assign' <Predicate = true> <Delay = 0.00>
@@ -102,7 +102,7 @@ ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%cols_non_t_read = read i32 @_ssdm_
 ST_1 : Operation 19 [1/1] (1.61ns)   --->   "%store_ln0 = store i32 0, i32 %pp_write_assign"   --->   Operation 19 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 20 [1/1] (1.61ns)   --->   "%store_ln0 = store i32 0, i32 %nn_write_assign"   --->   Operation 20 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 21 [1/1] (1.61ns)   --->   "%store_ln104 = store i31 0, i31 %c" [gp.cpp:104]   --->   Operation 21 'store' 'store_ln104' <Predicate = true> <Delay = 1.61>
-ST_1 : Operation 22 [1/1] (1.61ns)   --->   "%store_ln0 = store i32 0, i32 %empty_27"   --->   Operation 22 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 22 [1/1] (1.61ns)   --->   "%store_ln0 = store i32 0, i32 %empty_43"   --->   Operation 22 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 23 [1/1] (1.61ns)   --->   "%store_ln0 = store i32 0, i32 %empty"   --->   Operation 23 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body"   --->   Operation 24 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%c_3 = load i31 %c" [gp.cpp:104]   --->   Operation 25 'load' 'c_3' <Predicate = true> <Delay = 0.00>
@@ -155,11 +155,11 @@ ST_3 : Operation 62 [1/1] (1.67ns)   --->   "%e2 = sparsemux i32 @_ssdm_op_Spars
 
 State 4 <SV = 3> <Delay = 7.83>
 ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%p_load11 = load i32 %empty" [gp.cpp:111]   --->   Operation 63 'load' 'p_load11' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%p_load = load i32 %empty_27" [gp.cpp:110]   --->   Operation 64 'load' 'p_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%p_load = load i32 %empty_43" [gp.cpp:110]   --->   Operation 64 'load' 'p_load' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%nn_write_assign_load_1 = load i32 %nn_write_assign"   --->   Operation 65 'load' 'nn_write_assign_load_1' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%pp_write_assign_load_1 = load i32 %pp_write_assign"   --->   Operation 66 'load' 'pp_write_assign_load_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%specpipeline_ln104 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [gp.cpp:104]   --->   Operation 67 'specpipeline' 'specpipeline_ln104' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%specloopname_ln104 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [gp.cpp:104]   --->   Operation 68 'specloopname' 'specloopname_ln104' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%specpipeline_ln104 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13" [gp.cpp:104]   --->   Operation 67 'specpipeline' 'specpipeline_ln104' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%specloopname_ln104 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [gp.cpp:104]   --->   Operation 68 'specloopname' 'specloopname_ln104' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 69 [1/1] (2.70ns)   --->   "%icmp_ln107 = icmp_eq  i32 %e1, i32 0" [gp.cpp:107]   --->   Operation 69 'icmp' 'icmp_ln107' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 70 [1/1] (2.70ns)   --->   "%icmp_ln109 = icmp_eq  i32 %e2, i32 0" [gp.cpp:109]   --->   Operation 70 'icmp' 'icmp_ln109' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 71 [1/1] (2.70ns)   --->   "%icmp_ln110 = icmp_eq  i32 %e1, i32 %e2" [gp.cpp:110]   --->   Operation 71 'icmp' 'icmp_ln110' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
@@ -170,19 +170,19 @@ ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%sext_ln111_1 = sext i32 %e1" [gp.c
 ST_4 : Operation 76 [1/1] (2.72ns)   --->   "%icmp_ln111 = icmp_eq  i33 %sext_ln111_1, i33 %sub_ln111" [gp.cpp:111]   --->   Operation 76 'icmp' 'icmp_ln111' <Predicate = true> <Delay = 2.72> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.72> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 77 [1/1] (2.70ns)   --->   "%add_ln111 = add i32 %p_load11, i32 1" [gp.cpp:111]   --->   Operation 77 'add' 'add_ln111' <Predicate = true> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node nn_1)   --->   "%select_ln111 = select i1 %icmp_ln111, i32 %add_ln111, i32 %nn_write_assign_load_1" [gp.cpp:111]   --->   Operation 78 'select' 'select_ln111' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node empty_29)   --->   "%select_ln111_1 = select i1 %icmp_ln111, i32 %add_ln111, i32 %p_load11" [gp.cpp:111]   --->   Operation 79 'select' 'select_ln111_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node empty_45)   --->   "%select_ln111_1 = select i1 %icmp_ln111, i32 %add_ln111, i32 %p_load11" [gp.cpp:111]   --->   Operation 79 'select' 'select_ln111_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 80 [1/1] (0.97ns)   --->   "%or_ln109 = or i1 %icmp_ln107, i1 %icmp_ln109" [gp.cpp:109]   --->   Operation 80 'or' 'or_ln109' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node or_ln110)   --->   "%xor_ln110 = xor i1 %icmp_ln110, i1 1" [gp.cpp:110]   --->   Operation 81 'xor' 'xor_ln110' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 82 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln110 = or i1 %or_ln109, i1 %xor_ln110" [gp.cpp:110]   --->   Operation 82 'or' 'or_ln110' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 83 [1/1] (0.79ns)   --->   "%pp_1 = select i1 %or_ln110, i32 %pp_write_assign_load_1, i32 %add_ln110" [gp.cpp:110]   --->   Operation 83 'select' 'pp_1' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 84 [1/1] (0.97ns)   --->   "%or_ln110_1 = or i1 %or_ln109, i1 %icmp_ln110" [gp.cpp:110]   --->   Operation 84 'or' 'or_ln110_1' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 85 [1/1] (0.79ns) (out node of the LUT)   --->   "%nn_1 = select i1 %or_ln110_1, i32 %nn_write_assign_load_1, i32 %select_ln111" [gp.cpp:110]   --->   Operation 85 'select' 'nn_1' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 86 [1/1] (0.79ns)   --->   "%empty_28 = select i1 %or_ln110, i32 %p_load, i32 %add_ln110" [gp.cpp:110]   --->   Operation 86 'select' 'empty_28' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 87 [1/1] (0.79ns) (out node of the LUT)   --->   "%empty_29 = select i1 %or_ln110_1, i32 %p_load11, i32 %select_ln111_1" [gp.cpp:110]   --->   Operation 87 'select' 'empty_29' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 86 [1/1] (0.79ns)   --->   "%empty_44 = select i1 %or_ln110, i32 %p_load, i32 %add_ln110" [gp.cpp:110]   --->   Operation 86 'select' 'empty_44' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 87 [1/1] (0.79ns) (out node of the LUT)   --->   "%empty_45 = select i1 %or_ln110_1, i32 %p_load11, i32 %select_ln111_1" [gp.cpp:110]   --->   Operation 87 'select' 'empty_45' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 88 [1/1] (1.61ns)   --->   "%store_ln110 = store i32 %pp_1, i32 %pp_write_assign" [gp.cpp:110]   --->   Operation 88 'store' 'store_ln110' <Predicate = true> <Delay = 1.61>
 ST_4 : Operation 89 [1/1] (1.61ns)   --->   "%store_ln110 = store i32 %nn_1, i32 %nn_write_assign" [gp.cpp:110]   --->   Operation 89 'store' 'store_ln110' <Predicate = true> <Delay = 1.61>
-ST_4 : Operation 90 [1/1] (1.61ns)   --->   "%store_ln110 = store i32 %empty_28, i32 %empty_27" [gp.cpp:110]   --->   Operation 90 'store' 'store_ln110' <Predicate = true> <Delay = 1.61>
-ST_4 : Operation 91 [1/1] (1.61ns)   --->   "%store_ln110 = store i32 %empty_29, i32 %empty" [gp.cpp:110]   --->   Operation 91 'store' 'store_ln110' <Predicate = true> <Delay = 1.61>
+ST_4 : Operation 90 [1/1] (1.61ns)   --->   "%store_ln110 = store i32 %empty_44, i32 %empty_43" [gp.cpp:110]   --->   Operation 90 'store' 'store_ln110' <Predicate = true> <Delay = 1.61>
+ST_4 : Operation 91 [1/1] (1.61ns)   --->   "%store_ln110 = store i32 %empty_45, i32 %empty" [gp.cpp:110]   --->   Operation 91 'store' 'store_ln110' <Predicate = true> <Delay = 1.61>
 ST_4 : Operation 92 [1/1] (0.00ns)   --->   "%br_ln104 = br void %for.body" [gp.cpp:104]   --->   Operation 92 'br' 'br_ln104' <Predicate = true> <Delay = 0.00>
 
 

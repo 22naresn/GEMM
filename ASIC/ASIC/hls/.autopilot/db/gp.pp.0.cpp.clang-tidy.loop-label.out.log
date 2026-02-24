@@ -108,6 +108,6 @@ for (int iter = 0; iter < MAX_ITERS; ++iter) {
 ^~~
 VITIS_LOOP_232_1: 
 C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6663:1: note: FIX-IT applied suggested code changes
-C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6695:9: error: Resource with core_name: RAM_1P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+C:\GEMM\ASIC\ASIC\hls\.autopilot\db\gp.pp.0.cpp:6697:9: error: Resource with core_name: RAM_1P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
 #pragma HLS RESOURCE variable=M.e core=RAM_1P_LUTRAM
         ^

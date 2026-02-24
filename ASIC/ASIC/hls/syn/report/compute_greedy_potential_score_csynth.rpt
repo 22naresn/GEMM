@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'compute_greedy_potential_score'
 ================================================================
-* Date:           Sun Feb 22 21:56:54 2026
+* Date:           Tue Feb 24 22:02:05 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -88,7 +88,7 @@
     |grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2_fu_451  |compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2  |        0|   0|  168|  294|    0|
     |grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3_fu_469  |compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3  |        0|   0|  346|  484|    0|
     |grp_compute_pp_nn_fu_399                                             |compute_pp_nn                                             |        0|   0|  307|  855|    0|
-    |mul_32s_32s_32_1_1_U88                                               |mul_32s_32s_32_1_1                                        |        0|   3|    0|   21|    0|
+    |mul_32s_32s_32_1_1_U92                                               |mul_32s_32s_32_1_1                                        |        0|   3|    0|   21|    0|
     +---------------------------------------------------------------------+----------------------------------------------------------+---------+----+-----+-----+-----+
     |Total                                                                |                                                          |        0|   3| 1293| 2515|    0|
     +---------------------------------------------------------------------+----------------------------------------------------------+---------+----+-----+-----+-----+
@@ -137,7 +137,7 @@
     |ap_block_state8_on_subcall_done   |       and|   0|  0|   2|           1|           1|
     |ap_predicate_op221_call_state22   |       and|   0|  0|   2|           1|           1|
     |cmp34_i_fu_683_p2                 |      icmp|   0|  0|  10|           2|           2|
-    |empty_30_fu_1002_p2               |      icmp|   0|  0|  39|          32|           1|
+    |empty_46_fu_1002_p2               |      icmp|   0|  0|  39|          32|           1|
     |empty_fu_996_p2                   |      icmp|   0|  0|  39|          32|           2|
     |icmp_ln118_fu_554_p2              |      icmp|   0|  0|  39|          32|          32|
     |icmp_ln141_fu_760_p2              |      icmp|   0|  0|  39|          32|           1|
@@ -155,7 +155,7 @@
     |M_e_1_we0                         |        or|   0|  0|   2|           1|           1|
     |M_e_2_we0                         |        or|   0|  0|   2|           1|           1|
     |M_e_3_we0                         |        or|   0|  0|   2|           1|           1|
-    |empty_31_fu_1008_p2               |        or|   0|  0|   2|           1|           1|
+    |empty_47_fu_1008_p2               |        or|   0|  0|   2|           1|           1|
     |overlap_fu_513_p3                 |    select|   0|  0|  32|           1|          32|
     |s_3_fu_827_p3                     |    select|   0|  0|  32|           1|          32|
     |s_5_fu_861_p3                     |    select|   0|  0|  32|           1|          32|
@@ -251,7 +251,7 @@
     |ap_return_preg                                                                    |  32|   0|   32|          0|
     |cmp34_i_reg_1269                                                                  |   1|   0|    1|          0|
     |colt_reg_1376                                                                     |  32|   0|   32|          0|
-    |empty_31_reg_1421                                                                 |   1|   0|    1|          0|
+    |empty_47_reg_1421                                                                 |   1|   0|    1|          0|
     |grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1_fu_417_ap_start_reg  |   1|   0|    1|          0|
     |grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_146_1_fu_435_ap_start_reg  |   1|   0|    1|          0|
     |grp_compute_greedy_potential_score_Pipeline_VITIS_LOOP_152_2_fu_451_ap_start_reg  |   1|   0|    1|          0|

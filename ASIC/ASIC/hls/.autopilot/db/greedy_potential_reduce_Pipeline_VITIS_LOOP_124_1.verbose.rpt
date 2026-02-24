@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1'
 ================================================================
-* Date:           Sun Feb 22 21:56:55 2026
+* Date:           Tue Feb 24 22:02:06 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -73,8 +73,8 @@
     +---------------------------+----------------------+---------+----+---+----+-----+
     |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
     +---------------------------+----------------------+---------+----+---+----+-----+
-    |sparsemux_9_2_32_1_1_U113  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
-    |sparsemux_9_2_32_1_1_U114  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_32_1_1_U117  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_32_1_1_U118  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
     +---------------------------+----------------------+---------+----+---+----+-----+
     |Total                      |                      |        0|   0|  0|  34|    0|
     +---------------------------+----------------------+---------+----+---+----+-----+
@@ -358,7 +358,7 @@ State 6 <SV = 5> <Delay = 0.00>
 State 7 <SV = 6> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 2.15>
-ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%specpipeline_ln124 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [gp.cpp:124->gp.cpp:237]   --->   Operation 89 'specpipeline' 'specpipeline_ln124' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%specpipeline_ln124 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13" [gp.cpp:124->gp.cpp:237]   --->   Operation 89 'specpipeline' 'specpipeline_ln124' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 90 [1/1] (0.00ns)   --->   "%specloopname_ln124 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [gp.cpp:124->gp.cpp:237]   --->   Operation 90 'specloopname' 'specloopname_ln124' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln133 = zext i15 %add_ln133" [gp.cpp:133->gp.cpp:237]   --->   Operation 91 'zext' 'zext_ln133' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%M_e_0_addr_2 = getelementptr i32 %M_e_0, i64 0, i64 %zext_ln133" [gp.cpp:133->gp.cpp:237]   --->   Operation 92 'getelementptr' 'M_e_0_addr_2' <Predicate = true> <Delay = 0.00>
@@ -808,7 +808,7 @@ ret_ln0            (ret          ) [ 000000000]
 <pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 

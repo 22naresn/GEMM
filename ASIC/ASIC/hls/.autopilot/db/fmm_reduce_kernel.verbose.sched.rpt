@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fmm_reduce_kernel'
 ================================================================
-* Date:           Sun Feb 22 21:56:51 2026
+* Date:           Tue Feb 24 22:02:01 2026
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        ASIC
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 6
+* Number of FSM states : 7
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -75,53 +75,63 @@ IsGatedGlobalClock: 0
 3 --> 4 
 4 --> 5 
 5 --> 6 
-6 --> 
+6 --> 7 
+7 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.64>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%t_capacity_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %t_capacity" [gp.cpp:242]   --->   Operation 7 'read' 't_capacity_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %cols" [gp.cpp:242]   --->   Operation 8 'read' 'cols_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%rows_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %rows" [gp.cpp:242]   --->   Operation 9 'read' 'rows_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%A_dram_read = read i32 @_ssdm_op_Read.ap_none.i32P0A, i32 %A_dram" [gp.cpp:264]   --->   Operation 10 'read' 'A_dram_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [2/2] (3.64ns)   --->   "%call_ln264 = call void @load_matrix_from_dram, i32 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:264]   --->   Operation 11 'call' 'call_ln264' <Predicate = true> <Delay = 3.64> <CoreType = "Generic">   --->   Generic Core
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 8 [1/1] (1.00ns)   --->   "%k2_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %k2" [gp.cpp:242]   --->   Operation 8 'read' 'k2_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 9 [1/1] (1.00ns)   --->   "%k1_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %k1" [gp.cpp:242]   --->   Operation 9 'read' 'k1_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%t_capacity_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %t_capacity" [gp.cpp:242]   --->   Operation 10 'read' 't_capacity_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %cols" [gp.cpp:242]   --->   Operation 11 'read' 'cols_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%rows_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %rows" [gp.cpp:242]   --->   Operation 12 'read' 'rows_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%A_dram_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %A_dram" [gp.cpp:242]   --->   Operation 13 'read' 'A_dram_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 
-State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln264 = call void @load_matrix_from_dram, i32 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:264]   --->   Operation 12 'call' 'call_ln264' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 9.00>
+ST_2 : Operation 14 [2/2] (9.00ns)   --->   "%call_ln266 = call void @load_matrix_from_dram, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:266]   --->   Operation 14 'call' 'call_ln266' <Predicate = true> <Delay = 9.00> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%k2_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %k2" [gp.cpp:242]   --->   Operation 13 'read' 'k2_read' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%k1_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %k1" [gp.cpp:242]   --->   Operation 14 'read' 'k1_read' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln265 = call void @greedy_potential_reduce, i32 %k1_read, i32 %k2_read, i32 %M_rows, i32 %M_t, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3, i32 %M_t_capacity" [gp.cpp:265]   --->   Operation 15 'call' 'call_ln265' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln266 = call void @load_matrix_from_dram, i32 %gmem, i64 %A_dram_read, i32 %rows_read, i32 %cols_read, i32 %t_capacity_read, i32 %M_rows, i32 %M_cols, i32 %M_t, i32 %M_t_capacity, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:266]   --->   Operation 15 'call' 'call_ln266' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 3.11>
-ST_4 : Operation 16 [1/2] (3.11ns)   --->   "%call_ln265 = call void @greedy_potential_reduce, i32 %k1_read, i32 %k2_read, i32 %M_rows, i32 %M_t, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3, i32 %M_t_capacity" [gp.cpp:265]   --->   Operation 16 'call' 'call_ln265' <Predicate = true> <Delay = 3.11> <CoreType = "Generic">   --->   Generic Core
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln267 = call void @greedy_potential_reduce, i32 %k1_read, i32 %k2_read, i32 %M_rows, i32 %M_t, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3, i32 %M_t_capacity" [gp.cpp:267]   --->   Operation 16 'call' 'call_ln267' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln266 = call void @store_matrix_to_dram, i32 %A_dram, i32 %M_rows, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:266]   --->   Operation 17 'call' 'call_ln266' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 5 <SV = 4> <Delay = 3.11>
+ST_5 : Operation 17 [1/2] (3.11ns)   --->   "%call_ln267 = call void @greedy_potential_reduce, i32 %k1_read, i32 %k2_read, i32 %M_rows, i32 %M_t, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3, i32 %M_t_capacity" [gp.cpp:267]   --->   Operation 17 'call' 'call_ln267' <Predicate = true> <Delay = 3.11> <CoreType = "Generic">   --->   Generic Core
 
-State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln255 = specpipeline void @_ssdm_op_SpecPipeline, i32 0, i32 0, i32 1, i32 0, void @empty_0" [gp.cpp:255]   --->   Operation 18 'specpipeline' 'specpipeline_ln255' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%spectopmodule_ln242 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [gp.cpp:242]   --->   Operation 19 'spectopmodule' 'spectopmodule_ln242' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln242 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0" [gp.cpp:242]   --->   Operation 20 'specinterface' 'specinterface_ln242' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %A_dram"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_dram, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rows"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cols"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %t_capacity"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %k1"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k1, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %k2"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k2, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%specmemcore_ln260 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_3, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:260]   --->   Operation 33 'specmemcore' 'specmemcore_ln260' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%specmemcore_ln260 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_2, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:260]   --->   Operation 34 'specmemcore' 'specmemcore_ln260' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%specmemcore_ln260 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_1, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:260]   --->   Operation 35 'specmemcore' 'specmemcore_ln260' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%specmemcore_ln260 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_0, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:260]   --->   Operation 36 'specmemcore' 'specmemcore_ln260' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln266 = call void @store_matrix_to_dram, i32 %A_dram, i32 %M_rows, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:266]   --->   Operation 37 'call' 'call_ln266' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%ret_ln267 = ret" [gp.cpp:267]   --->   Operation 38 'ret' 'ret_ln267' <Predicate = true> <Delay = 0.00>
+State 6 <SV = 5> <Delay = 9.00>
+ST_6 : Operation 18 [2/2] (9.00ns)   --->   "%call_ln268 = call void @store_matrix_to_dram, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:268]   --->   Operation 18 'call' 'call_ln268' <Predicate = true> <Delay = 9.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln257 = specpipeline void @_ssdm_op_SpecPipeline, i32 0, i32 0, i32 1, i32 0, void @empty_13" [gp.cpp:257]   --->   Operation 19 'specpipeline' 'specpipeline_ln257' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 20 [1/1] (0.00ns)   --->   "%spectopmodule_ln242 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9" [gp.cpp:242]   --->   Operation 20 'spectopmodule' 'spectopmodule_ln242' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_12, i32 0, i32 0, void @empty_13, i32 0, i32 65536, void @empty_11, void @empty_17, void @empty_13, i32 16, i32 16, i32 256, i32 256, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram, void @empty_18, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_19, void @empty_20, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_21, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A_dram, void @empty_22, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_21, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rows"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty_18, i32 4294967295, i32 4294967295, void @empty_23, i32 0, i32 0, void @empty, void @empty_20, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty_22, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cols"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty_18, i32 4294967295, i32 4294967295, void @empty_23, i32 0, i32 0, void @empty, void @empty_16, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty_22, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %t_capacity"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity, void @empty_18, i32 4294967295, i32 4294967295, void @empty_23, i32 0, i32 0, void @empty, void @empty_0, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %t_capacity, void @empty_22, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %k1"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k1, void @empty_18, i32 4294967295, i32 4294967295, void @empty_23, i32 0, i32 0, void @empty, void @empty_10, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k1, void @empty_22, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %k2"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k2, void @empty_18, i32 4294967295, i32 4294967295, void @empty_23, i32 0, i32 0, void @empty, void @empty_1, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %k2, void @empty_22, i32 4294967295, i32 4294967295, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_18, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 41 [1/1] (0.00ns)   --->   "%specmemcore_ln262 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_3, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:262]   --->   Operation 41 'specmemcore' 'specmemcore_ln262' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 42 [1/1] (0.00ns)   --->   "%specmemcore_ln262 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_2, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:262]   --->   Operation 42 'specmemcore' 'specmemcore_ln262' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 43 [1/1] (0.00ns)   --->   "%specmemcore_ln262 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_1, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:262]   --->   Operation 43 'specmemcore' 'specmemcore_ln262' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 44 [1/1] (0.00ns)   --->   "%specmemcore_ln262 = specmemcore void @_ssdm_op_SpecMemCore, i32 %M_e_0, i64 666, i64 19, i64 18446744073709551615" [gp.cpp:262]   --->   Operation 44 'specmemcore' 'specmemcore_ln262' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 45 [1/2] (0.00ns)   --->   "%call_ln268 = call void @store_matrix_to_dram, i32 %gmem, i64 %A_dram_read, i32 %M_rows, i32 %M_cols, i32 %M_e_0, i32 %M_e_1, i32 %M_e_2, i32 %M_e_3" [gp.cpp:268]   --->   Operation 45 'call' 'call_ln268' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln269 = ret" [gp.cpp:269]   --->   Operation 46 'ret' 'ret_ln269' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -129,25 +139,29 @@ ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%ret_ln267 = ret" [gp.cpp:267]   --
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 1.000ns.
 
- <State 1>: 3.646ns
+ <State 1>: 1.000ns
 The critical path consists of the following:
-	wire read operation ('t_capacity', gp.cpp:242) on port 't_capacity' (gp.cpp:242) [32]  (0.000 ns)
-	'call' operation 0 bit ('call_ln264', gp.cpp:264) to 'load_matrix_from_dram' [40]  (3.646 ns)
+	s_axi read operation ('k2_read', gp.cpp:242) on port 'k2' (gp.cpp:242) [38]  (1.000 ns)
 
- <State 2>: 0.000ns
+ <State 2>: 9.000ns
 The critical path consists of the following:
+	'call' operation 0 bit ('call_ln266', gp.cpp:266) to 'load_matrix_from_dram' [48]  (9.000 ns)
 
  <State 3>: 0.000ns
 The critical path consists of the following:
 
- <State 4>: 3.112ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln265', gp.cpp:265) to 'greedy_potential_reduce' [41]  (3.112 ns)
-
- <State 5>: 0.000ns
+ <State 4>: 0.000ns
 The critical path consists of the following:
 
- <State 6>: 0.000ns
+ <State 5>: 3.112ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln267', gp.cpp:267) to 'greedy_potential_reduce' [49]  (3.112 ns)
+
+ <State 6>: 9.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln268', gp.cpp:268) to 'store_matrix_to_dram' [50]  (9.000 ns)
+
+ <State 7>: 0.000ns
 The critical path consists of the following:
 
 
@@ -165,6 +179,7 @@ N/A
 	State 4
 	State 5
 	State 6
+	State 7
 
 
 ============================================================

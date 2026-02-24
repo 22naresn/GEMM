@@ -5,6 +5,11 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler fmm_reduce_kernel_gmem_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -13,108 +18,118 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 152 \
-    name A_dram \
-    type other \
-    dir IO \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_A_dram \
-    op interface \
-    ports { A_dram_i { I 32 vector } A_dram_o { O 32 vector } } \
-} "
+set port_control {
+rows { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 16
+	offset_end 23
+}
+cols { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 24
+	offset_end 31
+}
+t_capacity { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 32
+	offset_end 39
+}
+k1 { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 40
+	offset_end 47
+}
+k2 { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 48
+	offset_end 55
+}
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
+interrupt {
+}
+}
+dict set axilite_register_dict control $port_control
+
+
+# Native S_AXILite:
+if {${::AESL::PGuard_simmodel_gen}} {
+	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
+		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
+			id 159 \
+			corename fmm_reduce_kernel_control_axilite \
+			name fmm_reduce_kernel_control_s_axi \
+			ports {$port_control} \
+			op interface \
+			interrupt_clear_mode TOW \
+			interrupt_trigger_type default \
+			is_flushable 0 \
+			is_datawidth64 0 \
+			is_addrwidth64 1 \
+			enable_mem_auto_widen 1 \
+		} "
+	} else {
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"
+	}
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 153 \
-    name rows \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_rows \
-    op interface \
-    ports { rows { I 32 vector } } \
-} "
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler fmm_reduce_kernel_control_s_axi BINDTYPE interface TYPE interface_s_axilite
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 154 \
-    name cols \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_cols \
-    op interface \
-    ports { cols { I 32 vector } } \
-} "
+set port_control_r {
+A_dram { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 16
+	offset_end 27
+}
+}
+dict set axilite_register_dict control_r $port_control_r
+
+
+# Native S_AXILite:
+if {${::AESL::PGuard_simmodel_gen}} {
+	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
+		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
+			id 160 \
+			corename fmm_reduce_kernel_control_r_axilite \
+			name fmm_reduce_kernel_control_r_s_axi \
+			ports {$port_control_r} \
+			op interface \
+			interrupt_clear_mode TOW \
+			interrupt_trigger_type default \
+			is_flushable 0 \
+			is_datawidth64 0 \
+			is_addrwidth64 1 \
+			enable_mem_auto_widen 1 \
+		} "
+	} else {
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control_r'"
+	}
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 155 \
-    name t_capacity \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_t_capacity \
-    op interface \
-    ports { t_capacity { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 156 \
-    name k1 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_k1 \
-    op interface \
-    ports { k1 { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 157 \
-    name k2 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_k2 \
-    op interface \
-    ports { k2 { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -1 \
-    name ap_ctrl \
-    type ap_ctrl \
-    reset_level 1 \
-    sync_rst true \
-    corename ap_ctrl \
-    op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
-} "
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler fmm_reduce_kernel_control_r_s_axi BINDTYPE interface TYPE interface_s_axilite
 }
 
 
@@ -124,9 +139,9 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -1 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
     corename apif_ap_clk \
     data_wd ${DataWd} \
@@ -139,16 +154,16 @@ puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored ge
 
 
 # Adapter definition:
-set PortName ap_rst
+set PortName ap_rst_n
 set DataWd 1 
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -2 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
-    corename apif_ap_rst \
+    corename apif_ap_rst_n \
     data_wd ${DataWd} \
     op interface \
 }"

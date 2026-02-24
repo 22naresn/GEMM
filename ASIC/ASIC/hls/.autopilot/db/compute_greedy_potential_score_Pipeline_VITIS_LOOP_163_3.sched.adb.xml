@@ -550,7 +550,7 @@ _ZL19reduction_move_undoR6Matrix.exit.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="31" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body59.i.split:1 %specpipeline_ln163 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0
+for.body59.i.split:1 %specpipeline_ln163 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln163"/></StgValue>
@@ -565,7 +565,7 @@ for.body59.i.split:1 %specpipeline_ln163 = specpipeline void @_ssdm_op_SpecPipel
 
 <Node id="32" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body59.i.split:2 %specloopname_ln163 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
+for.body59.i.split:2 %specloopname_ln163 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln163"/></StgValue>

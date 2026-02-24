@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fmm_reduce_kernel'" level="0">
-<item name = "Date">Sun Feb 22 21:56:51 2026
+<item name = "Date">Tue Feb 24 22:02:01 2026
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">ASIC</item>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_matrix_from_dram_fu_104">load_matrix_from_dram, ?, ?, ?, ?, ?, ?, no</column>
-<column name="grp_greedy_potential_reduce_fu_132">greedy_potential_reduce, ?, ?, ?, ?, ?, ?, no</column>
-<column name="grp_store_matrix_to_dram_fu_156">store_matrix_to_dram, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_load_matrix_from_dram_fu_136">load_matrix_from_dram, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_greedy_potential_reduce_fu_162">greedy_potential_reduce, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_store_matrix_to_dram_fu_184">store_matrix_to_dram, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

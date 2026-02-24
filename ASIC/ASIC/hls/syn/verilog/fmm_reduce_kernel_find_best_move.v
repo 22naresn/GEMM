@@ -208,7 +208,7 @@ reg   [0:0] write_flag6_2_reg_142;
 reg   [31:0] out_r2_2_reg_152;
 reg   [0:0] write_flag9_2_reg_162;
 reg   [31:0] out_sign_2_reg_172;
-reg   [31:0] empty_25_reg_182;
+reg   [31:0] empty_41_reg_182;
 reg   [31:0] ap_phi_mux_agg_result_3_phi_fu_195_p4;
 reg   [31:0] agg_result_3_reg_192;
 wire    ap_CS_fsm_state9;
@@ -231,8 +231,8 @@ wire   [0:0] or_ln223_2_fu_601_p2;
 reg   [31:0] ap_phi_mux_out_sign_3_phi_fu_255_p4;
 reg   [31:0] out_sign_3_reg_252;
 wire   [31:0] select_ln223_3_fu_608_p3;
-reg   [31:0] ap_phi_mux_empty_26_phi_fu_265_p4;
-reg   [31:0] empty_26_reg_262;
+reg   [31:0] ap_phi_mux_empty_42_phi_fu_265_p4;
+reg   [31:0] empty_42_reg_262;
 wire   [31:0] select_ln223_4_fu_617_p3;
 reg    grp_compute_pp_nn_fu_272_ap_start_reg;
 reg    grp_compute_greedy_potential_score_fu_288_ap_start_reg;
@@ -408,17 +408,17 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state8) & (icmp_ln217_reg_832 == 1'd1))) begin
-        empty_25_reg_182 <= select_ln219_4_fu_536_p3;
+        empty_41_reg_182 <= select_ln219_4_fu_536_p3;
     end else if (((1'b1 == ap_CS_fsm_state5) & (grp_compute_pp_nn_fu_272_ap_done == 1'b1) & (icmp_ln217_fu_485_p2 == 1'd0))) begin
-        empty_25_reg_182 <= empty_fu_58;
+        empty_41_reg_182 <= empty_fu_58;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln221_reg_883 == 1'd1))) begin
-        empty_26_reg_262 <= select_ln223_4_fu_617_p3;
+        empty_42_reg_262 <= select_ln223_4_fu_617_p3;
     end else if (((1'b1 == ap_CS_fsm_state9) & (icmp_ln221_reg_883 == 1'd0))) begin
-        empty_26_reg_262 <= empty_25_reg_182;
+        empty_42_reg_262 <= empty_41_reg_182;
     end
 end
 
@@ -426,7 +426,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         empty_fu_58 <= 32'd0;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        empty_fu_58 <= ap_phi_mux_empty_26_phi_fu_265_p4;
+        empty_fu_58 <= ap_phi_mux_empty_42_phi_fu_265_p4;
     end
 end
 
@@ -832,9 +832,9 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln221_reg_883 == 1'd1))) begin
-        ap_phi_mux_empty_26_phi_fu_265_p4 = select_ln223_4_fu_617_p3;
+        ap_phi_mux_empty_42_phi_fu_265_p4 = select_ln223_4_fu_617_p3;
     end else begin
-        ap_phi_mux_empty_26_phi_fu_265_p4 = empty_26_reg_262;
+        ap_phi_mux_empty_42_phi_fu_265_p4 = empty_42_reg_262;
     end
 end
 
@@ -1029,7 +1029,7 @@ assign icmp_ln219_fu_491_p2 = (($signed(best_score_reg_836) > $signed(empty_fu_5
 
 assign icmp_ln221_fu_551_p2 = (($signed(tmp_4_fu_542_p4) > $signed(31'd0)) ? 1'b1 : 1'b0);
 
-assign icmp_ln223_fu_557_p2 = (($signed(best_score_1_reg_887) > $signed(empty_25_reg_182)) ? 1'b1 : 1'b0);
+assign icmp_ln223_fu_557_p2 = (($signed(best_score_1_reg_887) > $signed(empty_41_reg_182)) ? 1'b1 : 1'b0);
 
 assign j_2_fu_625_p2 = (j_reg_102 + 32'd1);
 
@@ -1063,7 +1063,7 @@ assign select_ln223_2_fu_592_p3 = ((icmp_ln223_fu_557_p2[0:0] == 1'b1) ? j_reg_1
 
 assign select_ln223_3_fu_608_p3 = ((icmp_ln223_fu_557_p2[0:0] == 1'b1) ? 32'd4294967295 : out_sign_2_reg_172);
 
-assign select_ln223_4_fu_617_p3 = ((icmp_ln223_fu_557_p2[0:0] == 1'b1) ? best_score_1_reg_887 : empty_25_reg_182);
+assign select_ln223_4_fu_617_p3 = ((icmp_ln223_fu_557_p2[0:0] == 1'b1) ? best_score_1_reg_887 : empty_41_reg_182);
 
 assign select_ln223_fu_562_p3 = ((icmp_ln223_fu_557_p2[0:0] == 1'b1) ? best_score_1_reg_887 : agg_result_2_reg_112);
 

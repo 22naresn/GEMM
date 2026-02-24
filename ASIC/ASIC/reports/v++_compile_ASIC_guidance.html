@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sun Feb 22 21:56:59 2026</td></tr>
+<tr><td><b>Date</b></td><td>Tue Feb 24 22:02:10 2026</td></tr>
 <tr><td><b>Host</b></td><td>TUF15 running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\GEMM\ASIC\hls_config.cfg --work_dir ASIC </td></tr>
 </table></center><br>
@@ -3416,9 +3416,9 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 25
+<pre>Violations found: 28
 </pre>
-<pre>Rule Specs Violated: 2
+<pre>Rule Specs Violated: 3
 </pre>
 <a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
 <table border="1">
@@ -3434,29 +3434,95 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">24</td>
-<td align="left">Kernel</td>
+<td align="left">26</td>
+<td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Interface</td>
+<td align="left">Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">13</td>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_56_3_VITIS_LOOP_57_4'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">14</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3' (loop 'VITIS_LOOP_163_3'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_write_ln167', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=167">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=202">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3' (loop 'VITIS_LOOP_163_3'): Unable to schedule 'load' operation 32 bit ('M_e_2_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=165">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=202">gp.cpp</a>) on array 'M_e_2' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">17</td>
+<td align="left">18</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">Estimated clock period (9.117 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 1.000 ns, effective delay budget: 9.000 ns).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">**** Estimated Fmax: 109.69 MHz
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'compute_pp_nn_Pipeline_VITIS_LOOP_104_1' (loop 'VITIS_LOOP_104_1'): Unable to schedule 'load' operation 32 bit ('M_e_0_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=106">gp.cpp</a>) on array 'M_e_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_0'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_2_load_1', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=128">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) on array 'M_e_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_6_write_ln132', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=132">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">19</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
@@ -3469,51 +3535,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">6</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_2_load_3', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=128">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) on array 'M_e_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_pp_nn_Pipeline_VITIS_LOOP_104_1' (loop 'VITIS_LOOP_104_1'): Unable to schedule 'load' operation 32 bit ('M_e_0_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=106">gp.cpp</a>) on array 'M_e_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_0'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">20</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_write_ln131', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=131">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_2_load_1', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=128">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) on array 'M_e_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">22</td>
+<td align="left">24</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3524,84 +3546,18 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">11</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_152_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_0_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=126">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) on array 'M_e_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_0'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
 <td align="left">15</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 4, Depth = 4, loop 'VITIS_LOOP_163_3'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_write_ln131', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=131">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3' (loop 'VITIS_LOOP_163_3'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_write_ln167', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=167">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=202">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">12</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_163_3' (loop 'VITIS_LOOP_163_3'): Unable to schedule 'load' operation 32 bit ('M_e_2_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=165">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=202">gp.cpp</a>) on array 'M_e_2' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_49_1_VITIS_LOOP_51_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">Estimated clock period (9.117 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 1.000 ns, effective delay budget: 9.000 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3613,83 +3569,39 @@ window.onload = function () { addSorting(); }
 </tr>
 <tr>
 <td align="left">2</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Interface</td>
+<td align="left">Multiple burst writes of variable length and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/GEMM/ASIC\gp.cpp#line=68">gp.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_56_3_VITIS_LOOP_57_4'
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_152_2'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">18</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_0_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=126">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) on array 'M_e_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_0'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
+<td align="left">17</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 2, Depth = 4, loop 'VITIS_LOOP_104_1'
+<td align="left">Pipelining result : Target II = NA, Final II = 4, Depth = 4, loop 'VITIS_LOOP_163_3'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">25</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">**** Estimated Fmax: 109.69 MHz
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">21</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_1_write_ln132', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=132">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 5, Depth = 8, loop 'VITIS_LOOP_124_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">23</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_68_1_VITIS_LOOP_69_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">14</td>
+<td align="left">16</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
@@ -3700,13 +3612,134 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
+<td align="left">11</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 5, Depth = 8, loop 'VITIS_LOOP_124_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_49_1_VITIS_LOOP_51_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_0_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=126">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) on array 'M_e_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_0'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
 <td align="left">8</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
-<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_6_write_ln132', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=132">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_2_load_3', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=128">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) on array 'M_e_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'VITIS_LOOP_68_1_VITIS_LOOP_69_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_1_write_ln132', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=132">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'greedy_potential_reduce_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_write_ln131', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=131">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=237">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'store' operation 0 bit ('M_e_2_addr_write_ln131', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=131">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) of constant 0 on array 'M_e_2' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'M_e_2'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">The II Violation in module 'compute_greedy_potential_score_Pipeline_VITIS_LOOP_124_1' (loop 'VITIS_LOOP_124_1'): Unable to schedule 'load' operation 32 bit ('M_e_0_load', <a href="file:///C:/GEMM/ASIC\gp.cpp#line=126">gp.cpp</a>-><a href="file:///C:/GEMM/ASIC\gp.cpp#line=200">gp.cpp</a>) on array 'M_e_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'M_e_0'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Interface</td>
+<td align="left">Multiple burst reads of variable length and bit width 32 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/GEMM/ASIC\gp.cpp#line=56">gp.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 2, Depth = 4, loop 'VITIS_LOOP_104_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.fmm_reduce_kernel.Kernel</td>
+<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

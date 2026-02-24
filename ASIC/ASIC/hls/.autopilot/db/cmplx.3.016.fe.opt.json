@@ -1,19 +1,19 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "6 3 4",
+    "calls": "6 2 5",
     "control_depth": 0,
     "def_use_depth": 0,
     "file": "gp.cpp",
     "fileloc": 242,
-    "instructions": 31,
+    "instructions": 38,
     "memory_accesses": 0,
     "name": "fmm_reduce_kernel",
-    "total_instructions": 1306
+    "total_instructions": 1330
   },
   "1": {
     "basicblocks": 63,
-    "calls": "2 2",
+    "calls": "3 3",
     "control_depth": 6,
     "def_use_depth": 7,
     "file": "gp.cpp",
@@ -32,26 +32,8 @@
     "total_instructions": 445
   },
   "2": {
-    "basicblocks": 10,
-    "calls": "",
-    "control_depth": 5,
-    "def_use_depth": 6,
-    "file": "gp.cpp",
-    "fileloc": 100,
-    "instructions": 57,
-    "loads": {
-      "G": 9
-    },
-    "memory_accesses": 10,
-    "name": "compute_pp_nn",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 57
-  },
-  "3": {
     "basicblocks": 27,
-    "calls": "5",
+    "calls": "4",
     "control_depth": 6,
     "def_use_depth": 7,
     "file": "gp.cpp",
@@ -69,27 +51,27 @@
     },
     "total_instructions": 1145
   },
-  "4": {
-    "basicblocks": 9,
+  "3": {
+    "basicblocks": 10,
     "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 3,
+    "control_depth": 5,
+    "def_use_depth": 6,
     "file": "gp.cpp",
-    "fileloc": 64,
-    "instructions": 37,
+    "fileloc": 100,
+    "instructions": 57,
     "loads": {
-      "G": 6
+      "G": 9
     },
-    "memory_accesses": 4,
-    "name": "store_matrix_to_dram",
+    "memory_accesses": 10,
+    "name": "compute_pp_nn",
     "stores": {
-      "L": 1
+      "L": 4
     },
-    "total_instructions": 37
+    "total_instructions": 57
   },
-  "5": {
+  "4": {
     "basicblocks": 13,
-    "calls": "2 1 1",
+    "calls": "3 1 1",
     "control_depth": 0,
     "def_use_depth": 2,
     "file": "gp.cpp",
@@ -106,22 +88,34 @@
     },
     "total_instructions": 1002
   },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "gp.cpp",
+    "fileloc": 64,
+    "instructions": 44,
+    "loads": {
+      "G": 6
+    },
+    "memory_accesses": 5,
+    "name": "store_matrix_to_dram",
+    "total_instructions": 44
+  },
   "6": {
     "basicblocks": 23,
     "calls": "",
     "control_depth": 2,
-    "def_use_depth": 3,
+    "def_use_depth": 4,
     "file": "gp.cpp",
     "fileloc": 40,
-    "instructions": 93,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 10,
+    "instructions": 103,
+    "memory_accesses": 11,
     "name": "load_matrix_from_dram",
     "stores": {
       "G": 12
     },
-    "total_instructions": 93
+    "total_instructions": 103
   }
 }

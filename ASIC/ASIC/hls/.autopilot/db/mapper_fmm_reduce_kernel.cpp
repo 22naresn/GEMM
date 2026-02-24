@@ -243,9 +243,21 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void fmm_reduce_kernel(volatile void *, int, int, int, int, int);
+extern "C" void fmm_reduce_kernel(Byte<4>*, int, int, int, int, int, int);
 extern "C" void apatb_fmm_reduce_kernel_hw(volatile void * __xlx_apatb_param_A_dram, int __xlx_apatb_param_rows, int __xlx_apatb_param_cols, int __xlx_apatb_param_t_capacity, int __xlx_apatb_param_k1, int __xlx_apatb_param_k2) {
 using hls::sim::createStream;
+  // Collect __xlx_A_dram__tmp_vec
+std::vector<Byte<4>> __xlx_A_dram__tmp_vec;
+for (size_t i = 0; i < 65536; ++i){
+__xlx_A_dram__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_A_dram)[i]);
+}
+  int __xlx_size_param_A_dram = 65536;
+  int __xlx_offset_param_A_dram = 0;
+  int __xlx_offset_byte_param_A_dram = 0*4;
   // DUT call
-  fmm_reduce_kernel(__xlx_apatb_param_A_dram, __xlx_apatb_param_rows, __xlx_apatb_param_cols, __xlx_apatb_param_t_capacity, __xlx_apatb_param_k1, __xlx_apatb_param_k2);
+  fmm_reduce_kernel(__xlx_A_dram__tmp_vec.data(), __xlx_offset_byte_param_A_dram, __xlx_apatb_param_rows, __xlx_apatb_param_cols, __xlx_apatb_param_t_capacity, __xlx_apatb_param_k1, __xlx_apatb_param_k2);
+// print __xlx_apatb_param_A_dram
+for (size_t i = 0; i < __xlx_size_param_A_dram; ++i) {
+((Byte<4>*)__xlx_apatb_param_A_dram)[i] = __xlx_A_dram__tmp_vec[__xlx_offset_param_A_dram+i];
+}
 }

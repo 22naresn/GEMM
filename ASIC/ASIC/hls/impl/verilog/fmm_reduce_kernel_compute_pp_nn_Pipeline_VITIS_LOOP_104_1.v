@@ -96,10 +96,10 @@ wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln108_fu_286_p1;
 wire    ap_block_pp0_stage1;
 reg   [31:0] empty_fu_74;
-wire   [31:0] empty_29_fu_465_p3;
+wire   [31:0] empty_45_fu_465_p3;
 wire    ap_loop_init;
-reg   [31:0] empty_27_fu_78;
-wire   [31:0] empty_28_fu_457_p3;
+reg   [31:0] empty_43_fu_78;
+wire   [31:0] empty_44_fu_457_p3;
 reg   [30:0] c_fu_82;
 wire   [30:0] add_ln104_fu_278_p2;
 reg   [30:0] ap_sig_allocacmp_c_3;
@@ -163,7 +163,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
 #0 empty_fu_74 = 32'd0;
-#0 empty_27_fu_78 = 32'd0;
+#0 empty_43_fu_78 = 32'd0;
 #0 c_fu_82 = 31'd0;
 #0 nn_write_assign_fu_86 = 32'd0;
 #0 pp_write_assign_fu_90 = 32'd0;
@@ -184,7 +184,7 @@ end
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U26(
+sparsemux_9_2_32_1_1_U30(
     .din0(M_e_0_q0),
     .din1(M_e_1_q0),
     .din2(M_e_2_q0),
@@ -208,7 +208,7 @@ sparsemux_9_2_32_1_1_U26(
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U27(
+sparsemux_9_2_32_1_1_U31(
     .din0(M_e_0_q0),
     .din1(M_e_1_q0),
     .din2(M_e_2_q0),
@@ -285,9 +285,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        empty_27_fu_78 <= 32'd0;
+        empty_43_fu_78 <= 32'd0;
     end else if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        empty_27_fu_78 <= empty_28_fu_457_p3;
+        empty_43_fu_78 <= empty_44_fu_457_p3;
     end
 end
 
@@ -295,7 +295,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         empty_fu_74 <= 32'd0;
     end else if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        empty_fu_74 <= empty_29_fu_465_p3;
+        empty_fu_74 <= empty_45_fu_465_p3;
     end
 end
 
@@ -527,7 +527,7 @@ assign add_ln106_fu_258_p2 = (mul_ln106 + lshr_ln_fu_248_p4);
 
 assign add_ln108_fu_272_p2 = (mul_ln108 + lshr_ln_fu_248_p4);
 
-assign add_ln110_fu_371_p2 = (empty_27_fu_78 + 32'd1);
+assign add_ln110_fu_371_p2 = (empty_43_fu_78 + 32'd1);
 
 assign add_ln111_fu_395_p2 = (empty_fu_74 + 32'd1);
 
@@ -563,9 +563,9 @@ assign e1_fu_293_p9 = 'bx;
 
 assign e2_fu_322_p9 = 'bx;
 
-assign empty_28_fu_457_p3 = ((or_ln110_fu_429_p2[0:0] == 1'b1) ? empty_27_fu_78 : add_ln110_fu_371_p2);
+assign empty_44_fu_457_p3 = ((or_ln110_fu_429_p2[0:0] == 1'b1) ? empty_43_fu_78 : add_ln110_fu_371_p2);
 
-assign empty_29_fu_465_p3 = ((or_ln110_1_fu_443_p2[0:0] == 1'b1) ? empty_fu_74 : select_ln111_1_fu_409_p3);
+assign empty_45_fu_465_p3 = ((or_ln110_1_fu_443_p2[0:0] == 1'b1) ? empty_fu_74 : select_ln111_1_fu_409_p3);
 
 assign icmp_ln104_fu_242_p2 = (($signed(zext_ln104_fu_238_p1) < $signed(cols_non_t)) ? 1'b1 : 1'b0);
 

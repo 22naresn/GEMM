@@ -1473,7 +1473,7 @@ arrayidx5415.i.case.3:1 %store_ln132 = store i32 0, i15 %M_e_3_addr_1
 
 <Node id="32" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body.i.split:1 %specpipeline_ln124 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0
+for.body.i.split:1 %specpipeline_ln124 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln124"/></StgValue>

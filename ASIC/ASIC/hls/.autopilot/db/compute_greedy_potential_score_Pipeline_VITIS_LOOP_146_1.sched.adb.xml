@@ -486,7 +486,7 @@ for.body.i.split:15 %M_e_3_load = load i15 %M_e_3_addr
 
 <Node id="36" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body.i.split:10 %specpipeline_ln146 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0
+for.body.i.split:10 %specpipeline_ln146 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_13
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln146"/></StgValue>
@@ -502,7 +502,7 @@ for.body.i.split:10 %specpipeline_ln146 = specpipeline void @_ssdm_op_SpecPipeli
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.i.split:11 %specloopname_ln146 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10
+for.body.i.split:11 %specloopname_ln146 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln146"/></StgValue>

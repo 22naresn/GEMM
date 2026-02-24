@@ -269,23 +269,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_none port=A_dram_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>gp.cpp</string>
-      <key>line</key>
-      <integer>249</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_none port=rows_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -301,7 +285,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_none port=cols_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=s_axilite port=rows bundle=control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -317,7 +301,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_none port=t_capacity_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=s_axilite port=cols bundle=control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -333,7 +317,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_none port=k1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=s_axilite port=t_capacity bundle=control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -349,7 +333,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_none port=k2_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=s_axilite port=k1 bundle=control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -365,7 +349,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=ap_ctrl_hs port=return_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=s_axilite port=k2 bundle=control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -381,6 +365,38 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>gp.cpp</string>
+      <key>line</key>
+      <integer>256</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=m_axi port=A_dram offset=slave bundle=gmem depth=MAX_A_DEPTH max_read_burst_length=256 max_write_burst_length=256_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>gp.cpp</string>
+      <key>line</key>
+      <integer>257</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fmm_reduce_kernel_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
@@ -393,7 +409,7 @@
       <key>filename</key>
       <string>gp.cpp</string>
       <key>line</key>
-      <integer>260</integer>
+      <integer>262</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -409,7 +425,7 @@
       <key>filename</key>
       <string>gp.cpp</string>
       <key>line</key>
-      <integer>260</integer>
+      <integer>262</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -425,7 +441,7 @@
       <key>filename</key>
       <string>gp.cpp</string>
       <key>line</key>
-      <integer>261</integer>
+      <integer>263</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

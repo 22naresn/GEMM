@@ -2701,7 +2701,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>e1</originalName>
-              <rtlName>sparsemux_9_2_32_1_1_U45</rtlName>
+              <rtlName>sparsemux_9_2_32_1_1_U49</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -3155,7 +3155,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>e2</originalName>
-              <rtlName>sparsemux_9_2_32_1_1_U46</rtlName>
+              <rtlName>sparsemux_9_2_32_1_1_U50</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -8581,7 +8581,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_9_2_32_1_1_U45 (sparsemux_9_2_32_1_1)</first>
+          <first>sparsemux_9_2_32_1_1_U49 (sparsemux_9_2_32_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8596,7 +8596,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_9_2_32_1_1_U46 (sparsemux_9_2_32_1_1)</first>
+          <first>sparsemux_9_2_32_1_1_U50 (sparsemux_9_2_32_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -10027,14 +10027,14 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_9_2_32_1_1_U45</first>
+          <first>sparsemux_9_2_32_1_1_U49</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sparsemux_9_2_32_1_1_U46</first>
+          <first>sparsemux_9_2_32_1_1_U50</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -10045,7 +10045,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>sparsemux_9_2_32_1_1_U45 (sparsemux_9_2_32_1_1)</first>
+          <first>sparsemux_9_2_32_1_1_U49 (sparsemux_9_2_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10053,7 +10053,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_9_2_32_1_1_U46 (sparsemux_9_2_32_1_1)</first>
+          <first>sparsemux_9_2_32_1_1_U50 (sparsemux_9_2_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

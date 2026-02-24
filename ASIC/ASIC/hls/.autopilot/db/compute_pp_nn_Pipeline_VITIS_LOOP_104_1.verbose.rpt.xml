@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'compute_pp_nn_Pipeline_VITIS_LOOP_104_1'" level="0">
-<item name = "Date">Sun Feb 22 21:56:51 2026
+<item name = "Date">Tue Feb 24 22:02:03 2026
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">ASIC</item>
@@ -62,8 +62,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_9_2_32_1_1_U26">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
-<column name="sparsemux_9_2_32_1_1_U27">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
+<column name="sparsemux_9_2_32_1_1_U30">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
+<column name="sparsemux_9_2_32_1_1_U31">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -94,8 +94,8 @@
 <column name="or_ln109_fu_417_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln110_1_fu_443_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln110_fu_429_p2">or, 0, 0, 2, 1, 1</column>
-<column name="empty_28_fu_457_p3">select, 0, 0, 32, 1, 32</column>
-<column name="empty_29_fu_465_p3">select, 0, 0, 32, 1, 32</column>
+<column name="empty_44_fu_457_p3">select, 0, 0, 32, 1, 32</column>
+<column name="empty_45_fu_465_p3">select, 0, 0, 32, 1, 32</column>
 <column name="nn_1_fu_449_p3">select, 0, 0, 32, 1, 32</column>
 <column name="pp_1_fu_435_p3">select, 0, 0, 32, 1, 32</column>
 <column name="select_ln111_1_fu_409_p3">select, 0, 0, 32, 1, 32</column>
@@ -116,7 +116,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_c_3">9, 2, 31, 62</column>
 <column name="c_fu_82">9, 2, 31, 62</column>
-<column name="empty_27_fu_78">9, 2, 32, 64</column>
+<column name="empty_43_fu_78">9, 2, 32, 64</column>
 <column name="empty_fu_74">9, 2, 32, 64</column>
 <column name="nn_write_assign_fu_86">9, 2, 32, 64</column>
 <column name="pp_write_assign_fu_90">9, 2, 32, 64</column>
@@ -133,7 +133,7 @@
 <column name="c_fu_82">31, 0, 31, 0</column>
 <column name="e1_reg_598">32, 0, 32, 0</column>
 <column name="e2_reg_605">32, 0, 32, 0</column>
-<column name="empty_27_fu_78">32, 0, 32, 0</column>
+<column name="empty_43_fu_78">32, 0, 32, 0</column>
 <column name="empty_fu_74">32, 0, 32, 0</column>
 <column name="icmp_ln104_reg_544">1, 0, 1, 0</column>
 <column name="nn_write_assign_fu_86">32, 0, 32, 0</column>

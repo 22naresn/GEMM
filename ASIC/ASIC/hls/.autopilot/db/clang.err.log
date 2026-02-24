@@ -1,4 +1,4 @@
-gp.cpp:260:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+gp.cpp:262:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
 #pragma HLS RESOURCE variable=M.e core=RAM_1P_LUTRAM
         ^
 1 warning generated.

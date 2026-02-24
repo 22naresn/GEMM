@@ -6,52 +6,220 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="fmm_reduce_kernel_fmm_reduce_kernel,hls_ip_2025_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a200t-fbg676-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.116857,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=5535,HLS_SYN_LUT=61590,HLS_VERSION=2025_1}" *)
+(* CORE_GENERATION_INFO="fmm_reduce_kernel_fmm_reduce_kernel,hls_ip_2025_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a200t-fbg676-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.116857,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=10,HLS_SYN_DSP=0,HLS_SYN_FF=7220,HLS_SYN_LUT=63492,HLS_VERSION=2025_1}" *)
 
 module fmm_reduce_kernel (
         ap_clk,
-        ap_rst,
-        ap_start,
-        ap_done,
-        ap_idle,
-        ap_ready,
-        A_dram_i,
-        A_dram_o,
-        rows,
-        cols,
-        t_capacity,
-        k1,
-        k2
+        ap_rst_n,
+        m_axi_gmem_AWVALID,
+        m_axi_gmem_AWREADY,
+        m_axi_gmem_AWADDR,
+        m_axi_gmem_AWID,
+        m_axi_gmem_AWLEN,
+        m_axi_gmem_AWSIZE,
+        m_axi_gmem_AWBURST,
+        m_axi_gmem_AWLOCK,
+        m_axi_gmem_AWCACHE,
+        m_axi_gmem_AWPROT,
+        m_axi_gmem_AWQOS,
+        m_axi_gmem_AWREGION,
+        m_axi_gmem_AWUSER,
+        m_axi_gmem_WVALID,
+        m_axi_gmem_WREADY,
+        m_axi_gmem_WDATA,
+        m_axi_gmem_WSTRB,
+        m_axi_gmem_WLAST,
+        m_axi_gmem_WID,
+        m_axi_gmem_WUSER,
+        m_axi_gmem_ARVALID,
+        m_axi_gmem_ARREADY,
+        m_axi_gmem_ARADDR,
+        m_axi_gmem_ARID,
+        m_axi_gmem_ARLEN,
+        m_axi_gmem_ARSIZE,
+        m_axi_gmem_ARBURST,
+        m_axi_gmem_ARLOCK,
+        m_axi_gmem_ARCACHE,
+        m_axi_gmem_ARPROT,
+        m_axi_gmem_ARQOS,
+        m_axi_gmem_ARREGION,
+        m_axi_gmem_ARUSER,
+        m_axi_gmem_RVALID,
+        m_axi_gmem_RREADY,
+        m_axi_gmem_RDATA,
+        m_axi_gmem_RLAST,
+        m_axi_gmem_RID,
+        m_axi_gmem_RUSER,
+        m_axi_gmem_RRESP,
+        m_axi_gmem_BVALID,
+        m_axi_gmem_BREADY,
+        m_axi_gmem_BRESP,
+        m_axi_gmem_BID,
+        m_axi_gmem_BUSER,
+        s_axi_control_AWVALID,
+        s_axi_control_AWREADY,
+        s_axi_control_AWADDR,
+        s_axi_control_WVALID,
+        s_axi_control_WREADY,
+        s_axi_control_WDATA,
+        s_axi_control_WSTRB,
+        s_axi_control_ARVALID,
+        s_axi_control_ARREADY,
+        s_axi_control_ARADDR,
+        s_axi_control_RVALID,
+        s_axi_control_RREADY,
+        s_axi_control_RDATA,
+        s_axi_control_RRESP,
+        s_axi_control_BVALID,
+        s_axi_control_BREADY,
+        s_axi_control_BRESP,
+        interrupt,
+        s_axi_control_r_AWVALID,
+        s_axi_control_r_AWREADY,
+        s_axi_control_r_AWADDR,
+        s_axi_control_r_WVALID,
+        s_axi_control_r_WREADY,
+        s_axi_control_r_WDATA,
+        s_axi_control_r_WSTRB,
+        s_axi_control_r_ARVALID,
+        s_axi_control_r_ARREADY,
+        s_axi_control_r_ARADDR,
+        s_axi_control_r_RVALID,
+        s_axi_control_r_RREADY,
+        s_axi_control_r_RDATA,
+        s_axi_control_r_RRESP,
+        s_axi_control_r_BVALID,
+        s_axi_control_r_BREADY,
+        s_axi_control_r_BRESP
 );
 
-parameter    ap_ST_fsm_state1 = 6'd1;
-parameter    ap_ST_fsm_state2 = 6'd2;
-parameter    ap_ST_fsm_state3 = 6'd4;
-parameter    ap_ST_fsm_state4 = 6'd8;
-parameter    ap_ST_fsm_state5 = 6'd16;
-parameter    ap_ST_fsm_state6 = 6'd32;
+parameter    ap_ST_fsm_state1 = 7'd1;
+parameter    ap_ST_fsm_state2 = 7'd2;
+parameter    ap_ST_fsm_state3 = 7'd4;
+parameter    ap_ST_fsm_state4 = 7'd8;
+parameter    ap_ST_fsm_state5 = 7'd16;
+parameter    ap_ST_fsm_state6 = 7'd32;
+parameter    ap_ST_fsm_state7 = 7'd64;
+parameter    C_S_AXI_CONTROL_DATA_WIDTH = 32;
+parameter    C_S_AXI_CONTROL_ADDR_WIDTH = 6;
+parameter    C_S_AXI_DATA_WIDTH = 32;
+parameter    C_S_AXI_CONTROL_R_DATA_WIDTH = 32;
+parameter    C_S_AXI_CONTROL_R_ADDR_WIDTH = 5;
+parameter    C_M_AXI_GMEM_ID_WIDTH = 1;
+parameter    C_M_AXI_GMEM_ADDR_WIDTH = 64;
+parameter    C_M_AXI_GMEM_DATA_WIDTH = 32;
+parameter    C_M_AXI_GMEM_AWUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_ARUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_WUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_RUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_BUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_USER_VALUE = 0;
+parameter    C_M_AXI_GMEM_PROT_VALUE = 0;
+parameter    C_M_AXI_GMEM_CACHE_VALUE = 3;
+parameter    C_M_AXI_DATA_WIDTH = 32;
+
+parameter C_S_AXI_CONTROL_WSTRB_WIDTH = (32 / 8);
+parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
+parameter C_S_AXI_CONTROL_R_WSTRB_WIDTH = (32 / 8);
+parameter C_M_AXI_GMEM_WSTRB_WIDTH = (32 / 8);
+parameter C_M_AXI_WSTRB_WIDTH = (32 / 8);
 
 input   ap_clk;
-input   ap_rst;
-input   ap_start;
-output   ap_done;
-output   ap_idle;
-output   ap_ready;
-input  [31:0] A_dram_i;
-output  [31:0] A_dram_o;
-input  [31:0] rows;
-input  [31:0] cols;
-input  [31:0] t_capacity;
-input  [31:0] k1;
-input  [31:0] k2;
+input   ap_rst_n;
+output   m_axi_gmem_AWVALID;
+input   m_axi_gmem_AWREADY;
+output  [C_M_AXI_GMEM_ADDR_WIDTH - 1:0] m_axi_gmem_AWADDR;
+output  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_AWID;
+output  [7:0] m_axi_gmem_AWLEN;
+output  [2:0] m_axi_gmem_AWSIZE;
+output  [1:0] m_axi_gmem_AWBURST;
+output  [1:0] m_axi_gmem_AWLOCK;
+output  [3:0] m_axi_gmem_AWCACHE;
+output  [2:0] m_axi_gmem_AWPROT;
+output  [3:0] m_axi_gmem_AWQOS;
+output  [3:0] m_axi_gmem_AWREGION;
+output  [C_M_AXI_GMEM_AWUSER_WIDTH - 1:0] m_axi_gmem_AWUSER;
+output   m_axi_gmem_WVALID;
+input   m_axi_gmem_WREADY;
+output  [C_M_AXI_GMEM_DATA_WIDTH - 1:0] m_axi_gmem_WDATA;
+output  [C_M_AXI_GMEM_WSTRB_WIDTH - 1:0] m_axi_gmem_WSTRB;
+output   m_axi_gmem_WLAST;
+output  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_WID;
+output  [C_M_AXI_GMEM_WUSER_WIDTH - 1:0] m_axi_gmem_WUSER;
+output   m_axi_gmem_ARVALID;
+input   m_axi_gmem_ARREADY;
+output  [C_M_AXI_GMEM_ADDR_WIDTH - 1:0] m_axi_gmem_ARADDR;
+output  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_ARID;
+output  [7:0] m_axi_gmem_ARLEN;
+output  [2:0] m_axi_gmem_ARSIZE;
+output  [1:0] m_axi_gmem_ARBURST;
+output  [1:0] m_axi_gmem_ARLOCK;
+output  [3:0] m_axi_gmem_ARCACHE;
+output  [2:0] m_axi_gmem_ARPROT;
+output  [3:0] m_axi_gmem_ARQOS;
+output  [3:0] m_axi_gmem_ARREGION;
+output  [C_M_AXI_GMEM_ARUSER_WIDTH - 1:0] m_axi_gmem_ARUSER;
+input   m_axi_gmem_RVALID;
+output   m_axi_gmem_RREADY;
+input  [C_M_AXI_GMEM_DATA_WIDTH - 1:0] m_axi_gmem_RDATA;
+input   m_axi_gmem_RLAST;
+input  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_RID;
+input  [C_M_AXI_GMEM_RUSER_WIDTH - 1:0] m_axi_gmem_RUSER;
+input  [1:0] m_axi_gmem_RRESP;
+input   m_axi_gmem_BVALID;
+output   m_axi_gmem_BREADY;
+input  [1:0] m_axi_gmem_BRESP;
+input  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_BID;
+input  [C_M_AXI_GMEM_BUSER_WIDTH - 1:0] m_axi_gmem_BUSER;
+input   s_axi_control_AWVALID;
+output   s_axi_control_AWREADY;
+input  [C_S_AXI_CONTROL_ADDR_WIDTH - 1:0] s_axi_control_AWADDR;
+input   s_axi_control_WVALID;
+output   s_axi_control_WREADY;
+input  [C_S_AXI_CONTROL_DATA_WIDTH - 1:0] s_axi_control_WDATA;
+input  [C_S_AXI_CONTROL_WSTRB_WIDTH - 1:0] s_axi_control_WSTRB;
+input   s_axi_control_ARVALID;
+output   s_axi_control_ARREADY;
+input  [C_S_AXI_CONTROL_ADDR_WIDTH - 1:0] s_axi_control_ARADDR;
+output   s_axi_control_RVALID;
+input   s_axi_control_RREADY;
+output  [C_S_AXI_CONTROL_DATA_WIDTH - 1:0] s_axi_control_RDATA;
+output  [1:0] s_axi_control_RRESP;
+output   s_axi_control_BVALID;
+input   s_axi_control_BREADY;
+output  [1:0] s_axi_control_BRESP;
+output   interrupt;
+input   s_axi_control_r_AWVALID;
+output   s_axi_control_r_AWREADY;
+input  [C_S_AXI_CONTROL_R_ADDR_WIDTH - 1:0] s_axi_control_r_AWADDR;
+input   s_axi_control_r_WVALID;
+output   s_axi_control_r_WREADY;
+input  [C_S_AXI_CONTROL_R_DATA_WIDTH - 1:0] s_axi_control_r_WDATA;
+input  [C_S_AXI_CONTROL_R_WSTRB_WIDTH - 1:0] s_axi_control_r_WSTRB;
+input   s_axi_control_r_ARVALID;
+output   s_axi_control_r_ARREADY;
+input  [C_S_AXI_CONTROL_R_ADDR_WIDTH - 1:0] s_axi_control_r_ARADDR;
+output   s_axi_control_r_RVALID;
+input   s_axi_control_r_RREADY;
+output  [C_S_AXI_CONTROL_R_DATA_WIDTH - 1:0] s_axi_control_r_RDATA;
+output  [1:0] s_axi_control_r_RRESP;
+output   s_axi_control_r_BVALID;
+input   s_axi_control_r_BREADY;
+output  [1:0] s_axi_control_r_BRESP;
 
-reg ap_done;
-reg ap_idle;
-reg ap_ready;
-reg[31:0] A_dram_o;
-
-(* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
+ reg    ap_rst_n_inv;
+wire    ap_start;
+reg    ap_done;
+reg    ap_idle;
+(* fsm_encoding = "none" *) reg   [6:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
+reg    ap_ready;
+wire   [63:0] A_dram;
+wire   [31:0] rows;
+wire   [31:0] cols;
+wire   [31:0] t_capacity;
+wire   [31:0] k1;
+wire   [31:0] k2;
 reg   [31:0] M_rows;
 reg   [31:0] M_cols;
 reg   [31:0] M_t;
@@ -76,104 +244,179 @@ reg    M_e_3_ce0;
 reg    M_e_3_we0;
 reg   [31:0] M_e_3_d0;
 wire   [31:0] M_e_3_q0;
-reg   [31:0] t_capacity_read_reg_174;
-reg   [31:0] cols_read_reg_179;
-reg   [31:0] rows_read_reg_184;
-reg   [31:0] A_dram_read_reg_189;
-reg   [31:0] k2_read_reg_194;
-wire    ap_CS_fsm_state3;
-reg   [31:0] k1_read_reg_199;
-wire    grp_load_matrix_from_dram_fu_104_ap_start;
-wire    grp_load_matrix_from_dram_fu_104_ap_done;
-wire    grp_load_matrix_from_dram_fu_104_ap_idle;
-wire    grp_load_matrix_from_dram_fu_104_ap_ready;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_rows;
-wire    grp_load_matrix_from_dram_fu_104_M_rows_ap_vld;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_cols;
-wire    grp_load_matrix_from_dram_fu_104_M_cols_ap_vld;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_t;
-wire    grp_load_matrix_from_dram_fu_104_M_t_ap_vld;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_t_capacity;
-wire    grp_load_matrix_from_dram_fu_104_M_t_capacity_ap_vld;
-wire   [14:0] grp_load_matrix_from_dram_fu_104_M_e_0_address0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_0_ce0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_0_we0;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_e_0_d0;
-wire   [14:0] grp_load_matrix_from_dram_fu_104_M_e_1_address0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_1_ce0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_1_we0;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_e_1_d0;
-wire   [14:0] grp_load_matrix_from_dram_fu_104_M_e_2_address0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_2_ce0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_2_we0;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_e_2_d0;
-wire   [14:0] grp_load_matrix_from_dram_fu_104_M_e_3_address0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_3_ce0;
-wire    grp_load_matrix_from_dram_fu_104_M_e_3_we0;
-wire   [31:0] grp_load_matrix_from_dram_fu_104_M_e_3_d0;
-wire    grp_greedy_potential_reduce_fu_132_ap_start;
-wire    grp_greedy_potential_reduce_fu_132_ap_done;
-wire    grp_greedy_potential_reduce_fu_132_ap_idle;
-wire    grp_greedy_potential_reduce_fu_132_ap_ready;
-wire   [31:0] grp_greedy_potential_reduce_fu_132_M_t_o;
-wire    grp_greedy_potential_reduce_fu_132_M_t_o_ap_vld;
-wire   [14:0] grp_greedy_potential_reduce_fu_132_M_e_0_address0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_0_ce0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_0_we0;
-wire   [31:0] grp_greedy_potential_reduce_fu_132_M_e_0_d0;
-wire   [14:0] grp_greedy_potential_reduce_fu_132_M_e_1_address0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_1_ce0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_1_we0;
-wire   [31:0] grp_greedy_potential_reduce_fu_132_M_e_1_d0;
-wire   [14:0] grp_greedy_potential_reduce_fu_132_M_e_2_address0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_2_ce0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_2_we0;
-wire   [31:0] grp_greedy_potential_reduce_fu_132_M_e_2_d0;
-wire   [14:0] grp_greedy_potential_reduce_fu_132_M_e_3_address0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_3_ce0;
-wire    grp_greedy_potential_reduce_fu_132_M_e_3_we0;
-wire   [31:0] grp_greedy_potential_reduce_fu_132_M_e_3_d0;
-wire    grp_store_matrix_to_dram_fu_156_ap_start;
-wire    grp_store_matrix_to_dram_fu_156_ap_done;
-wire    grp_store_matrix_to_dram_fu_156_ap_idle;
-wire    grp_store_matrix_to_dram_fu_156_ap_ready;
-wire   [31:0] grp_store_matrix_to_dram_fu_156_A_dram;
-wire    grp_store_matrix_to_dram_fu_156_A_dram_ap_vld;
-wire   [14:0] grp_store_matrix_to_dram_fu_156_M_e_0_address0;
-wire    grp_store_matrix_to_dram_fu_156_M_e_0_ce0;
-wire   [14:0] grp_store_matrix_to_dram_fu_156_M_e_1_address0;
-wire    grp_store_matrix_to_dram_fu_156_M_e_1_ce0;
-wire   [14:0] grp_store_matrix_to_dram_fu_156_M_e_2_address0;
-wire    grp_store_matrix_to_dram_fu_156_M_e_2_ce0;
-wire   [14:0] grp_store_matrix_to_dram_fu_156_M_e_3_address0;
-wire    grp_store_matrix_to_dram_fu_156_M_e_3_ce0;
-reg    grp_load_matrix_from_dram_fu_104_ap_start_reg;
+reg   [31:0] k2_read_reg_203;
+reg   [31:0] k1_read_reg_208;
+reg   [31:0] t_capacity_read_reg_213;
+reg   [31:0] cols_read_reg_218;
+reg   [31:0] rows_read_reg_223;
+reg   [63:0] A_dram_read_reg_228;
+wire    grp_load_matrix_from_dram_fu_136_ap_start;
+wire    grp_load_matrix_from_dram_fu_136_ap_done;
+wire    grp_load_matrix_from_dram_fu_136_ap_idle;
+wire    grp_load_matrix_from_dram_fu_136_ap_ready;
+wire    grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWID;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWUSER;
+wire    grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WVALID;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WDATA;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WSTRB;
+wire    grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WID;
+wire   [0:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WUSER;
+wire    grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARID;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARUSER;
+wire    grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY;
+wire    grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_BREADY;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_rows;
+wire    grp_load_matrix_from_dram_fu_136_M_rows_ap_vld;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_cols;
+wire    grp_load_matrix_from_dram_fu_136_M_cols_ap_vld;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_t;
+wire    grp_load_matrix_from_dram_fu_136_M_t_ap_vld;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_t_capacity;
+wire    grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld;
+wire   [14:0] grp_load_matrix_from_dram_fu_136_M_e_0_address0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_0_ce0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_0_we0;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_e_0_d0;
+wire   [14:0] grp_load_matrix_from_dram_fu_136_M_e_1_address0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_1_ce0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_1_we0;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_e_1_d0;
+wire   [14:0] grp_load_matrix_from_dram_fu_136_M_e_2_address0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_2_ce0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_2_we0;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_e_2_d0;
+wire   [14:0] grp_load_matrix_from_dram_fu_136_M_e_3_address0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_3_ce0;
+wire    grp_load_matrix_from_dram_fu_136_M_e_3_we0;
+wire   [31:0] grp_load_matrix_from_dram_fu_136_M_e_3_d0;
+wire    grp_greedy_potential_reduce_fu_162_ap_start;
+wire    grp_greedy_potential_reduce_fu_162_ap_done;
+wire    grp_greedy_potential_reduce_fu_162_ap_idle;
+wire    grp_greedy_potential_reduce_fu_162_ap_ready;
+wire   [31:0] grp_greedy_potential_reduce_fu_162_M_t_o;
+wire    grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld;
+wire   [14:0] grp_greedy_potential_reduce_fu_162_M_e_0_address0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_0_ce0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_0_we0;
+wire   [31:0] grp_greedy_potential_reduce_fu_162_M_e_0_d0;
+wire   [14:0] grp_greedy_potential_reduce_fu_162_M_e_1_address0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_1_ce0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_1_we0;
+wire   [31:0] grp_greedy_potential_reduce_fu_162_M_e_1_d0;
+wire   [14:0] grp_greedy_potential_reduce_fu_162_M_e_2_address0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_2_ce0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_2_we0;
+wire   [31:0] grp_greedy_potential_reduce_fu_162_M_e_2_d0;
+wire   [14:0] grp_greedy_potential_reduce_fu_162_M_e_3_address0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_3_ce0;
+wire    grp_greedy_potential_reduce_fu_162_M_e_3_we0;
+wire   [31:0] grp_greedy_potential_reduce_fu_162_M_e_3_d0;
+wire    grp_store_matrix_to_dram_fu_184_ap_start;
+wire    grp_store_matrix_to_dram_fu_184_ap_done;
+wire    grp_store_matrix_to_dram_fu_184_ap_idle;
+wire    grp_store_matrix_to_dram_fu_184_ap_ready;
+wire    grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWID;
+wire   [31:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWUSER;
+wire    grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID;
+wire   [31:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WDATA;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WSTRB;
+wire    grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WID;
+wire   [0:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WUSER;
+wire    grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARID;
+wire   [31:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARUSER;
+wire    grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_RREADY;
+wire    grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY;
+wire   [14:0] grp_store_matrix_to_dram_fu_184_M_e_0_address0;
+wire    grp_store_matrix_to_dram_fu_184_M_e_0_ce0;
+wire   [14:0] grp_store_matrix_to_dram_fu_184_M_e_1_address0;
+wire    grp_store_matrix_to_dram_fu_184_M_e_1_ce0;
+wire   [14:0] grp_store_matrix_to_dram_fu_184_M_e_2_address0;
+wire    grp_store_matrix_to_dram_fu_184_M_e_2_ce0;
+wire   [14:0] grp_store_matrix_to_dram_fu_184_M_e_3_address0;
+wire    grp_store_matrix_to_dram_fu_184_M_e_3_ce0;
+reg    gmem_0_AWVALID;
+wire    gmem_0_AWREADY;
+reg    gmem_0_WVALID;
+wire    gmem_0_WREADY;
+reg    gmem_0_ARVALID;
+wire    gmem_0_ARREADY;
+wire    gmem_0_RVALID;
+reg    gmem_0_RREADY;
+wire   [31:0] gmem_0_RDATA;
+wire   [12:0] gmem_0_RFIFONUM;
+wire    gmem_0_BVALID;
+reg    gmem_0_BREADY;
+reg    grp_load_matrix_from_dram_fu_136_ap_start_reg;
 wire    ap_CS_fsm_state2;
-reg    grp_greedy_potential_reduce_fu_132_ap_start_reg;
+wire    ap_CS_fsm_state3;
+reg    grp_greedy_potential_reduce_fu_162_ap_start_reg;
 wire    ap_CS_fsm_state4;
-reg    grp_store_matrix_to_dram_fu_156_ap_start_reg;
 wire    ap_CS_fsm_state5;
-reg   [31:0] A_dram_o_reg;
+reg    grp_store_matrix_to_dram_fu_184_ap_start_reg;
 wire    ap_CS_fsm_state6;
-reg   [5:0] ap_NS_fsm;
+wire    ap_CS_fsm_state7;
+reg   [6:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
-reg    ap_ST_fsm_state2_blk;
-wire    ap_ST_fsm_state3_blk;
-reg    ap_ST_fsm_state4_blk;
-wire    ap_ST_fsm_state5_blk;
-reg    ap_ST_fsm_state6_blk;
+wire    ap_ST_fsm_state2_blk;
+reg    ap_ST_fsm_state3_blk;
+wire    ap_ST_fsm_state4_blk;
+reg    ap_ST_fsm_state5_blk;
+wire    ap_ST_fsm_state6_blk;
+reg    ap_ST_fsm_state7_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 6'd1;
+#0 ap_CS_fsm = 7'd1;
 #0 M_rows = 32'd0;
 #0 M_cols = 32'd0;
 #0 M_t = 32'd0;
 #0 M_t_capacity = 32'd0;
-#0 grp_load_matrix_from_dram_fu_104_ap_start_reg = 1'b0;
-#0 grp_greedy_potential_reduce_fu_132_ap_start_reg = 1'b0;
-#0 grp_store_matrix_to_dram_fu_156_ap_start_reg = 1'b0;
+#0 grp_load_matrix_from_dram_fu_136_ap_start_reg = 1'b0;
+#0 grp_greedy_potential_reduce_fu_162_ap_start_reg = 1'b0;
+#0 grp_store_matrix_to_dram_fu_184_ap_start_reg = 1'b0;
 end
 
 fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W #(
@@ -182,7 +425,7 @@ fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W #(
     .AddressWidth( 15 ))
 M_e_0_U(
     .clk(ap_clk),
-    .reset(ap_rst),
+    .reset(ap_rst_n_inv),
     .address0(M_e_0_address0),
     .ce0(M_e_0_ce0),
     .we0(M_e_0_we0),
@@ -196,7 +439,7 @@ fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W #(
     .AddressWidth( 15 ))
 M_e_1_U(
     .clk(ap_clk),
-    .reset(ap_rst),
+    .reset(ap_rst_n_inv),
     .address0(M_e_1_address0),
     .ce0(M_e_1_ce0),
     .we0(M_e_1_we0),
@@ -210,7 +453,7 @@ fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W #(
     .AddressWidth( 15 ))
 M_e_2_U(
     .clk(ap_clk),
-    .reset(ap_rst),
+    .reset(ap_rst_n_inv),
     .address0(M_e_2_address0),
     .ce0(M_e_2_ce0),
     .we0(M_e_2_we0),
@@ -224,7 +467,7 @@ fmm_reduce_kernel_M_e_0_RAM_1P_LUTRAM_1R1W #(
     .AddressWidth( 15 ))
 M_e_3_U(
     .clk(ap_clk),
-    .reset(ap_rst),
+    .reset(ap_rst_n_inv),
     .address0(M_e_3_address0),
     .ce0(M_e_3_ce0),
     .we0(M_e_3_we0),
@@ -232,107 +475,353 @@ M_e_3_U(
     .q0(M_e_3_q0)
 );
 
-fmm_reduce_kernel_load_matrix_from_dram grp_load_matrix_from_dram_fu_104(
+fmm_reduce_kernel_load_matrix_from_dram grp_load_matrix_from_dram_fu_136(
     .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_load_matrix_from_dram_fu_104_ap_start),
-    .ap_done(grp_load_matrix_from_dram_fu_104_ap_done),
-    .ap_idle(grp_load_matrix_from_dram_fu_104_ap_idle),
-    .ap_ready(grp_load_matrix_from_dram_fu_104_ap_ready),
-    .A_dram_read(A_dram_read_reg_189),
-    .rows(rows_read_reg_184),
-    .cols(cols_read_reg_179),
-    .t_capacity(t_capacity_read_reg_174),
-    .M_rows(grp_load_matrix_from_dram_fu_104_M_rows),
-    .M_rows_ap_vld(grp_load_matrix_from_dram_fu_104_M_rows_ap_vld),
-    .M_cols(grp_load_matrix_from_dram_fu_104_M_cols),
-    .M_cols_ap_vld(grp_load_matrix_from_dram_fu_104_M_cols_ap_vld),
-    .M_t(grp_load_matrix_from_dram_fu_104_M_t),
-    .M_t_ap_vld(grp_load_matrix_from_dram_fu_104_M_t_ap_vld),
-    .M_t_capacity(grp_load_matrix_from_dram_fu_104_M_t_capacity),
-    .M_t_capacity_ap_vld(grp_load_matrix_from_dram_fu_104_M_t_capacity_ap_vld),
-    .M_e_0_address0(grp_load_matrix_from_dram_fu_104_M_e_0_address0),
-    .M_e_0_ce0(grp_load_matrix_from_dram_fu_104_M_e_0_ce0),
-    .M_e_0_we0(grp_load_matrix_from_dram_fu_104_M_e_0_we0),
-    .M_e_0_d0(grp_load_matrix_from_dram_fu_104_M_e_0_d0),
-    .M_e_1_address0(grp_load_matrix_from_dram_fu_104_M_e_1_address0),
-    .M_e_1_ce0(grp_load_matrix_from_dram_fu_104_M_e_1_ce0),
-    .M_e_1_we0(grp_load_matrix_from_dram_fu_104_M_e_1_we0),
-    .M_e_1_d0(grp_load_matrix_from_dram_fu_104_M_e_1_d0),
-    .M_e_2_address0(grp_load_matrix_from_dram_fu_104_M_e_2_address0),
-    .M_e_2_ce0(grp_load_matrix_from_dram_fu_104_M_e_2_ce0),
-    .M_e_2_we0(grp_load_matrix_from_dram_fu_104_M_e_2_we0),
-    .M_e_2_d0(grp_load_matrix_from_dram_fu_104_M_e_2_d0),
-    .M_e_3_address0(grp_load_matrix_from_dram_fu_104_M_e_3_address0),
-    .M_e_3_ce0(grp_load_matrix_from_dram_fu_104_M_e_3_ce0),
-    .M_e_3_we0(grp_load_matrix_from_dram_fu_104_M_e_3_we0),
-    .M_e_3_d0(grp_load_matrix_from_dram_fu_104_M_e_3_d0)
+    .ap_rst(ap_rst_n_inv),
+    .ap_start(grp_load_matrix_from_dram_fu_136_ap_start),
+    .ap_done(grp_load_matrix_from_dram_fu_136_ap_done),
+    .ap_idle(grp_load_matrix_from_dram_fu_136_ap_idle),
+    .ap_ready(grp_load_matrix_from_dram_fu_136_ap_ready),
+    .m_axi_gmem_0_AWVALID(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWVALID),
+    .m_axi_gmem_0_AWREADY(1'b0),
+    .m_axi_gmem_0_AWADDR(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_WREADY(1'b0),
+    .m_axi_gmem_0_WDATA(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_ARREADY(gmem_0_ARREADY),
+    .m_axi_gmem_0_ARADDR(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_RVALID(gmem_0_RVALID),
+    .m_axi_gmem_0_RREADY(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RDATA(gmem_0_RDATA),
+    .m_axi_gmem_0_RLAST(1'b0),
+    .m_axi_gmem_0_RID(1'd0),
+    .m_axi_gmem_0_RFIFONUM(gmem_0_RFIFONUM),
+    .m_axi_gmem_0_RUSER(1'd0),
+    .m_axi_gmem_0_RRESP(2'd0),
+    .m_axi_gmem_0_BVALID(1'b0),
+    .m_axi_gmem_0_BREADY(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BRESP(2'd0),
+    .m_axi_gmem_0_BID(1'd0),
+    .m_axi_gmem_0_BUSER(1'd0),
+    .A_dram(A_dram_read_reg_228),
+    .rows(rows_read_reg_223),
+    .cols(cols_read_reg_218),
+    .t_capacity(t_capacity_read_reg_213),
+    .M_rows(grp_load_matrix_from_dram_fu_136_M_rows),
+    .M_rows_ap_vld(grp_load_matrix_from_dram_fu_136_M_rows_ap_vld),
+    .M_cols(grp_load_matrix_from_dram_fu_136_M_cols),
+    .M_cols_ap_vld(grp_load_matrix_from_dram_fu_136_M_cols_ap_vld),
+    .M_t(grp_load_matrix_from_dram_fu_136_M_t),
+    .M_t_ap_vld(grp_load_matrix_from_dram_fu_136_M_t_ap_vld),
+    .M_t_capacity(grp_load_matrix_from_dram_fu_136_M_t_capacity),
+    .M_t_capacity_ap_vld(grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld),
+    .M_e_0_address0(grp_load_matrix_from_dram_fu_136_M_e_0_address0),
+    .M_e_0_ce0(grp_load_matrix_from_dram_fu_136_M_e_0_ce0),
+    .M_e_0_we0(grp_load_matrix_from_dram_fu_136_M_e_0_we0),
+    .M_e_0_d0(grp_load_matrix_from_dram_fu_136_M_e_0_d0),
+    .M_e_1_address0(grp_load_matrix_from_dram_fu_136_M_e_1_address0),
+    .M_e_1_ce0(grp_load_matrix_from_dram_fu_136_M_e_1_ce0),
+    .M_e_1_we0(grp_load_matrix_from_dram_fu_136_M_e_1_we0),
+    .M_e_1_d0(grp_load_matrix_from_dram_fu_136_M_e_1_d0),
+    .M_e_2_address0(grp_load_matrix_from_dram_fu_136_M_e_2_address0),
+    .M_e_2_ce0(grp_load_matrix_from_dram_fu_136_M_e_2_ce0),
+    .M_e_2_we0(grp_load_matrix_from_dram_fu_136_M_e_2_we0),
+    .M_e_2_d0(grp_load_matrix_from_dram_fu_136_M_e_2_d0),
+    .M_e_3_address0(grp_load_matrix_from_dram_fu_136_M_e_3_address0),
+    .M_e_3_ce0(grp_load_matrix_from_dram_fu_136_M_e_3_ce0),
+    .M_e_3_we0(grp_load_matrix_from_dram_fu_136_M_e_3_we0),
+    .M_e_3_d0(grp_load_matrix_from_dram_fu_136_M_e_3_d0)
 );
 
-fmm_reduce_kernel_greedy_potential_reduce grp_greedy_potential_reduce_fu_132(
+fmm_reduce_kernel_greedy_potential_reduce grp_greedy_potential_reduce_fu_162(
     .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_greedy_potential_reduce_fu_132_ap_start),
-    .ap_done(grp_greedy_potential_reduce_fu_132_ap_done),
-    .ap_idle(grp_greedy_potential_reduce_fu_132_ap_idle),
-    .ap_ready(grp_greedy_potential_reduce_fu_132_ap_ready),
-    .k1(k1_read_reg_199),
-    .k2(k2_read_reg_194),
+    .ap_rst(ap_rst_n_inv),
+    .ap_start(grp_greedy_potential_reduce_fu_162_ap_start),
+    .ap_done(grp_greedy_potential_reduce_fu_162_ap_done),
+    .ap_idle(grp_greedy_potential_reduce_fu_162_ap_idle),
+    .ap_ready(grp_greedy_potential_reduce_fu_162_ap_ready),
+    .k1(k1_read_reg_208),
+    .k2(k2_read_reg_203),
     .M_rows(M_rows),
     .M_t_i(M_t),
-    .M_t_o(grp_greedy_potential_reduce_fu_132_M_t_o),
-    .M_t_o_ap_vld(grp_greedy_potential_reduce_fu_132_M_t_o_ap_vld),
+    .M_t_o(grp_greedy_potential_reduce_fu_162_M_t_o),
+    .M_t_o_ap_vld(grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld),
     .M_cols(M_cols),
-    .M_e_0_address0(grp_greedy_potential_reduce_fu_132_M_e_0_address0),
-    .M_e_0_ce0(grp_greedy_potential_reduce_fu_132_M_e_0_ce0),
-    .M_e_0_we0(grp_greedy_potential_reduce_fu_132_M_e_0_we0),
-    .M_e_0_d0(grp_greedy_potential_reduce_fu_132_M_e_0_d0),
+    .M_e_0_address0(grp_greedy_potential_reduce_fu_162_M_e_0_address0),
+    .M_e_0_ce0(grp_greedy_potential_reduce_fu_162_M_e_0_ce0),
+    .M_e_0_we0(grp_greedy_potential_reduce_fu_162_M_e_0_we0),
+    .M_e_0_d0(grp_greedy_potential_reduce_fu_162_M_e_0_d0),
     .M_e_0_q0(M_e_0_q0),
-    .M_e_1_address0(grp_greedy_potential_reduce_fu_132_M_e_1_address0),
-    .M_e_1_ce0(grp_greedy_potential_reduce_fu_132_M_e_1_ce0),
-    .M_e_1_we0(grp_greedy_potential_reduce_fu_132_M_e_1_we0),
-    .M_e_1_d0(grp_greedy_potential_reduce_fu_132_M_e_1_d0),
+    .M_e_1_address0(grp_greedy_potential_reduce_fu_162_M_e_1_address0),
+    .M_e_1_ce0(grp_greedy_potential_reduce_fu_162_M_e_1_ce0),
+    .M_e_1_we0(grp_greedy_potential_reduce_fu_162_M_e_1_we0),
+    .M_e_1_d0(grp_greedy_potential_reduce_fu_162_M_e_1_d0),
     .M_e_1_q0(M_e_1_q0),
-    .M_e_2_address0(grp_greedy_potential_reduce_fu_132_M_e_2_address0),
-    .M_e_2_ce0(grp_greedy_potential_reduce_fu_132_M_e_2_ce0),
-    .M_e_2_we0(grp_greedy_potential_reduce_fu_132_M_e_2_we0),
-    .M_e_2_d0(grp_greedy_potential_reduce_fu_132_M_e_2_d0),
+    .M_e_2_address0(grp_greedy_potential_reduce_fu_162_M_e_2_address0),
+    .M_e_2_ce0(grp_greedy_potential_reduce_fu_162_M_e_2_ce0),
+    .M_e_2_we0(grp_greedy_potential_reduce_fu_162_M_e_2_we0),
+    .M_e_2_d0(grp_greedy_potential_reduce_fu_162_M_e_2_d0),
     .M_e_2_q0(M_e_2_q0),
-    .M_e_3_address0(grp_greedy_potential_reduce_fu_132_M_e_3_address0),
-    .M_e_3_ce0(grp_greedy_potential_reduce_fu_132_M_e_3_ce0),
-    .M_e_3_we0(grp_greedy_potential_reduce_fu_132_M_e_3_we0),
-    .M_e_3_d0(grp_greedy_potential_reduce_fu_132_M_e_3_d0),
+    .M_e_3_address0(grp_greedy_potential_reduce_fu_162_M_e_3_address0),
+    .M_e_3_ce0(grp_greedy_potential_reduce_fu_162_M_e_3_ce0),
+    .M_e_3_we0(grp_greedy_potential_reduce_fu_162_M_e_3_we0),
+    .M_e_3_d0(grp_greedy_potential_reduce_fu_162_M_e_3_d0),
     .M_e_3_q0(M_e_3_q0),
     .M_t_capacity(M_t_capacity)
 );
 
-fmm_reduce_kernel_store_matrix_to_dram grp_store_matrix_to_dram_fu_156(
+fmm_reduce_kernel_store_matrix_to_dram grp_store_matrix_to_dram_fu_184(
     .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_store_matrix_to_dram_fu_156_ap_start),
-    .ap_done(grp_store_matrix_to_dram_fu_156_ap_done),
-    .ap_idle(grp_store_matrix_to_dram_fu_156_ap_idle),
-    .ap_ready(grp_store_matrix_to_dram_fu_156_ap_ready),
-    .A_dram(grp_store_matrix_to_dram_fu_156_A_dram),
-    .A_dram_ap_vld(grp_store_matrix_to_dram_fu_156_A_dram_ap_vld),
+    .ap_rst(ap_rst_n_inv),
+    .ap_start(grp_store_matrix_to_dram_fu_184_ap_start),
+    .ap_done(grp_store_matrix_to_dram_fu_184_ap_done),
+    .ap_idle(grp_store_matrix_to_dram_fu_184_ap_idle),
+    .ap_ready(grp_store_matrix_to_dram_fu_184_ap_ready),
+    .m_axi_gmem_0_AWVALID(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID),
+    .m_axi_gmem_0_AWREADY(gmem_0_AWREADY),
+    .m_axi_gmem_0_AWADDR(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_WREADY(gmem_0_WREADY),
+    .m_axi_gmem_0_WDATA(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_ARREADY(1'b0),
+    .m_axi_gmem_0_ARADDR(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_RVALID(1'b0),
+    .m_axi_gmem_0_RREADY(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RDATA(32'd0),
+    .m_axi_gmem_0_RLAST(1'b0),
+    .m_axi_gmem_0_RID(1'd0),
+    .m_axi_gmem_0_RFIFONUM(13'd0),
+    .m_axi_gmem_0_RUSER(1'd0),
+    .m_axi_gmem_0_RRESP(2'd0),
+    .m_axi_gmem_0_BVALID(gmem_0_BVALID),
+    .m_axi_gmem_0_BREADY(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BRESP(2'd0),
+    .m_axi_gmem_0_BID(1'd0),
+    .m_axi_gmem_0_BUSER(1'd0),
+    .A_dram(A_dram_read_reg_228),
     .M_rows(M_rows),
     .M_cols(M_cols),
-    .M_e_0_address0(grp_store_matrix_to_dram_fu_156_M_e_0_address0),
-    .M_e_0_ce0(grp_store_matrix_to_dram_fu_156_M_e_0_ce0),
+    .M_e_0_address0(grp_store_matrix_to_dram_fu_184_M_e_0_address0),
+    .M_e_0_ce0(grp_store_matrix_to_dram_fu_184_M_e_0_ce0),
     .M_e_0_q0(M_e_0_q0),
-    .M_e_1_address0(grp_store_matrix_to_dram_fu_156_M_e_1_address0),
-    .M_e_1_ce0(grp_store_matrix_to_dram_fu_156_M_e_1_ce0),
+    .M_e_1_address0(grp_store_matrix_to_dram_fu_184_M_e_1_address0),
+    .M_e_1_ce0(grp_store_matrix_to_dram_fu_184_M_e_1_ce0),
     .M_e_1_q0(M_e_1_q0),
-    .M_e_2_address0(grp_store_matrix_to_dram_fu_156_M_e_2_address0),
-    .M_e_2_ce0(grp_store_matrix_to_dram_fu_156_M_e_2_ce0),
+    .M_e_2_address0(grp_store_matrix_to_dram_fu_184_M_e_2_address0),
+    .M_e_2_ce0(grp_store_matrix_to_dram_fu_184_M_e_2_ce0),
     .M_e_2_q0(M_e_2_q0),
-    .M_e_3_address0(grp_store_matrix_to_dram_fu_156_M_e_3_address0),
-    .M_e_3_ce0(grp_store_matrix_to_dram_fu_156_M_e_3_ce0),
+    .M_e_3_address0(grp_store_matrix_to_dram_fu_184_M_e_3_address0),
+    .M_e_3_ce0(grp_store_matrix_to_dram_fu_184_M_e_3_ce0),
     .M_e_3_q0(M_e_3_q0)
 );
 
+fmm_reduce_kernel_control_s_axi #(
+    .C_S_AXI_ADDR_WIDTH( C_S_AXI_CONTROL_ADDR_WIDTH ),
+    .C_S_AXI_DATA_WIDTH( C_S_AXI_CONTROL_DATA_WIDTH ))
+control_s_axi_U(
+    .AWVALID(s_axi_control_AWVALID),
+    .AWREADY(s_axi_control_AWREADY),
+    .AWADDR(s_axi_control_AWADDR),
+    .WVALID(s_axi_control_WVALID),
+    .WREADY(s_axi_control_WREADY),
+    .WDATA(s_axi_control_WDATA),
+    .WSTRB(s_axi_control_WSTRB),
+    .ARVALID(s_axi_control_ARVALID),
+    .ARREADY(s_axi_control_ARREADY),
+    .ARADDR(s_axi_control_ARADDR),
+    .RVALID(s_axi_control_RVALID),
+    .RREADY(s_axi_control_RREADY),
+    .RDATA(s_axi_control_RDATA),
+    .RRESP(s_axi_control_RRESP),
+    .BVALID(s_axi_control_BVALID),
+    .BREADY(s_axi_control_BREADY),
+    .BRESP(s_axi_control_BRESP),
+    .ACLK(ap_clk),
+    .ARESET(ap_rst_n_inv),
+    .ACLK_EN(1'b1),
+    .rows(rows),
+    .cols(cols),
+    .t_capacity(t_capacity),
+    .k1(k1),
+    .k2(k2),
+    .ap_start(ap_start),
+    .interrupt(interrupt),
+    .ap_ready(ap_ready),
+    .ap_done(ap_done),
+    .ap_idle(ap_idle)
+);
+
+fmm_reduce_kernel_control_r_s_axi #(
+    .C_S_AXI_ADDR_WIDTH( C_S_AXI_CONTROL_R_ADDR_WIDTH ),
+    .C_S_AXI_DATA_WIDTH( C_S_AXI_CONTROL_R_DATA_WIDTH ))
+control_r_s_axi_U(
+    .AWVALID(s_axi_control_r_AWVALID),
+    .AWREADY(s_axi_control_r_AWREADY),
+    .AWADDR(s_axi_control_r_AWADDR),
+    .WVALID(s_axi_control_r_WVALID),
+    .WREADY(s_axi_control_r_WREADY),
+    .WDATA(s_axi_control_r_WDATA),
+    .WSTRB(s_axi_control_r_WSTRB),
+    .ARVALID(s_axi_control_r_ARVALID),
+    .ARREADY(s_axi_control_r_ARREADY),
+    .ARADDR(s_axi_control_r_ARADDR),
+    .RVALID(s_axi_control_r_RVALID),
+    .RREADY(s_axi_control_r_RREADY),
+    .RDATA(s_axi_control_r_RDATA),
+    .RRESP(s_axi_control_r_RRESP),
+    .BVALID(s_axi_control_r_BVALID),
+    .BREADY(s_axi_control_r_BREADY),
+    .BRESP(s_axi_control_r_BRESP),
+    .ACLK(ap_clk),
+    .ARESET(ap_rst_n_inv),
+    .ACLK_EN(1'b1),
+    .A_dram(A_dram)
+);
+
+fmm_reduce_kernel_gmem_m_axi #(
+    .CONSERVATIVE( 1 ),
+    .USER_MAXREQS( 7 ),
+    .MAX_READ_BURST_LENGTH( 256 ),
+    .MAX_WRITE_BURST_LENGTH( 256 ),
+    .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM_ID_WIDTH ),
+    .C_M_AXI_ADDR_WIDTH( C_M_AXI_GMEM_ADDR_WIDTH ),
+    .C_M_AXI_DATA_WIDTH( C_M_AXI_GMEM_DATA_WIDTH ),
+    .C_M_AXI_AWUSER_WIDTH( C_M_AXI_GMEM_AWUSER_WIDTH ),
+    .C_M_AXI_ARUSER_WIDTH( C_M_AXI_GMEM_ARUSER_WIDTH ),
+    .C_M_AXI_WUSER_WIDTH( C_M_AXI_GMEM_WUSER_WIDTH ),
+    .C_M_AXI_RUSER_WIDTH( C_M_AXI_GMEM_RUSER_WIDTH ),
+    .C_M_AXI_BUSER_WIDTH( C_M_AXI_GMEM_BUSER_WIDTH ),
+    .C_USER_VALUE( C_M_AXI_GMEM_USER_VALUE ),
+    .C_PROT_VALUE( C_M_AXI_GMEM_PROT_VALUE ),
+    .C_CACHE_VALUE( C_M_AXI_GMEM_CACHE_VALUE ),
+    .CH0_NUM_READ_OUTSTANDING( 16 ),
+    .CH0_NUM_WRITE_OUTSTANDING( 16 ),
+    .CH0_USER_RFIFONUM_WIDTH( 13 ),
+    .CH0_USER_DW( 32 ),
+    .CH0_USER_AW( 64 ),
+    .NUM_READ_OUTSTANDING( 16 ),
+    .NUM_WRITE_OUTSTANDING( 16 ))
+gmem_m_axi_U(
+    .AWVALID(m_axi_gmem_AWVALID),
+    .AWREADY(m_axi_gmem_AWREADY),
+    .AWADDR(m_axi_gmem_AWADDR),
+    .AWID(m_axi_gmem_AWID),
+    .AWLEN(m_axi_gmem_AWLEN),
+    .AWSIZE(m_axi_gmem_AWSIZE),
+    .AWBURST(m_axi_gmem_AWBURST),
+    .AWLOCK(m_axi_gmem_AWLOCK),
+    .AWCACHE(m_axi_gmem_AWCACHE),
+    .AWPROT(m_axi_gmem_AWPROT),
+    .AWQOS(m_axi_gmem_AWQOS),
+    .AWREGION(m_axi_gmem_AWREGION),
+    .AWUSER(m_axi_gmem_AWUSER),
+    .WVALID(m_axi_gmem_WVALID),
+    .WREADY(m_axi_gmem_WREADY),
+    .WDATA(m_axi_gmem_WDATA),
+    .WSTRB(m_axi_gmem_WSTRB),
+    .WLAST(m_axi_gmem_WLAST),
+    .WID(m_axi_gmem_WID),
+    .WUSER(m_axi_gmem_WUSER),
+    .ARVALID(m_axi_gmem_ARVALID),
+    .ARREADY(m_axi_gmem_ARREADY),
+    .ARADDR(m_axi_gmem_ARADDR),
+    .ARID(m_axi_gmem_ARID),
+    .ARLEN(m_axi_gmem_ARLEN),
+    .ARSIZE(m_axi_gmem_ARSIZE),
+    .ARBURST(m_axi_gmem_ARBURST),
+    .ARLOCK(m_axi_gmem_ARLOCK),
+    .ARCACHE(m_axi_gmem_ARCACHE),
+    .ARPROT(m_axi_gmem_ARPROT),
+    .ARQOS(m_axi_gmem_ARQOS),
+    .ARREGION(m_axi_gmem_ARREGION),
+    .ARUSER(m_axi_gmem_ARUSER),
+    .RVALID(m_axi_gmem_RVALID),
+    .RREADY(m_axi_gmem_RREADY),
+    .RDATA(m_axi_gmem_RDATA),
+    .RLAST(m_axi_gmem_RLAST),
+    .RID(m_axi_gmem_RID),
+    .RUSER(m_axi_gmem_RUSER),
+    .RRESP(m_axi_gmem_RRESP),
+    .BVALID(m_axi_gmem_BVALID),
+    .BREADY(m_axi_gmem_BREADY),
+    .BRESP(m_axi_gmem_BRESP),
+    .BID(m_axi_gmem_BID),
+    .BUSER(m_axi_gmem_BUSER),
+    .ACLK(ap_clk),
+    .ARESET(ap_rst_n_inv),
+    .ACLK_EN(1'b1),
+    .I_CH0_ARVALID(gmem_0_ARVALID),
+    .I_CH0_ARREADY(gmem_0_ARREADY),
+    .I_CH0_ARADDR(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARADDR),
+    .I_CH0_ARLEN(grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARLEN),
+    .I_CH0_RVALID(gmem_0_RVALID),
+    .I_CH0_RREADY(gmem_0_RREADY),
+    .I_CH0_RDATA(gmem_0_RDATA),
+    .I_CH0_RFIFONUM(gmem_0_RFIFONUM),
+    .I_CH0_AWVALID(gmem_0_AWVALID),
+    .I_CH0_AWREADY(gmem_0_AWREADY),
+    .I_CH0_AWADDR(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWADDR),
+    .I_CH0_AWLEN(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWLEN),
+    .I_CH0_WVALID(gmem_0_WVALID),
+    .I_CH0_WREADY(gmem_0_WREADY),
+    .I_CH0_WDATA(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WDATA),
+    .I_CH0_WSTRB(grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WSTRB),
+    .I_CH0_BVALID(gmem_0_BVALID),
+    .I_CH0_BREADY(gmem_0_BREADY)
+);
+
 always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
+    if (ap_rst_n_inv == 1'b1) begin
         ap_CS_fsm <= ap_ST_fsm_state1;
     end else begin
         ap_CS_fsm <= ap_NS_fsm;
@@ -340,268 +829,249 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_greedy_potential_reduce_fu_132_ap_start_reg <= 1'b0;
+    if (ap_rst_n_inv == 1'b1) begin
+        grp_greedy_potential_reduce_fu_162_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_greedy_potential_reduce_fu_132_ap_start_reg <= 1'b1;
-        end else if ((grp_greedy_potential_reduce_fu_132_ap_ready == 1'b1)) begin
-            grp_greedy_potential_reduce_fu_132_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state4)) begin
+            grp_greedy_potential_reduce_fu_162_ap_start_reg <= 1'b1;
+        end else if ((grp_greedy_potential_reduce_fu_162_ap_ready == 1'b1)) begin
+            grp_greedy_potential_reduce_fu_162_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_load_matrix_from_dram_fu_104_ap_start_reg <= 1'b0;
+    if (ap_rst_n_inv == 1'b1) begin
+        grp_load_matrix_from_dram_fu_136_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-            grp_load_matrix_from_dram_fu_104_ap_start_reg <= 1'b1;
-        end else if ((grp_load_matrix_from_dram_fu_104_ap_ready == 1'b1)) begin
-            grp_load_matrix_from_dram_fu_104_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state2)) begin
+            grp_load_matrix_from_dram_fu_136_ap_start_reg <= 1'b1;
+        end else if ((grp_load_matrix_from_dram_fu_136_ap_ready == 1'b1)) begin
+            grp_load_matrix_from_dram_fu_136_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_store_matrix_to_dram_fu_156_ap_start_reg <= 1'b0;
+    if (ap_rst_n_inv == 1'b1) begin
+        grp_store_matrix_to_dram_fu_184_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state5)) begin
-            grp_store_matrix_to_dram_fu_156_ap_start_reg <= 1'b1;
-        end else if ((grp_store_matrix_to_dram_fu_156_ap_ready == 1'b1)) begin
-            grp_store_matrix_to_dram_fu_156_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state6)) begin
+            grp_store_matrix_to_dram_fu_184_ap_start_reg <= 1'b1;
+        end else if ((grp_store_matrix_to_dram_fu_184_ap_ready == 1'b1)) begin
+            grp_store_matrix_to_dram_fu_184_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_greedy_potential_reduce_fu_132_M_t_o_ap_vld == 1'b1))) begin
-        M_t <= grp_greedy_potential_reduce_fu_132_M_t_o;
-    end else if (((1'b1 == ap_CS_fsm_state2) & (grp_load_matrix_from_dram_fu_104_M_t_ap_vld == 1'b1))) begin
-        M_t <= grp_load_matrix_from_dram_fu_104_M_t;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state6) & (grp_store_matrix_to_dram_fu_156_A_dram_ap_vld == 1'b1))) begin
-        A_dram_o_reg <= grp_store_matrix_to_dram_fu_156_A_dram;
+    if (((grp_greedy_potential_reduce_fu_162_M_t_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        M_t <= grp_greedy_potential_reduce_fu_162_M_t_o;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_t_ap_vld == 1'b1))) begin
+        M_t <= grp_load_matrix_from_dram_fu_136_M_t;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        A_dram_read_reg_189 <= A_dram_i;
-        cols_read_reg_179 <= cols;
-        rows_read_reg_184 <= rows;
-        t_capacity_read_reg_174 <= t_capacity;
+        A_dram_read_reg_228 <= A_dram;
+        cols_read_reg_218 <= cols;
+        k1_read_reg_208 <= k1;
+        k2_read_reg_203 <= k2;
+        rows_read_reg_223 <= rows;
+        t_capacity_read_reg_213 <= t_capacity;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state2) & (grp_load_matrix_from_dram_fu_104_M_cols_ap_vld == 1'b1))) begin
-        M_cols <= grp_load_matrix_from_dram_fu_104_M_cols;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_cols_ap_vld == 1'b1))) begin
+        M_cols <= grp_load_matrix_from_dram_fu_136_M_cols;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_load_matrix_from_dram_fu_104_M_rows_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
-        M_rows <= grp_load_matrix_from_dram_fu_104_M_rows;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_rows_ap_vld == 1'b1))) begin
+        M_rows <= grp_load_matrix_from_dram_fu_136_M_rows;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state2) & (grp_load_matrix_from_dram_fu_104_M_t_capacity_ap_vld == 1'b1))) begin
-        M_t_capacity <= grp_load_matrix_from_dram_fu_104_M_t_capacity;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        k1_read_reg_199 <= k1;
-        k2_read_reg_194 <= k2;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_M_t_capacity_ap_vld == 1'b1))) begin
+        M_t_capacity <= grp_load_matrix_from_dram_fu_136_M_t_capacity;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state6) & (grp_store_matrix_to_dram_fu_156_A_dram_ap_vld == 1'b1))) begin
-        A_dram_o = grp_store_matrix_to_dram_fu_156_A_dram;
-    end else begin
-        A_dram_o = A_dram_o_reg;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_0_address0 = grp_store_matrix_to_dram_fu_156_M_e_0_address0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_0_address0 = grp_greedy_potential_reduce_fu_132_M_e_0_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_0_address0 = grp_load_matrix_from_dram_fu_104_M_e_0_address0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_0_address0 = grp_store_matrix_to_dram_fu_184_M_e_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_0_address0 = grp_greedy_potential_reduce_fu_162_M_e_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_0_address0 = grp_load_matrix_from_dram_fu_136_M_e_0_address0;
     end else begin
         M_e_0_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_0_ce0 = grp_store_matrix_to_dram_fu_156_M_e_0_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_0_ce0 = grp_greedy_potential_reduce_fu_132_M_e_0_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_0_ce0 = grp_load_matrix_from_dram_fu_104_M_e_0_ce0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_0_ce0 = grp_store_matrix_to_dram_fu_184_M_e_0_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_0_ce0 = grp_greedy_potential_reduce_fu_162_M_e_0_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_0_ce0 = grp_load_matrix_from_dram_fu_136_M_e_0_ce0;
     end else begin
         M_e_0_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_0_d0 = grp_greedy_potential_reduce_fu_132_M_e_0_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_0_d0 = grp_load_matrix_from_dram_fu_104_M_e_0_d0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_0_d0 = grp_greedy_potential_reduce_fu_162_M_e_0_d0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_0_d0 = grp_load_matrix_from_dram_fu_136_M_e_0_d0;
     end else begin
         M_e_0_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_0_we0 = grp_greedy_potential_reduce_fu_132_M_e_0_we0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_0_we0 = grp_load_matrix_from_dram_fu_104_M_e_0_we0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_0_we0 = grp_greedy_potential_reduce_fu_162_M_e_0_we0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_0_we0 = grp_load_matrix_from_dram_fu_136_M_e_0_we0;
     end else begin
         M_e_0_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_1_address0 = grp_store_matrix_to_dram_fu_156_M_e_1_address0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_1_address0 = grp_greedy_potential_reduce_fu_132_M_e_1_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_1_address0 = grp_load_matrix_from_dram_fu_104_M_e_1_address0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_1_address0 = grp_store_matrix_to_dram_fu_184_M_e_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_1_address0 = grp_greedy_potential_reduce_fu_162_M_e_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_1_address0 = grp_load_matrix_from_dram_fu_136_M_e_1_address0;
     end else begin
         M_e_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_1_ce0 = grp_store_matrix_to_dram_fu_156_M_e_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_1_ce0 = grp_greedy_potential_reduce_fu_132_M_e_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_1_ce0 = grp_load_matrix_from_dram_fu_104_M_e_1_ce0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_1_ce0 = grp_store_matrix_to_dram_fu_184_M_e_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_1_ce0 = grp_greedy_potential_reduce_fu_162_M_e_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_1_ce0 = grp_load_matrix_from_dram_fu_136_M_e_1_ce0;
     end else begin
         M_e_1_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_1_d0 = grp_greedy_potential_reduce_fu_132_M_e_1_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_1_d0 = grp_load_matrix_from_dram_fu_104_M_e_1_d0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_1_d0 = grp_greedy_potential_reduce_fu_162_M_e_1_d0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_1_d0 = grp_load_matrix_from_dram_fu_136_M_e_1_d0;
     end else begin
         M_e_1_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_1_we0 = grp_greedy_potential_reduce_fu_132_M_e_1_we0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_1_we0 = grp_load_matrix_from_dram_fu_104_M_e_1_we0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_1_we0 = grp_greedy_potential_reduce_fu_162_M_e_1_we0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_1_we0 = grp_load_matrix_from_dram_fu_136_M_e_1_we0;
     end else begin
         M_e_1_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_2_address0 = grp_store_matrix_to_dram_fu_156_M_e_2_address0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_2_address0 = grp_greedy_potential_reduce_fu_132_M_e_2_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_2_address0 = grp_load_matrix_from_dram_fu_104_M_e_2_address0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_2_address0 = grp_store_matrix_to_dram_fu_184_M_e_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_2_address0 = grp_greedy_potential_reduce_fu_162_M_e_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_2_address0 = grp_load_matrix_from_dram_fu_136_M_e_2_address0;
     end else begin
         M_e_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_2_ce0 = grp_store_matrix_to_dram_fu_156_M_e_2_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_2_ce0 = grp_greedy_potential_reduce_fu_132_M_e_2_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_2_ce0 = grp_load_matrix_from_dram_fu_104_M_e_2_ce0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_2_ce0 = grp_store_matrix_to_dram_fu_184_M_e_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_2_ce0 = grp_greedy_potential_reduce_fu_162_M_e_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_2_ce0 = grp_load_matrix_from_dram_fu_136_M_e_2_ce0;
     end else begin
         M_e_2_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_2_d0 = grp_greedy_potential_reduce_fu_132_M_e_2_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_2_d0 = grp_load_matrix_from_dram_fu_104_M_e_2_d0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_2_d0 = grp_greedy_potential_reduce_fu_162_M_e_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_2_d0 = grp_load_matrix_from_dram_fu_136_M_e_2_d0;
     end else begin
         M_e_2_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_2_we0 = grp_greedy_potential_reduce_fu_132_M_e_2_we0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_2_we0 = grp_load_matrix_from_dram_fu_104_M_e_2_we0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_2_we0 = grp_greedy_potential_reduce_fu_162_M_e_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_2_we0 = grp_load_matrix_from_dram_fu_136_M_e_2_we0;
     end else begin
         M_e_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_3_address0 = grp_store_matrix_to_dram_fu_156_M_e_3_address0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_3_address0 = grp_greedy_potential_reduce_fu_132_M_e_3_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_3_address0 = grp_load_matrix_from_dram_fu_104_M_e_3_address0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_3_address0 = grp_store_matrix_to_dram_fu_184_M_e_3_address0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_3_address0 = grp_greedy_potential_reduce_fu_162_M_e_3_address0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_3_address0 = grp_load_matrix_from_dram_fu_136_M_e_3_address0;
     end else begin
         M_e_3_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        M_e_3_ce0 = grp_store_matrix_to_dram_fu_156_M_e_3_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_3_ce0 = grp_greedy_potential_reduce_fu_132_M_e_3_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_3_ce0 = grp_load_matrix_from_dram_fu_104_M_e_3_ce0;
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        M_e_3_ce0 = grp_store_matrix_to_dram_fu_184_M_e_3_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_3_ce0 = grp_greedy_potential_reduce_fu_162_M_e_3_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_3_ce0 = grp_load_matrix_from_dram_fu_136_M_e_3_ce0;
     end else begin
         M_e_3_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_3_d0 = grp_greedy_potential_reduce_fu_132_M_e_3_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_3_d0 = grp_load_matrix_from_dram_fu_104_M_e_3_d0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_3_d0 = grp_greedy_potential_reduce_fu_162_M_e_3_d0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_3_d0 = grp_load_matrix_from_dram_fu_136_M_e_3_d0;
     end else begin
         M_e_3_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        M_e_3_we0 = grp_greedy_potential_reduce_fu_132_M_e_3_we0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        M_e_3_we0 = grp_load_matrix_from_dram_fu_104_M_e_3_we0;
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        M_e_3_we0 = grp_greedy_potential_reduce_fu_162_M_e_3_we0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        M_e_3_we0 = grp_load_matrix_from_dram_fu_136_M_e_3_we0;
     end else begin
         M_e_3_we0 = 1'b0;
     end
@@ -615,36 +1085,38 @@ always @ (*) begin
     end
 end
 
+assign ap_ST_fsm_state2_blk = 1'b0;
+
 always @ (*) begin
-    if ((grp_load_matrix_from_dram_fu_104_ap_done == 1'b0)) begin
-        ap_ST_fsm_state2_blk = 1'b1;
+    if ((grp_load_matrix_from_dram_fu_136_ap_done == 1'b0)) begin
+        ap_ST_fsm_state3_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state2_blk = 1'b0;
+        ap_ST_fsm_state3_blk = 1'b0;
     end
 end
 
-assign ap_ST_fsm_state3_blk = 1'b0;
+assign ap_ST_fsm_state4_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_greedy_potential_reduce_fu_132_ap_done == 1'b0)) begin
-        ap_ST_fsm_state4_blk = 1'b1;
+    if ((grp_greedy_potential_reduce_fu_162_ap_done == 1'b0)) begin
+        ap_ST_fsm_state5_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state4_blk = 1'b0;
+        ap_ST_fsm_state5_blk = 1'b0;
     end
 end
 
-assign ap_ST_fsm_state5_blk = 1'b0;
+assign ap_ST_fsm_state6_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_store_matrix_to_dram_fu_156_ap_done == 1'b0)) begin
-        ap_ST_fsm_state6_blk = 1'b1;
+    if ((grp_store_matrix_to_dram_fu_184_ap_done == 1'b0)) begin
+        ap_ST_fsm_state7_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state6_blk = 1'b0;
+        ap_ST_fsm_state7_blk = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state6) & (grp_store_matrix_to_dram_fu_156_ap_done == 1'b1))) begin
+    if (((grp_store_matrix_to_dram_fu_184_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -660,10 +1132,50 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state6) & (grp_store_matrix_to_dram_fu_156_ap_done == 1'b1))) begin
+    if (((grp_store_matrix_to_dram_fu_184_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
+        gmem_0_ARVALID = grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_ARVALID;
+    end else begin
+        gmem_0_ARVALID = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6))) begin
+        gmem_0_AWVALID = grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_AWVALID;
+    end else begin
+        gmem_0_AWVALID = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6))) begin
+        gmem_0_BREADY = grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_BREADY;
+    end else begin
+        gmem_0_BREADY = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
+        gmem_0_RREADY = grp_load_matrix_from_dram_fu_136_m_axi_gmem_0_RREADY;
+    end else begin
+        gmem_0_RREADY = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6))) begin
+        gmem_0_WVALID = grp_store_matrix_to_dram_fu_184_m_axi_gmem_0_WVALID;
+    end else begin
+        gmem_0_WVALID = 1'b0;
     end
 end
 
@@ -677,30 +1189,33 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_load_matrix_from_dram_fu_104_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end
+            ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            ap_NS_fsm = ap_ST_fsm_state4;
-        end
-        ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & (grp_greedy_potential_reduce_fu_132_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state5;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state3) & (grp_load_matrix_from_dram_fu_136_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
+        ap_ST_fsm_state4 : begin
+            ap_NS_fsm = ap_ST_fsm_state5;
+        end
         ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
+            if (((grp_greedy_potential_reduce_fu_162_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+                ap_NS_fsm = ap_ST_fsm_state6;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state5;
+            end
         end
         ap_ST_fsm_state6 : begin
-            if (((1'b1 == ap_CS_fsm_state6) & (grp_store_matrix_to_dram_fu_156_ap_done == 1'b1))) begin
+            ap_NS_fsm = ap_ST_fsm_state7;
+        end
+        ap_ST_fsm_state7 : begin
+            if (((grp_store_matrix_to_dram_fu_184_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state6;
+                ap_NS_fsm = ap_ST_fsm_state7;
             end
         end
         default : begin
@@ -721,10 +1236,16 @@ assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 
 assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
-assign grp_greedy_potential_reduce_fu_132_ap_start = grp_greedy_potential_reduce_fu_132_ap_start_reg;
+assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
-assign grp_load_matrix_from_dram_fu_104_ap_start = grp_load_matrix_from_dram_fu_104_ap_start_reg;
+always @ (*) begin
+    ap_rst_n_inv = ~ap_rst_n;
+end
 
-assign grp_store_matrix_to_dram_fu_156_ap_start = grp_store_matrix_to_dram_fu_156_ap_start_reg;
+assign grp_greedy_potential_reduce_fu_162_ap_start = grp_greedy_potential_reduce_fu_162_ap_start_reg;
+
+assign grp_load_matrix_from_dram_fu_136_ap_start = grp_load_matrix_from_dram_fu_136_ap_start_reg;
+
+assign grp_store_matrix_to_dram_fu_184_ap_start = grp_store_matrix_to_dram_fu_184_ap_start_reg;
 
 endmodule //fmm_reduce_kernel

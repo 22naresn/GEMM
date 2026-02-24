@@ -504,7 +504,7 @@ VITIS_LOOP_213_2:4 %br_ln212 = br i1 %icmp_ln213, void %for.end23, void %VITIS_L
 
 <Node id="39" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_213_2.split:0 %specloopname_ln212 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6
+VITIS_LOOP_213_2.split:0 %specloopname_ln212 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln212"/></StgValue>
@@ -1029,7 +1029,7 @@ for.inc21:1 %br_ln212 = br void %VITIS_LOOP_213_2
 
 <Node id="56" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body5.split:1 %specloopname_ln213 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
+for.body5.split:1 %specloopname_ln213 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln213"/></StgValue>
@@ -1471,10 +1471,10 @@ if.end9:6 %out_sign_2 = phi i32 %out_sign_0_load_1, void %for.body5.split, i32 %
 
 <Node id="83" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-if.end9:7 %empty_25 = phi i32 %p_load, void %for.body5.split, i32 %select_ln219_4, void %if.then
+if.end9:7 %empty_41 = phi i32 %p_load, void %for.body5.split, i32 %select_ln219_4, void %if.then
 
 ]]></Node>
-<StgValue><ssdm name="empty_25"/></StgValue>
+<StgValue><ssdm name="empty_41"/></StgValue>
 </operation>
 
 <operation id="100" st_id="9" stage="1" lat="1">
@@ -1539,7 +1539,7 @@ if.then11:0 %best_score_1 = call i32 @compute_greedy_potential_score, i31 %i_1, 
 
 <Node id="89" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.then11:1 %icmp_ln223 = icmp_sgt  i32 %best_score_1, i32 %empty_25
+if.then11:1 %icmp_ln223 = icmp_sgt  i32 %best_score_1, i32 %empty_41
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln223"/></StgValue>
@@ -1667,7 +1667,7 @@ if.then11:8 %select_ln223_3 = select i1 %icmp_ln223, i32 4294967295, i32 %out_si
 
 <Node id="97" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-if.then11:9 %select_ln223_4 = select i1 %icmp_ln223, i32 %best_score_1, i32 %empty_25
+if.then11:9 %select_ln223_4 = select i1 %icmp_ln223, i32 %best_score_1, i32 %empty_41
 
 ]]></Node>
 <StgValue><ssdm name="select_ln223_4"/></StgValue>
@@ -1803,10 +1803,10 @@ for.inc:6 %out_sign_3 = phi i32 %out_sign_2, void %if.end9, i32 %select_ln223_3,
 
 <Node id="107" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-for.inc:7 %empty_26 = phi i32 %empty_25, void %if.end9, i32 %select_ln223_4, void %if.then11
+for.inc:7 %empty_42 = phi i32 %empty_41, void %if.end9, i32 %select_ln223_4, void %if.then11
 
 ]]></Node>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_42"/></StgValue>
 </operation>
 
 <operation id="121" st_id="11" stage="1" lat="1">
@@ -1938,7 +1938,7 @@ for.inc:15 %store_ln219 = store i32 %out_sign_3, i32 %out_sign_0
 
 <Node id="116" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc:16 %store_ln219 = store i32 %empty_26, i32 %empty
+for.inc:16 %store_ln219 = store i32 %empty_42, i32 %empty
 
 ]]></Node>
 <StgValue><ssdm name="store_ln219"/></StgValue>
