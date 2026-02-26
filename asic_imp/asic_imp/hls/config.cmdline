@@ -1,3 +1,0 @@
-relativeroot=C:/GEMM/asic_imp
-original_argv=--mode hls --csim --config C:\GEMM\asic_imp\hls_config.cfg --work_dir asic_imp 
-
