@@ -1,0 +1,22 @@
+// Tang Nano 9K — fmm16_v3 CST
+
+IO_LOC  "clk"     52;
+IO_PORT "clk"     IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+
+IO_LOC  "rst"     3;
+IO_PORT "rst"     IO_TYPE=LVCMOS18 PULL_MODE=UP;
+
+IO_LOC  "uart_tx" 17;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+
+IO_LOC  "uart_rx" 18;
+IO_PORT "uart_rx" IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+
+IO_LOC  "led_0"   10;
+IO_PORT "led_0"   IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_1"   11;
+IO_PORT "led_1"   IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_2"   14;
+IO_PORT "led_2"   IO_TYPE=LVCMOS18;
